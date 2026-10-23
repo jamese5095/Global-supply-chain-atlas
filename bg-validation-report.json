@@ -1,0 +1,224 @@
+{
+  "status": "passed",
+  "bgProjectCount": 492,
+  "coveredCustomers": 139,
+  "originalCustomerRoster": 145,
+  "unallocatedGlobalOrCrossRegionalCases": 12,
+  "regionTypeCombinationsChecked": 180,
+  "officialTypes": 17,
+  "originalSixDatasetsUnchanged": true,
+  "multiLabelStatisticsVerified": true,
+  "referenceAndManufacturingExcludedFromBGHeat": true,
+  "regionalAndGlobalScopesNotAssignedToCountries": true,
+  "crossIndustryIdsNamespaced": true,
+  "version": "BG第二版",
+  "editorial": {
+    "inputSheetsOnly": [
+      "高科技",
+      "工业设备",
+      "汽车",
+      "消费品",
+      "零售餐饮",
+      "医药"
+    ],
+    "summarySheetUsed": false,
+    "rankedRegions": 10,
+    "analysisSectionsExpanded": 3,
+    "SFSourceLinksShown": false,
+    "capabilityAndOpportunityStatesPreserved": true
+  },
+  "browserQA": {
+    "regions": [
+      {
+        "analysisFolds": 0,
+        "basisItems": 3,
+        "priority": "第1优先 · 优先拓展",
+        "region": "东南亚 · 区域业务布局",
+        "sections": [
+          "区域业务特点",
+          "BG切入方向",
+          "现有能力依据"
+        ],
+        "sourceLinks": 0,
+        "typeButtons": 17
+      },
+      {
+        "analysisFolds": 0,
+        "basisItems": 3,
+        "priority": "第2优先 · 优先拓展",
+        "region": "欧洲 · 区域业务布局",
+        "sections": [
+          "区域业务特点",
+          "BG切入方向",
+          "现有能力依据"
+        ],
+        "sourceLinks": 0,
+        "typeButtons": 17
+      },
+      {
+        "analysisFolds": 0,
+        "basisItems": 3,
+        "priority": "第3优先 · 定向突破",
+        "region": "北美 · 区域业务布局",
+        "sections": [
+          "区域业务特点",
+          "BG切入方向",
+          "现有能力依据"
+        ],
+        "sourceLinks": 0,
+        "typeButtons": 17
+      },
+      {
+        "analysisFolds": 0,
+        "basisItems": 3,
+        "priority": "第4优先 · 定向突破",
+        "region": "东亚 · 区域业务布局",
+        "sections": [
+          "区域业务特点",
+          "BG切入方向",
+          "现有能力依据"
+        ],
+        "sourceLinks": 0,
+        "typeButtons": 17
+      },
+      {
+        "analysisFolds": 0,
+        "basisItems": 3,
+        "priority": "第5优先 · 定向突破",
+        "region": "大洋洲 · 区域业务布局",
+        "sections": [
+          "区域业务特点",
+          "BG切入方向",
+          "现有能力依据"
+        ],
+        "sourceLinks": 0,
+        "typeButtons": 17
+      },
+      {
+        "analysisFolds": 0,
+        "basisItems": 3,
+        "priority": "第6优先 · 节点布局",
+        "region": "中东 · 区域业务布局",
+        "sections": [
+          "区域业务特点",
+          "BG切入方向",
+          "现有能力依据"
+        ],
+        "sourceLinks": 0,
+        "typeButtons": 17
+      },
+      {
+        "analysisFolds": 0,
+        "basisItems": 3,
+        "priority": "第7优先 · 节点布局",
+        "region": "拉丁美洲 · 区域业务布局",
+        "sections": [
+          "区域业务特点",
+          "BG切入方向",
+          "现有能力依据"
+        ],
+        "sourceLinks": 0,
+        "typeButtons": 17
+      },
+      {
+        "analysisFolds": 0,
+        "basisItems": 3,
+        "priority": "第8优先 · 随客推进",
+        "region": "南亚 · 区域业务布局",
+        "sections": [
+          "区域业务特点",
+          "BG切入方向",
+          "现有能力依据"
+        ],
+        "sourceLinks": 0,
+        "typeButtons": 17
+      },
+      {
+        "analysisFolds": 0,
+        "basisItems": 3,
+        "priority": "第9优先 · 随客推进",
+        "region": "非洲 · 区域业务布局",
+        "sections": [
+          "区域业务特点",
+          "BG切入方向",
+          "现有能力依据"
+        ],
+        "sourceLinks": 0,
+        "typeButtons": 17
+      },
+      {
+        "analysisFolds": 0,
+        "basisItems": 3,
+        "priority": "第10优先 · 随客推进",
+        "region": "欧亚其他 · 区域业务布局",
+        "sections": [
+          "区域业务特点",
+          "BG切入方向",
+          "现有能力依据"
+        ],
+        "sourceLinks": 0,
+        "typeButtons": 17
+      }
+    ],
+    "filterCountVerified": 145,
+    "filterKeepsPriority": true,
+    "mapDocumentTopBeforeAndAfter": 516.6875,
+    "sourceLinksInSFAnalysis": 0,
+    "staticMapLabelsOrRectangles": 0,
+    "mapFocusOutline": "none",
+    "automotivePageAndReturnToBG": true,
+    "consoleErrors": []
+  },
+  "latestChange": {
+    "regionalCaseEvidenceRemoved": true,
+    "allTenRegionsRuntimeChecked": true,
+    "globalCasesPreserved": true,
+    "originalIndustryPagesUnchanged": true,
+    "browserVerifiedRegion": "欧洲",
+    "regionalCaseContainerEmpty": true
+  },
+  "navigationUpdate": {
+    "status": "passed",
+    "fixedTopLeftBackAndHome": false,
+    "backRestoresRegionCountryCustomerTypeAndScroll": true,
+    "noHistoryFallsBackToBGHome": true,
+    "backgroundRefreshDoesNotCreateHistory": true,
+    "searchTypingDoesNotCreatePerCharacterHistory": true,
+    "boundedHistory": 80,
+    "browserVerified": [
+      "BG Europe type filter to Europe to global",
+      "hightech ASML Netherlands to Europe to client to industry global to BG global",
+      "sticky controls at scrollY 1080",
+      "home returns BG and scrollY 0"
+    ],
+    "consoleErrors": [],
+    "sixIndustryRegression": "passed",
+    "homepageWording": "首先……其次……",
+    "fixedTopLeftBack": true,
+    "standaloneHomeButtonRemoved": true,
+    "logoHomeEntryVerified": true
+  },
+  "scopeNotesUpdate": {
+    "status": "passed",
+    "industryPages": 6,
+    "bgPage": true,
+    "subindustries": 29,
+    "fiveClientsPerSubindustryVerified": true,
+    "totalRoster": 145,
+    "notesUnaffectedByFilters": true,
+    "backRestoresFilters": true,
+    "allIndustryPagesBrowserChecked": true,
+    "horizontalOverflow": false,
+    "embeddedScriptSyntax": "passed",
+    "consoleErrors": []
+  },
+  "regionalCapabilitiesUpdate": {
+    "status": "passed",
+    "allTenRegionsBrowserChecked": true,
+    "regionalContainerHiddenAndEmpty": true,
+    "globalCapabilitiesPreserved": true,
+    "threeCoreAnalysisSectionsPreserved": true,
+    "consoleErrors": []
+  },
+  "globalCapabilitiesTitle": "能力建设分析"
+}

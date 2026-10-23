@@ -87,22 +87,5 @@
   "clearAllKeepsIndustry": true,
   "defaultCasesStayInSelectedIndustry": true,
   "sourceLinksPreserved": true,
-  "visualBrowserQA": {
-    "status": "passed",
-    "browser": "Codex in-app browser",
-    "checks": [
-      "六行业切换入口",
-      "医药30家客户及欧洲区域共用案例",
-      "波兰国家案例与来源链接",
-      "餐饮15家客户及德国案例",
-      "运营计划不误标为规划项目",
-      "星巴克客户布局摘要位于地图之后",
-      "客户级承接主体汇总与来源",
-      "浏览器控制台无错误"
-    ]
-  },
-  "sourceWorkbooks": {
-    "医药": "542b58a14064e9844bacc6d96ac208d3b3ea416cefc57911070f8b2c13b163a3",
-    "餐饮": "20d3cc31aafd6d91487b65a5797b22aebdd813cf747697fec11f0025402ea4d6"
-  }
+  "visualBrowserQA": "not performed; DOM/selection adapters used"
 }

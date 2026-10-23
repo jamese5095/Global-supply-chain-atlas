@@ -14,7 +14,13 @@ replacements={
  'DATA':json.dumps(json.loads((ROOT/'data.json').read_text()),ensure_ascii=False,separators=(',',':')).replace('<','\\u003c'),
  'GEO':json.dumps(json.loads((ROOT/'vendor/countries-50m.json').read_text()),separators=(',',':')),
  'REGIONS':json.dumps(json.loads((ROOT/'regions.json').read_text()),ensure_ascii=False,separators=(',',':')),
+ 'SCOPE':(ROOT/'scope-notes.js').read_text(),
  'APP':(ROOT/'app.js').read_text(),
+ 'BGSTYLE':(ROOT/'bg.css').read_text(),
+ 'BGCORE':(ROOT/'bg-core.js').read_text(),
+ 'BGAPP':(ROOT/'bg.js').read_text(),
+ 'NAV':(ROOT/'navigation.js').read_text(),
+ 'BGCONTENT':json.dumps(json.loads((ROOT/'bg-content.json').read_text()),ensure_ascii=False,separators=(',',':')).replace('<','\\u003c'),
 }
 for key,value in replacements.items():
  marker='/*__'+key+'__*/'

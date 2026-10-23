@@ -28,10 +28,11 @@
  function text(s,c){return esc(s).replace(/\[(\d+)\]/g,(m,n)=>{const src=sources.get(c?.sourceRefs?.[n]);return src?`<a href="${esc(core.safeUrl(src.url))}" target="_blank" rel="noopener noreferrer" title="${esc(src.label)}">[${n}]</a>`:m;}).replace(/\n/g,'<br>');}
  function sourceList(ids){return `<ul class="source-list">${uniq(ids).map(id=>{const s=sources.get(id);return s?`<li><a href="${esc(core.safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.label)} ↗</a></li>`:'';}).join('')}</ul>`;}
  function useDataset(id){
+  window.AtlasBG?.deactivate();
   db=datasets.get(id);clients=new Map(db.clients.map(c=>[c.id,c]));sources=new Map(db.sources.map(s=>[s.id,s]));countries=new Map(db.countries.map(c=>[c.id,c]));
   state={...defaults};$('navSearch').value='';
   $('industry').innerHTML=[...datasets.values()].map(d=>`<option value="${esc(d.id)}">${esc(d.name)}</option>`).join('');$('industry').value=id;$('industryWrap').hidden=true;$('industryName').hidden=datasets.size>1;$('industryName').textContent=db.name;
-  $('industryTabs').innerHTML=[...datasets.values()].map(d=>`<button class="industry-tab ${d.id===id?'active':''}" data-industry="${esc(d.id)}" aria-pressed="${d.id===id}">${esc(d.name)}</button>`).join('');
+  $('industryTabs').innerHTML='<button class="industry-tab" data-bg-home aria-pressed="false">BG 总览</button>'+[...datasets.values()].map(d=>`<button class="industry-tab ${d.id===id?'active':''}" data-industry="${esc(d.id)}" aria-pressed="${d.id===id}">${esc(d.name)}</button>`).join('');
   $('pageTitle').textContent=db.name+'头部企业国际供应链布局';document.title=db.name+'头部企业国际供应链布局';
   $('typeFilter').innerHTML='<option value="">全部业务类型</option>'+core.TYPE_GROUPS.map(g=>`<optgroup label="${esc(g.name)}">${g.types.map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join('')}</optgroup>`).join('');
   $('version').textContent=`资料：${db.version} · ${db.workbook}`;drawGeography();refresh();
@@ -53,18 +54,21 @@
   hideTip();aggregate();$('typeFilter').value=state.type;
   const st=core.stats(state.country?scoped(rows,true).filter(r=>r.scope!=='country'||r.countryId===state.country):scoped(rows)),c=clients.get(state.client);
   $('summary').innerHTML=[[st.clients,'涉及客户'],[st.projects,'收录案例']].map(([n,label])=>`<div class="stat"><b>${n}</b><span>${label}</span></div>`).join('');
-  $('introText').textContent='选客户、点区域或按业务类型筛选，直接查看对应案例。';
+  $('introText').innerHTML=window.AtlasScope.industry(db);
   $('context').innerHTML=[['client',c?.name||state.sub],['type',state.type],['area',byArea.get(state.area)?.name],['country',state.country?nameCountry(state.country):'']].filter(([,v])=>v).map(([k,v])=>`<button data-clear="${k}" title="取消筛选">${esc(v)} ×</button>`).join('')||'<span class="context-view">全部客户 · 全球 · 全部业务</span>';
-  renderNavigation();renderProfile();paintMap();renderPanel();
+  renderNavigation();renderProfile();paintMap();renderPanel();rememberView();
  }
+ function viewSnapshot(){return {kind:'industry',dataset:db.id,state:{...state},search:$('navSearch').value,label:db.name+' · '+(clients.get(state.client)?.name||byArea.get(state.area)?.name||'全球')};}
+ function rememberView(replace=false){if(!window.AtlasBG?.active)window.AtlasNav?.record(viewSnapshot(),{replace});}
+ function restoreView(saved){useDataset(datasets.has(saved.dataset)?saved.dataset:seed.id);state={...defaults,...saved.state};if(state.client&&!clients.has(state.client)){state.client='';state.sub='';state.view='region';}$('navSearch').value=saved.search||'';drawGeography();refresh();}
  function renderNavigation(){
   const q=$('navSearch').value.trim().toLowerCase();
   $('reset').disabled=!(state.sub||state.client||state.type||state.area||state.country||q);
   $('navCount').textContent=db.clients.length+'家';
-  $('navigation').innerHTML=`<button class="nav-all ${!state.client&&!state.sub?'active':''}" data-all-clients>全部客户</button>`+db.subindustries.map((sub,i)=>{
+  $('navigation').innerHTML=`<button class="nav-all ${!state.client&&!state.sub?'active':''}" data-all-clients>${esc(db.name)}头部企业</button>`+db.subindustries.map((sub,i)=>{
    const cs=db.clients.filter(c=>c.subindustry===sub&&(!q||(c.name+' '+sub).toLowerCase().includes(q)));if(!cs.length)return '';
    const open=q||state.sub===sub||cSub()===sub||(!state.sub&&!state.client&&i===0);
-   return `<details class="nav-group" ${open?'open':''}><summary><span>${esc(sub)} <small>${cs.length}</small></span></summary><button class="nav-client ${state.sub===sub&&!state.client?'active':''}" data-sub="${esc(sub)}">本子行业全部客户</button>${cs.map(c=>`<button class="nav-client ${state.client===c.id?'active':''}" data-client="${esc(c.id)}"><span>${esc(c.name)}</span></button>`).join('')}</details>`;
+   return `<details class="nav-group" ${open?'open':''}><summary><span>${esc(sub)} <small>${cs.length}</small></span></summary><button class="nav-client ${state.sub===sub&&!state.client?'active':''}" data-sub="${esc(sub)}">子行业TOP5客户</button>${cs.map(c=>`<button class="nav-client ${state.client===c.id?'active':''}" data-client="${esc(c.id)}"><span>${esc(c.name)}</span></button>`).join('')}</details>`;
   }).join('');
  }
  function cSub(){return clients.get(state.client)?.subindustry||'';}
@@ -162,7 +166,7 @@
   if(b.hasAttribute('data-area')){chooseArea(b.dataset.area);return;}
   if(b.hasAttribute('data-country')){chooseCountry(b.dataset.country);return;}
  });
- $('industry').addEventListener('change',e=>useDataset(e.target.value));$('navSearch').addEventListener('input',renderNavigation);$('typeFilter').addEventListener('change',e=>{state.type=e.target.value;refresh();});
+ $('industry').addEventListener('change',e=>useDataset(e.target.value));$('navSearch').addEventListener('input',()=>{renderNavigation();rememberView(true);});$('typeFilter').addEventListener('change',e=>{state.type=e.target.value;refresh();});
  $('reset').addEventListener('click',()=>{state={...defaults};$('navSearch').value='';drawGeography();refresh();});$('backWorld').addEventListener('click',world);
  $('methodBtn').addEventListener('click',()=>{$('dataDialog').close();$('methodDialog').showModal();});
  document.querySelector('.brand').addEventListener('click',e=>{e.preventDefault();state={...defaults};$('navSearch').value='';drawGeography();refresh();});
@@ -182,7 +186,8 @@
  $('dataBtn').addEventListener('click',()=>{$('dataInfo').innerHTML=[...datasets.values()].map(d=>`<div class="data-version"><strong>${esc(d.name)}</strong><small>${esc(d.version)} · ${d.clients.length}家客户 · ${d.records.length}个项目及配套条目<br>${esc(d.workbook)}</small></div>`).join('');$('storageInfo').textContent=storage?'本机持久保存可用。':'当前环境无法持久保存，内置资料可正常浏览。';$('dataDialog').showModal();});
  $('exportData').addEventListener('click',()=>{const data={schemaVersion:'2.0',datasets:[...datasets.values()]},url=URL.createObjectURL(new Blob([JSON.stringify(data)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='国际供应链看板_资料备份.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
  $('restoreFile').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{if(f.size>25*1024*1024)throw Error('备份文件超过25MB。');const data=JSON.parse(await f.text()),ds=data.datasets||[data];if(!ds.length||ds.length>30)throw Error('备份行业数量无效。');ds.forEach(core.validate);if(new Set(ds.map(d=>d.id)).size!==ds.length)throw Error('备份包含重复行业。');if(storage)await saveDatasets(ds);ds.forEach(d=>datasets.set(d.id,d));$('dataDialog').close();useDataset(ds[0].id);showNotice(storage?'已载入并保存资料备份。':'已载入本次页面；当前环境无法持久保存，请保留原备份文件。');}catch(err){$('storageInfo').textContent='载入未完成：'+err.message;}finally{e.target.value='';}});
+ window.AtlasHost={datasets:()=>[...datasets.values()],snapshot:viewSnapshot,restore:restoreView};
  useDataset(seed.id);
- openStorage().then(async d=>{storage=d;const saved=await storageData();for(const s of saved){try{core.validate(s);datasets.set(s.id,s);}catch{}}if(saved.length){useDataset(datasets.has(db.id)?db.id:seed.id);}}).catch(()=>{});
+ openStorage().then(async d=>{storage=d;const saved=await storageData();for(const s of saved){try{core.validate(s);datasets.set(s.id,s);}catch{}}if(saved.length){const applySaved=()=>{const bgSaved=window.AtlasBG?.active?window.AtlasBG.snapshot():null,industrySaved=viewSnapshot();if(bgSaved){useDataset(datasets.has(db.id)?db.id:seed.id);window.AtlasBG.restore(bgSaved);}else restoreView(industrySaved);};if(window.AtlasNav)window.AtlasNav.silent(applySaved);else applySaved();}}).catch(()=>{});
  Object.defineProperty(window,'atlasDiagnostics',{get:()=>({state:{...state},industry:db.name,customers:db.clients.length,projects:db.records.length,sources:db.sources.length,visible:core.stats(rows),areas:[...areaRows].map(([id,rs])=>({id,...core.stats(rs)})),broad:core.stats(broadRows),classification:core.TYPES,storage:!!storage})});
 })();
