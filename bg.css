@@ -25,3 +25,5 @@ body.bg-mode .intro{margin-bottom:20px}body.bg-mode .eyebrow{letter-spacing:1px}
 
 /* Keep sample boundaries visible under the title across every page. */
 .intro{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:25px;row-gap:12px}.intro>div:first-child{min-width:0}.scope-notes{grid-column:1/-1;margin-top:0;display:grid;gap:6px;font-size:12px;line-height:1.85}.scope-note{display:grid;grid-template-columns:66px minmax(0,1fr);gap:4px}.scope-note strong{color:#425e75;font-weight:600;white-space:nowrap}.scope-note span{overflow-wrap:anywhere}@media(max-width:700px){.intro{grid-template-columns:1fr;gap:13px}.intro .summary{margin-top:0}.scope-notes{grid-column:1;font-size:11px}.scope-note{grid-template-columns:61px minmax(0,1fr);gap:2px}}
+
+.scope-note .scope-selection{color:#000;font-weight:700;white-space:normal}
