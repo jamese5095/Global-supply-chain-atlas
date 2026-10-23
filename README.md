@@ -2,7 +2,7 @@
 
 BG国际供应链布局总览 · 六行业
 
-在线访问：https://jamese5095.github.io/bg-global-supply-chain-atlas/
+在线访问：https://jamese5095.github.io/Global-supply-chain-atlas/
 
 打开 `index.html` 即可查看离线页面。顶部保留BG总览和六个行业页面。
 
