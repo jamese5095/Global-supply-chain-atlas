@@ -56,12 +56,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-uc4m8g",
-            "2": "source-1yge2mx",
-            "3": "source-dewcwg",
-            "4": "source-1h2ippf"
-          },
           "actors": [
             {
               "id": "provider-1g61c9g",
@@ -102,7 +96,13 @@
             "US",
             "JP"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-uc4m8g",
+            "2": "source-1yge2mx",
+            "3": "source-dewcwg",
+            "4": "source-1h2ippf"
+          }
         },
         {
           "id": "client-wvr2k8",
@@ -158,12 +158,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-lisn7s",
-            "2": "source-wu6op1",
-            "3": "source-10cqw04",
-            "4": "source-1yyqchb"
-          },
           "actors": [
             {
               "id": "provider-1otfg47",
@@ -189,13 +183,19 @@
           "countryIds": [
             "NL"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-lisn7s",
+            "2": "source-wu6op1",
+            "3": "source-10cqw04",
+            "4": "source-1yyqchb"
+          }
         },
         {
           "id": "client-127wl6y",
           "name": "美光 Micron",
           "subindustry": "半导体",
-          "overview": "生产基地：晶圆制造重点布局中国台湾、新加坡、日本及美国；马来西亚承担封装测试，中国西安布局封测，印度Gujarat封测基地推进建设。\n\n产能分工：中国台湾为DRAM及HBM重要制造基地，2025财年多数DRAM产出来自当地；新加坡连接晶圆制造与后段生产，日本广岛升级DRAM工艺。新加坡HBM先进封装新增能力计划自2027年起释放。\n\n需求市场：面向数据中心、手机、PC、汽车及工业客户。2025财年约80%收入对应产品交付至美国境外客户地点。[5]",
+          "overview": "生产基地：晶圆制造重点布局中国台湾、新加坡、日本及美国；马来西亚承担封装测试，中国西安布局封测，印度Gujarat封测基地推进建设。\n\n产能分工：中国台湾为DRAM及HBM重要制造基地，2025财年多数DRAM产出来自当地；新加坡连接晶圆制造与后段生产，日本广岛升级DRAM工艺。新加坡HBM先进封装新增能力计划自2027年起释放。\n\n需求市场：面向数据中心、手机、PC、汽车及工业客户。2025财年约80%收入对应产品交付至美国境外客户地点。[4]",
           "carrierText": "DB Schenker Asia Pacific（DSV集团）：亚太“存储芯片寄售与客户补货”；承担寄售仓配、领用补货及库存回传。[1][3]\nNittsu NEC Logistics（日通NEC）：亚太“存储芯片寄售与客户补货”；承担芯片寄售仓配、客户补货及库存管理。[1][2][3]",
           "matrixRow": 11,
           "sections": [
@@ -209,14 +209,13 @@
             },
             {
               "label": "需求市场",
-              "text": "面向数据中心、手机、PC、汽车及工业客户。2025财年约80%收入对应产品交付至美国境外客户地点。[5]"
+              "text": "面向数据中心、手机、PC、汽车及工业客户。2025财年约80%收入对应产品交付至美国境外客户地点。[4]"
             }
           ],
           "sourceIds": [
             "source-vn8ksz",
             "source-m5yq81",
             "source-39vkid",
-            "source-1cl8y3m",
             "source-11osxrd"
           ],
           "footprint": {
@@ -236,19 +235,12 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "面向数据中心、手机、PC、汽车及工业客户。2025财年约80%收入对应产品交付至美国境外客户地点。[5]",
+              "text": "面向数据中心、手机、PC、汽车及工业客户。2025财年约80%收入对应产品交付至美国境外客户地点。[4]",
               "countryIds": [
                 "US"
               ],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-vn8ksz",
-            "2": "source-m5yq81",
-            "3": "source-39vkid",
-            "4": "source-1cl8y3m",
-            "5": "source-11osxrd"
           },
           "actors": [
             {
@@ -290,14 +282,20 @@
             }
           ],
           "countryIds": [],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-vn8ksz",
+            "2": "source-m5yq81",
+            "3": "source-39vkid",
+            "4": "source-11osxrd"
+          }
         },
         {
           "id": "client-jzv2md",
           "name": "三星半导体 Samsung DS",
           "subindustry": "半导体",
-          "overview": "生产基地：韩国器兴、华城、平泽构成核心晶圆制造网络，天安、温阳配套封装；中国西安布局存储芯片，美国Austin承担晶圆代工，Taylor基地扩建先进制程能力。\n\n产能分工：韩国集中布局先进逻辑及存储制造；Austin提供成熟制程代工，Taylor布局先进制程；NAND制造覆盖韩国华城、平泽及中国西安。\n\n需求市场：服务全球手机、PC、数据中心、汽车电子及工业物联网客户，制造网络同时对接存储器客户和无晶圆厂芯片设计企业。[3][2][4]",
-          "carrierText": "Samsung Austin Semiconductor自营物料团队：美国奥斯汀“晶圆厂物料收储与机台领用”；负责备件及原料零件收发、盘点、差异调查和领用管理。[1]",
+          "overview": "生产基地：韩国器兴、华城、平泽构成核心晶圆制造网络，天安、温阳配套封装；中国西安布局存储芯片，美国Austin承担晶圆代工，Taylor基地扩建先进制程能力。\n\n产能分工：韩国集中布局先进逻辑及存储制造；Austin提供成熟制程代工，Taylor布局先进制程；NAND制造覆盖韩国华城、平泽及中国西安。\n\n需求市场：服务全球手机、PC、数据中心、汽车电子及工业物联网客户，制造网络同时对接存储器客户和无晶圆厂芯片设计企业。[2][1][3]",
+          "carrierText": "",
           "matrixRow": 16,
           "sections": [
             {
@@ -310,11 +308,10 @@
             },
             {
               "label": "需求市场",
-              "text": "服务全球手机、PC、数据中心、汽车电子及工业物联网客户，制造网络同时对接存储器客户和无晶圆厂芯片设计企业。[3][2][4]"
+              "text": "服务全球手机、PC、数据中心、汽车电子及工业物联网客户，制造网络同时对接存储器客户和无晶圆厂芯片设计企业。[2][1][3]"
             }
           ],
           "sourceIds": [
-            "source-1gjwhph",
             "source-1vp9gt9",
             "source-8qlelg",
             "source-1dn5dd2"
@@ -332,40 +329,21 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "服务全球手机、PC、数据中心、汽车电子及工业物联网客户，制造网络同时对接存储器客户和无晶圆厂芯片设计企业。[3][2][4]",
+              "text": "服务全球手机、PC、数据中心、汽车电子及工业物联网客户，制造网络同时对接存储器客户和无晶圆厂芯片设计企业。[2][1][3]",
               "countryIds": [],
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1gjwhph",
-            "2": "source-1vp9gt9",
-            "3": "source-8qlelg",
-            "4": "source-1dn5dd2"
-          },
-          "actors": [
-            {
-              "id": "provider-14h9aw",
-              "name": "Samsung Austin Semiconductor自营物料团队",
-              "role": "客户自营",
-              "duty": "美国奥斯汀“晶圆厂物料收储与机台领用”；负责备件及原料零件收发、盘点、差异调查和领用管理。[1]",
-              "quotes": [
-                "晶圆厂物料收储与机台领用"
-              ],
-              "sourceIds": [
-                "source-1gjwhph"
-              ],
-              "countryIds": [
-                "US"
-              ],
-              "scopeNames": [],
-              "clientId": "client-jzv2md"
-            }
-          ],
+          "actors": [],
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1vp9gt9",
+            "2": "source-8qlelg",
+            "3": "source-1dn5dd2"
+          }
         },
         {
           "id": "client-1lbyrla",
@@ -415,13 +393,6 @@
               ],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1094ln1",
-            "2": "source-1y2pf11",
-            "3": "source-1nxlzwy",
-            "4": "source-bv1j27",
-            "5": "source-1f31n43"
           },
           "actors": [
             {
@@ -479,7 +450,14 @@
             "KR",
             "CN"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-1094ln1",
+            "2": "source-1y2pf11",
+            "3": "source-1nxlzwy",
+            "4": "source-bv1j27",
+            "5": "source-1f31n43"
+          }
         },
         {
           "id": "client-1etncxi",
@@ -537,16 +515,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-1ahnaxb",
-            "2": "source-11bmxyw",
-            "3": "source-17ixb2n",
-            "4": "source-1c2fkg5",
-            "5": "source-wuvnpf",
-            "6": "source-fn5gi9",
-            "7": "source-p3lmwb",
-            "8": "source-nd0ewb"
           },
           "actors": [
             {
@@ -608,7 +576,17 @@
             "CZ",
             "VN"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-1ahnaxb",
+            "2": "source-11bmxyw",
+            "3": "source-17ixb2n",
+            "4": "source-1c2fkg5",
+            "5": "source-wuvnpf",
+            "6": "source-fn5gi9",
+            "7": "source-p3lmwb",
+            "8": "source-nd0ewb"
+          }
         },
         {
           "id": "client-n8evie",
@@ -657,13 +635,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1wncuqp",
-            "2": "source-1ip20oq",
-            "3": "source-18tewcl",
-            "4": "source-ccrj9l",
-            "5": "source-cfs4km"
-          },
           "actors": [
             {
               "id": "provider-1kzq16k",
@@ -688,7 +659,14 @@
           "countryIds": [
             "TH"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1wncuqp",
+            "2": "source-1ip20oq",
+            "3": "source-18tewcl",
+            "4": "source-ccrj9l",
+            "5": "source-cfs4km"
+          }
         },
         {
           "id": "client-1yetzne",
@@ -740,12 +718,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-szej3l",
-            "2": "source-q0yuo4",
-            "3": "source-c811h7",
-            "4": "source-1fggxra"
-          },
           "actors": [
             {
               "id": "provider-1vmduba",
@@ -783,14 +755,20 @@
           "countryIds": [
             "VN"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-szej3l",
+            "2": "source-q0yuo4",
+            "3": "source-c811h7",
+            "4": "source-1fggxra"
+          }
         },
         {
           "id": "client-16393wx",
           "name": "立讯精密 Luxshare",
           "subindustry": "零部件",
           "overview": "生产基地：以中国大陆制造集群为基础，海外节点包括越南北江及义安、德国Kiel-Pries、马来西亚槟城、墨西哥Reynosa、印度Chennai及菲律宾Lipa City。\n\n产能分工：将互连零部件、模组及系统组装相衔接，覆盖消费电子、通信与数据中心、汽车电子；通过全球工厂配套开发、测试、制造及客户现场技术支持。\n\n需求市场：服务全球品牌及设备客户，销售与技术支持网点覆盖美国、欧洲、日本、韩国及新加坡等市场，连接当地客户和跨国生产网络。[1]",
-          "carrierText": "立讯义安自营物流团队：越南“电子制造配套仓储”；负责仓储运营及SAP/WMS库存管理。[4]\n立讯精密各国制造体系：“海外制造与就近供货”；承担越南、马来西亚、菲律宾、德国、墨西哥及印度节点的制造、测试和供货配套。[1][2]",
+          "carrierText": "立讯义安自营物流团队：越南“电子制造配套仓储”；负责仓储运营及SAP/WMS库存管理。[3]\n立讯精密各国制造体系：“海外制造与就近供货”；承担越南、马来西亚、菲律宾、德国、墨西哥及印度节点的制造、测试和供货配套。[1][2]",
           "matrixRow": 42,
           "sections": [
             {
@@ -809,7 +787,6 @@
           "sourceIds": [
             "source-eq08px",
             "source-1w4vtp1",
-            "source-o0vd9l",
             "source-1fiekdz"
           ],
           "footprint": {
@@ -841,18 +818,12 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-eq08px",
-            "2": "source-1w4vtp1",
-            "3": "source-o0vd9l",
-            "4": "source-1fiekdz"
-          },
           "actors": [
             {
               "id": "provider-101lm6t",
               "name": "立讯义安自营物流团队",
               "role": "客户自营",
-              "duty": "越南“电子制造配套仓储”；负责仓储运营及SAP/WMS库存管理。[4]",
+              "duty": "越南“电子制造配套仓储”；负责仓储运营及SAP/WMS库存管理。[3]",
               "quotes": [
                 "电子制造配套仓储"
               ],
@@ -897,7 +868,12 @@
             "PH",
             "IN"
           ],
-          "recordsCount": 7
+          "recordsCount": 7,
+          "sourceRefs": {
+            "1": "source-eq08px",
+            "2": "source-1w4vtp1",
+            "3": "source-1fiekdz"
+          }
         },
         {
           "id": "client-xgcgyw",
@@ -950,12 +926,6 @@
                 "middle-east"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-1vs5h69",
-            "2": "source-1opma94",
-            "3": "source-6mo2ys",
-            "4": "source-1o65gcu"
           },
           "actors": [
             {
@@ -1016,7 +986,13 @@
             "MY",
             "JP"
           ],
-          "recordsCount": 5
+          "recordsCount": 5,
+          "sourceRefs": {
+            "1": "source-1vs5h69",
+            "2": "source-1opma94",
+            "3": "source-6mo2ys",
+            "4": "source-1o65gcu"
+          }
         },
         {
           "id": "client-kj3f99",
@@ -1062,11 +1038,6 @@
                 "north-america"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-pirdfx",
-            "2": "source-tdt8ho",
-            "3": "source-1z1xes"
           },
           "actors": [
             {
@@ -1137,7 +1108,12 @@
             }
           ],
           "countryIds": [],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-pirdfx",
+            "2": "source-tdt8ho",
+            "3": "source-1z1xes"
+          }
         },
         {
           "id": "client-ghpsvj",
@@ -1184,11 +1160,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-142m0k9",
-            "2": "source-19mhjxl",
-            "3": "source-s3u7ys"
           },
           "actors": [
             {
@@ -1295,7 +1266,12 @@
             "FR",
             "CY"
           ],
-          "recordsCount": 6
+          "recordsCount": 6,
+          "sourceRefs": {
+            "1": "source-142m0k9",
+            "2": "source-19mhjxl",
+            "3": "source-s3u7ys"
+          }
         },
         {
           "id": "client-1md4r9k",
@@ -1351,13 +1327,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-1uptgjv",
-            "2": "source-15k31ob",
-            "3": "source-1q2cgj8",
-            "4": "source-on872s",
-            "5": "source-mbejxj"
           },
           "actors": [
             {
@@ -1453,7 +1422,14 @@
             "NL",
             "BE"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-1uptgjv",
+            "2": "source-15k31ob",
+            "3": "source-1q2cgj8",
+            "4": "source-on872s",
+            "5": "source-mbejxj"
+          }
         },
         {
           "id": "client-170wnw1",
@@ -1501,12 +1477,6 @@
                 "middle-east"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-mgvfn9",
-            "2": "source-adpmsz",
-            "3": "source-1r7nuv6",
-            "4": "source-3zeqcd"
           },
           "actors": [
             {
@@ -1601,7 +1571,13 @@
             "LU",
             "AT"
           ],
-          "recordsCount": 6
+          "recordsCount": 6,
+          "sourceRefs": {
+            "1": "source-mgvfn9",
+            "2": "source-adpmsz",
+            "3": "source-1r7nuv6",
+            "4": "source-3zeqcd"
+          }
         },
         {
           "id": "client-1lddhu8",
@@ -1649,11 +1625,6 @@
                 "middle-east"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-1lhro3",
-            "2": "source-jma8vv",
-            "3": "source-oo0mkd"
           },
           "actors": [
             {
@@ -1725,7 +1696,12 @@
             "US",
             "DE"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-1lhro3",
+            "2": "source-jma8vv",
+            "3": "source-oo0mkd"
+          }
         },
         {
           "id": "client-1bfbs38",
@@ -1777,12 +1753,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-1fllq1n",
-            "2": "source-10vjjvx",
-            "3": "source-3l8s5w",
-            "4": "source-1ihswm3"
           },
           "actors": [
             {
@@ -1841,7 +1811,13 @@
             "JP",
             "AU"
           ],
-          "recordsCount": 9
+          "recordsCount": 9,
+          "sourceRefs": {
+            "1": "source-1fllq1n",
+            "2": "source-10vjjvx",
+            "3": "source-3l8s5w",
+            "4": "source-1ihswm3"
+          }
         },
         {
           "id": "client-18nar44",
@@ -1896,13 +1872,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-18hal1",
-            "2": "source-1iqv58h",
-            "3": "source-1022gvz",
-            "4": "source-a22urz",
-            "5": "source-pq6kg5"
           },
           "actors": [
             {
@@ -2008,7 +1977,14 @@
             "CZ",
             "VN"
           ],
-          "recordsCount": 6
+          "recordsCount": 6,
+          "sourceRefs": {
+            "1": "source-18hal1",
+            "2": "source-1iqv58h",
+            "3": "source-1022gvz",
+            "4": "source-a22urz",
+            "5": "source-pq6kg5"
+          }
         },
         {
           "id": "client-vflk8q",
@@ -2055,10 +2031,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1xzf7e",
-            "2": "source-sh7cgx"
-          },
           "actors": [
             {
               "id": "provider-4yolv9",
@@ -2082,7 +2054,11 @@
           "countryIds": [
             "JP"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1xzf7e",
+            "2": "source-sh7cgx"
+          }
         },
         {
           "id": "client-ekfxhv",
@@ -2135,12 +2111,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-44dypr",
-            "2": "source-14p7m9f",
-            "3": "source-uje9ty",
-            "4": "source-1htxgv1"
-          },
           "actors": [
             {
               "id": "provider-9t1vz5",
@@ -2182,7 +2152,13 @@
             "HU",
             "IN"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-44dypr",
+            "2": "source-14p7m9f",
+            "3": "source-uje9ty",
+            "4": "source-1htxgv1"
+          }
         },
         {
           "id": "client-1vdc68r",
@@ -2231,11 +2207,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1q22ed7",
-            "2": "source-118xyp4",
-            "3": "source-52xgw3"
-          },
           "actors": [
             {
               "id": "provider-19jciyz",
@@ -2281,14 +2252,19 @@
             "MY",
             "TW"
           ],
-          "recordsCount": 4
+          "recordsCount": 4,
+          "sourceRefs": {
+            "1": "source-1q22ed7",
+            "2": "source-118xyp4",
+            "3": "source-52xgw3"
+          }
         },
         {
           "id": "client-1xtfrlz",
           "name": "美的 Midea",
           "subindustry": "传统消费电子及家电",
-          "overview": "生产基地：集团全球化制造覆盖中国及海外，2025年海外设有43个主要制造基地；家电及暖通代表节点包括泰国、越南、巴西、埃及、意大利及日本。\n\n产能分工：泰国配置空调制造，巴西Pouso Alegre生产冰箱及洗衣机；结合Toshiba、Clivet及Teka等业务形成多品类和区域生产供给。\n\n需求市场：2025年海外收入1,959亿元，本地化自营业务覆盖50个主要国家；通过出口与当地制造并行服务亚洲、美洲、欧洲及中东非需求。[3][4][5][1][2]",
-          "carrierText": "安得智联：泰国“空调工厂精益生产物流”；承担库存规划与生产计划协同。[1]\nMidea Indústria do Brasil：巴西Pouso Alegre冰箱及洗衣机制造供货。[2]",
+          "overview": "生产基地：集团全球化制造覆盖中国及海外，2025年海外设有43个主要制造基地；家电及暖通代表节点包括泰国、越南、巴西、埃及、意大利及日本。\n\n产能分工：泰国配置空调制造，巴西承担家电本地制造供给；结合Toshiba、Clivet及Teka等业务形成多品类和区域生产供给。\n\n需求市场：2025年海外收入1,959亿元，本地化自营业务覆盖50个主要国家；通过出口与当地制造并行服务亚洲、美洲、欧洲及中东非需求。[2][3][4][1]",
+          "carrierText": "安得智联：泰国“空调工厂精益生产物流”；承担库存规划与生产计划协同。[1]",
           "matrixRow": 86,
           "sections": [
             {
@@ -2297,16 +2273,15 @@
             },
             {
               "label": "产能分工",
-              "text": "泰国配置空调制造，巴西Pouso Alegre生产冰箱及洗衣机；结合Toshiba、Clivet及Teka等业务形成多品类和区域生产供给。"
+              "text": "泰国配置空调制造，巴西承担家电本地制造供给；结合Toshiba、Clivet及Teka等业务形成多品类和区域生产供给。"
             },
             {
               "label": "需求市场",
-              "text": "2025年海外收入1,959亿元，本地化自营业务覆盖50个主要国家；通过出口与当地制造并行服务亚洲、美洲、欧洲及中东非需求。[3][4][5][1][2]"
+              "text": "2025年海外收入1,959亿元，本地化自营业务覆盖50个主要国家；通过出口与当地制造并行服务亚洲、美洲、欧洲及中东非需求。[2][3][4][1]"
             }
           ],
           "sourceIds": [
             "source-1ast76p",
-            "source-1oc5ldm",
             "source-csamxx",
             "source-1h8nwln",
             "source-itc5xn"
@@ -2328,20 +2303,13 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "2025年海外收入1,959亿元，本地化自营业务覆盖50个主要国家；通过出口与当地制造并行服务亚洲、美洲、欧洲及中东非需求。[3][4][5][1][2]",
+              "text": "2025年海外收入1,959亿元，本地化自营业务覆盖50个主要国家；通过出口与当地制造并行服务亚洲、美洲、欧洲及中东非需求。[2][3][4][1]",
               "countryIds": [],
               "areaIds": [
                 "europe",
                 "middle-east"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-1ast76p",
-            "2": "source-1oc5ldm",
-            "3": "source-csamxx",
-            "4": "source-1h8nwln",
-            "5": "source-itc5xn"
           },
           "actors": [
             {
@@ -2360,35 +2328,26 @@
               ],
               "scopeNames": [],
               "clientId": "client-1xtfrlz"
-            },
-            {
-              "id": "provider-1xrx2yv",
-              "name": "Midea Indústria do Brasil",
-              "role": "第三方服务",
-              "duty": "巴西Pouso Alegre冰箱及洗衣机制造供货。[2]",
-              "quotes": [],
-              "sourceIds": [
-                "source-1oc5ldm"
-              ],
-              "countryIds": [
-                "BR"
-              ],
-              "scopeNames": [],
-              "clientId": "client-1xtfrlz"
             }
           ],
           "countryIds": [
             "BR",
             "TH"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-1ast76p",
+            "2": "source-csamxx",
+            "3": "source-1h8nwln",
+            "4": "source-itc5xn"
+          }
         },
         {
           "id": "client-x5cczb",
           "name": "海尔 Haier",
           "subindustry": "传统消费电子及家电",
-          "overview": "生产基地：依托中国制造基础及海外本地化体系，美国GE Appliances、意大利及土耳其的Haier Europe基地、印度制造园区和埃及生态园构成代表性区域节点。\n\n产能分工：美国Louisville等地生产洗衣、制冷及厨电产品；意大利布局厨电，土耳其布局厨电及洗涤产品；印度扩建空调能力，埃及配置家电生产。\n\n需求市场：通过GE Appliances、Haier、Candy、Hoover等品牌服务北美、欧洲及亚洲客户，并扩展中东非；区域制造按当地产品需求和标准组织供给。[6][7][8][4]",
-          "carrierText": "LT Solution：意大利“Washpass入户交付”；负责预约送至楼层、摆放、拆包及包装回收。[3]\nEnergo Logistics：意大利“Washpass联网安装”；负责接水、联网、应用绑定及试机。[3]\nHaier Electric Egypt自营物流团队：埃及“家电工厂进出口与仓储”；负责进出口、仓储、库存和运输组织。[4][5]",
+          "overview": "生产基地：依托中国制造基础及海外本地化体系，美国GE Appliances、意大利及土耳其的Haier Europe基地、印度制造园区和埃及生态园构成代表性区域节点。\n\n产能分工：美国Louisville等地生产洗衣、制冷及厨电产品；意大利布局厨电，土耳其布局厨电及洗涤产品；印度扩建空调能力，埃及配置家电生产。\n\n需求市场：通过GE Appliances、Haier、Candy、Hoover等品牌服务北美、欧洲及亚洲客户，并扩展中东非；区域制造按当地产品需求和标准组织供给。[4][5][6][2]",
+          "carrierText": "LT Solution：意大利“Washpass入户交付”；负责预约送至楼层、摆放、拆包及包装回收。[1]\nEnergo Logistics：意大利“Washpass联网安装”；负责接水、联网、应用绑定及试机。[1]\nHaier Electric Egypt自营物流团队：埃及“家电工厂进出口与仓储”；负责进出口、仓储、库存和运输组织。[2][3]",
           "matrixRow": 91,
           "sections": [
             {
@@ -2401,12 +2360,10 @@
             },
             {
               "label": "需求市场",
-              "text": "通过GE Appliances、Haier、Candy、Hoover等品牌服务北美、欧洲及亚洲客户，并扩展中东非；区域制造按当地产品需求和标准组织供给。[6][7][8][4]"
+              "text": "通过GE Appliances、Haier、Candy、Hoover等品牌服务北美、欧洲及亚洲客户，并扩展中东非；区域制造按当地产品需求和标准组织供给。[4][5][6][2]"
             }
           ],
           "sourceIds": [
-            "source-15q3djd",
-            "source-16qajeg",
             "source-54cc6",
             "source-1pq4gu9",
             "source-1q9o3vi",
@@ -2430,7 +2387,7 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "通过GE Appliances、Haier、Candy、Hoover等品牌服务北美、欧洲及亚洲客户，并扩展中东非；区域制造按当地产品需求和标准组织供给。[6][7][8][4]",
+              "text": "通过GE Appliances、Haier、Candy、Hoover等品牌服务北美、欧洲及亚洲客户，并扩展中东非；区域制造按当地产品需求和标准组织供给。[4][5][6][2]",
               "countryIds": [],
               "areaIds": [
                 "north-america",
@@ -2439,22 +2396,12 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-15q3djd",
-            "2": "source-16qajeg",
-            "3": "source-54cc6",
-            "4": "source-1pq4gu9",
-            "5": "source-1q9o3vi",
-            "6": "source-1kedumu",
-            "7": "source-1p9s2p7",
-            "8": "source-n9ue0z"
-          },
           "actors": [
             {
               "id": "provider-1tuva7k",
               "name": "LT Solution",
               "role": "第三方服务",
-              "duty": "意大利“Washpass入户交付”；负责预约送至楼层、摆放、拆包及包装回收。[3]",
+              "duty": "意大利“Washpass入户交付”；负责预约送至楼层、摆放、拆包及包装回收。[1]",
               "quotes": [
                 "Washpass入户交付"
               ],
@@ -2471,7 +2418,7 @@
               "id": "provider-10kv0xo",
               "name": "Energo Logistics",
               "role": "第三方服务",
-              "duty": "意大利“Washpass联网安装”；负责接水、联网、应用绑定及试机。[3]",
+              "duty": "意大利“Washpass联网安装”；负责接水、联网、应用绑定及试机。[1]",
               "quotes": [
                 "Washpass联网安装"
               ],
@@ -2488,7 +2435,7 @@
               "id": "provider-q1xfem",
               "name": "Haier Electric Egypt自营物流团队",
               "role": "客户自营",
-              "duty": "埃及“家电工厂进出口与仓储”；负责进出口、仓储、库存和运输组织。[4][5]",
+              "duty": "埃及“家电工厂进出口与仓储”；负责进出口、仓储、库存和运输组织。[2][3]",
               "quotes": [
                 "家电工厂进出口与仓储"
               ],
@@ -2507,7 +2454,15 @@
             "IT",
             "EG"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-54cc6",
+            "2": "source-1pq4gu9",
+            "3": "source-1q9o3vi",
+            "4": "source-1kedumu",
+            "5": "source-1p9s2p7",
+            "6": "source-n9ue0z"
+          }
         },
         {
           "id": "client-zip8ez",
@@ -2563,12 +2518,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-1k27ynl",
-            "2": "source-hmt7uo",
-            "3": "source-irr0mj",
-            "4": "source-13byxao"
-          },
           "actors": [
             {
               "id": "provider-1i0226s",
@@ -2617,13 +2566,19 @@
           "countryIds": [
             "NL"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-1k27ynl",
+            "2": "source-hmt7uo",
+            "3": "source-irr0mj",
+            "4": "source-13byxao"
+          }
         },
         {
           "id": "client-1olgn7z",
           "name": "惠而浦 Whirlpool",
           "subindustry": "传统消费电子及家电",
-          "overview": "生产基地：2025年底主要制造业务位于4个国家的20个地点，核心制造供给围绕美国、墨西哥和巴西等市场配置。\n\n产能分工：强调区域生产服务区域销售。2025年美国销售大家电约80%来自美国工厂；巴西销售大家电约91%为巴西制造，墨西哥约63%为当地制造。\n\n需求市场：大家电业务重点为北美与拉美，KitchenAid等小家电面向全球。欧洲大家电业务于2024年转入Beko Europe，Whirlpool品牌在欧洲采用授权安排。[4][5]",
+          "overview": "生产基地：2025年底主要制造业务位于4个国家的20个地点，核心制造供给围绕美国、墨西哥和巴西等市场配置。\n\n产能分工：强调区域生产服务区域销售。2025年美国销售大家电约80%来自美国工厂；巴西销售大家电约91%为巴西制造，墨西哥约63%为当地制造。\n\n需求市场：大家电业务重点为北美与拉美，KitchenAid等小家电面向全球。欧洲大家电业务于2024年转入Beko Europe，Whirlpool品牌在欧洲采用授权安排。[3][4]",
           "carrierText": "Penske Logistics：“家电分销中心与库存运营”“货运与多物流商协同”；承担分销中心运营、货运管理和WMS实施。[1]\nKenco：“货运与多物流商协同”中的企业WMS及库存作业协同；负责WMS设计和多家物流商作业衔接。[2]",
           "matrixRow": 103,
           "sections": [
@@ -2637,13 +2592,12 @@
             },
             {
               "label": "需求市场",
-              "text": "大家电业务重点为北美与拉美，KitchenAid等小家电面向全球。欧洲大家电业务于2024年转入Beko Europe，Whirlpool品牌在欧洲采用授权安排。[4][5]"
+              "text": "大家电业务重点为北美与拉美，KitchenAid等小家电面向全球。欧洲大家电业务于2024年转入Beko Europe，Whirlpool品牌在欧洲采用授权安排。[3][4]"
             }
           ],
           "sourceIds": [
             "source-1jmp83k",
             "source-kmjcwr",
-            "source-1eygfjh",
             "source-1k8vp8g",
             "source-15u6xut"
           ],
@@ -2660,7 +2614,7 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "大家电业务重点为北美与拉美，KitchenAid等小家电面向全球。欧洲大家电业务于2024年转入Beko Europe，Whirlpool品牌在欧洲采用授权安排。[4][5]",
+              "text": "大家电业务重点为北美与拉美，KitchenAid等小家电面向全球。欧洲大家电业务于2024年转入Beko Europe，Whirlpool品牌在欧洲采用授权安排。[3][4]",
               "countryIds": [],
               "areaIds": [
                 "north-america",
@@ -2668,13 +2622,6 @@
                 "latin-america"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-1jmp83k",
-            "2": "source-kmjcwr",
-            "3": "source-1eygfjh",
-            "4": "source-1k8vp8g",
-            "5": "source-15u6xut"
           },
           "actors": [
             {
@@ -2710,7 +2657,13 @@
             }
           ],
           "countryIds": [],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1jmp83k",
+            "2": "source-kmjcwr",
+            "3": "source-1k8vp8g",
+            "4": "source-15u6xut"
+          }
         },
         {
           "id": "client-1viyz9j",
@@ -2771,13 +2724,6 @@
                 "latin-america"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-1abydpv",
-            "2": "source-bn9n2q",
-            "3": "source-o82bcu",
-            "4": "source-1rxzuyc",
-            "5": "source-12hflv7"
           },
           "actors": [
             {
@@ -2895,7 +2841,14 @@
             "PL",
             "TH"
           ],
-          "recordsCount": 4
+          "recordsCount": 4,
+          "sourceRefs": {
+            "1": "source-1abydpv",
+            "2": "source-bn9n2q",
+            "3": "source-o82bcu",
+            "4": "source-1rxzuyc",
+            "5": "source-12hflv7"
+          }
         }
       ],
       "sources": [
@@ -2977,25 +2930,11 @@
           "cell": "E13"
         },
         {
-          "id": "source-1cl8y3m",
-          "label": "全球：存储器件包装、标签与物料编号说明",
-          "url": "https://www.micron.com/sales-support/sales/packaging-and-shipping-information",
-          "clientId": "client-127wl6y",
-          "cell": "E14"
-        },
-        {
           "id": "source-11osxrd",
-          "label": "全球制造及交付：FY2025年报",
-          "url": "https://investors.micron.com/static-files/7a1f8c6f-1ce9-4efe-bc6e-722b6b9c4550",
+          "label": "Micron：2025年报（SEC正式文件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000040/202510karscopy.pdf",
           "clientId": "client-127wl6y",
           "cell": "E15"
-        },
-        {
-          "id": "source-1gjwhph",
-          "label": "美国：Austin物流岗位，备件及原料零件库存",
-          "url": "https://sec.wd3.myworkdayjobs.com/en-US/Samsung_Careers/job/Logistics-Professional_R117236",
-          "clientId": "client-jzv2md",
-          "cell": "E16"
         },
         {
           "id": "source-1vp9gt9",
@@ -3185,13 +3124,6 @@
           "url": "https://static.cninfo.com.cn/finalpage/2026-06-17/1225373512.PDF",
           "clientId": "client-16393wx",
           "cell": "E43"
-        },
-        {
-          "id": "source-o0vd9l",
-          "label": "集团：精益仓储及厂内配送（官网）",
-          "url": "https://www.luxshare-ict.com/innovate-technology.html",
-          "clientId": "client-16393wx",
-          "cell": "E44"
         },
         {
           "id": "source-1fiekdz",
@@ -3488,13 +3420,6 @@
           "cell": "E86"
         },
         {
-          "id": "source-1oc5ldm",
-          "label": "巴西：Pouso Alegre冰箱／洗衣机工厂投运（政府，2024）",
-          "url": "https://www.agenciaminas.mg.gov.br/noticia/multinacional-inaugura-unidade-que-vai-gerar-650-empregos-diretos-em-pouso-alegre-124524",
-          "clientId": "client-1xtfrlz",
-          "cell": "E87"
-        },
-        {
           "id": "source-csamxx",
           "label": "海外制造及市场：2025业绩",
           "url": "https://www.midea.com.cn/zh/Investors",
@@ -3514,20 +3439,6 @@
           "url": "https://www.midea.com/sg/news/midea-wins-forbes-china-flagship-brand-again",
           "clientId": "client-1xtfrlz",
           "cell": "E90"
-        },
-        {
-          "id": "source-15q3djd",
-          "label": "海尔意大利交付说明",
-          "url": "https://www.haier-europe.com/it_IT/pages/tempi-e-modalita-di-consegna",
-          "clientId": "client-x5cczb",
-          "cell": "E91"
-        },
-        {
-          "id": "source-16qajeg",
-          "label": "Energo交付服务能力",
-          "url": "https://www.energologistic.it/",
-          "clientId": "client-x5cczb",
-          "cell": "E92"
         },
         {
           "id": "source-54cc6",
@@ -3612,13 +3523,6 @@
           "url": "https://kencogroup.com/news/kenco-honored-with-whirlpool-supply-chain-supplier-award/",
           "clientId": "client-1olgn7z",
           "cell": "E104"
-        },
-        {
-          "id": "source-1eygfjh",
-          "label": "全球：2025业务布局与厨房／洗衣家电品牌",
-          "url": "https://cprod.whirlpoolcorp.com/our-company.html",
-          "clientId": "client-1olgn7z",
-          "cell": "E105"
         },
         {
           "id": "source-1k8vp8g",
@@ -3918,55 +3822,6 @@
             }
           ],
           "engagementId": "project-1aojqse"
-        },
-        {
-          "id": "project-1ftz7l8",
-          "clientId": "client-jzv2md",
-          "title": "奥斯汀晶圆厂物料收储与机台领用",
-          "detail": "维修备件及原料零件收发、盘点、库存差异调查与机台领用。[1]",
-          "original": "奥斯汀晶圆厂物料收储与机台领用（生产物流）\n维修备件及原料零件收发、盘点、库存差异调查与机台领用。[1]",
-          "types": [
-            "生产物流"
-          ],
-          "attribute": "logistics",
-          "scope": "country",
-          "region": "",
-          "countryId": "US",
-          "reference": false,
-          "areaId": "north-america",
-          "contextAreas": [
-            "north-america"
-          ],
-          "eligibleCountryIds": [
-            "US"
-          ],
-          "matrixCells": [
-            "F16"
-          ],
-          "sourceIds": [
-            "source-1gjwhph"
-          ],
-          "state": "disclosed",
-          "actors": [
-            {
-              "id": "provider-14h9aw",
-              "name": "Samsung Austin Semiconductor自营物料团队",
-              "role": "客户自营",
-              "duty": "美国奥斯汀“晶圆厂物料收储与机台领用”；负责备件及原料零件收发、盘点、差异调查和领用管理。[1]",
-              "quotes": [
-                "晶圆厂物料收储与机台领用"
-              ],
-              "sourceIds": [
-                "source-1gjwhph"
-              ],
-              "countryIds": [
-                "US"
-              ],
-              "scopeNames": [],
-              "clientId": "client-jzv2md"
-            }
-          ],
-          "engagementId": "project-1ftz7l8"
         },
         {
           "id": "project-9nok0a",
@@ -4556,8 +4411,8 @@
           "id": "project-768r4t",
           "clientId": "client-16393wx",
           "title": "义安电子制造配套仓储项目",
-          "detail": "物流团队开展仓储运营及SAP/WMS库存管理。[4]",
-          "original": "义安电子制造配套仓储项目\n物流团队开展仓储运营及SAP/WMS库存管理。[4]",
+          "detail": "物流团队开展仓储运营及SAP/WMS库存管理。[3]",
+          "original": "义安电子制造配套仓储项目\n物流团队开展仓储运营及SAP/WMS库存管理。[3]",
           "types": [],
           "attribute": "logistics",
           "scope": "country",
@@ -4583,7 +4438,7 @@
               "id": "provider-101lm6t",
               "name": "立讯义安自营物流团队",
               "role": "客户自营",
-              "duty": "越南“电子制造配套仓储”；负责仓储运营及SAP/WMS库存管理。[4]",
+              "duty": "越南“电子制造配套仓储”；负责仓储运营及SAP/WMS库存管理。[3]",
               "quotes": [
                 "电子制造配套仓储"
               ],
@@ -7465,51 +7320,6 @@
           "engagementId": "project-2gdog0"
         },
         {
-          "id": "project-1v8kdma",
-          "clientId": "client-1xtfrlz",
-          "title": "Pouso Alegre冰箱及洗衣机制造节点",
-          "detail": "冰箱、洗衣机本地制造与供货布局。[2]",
-          "original": "Pouso Alegre冰箱及洗衣机制造节点\n冰箱、洗衣机本地制造与供货布局。[2]",
-          "types": [],
-          "attribute": "manufacturing",
-          "scope": "country",
-          "region": "",
-          "countryId": "BR",
-          "reference": false,
-          "areaId": "latin-america",
-          "contextAreas": [
-            "latin-america"
-          ],
-          "eligibleCountryIds": [
-            "BR"
-          ],
-          "matrixCells": [
-            "I86"
-          ],
-          "sourceIds": [
-            "source-1oc5ldm"
-          ],
-          "state": "disclosed",
-          "actors": [
-            {
-              "id": "provider-1xrx2yv",
-              "name": "Midea Indústria do Brasil",
-              "role": "第三方服务",
-              "duty": "巴西Pouso Alegre冰箱及洗衣机制造供货。[2]",
-              "quotes": [],
-              "sourceIds": [
-                "source-1oc5ldm"
-              ],
-              "countryIds": [
-                "BR"
-              ],
-              "scopeNames": [],
-              "clientId": "client-1xtfrlz"
-            }
-          ],
-          "engagementId": "project-1v8kdma"
-        },
-        {
           "id": "project-1vzao0t",
           "clientId": "client-1xtfrlz",
           "title": "泰国空调工厂精益生产物流",
@@ -7562,8 +7372,8 @@
           "id": "project-1af8spu",
           "clientId": "client-x5cczb",
           "title": "意大利Washpass入户交付",
-          "detail": "洗衣机及洗涤剂罐预约送至楼层、拆包和包装回收。[3]",
-          "original": "意大利Washpass入户交付（末端配送）\n洗衣机及洗涤剂罐预约送至楼层、拆包和包装回收。[3]",
+          "detail": "洗衣机及洗涤剂罐预约送至楼层、拆包和包装回收。[1]",
+          "original": "意大利Washpass入户交付（末端配送）\n洗衣机及洗涤剂罐预约送至楼层、拆包和包装回收。[1]",
           "types": [
             "末端配送"
           ],
@@ -7591,7 +7401,7 @@
               "id": "provider-1tuva7k",
               "name": "LT Solution",
               "role": "第三方服务",
-              "duty": "意大利“Washpass入户交付”；负责预约送至楼层、摆放、拆包及包装回收。[3]",
+              "duty": "意大利“Washpass入户交付”；负责预约送至楼层、摆放、拆包及包装回收。[1]",
               "quotes": [
                 "Washpass入户交付"
               ],
@@ -7611,8 +7421,8 @@
           "id": "project-fheotz",
           "clientId": "client-x5cczb",
           "title": "意大利Washpass联网安装",
-          "detail": "洗衣机接水、Wi-Fi联网、hOn绑定与试机。[3]",
-          "original": "意大利Washpass联网安装\n洗衣机接水、Wi-Fi联网、hOn绑定与试机。[3]",
+          "detail": "洗衣机接水、Wi-Fi联网、hOn绑定与试机。[1]",
+          "original": "意大利Washpass联网安装\n洗衣机接水、Wi-Fi联网、hOn绑定与试机。[1]",
           "types": [],
           "attribute": "logistics",
           "scope": "country",
@@ -7638,7 +7448,7 @@
               "id": "provider-10kv0xo",
               "name": "Energo Logistics",
               "role": "第三方服务",
-              "duty": "意大利“Washpass联网安装”；负责接水、联网、应用绑定及试机。[3]",
+              "duty": "意大利“Washpass联网安装”；负责接水、联网、应用绑定及试机。[1]",
               "quotes": [
                 "Washpass联网安装"
               ],
@@ -7658,8 +7468,8 @@
           "id": "project-l6jaum",
           "clientId": "client-x5cczb",
           "title": "埃及家电工厂进出口与仓储物流",
-          "detail": "组织空调、电视、洗衣机及物料进出口、厂区仓储与库存管理。[4][5]",
-          "original": "埃及家电工厂进出口与仓储物流（生产物流）\n组织空调、电视、洗衣机及物料进出口、厂区仓储与库存管理。[4][5]",
+          "detail": "组织空调、电视、洗衣机及物料进出口、厂区仓储与库存管理。[2][3]",
+          "original": "埃及家电工厂进出口与仓储物流（生产物流）\n组织空调、电视、洗衣机及物料进出口、厂区仓储与库存管理。[2][3]",
           "types": [
             "生产物流"
           ],
@@ -7688,7 +7498,7 @@
               "id": "provider-q1xfem",
               "name": "Haier Electric Egypt自营物流团队",
               "role": "客户自营",
-              "duty": "埃及“家电工厂进出口与仓储”；负责进出口、仓储、库存和运输组织。[4][5]",
+              "duty": "埃及“家电工厂进出口与仓储”；负责进出口、仓储、库存和运输组织。[2][3]",
               "quotes": [
                 "家电工厂进出口与仓储"
               ],
@@ -8390,11 +8200,11 @@
       ],
       "report": {
         "customers": 25,
-        "sourceLinks": 110,
-        "projectCells": 75,
-        "projects": 77,
+        "sourceLinks": 103,
+        "projectCells": 74,
+        "projects": 75,
         "regional": 3,
-        "manufacturing": 24,
+        "manufacturing": 23,
         "untyped": 15,
         "warnings": []
       },
@@ -8404,7 +8214,15 @@
         "智能终端",
         "AI算力",
         "传统消费电子及家电"
-      ]
+      ],
+      "sourceAuditRevision": "2026-10-23-links-v1",
+      "sourceAuditPreviousFingerprints": [
+        "bf69b7cf"
+      ],
+      "sourceAuditCounts": {
+        "sources": 103,
+        "records": 75
+      }
     },
     {
       "schemaVersion": "2.0",
@@ -8471,14 +8289,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-1ygtewc",
-            "2": "source-k8by9k",
-            "3": "source-1q71rs5",
-            "4": "source-1oiq2k5",
-            "5": "source-13a4cbb",
-            "6": "source-txh8ki"
           },
           "actors": [
             {
@@ -8581,7 +8391,15 @@
             "BE",
             "AT"
           ],
-          "recordsCount": 4
+          "recordsCount": 4,
+          "sourceRefs": {
+            "1": "source-1ygtewc",
+            "2": "source-k8by9k",
+            "3": "source-1q71rs5",
+            "4": "source-1oiq2k5",
+            "5": "source-13a4cbb",
+            "6": "source-txh8ki"
+          }
         },
         {
           "id": "client-1eixwp",
@@ -8635,11 +8453,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-c0cybh",
-            "2": "source-1xjh3ej",
-            "3": "source-2n0jpf"
-          },
           "actors": [
             {
               "id": "provider-1dr23tv",
@@ -8676,7 +8489,12 @@
             "BR",
             "DE"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-c0cybh",
+            "2": "source-1xjh3ej",
+            "3": "source-2n0jpf"
+          }
         },
         {
           "id": "client-1s9gppv",
@@ -8736,13 +8554,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-1ss4spx",
-            "2": "source-40rwkj",
-            "3": "source-4nqg3x",
-            "4": "source-hk8ryf",
-            "5": "source-1l7qyhe"
-          },
           "actors": [
             {
               "id": "provider-1heovio",
@@ -8769,7 +8580,14 @@
             "CZ",
             "KR"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-1ss4spx",
+            "2": "source-40rwkj",
+            "3": "source-4nqg3x",
+            "4": "source-hk8ryf",
+            "5": "source-1l7qyhe"
+          }
         },
         {
           "id": "client-oou2wq",
@@ -8825,10 +8643,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-5b2lld",
-            "2": "source-1034da9"
-          },
           "actors": [
             {
               "id": "provider-1dr23tv",
@@ -8857,7 +8671,11 @@
             "BE",
             "SE"
           ],
-          "recordsCount": 5
+          "recordsCount": 5,
+          "sourceRefs": {
+            "1": "source-5b2lld",
+            "2": "source-1034da9"
+          }
         },
         {
           "id": "client-1ym60b2",
@@ -8924,13 +8742,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-1dhel5q",
-            "2": "source-qkkqa7",
-            "3": "source-1tbyxy4",
-            "4": "source-jo2u1x",
-            "5": "source-1d3mzo6"
-          },
           "actors": [
             {
               "id": "provider-1otfg47",
@@ -8990,7 +8801,14 @@
             "IE",
             "MY"
           ],
-          "recordsCount": 5
+          "recordsCount": 5,
+          "sourceRefs": {
+            "1": "source-1dhel5q",
+            "2": "source-qkkqa7",
+            "3": "source-1tbyxy4",
+            "4": "source-jo2u1x",
+            "5": "source-1d3mzo6"
+          }
         },
         {
           "id": "client-bm5uqj",
@@ -9047,13 +8865,6 @@
                 "latin-america"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-1fodado",
-            "2": "source-1rltook",
-            "3": "source-8fdsmn",
-            "4": "source-283j2w",
-            "5": "source-12ryym1"
           },
           "actors": [
             {
@@ -9117,7 +8928,14 @@
             "JP",
             "IN"
           ],
-          "recordsCount": 6
+          "recordsCount": 6,
+          "sourceRefs": {
+            "1": "source-1fodado",
+            "2": "source-1rltook",
+            "3": "source-8fdsmn",
+            "4": "source-283j2w",
+            "5": "source-12ryym1"
+          }
         },
         {
           "id": "client-xb9kqe",
@@ -9169,11 +8987,6 @@
                 "latin-america"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-1liqxbc",
-            "2": "source-18zsedu",
-            "3": "source-jihc4e"
           },
           "actors": [
             {
@@ -9228,7 +9041,12 @@
             "RO",
             "SG"
           ],
-          "recordsCount": 14
+          "recordsCount": 14,
+          "sourceRefs": {
+            "1": "source-1liqxbc",
+            "2": "source-18zsedu",
+            "3": "source-jihc4e"
+          }
         },
         {
           "id": "client-1ewxnz",
@@ -9280,10 +9098,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-1w4ritx",
-            "2": "source-zxdy8a"
-          },
           "actors": [
             {
               "id": "provider-qins9n",
@@ -9324,13 +9138,17 @@
             "NO",
             "SG"
           ],
-          "recordsCount": 11
+          "recordsCount": 11,
+          "sourceRefs": {
+            "1": "source-1w4ritx",
+            "2": "source-zxdy8a"
+          }
         },
         {
           "id": "client-lz007n",
           "name": "帕卡 PACCAR",
           "subindustry": "商用车主机厂",
-          "overview": "生产基地：Kenworth、Peterbilt在北美组织卡车制造，DAF网络覆盖荷兰、比利时、英国、巴西、澳大利亚及中国台湾。\n\n产能分工：整车装配与发动机、驾驶室、车桥等部件分工协同；荷兰和英国配置DAF整车能力，比利时制造驾驶室及车桥，巴西和澳洲承担区域供给。\n\n需求市场：北美、欧洲、拉美及澳洲是重要市场，整车生产与PACCAR Parts分拨网络相衔接，服务新车客户和跨品牌维修需求。[4][5]",
+          "overview": "生产基地：Kenworth、Peterbilt在北美组织卡车制造，DAF网络覆盖荷兰、比利时、英国、巴西、澳大利亚及中国台湾。\n\n产能分工：整车装配与发动机、驾驶室、车桥等部件分工协同；荷兰和英国配置DAF整车能力，比利时制造驾驶室及车桥，巴西和澳洲承担区域供给。\n\n需求市场：北美、欧洲、拉美及澳洲是重要市场，整车生产与PACCAR Parts分拨网络相衔接，服务新车客户和跨品牌维修需求。[3][4]",
           "carrierText": "PACCAR Parts（集团自营）：北美、欧洲、拉美及澳大利亚公布PDC仓网，承担卡车备件库存与订单配送。[1]\nPACCAR Parts Australia：Bayswater备件中心扩容、输送与拣配支持（2025）。[2]",
           "matrixRow": 34,
           "sections": [
@@ -9344,13 +9162,12 @@
             },
             {
               "label": "需求市场",
-              "text": "北美、欧洲、拉美及澳洲是重要市场，整车生产与PACCAR Parts分拨网络相衔接，服务新车客户和跨品牌维修需求。[4][5]"
+              "text": "北美、欧洲、拉美及澳洲是重要市场，整车生产与PACCAR Parts分拨网络相衔接，服务新车客户和跨品牌维修需求。[3][4]"
             }
           ],
           "sourceIds": [
             "source-2ou4vl",
             "source-gcsh67",
-            "source-7ip40",
             "source-1bo6e58",
             "source-140g8sd"
           ],
@@ -9372,7 +9189,7 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "北美、欧洲、拉美及澳洲是重要市场，整车生产与PACCAR Parts分拨网络相衔接，服务新车客户和跨品牌维修需求。[4][5]",
+              "text": "北美、欧洲、拉美及澳洲是重要市场，整车生产与PACCAR Parts分拨网络相衔接，服务新车客户和跨品牌维修需求。[3][4]",
               "countryIds": [],
               "areaIds": [
                 "north-america",
@@ -9380,13 +9197,6 @@
                 "latin-america"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-2ou4vl",
-            "2": "source-gcsh67",
-            "3": "source-7ip40",
-            "4": "source-1bo6e58",
-            "5": "source-140g8sd"
           },
           "actors": [
             {
@@ -9435,7 +9245,13 @@
             "HU",
             "AU"
           ],
-          "recordsCount": 12
+          "recordsCount": 12,
+          "sourceRefs": {
+            "1": "source-2ou4vl",
+            "2": "source-gcsh67",
+            "3": "source-1bo6e58",
+            "4": "source-140g8sd"
+          }
         },
         {
           "id": "client-7r2zt9",
@@ -9490,13 +9306,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-1n85lbq",
-            "2": "source-aww230",
-            "3": "source-dmxck0",
-            "4": "source-1vvf1yo",
-            "5": "source-3mhetv"
-          },
           "actors": [
             {
               "id": "provider-f6g6hf",
@@ -9535,7 +9344,14 @@
             "JP",
             "AU"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-1n85lbq",
+            "2": "source-aww230",
+            "3": "source-dmxck0",
+            "4": "source-1vvf1yo",
+            "5": "source-3mhetv"
+          }
         },
         {
           "id": "client-1nfv7de",
@@ -9581,11 +9397,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-zzq4vt",
-            "2": "source-1ilqrao",
-            "3": "source-xzcmin"
           },
           "actors": [
             {
@@ -9793,7 +9604,12 @@
             "AU",
             "NZ"
           ],
-          "recordsCount": 9
+          "recordsCount": 9,
+          "sourceRefs": {
+            "1": "source-zzq4vt",
+            "2": "source-1ilqrao",
+            "3": "source-xzcmin"
+          }
         },
         {
           "id": "client-1erdolm",
@@ -9847,13 +9663,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-1vt87x9",
-            "2": "source-1xer6y8",
-            "3": "source-1ykk3z1",
-            "4": "source-1sqt8f1",
-            "5": "source-9umwlg"
-          },
           "actors": [
             {
               "id": "provider-1v1wwmu",
@@ -9893,7 +9702,14 @@
             "NL",
             "JP"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-1vt87x9",
+            "2": "source-1xer6y8",
+            "3": "source-1ykk3z1",
+            "4": "source-1sqt8f1",
+            "5": "source-9umwlg"
+          }
         },
         {
           "id": "client-zpg3se",
@@ -9948,11 +9764,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-1mqn6ll",
-            "2": "source-dxf5wt",
-            "3": "source-srh5r1"
-          },
           "actors": [
             {
               "id": "provider-50v913",
@@ -9984,7 +9795,12 @@
             }
           ],
           "countryIds": [],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1mqn6ll",
+            "2": "source-dxf5wt",
+            "3": "source-srh5r1"
+          }
         },
         {
           "id": "client-1aj8gl2",
@@ -10035,12 +9851,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-3pkr2q",
-            "2": "source-1c15aex",
-            "3": "source-15cq44i",
-            "4": "source-10ybmwn"
-          },
           "actors": [
             {
               "id": "provider-1nehqaq",
@@ -10077,7 +9887,13 @@
           "countryIds": [
             "AT"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-3pkr2q",
+            "2": "source-1c15aex",
+            "3": "source-15cq44i",
+            "4": "source-10ybmwn"
+          }
         },
         {
           "id": "client-ap0z7h",
@@ -10128,11 +9944,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-1esszam",
-            "2": "source-hi99j1",
-            "3": "source-1d9jvpu"
-          },
           "actors": [
             {
               "id": "provider-nu9bqk",
@@ -10174,7 +9985,12 @@
             "ES",
             "CZ"
           ],
-          "recordsCount": 4
+          "recordsCount": 4,
+          "sourceRefs": {
+            "1": "source-1esszam",
+            "2": "source-hi99j1",
+            "3": "source-1d9jvpu"
+          }
         },
         {
           "id": "client-1m2ap98",
@@ -10226,13 +10042,6 @@
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-14m1dvs",
-            "2": "source-1hnim86",
-            "3": "source-8erlf0",
-            "4": "source-887450",
-            "5": "source-19fiors"
           },
           "actors": [
             {
@@ -10286,7 +10095,14 @@
             "TH",
             "AU"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-14m1dvs",
+            "2": "source-1hnim86",
+            "3": "source-8erlf0",
+            "4": "source-887450",
+            "5": "source-19fiors"
+          }
         },
         {
           "id": "client-skbrrg",
@@ -10336,13 +10152,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1myv48p",
-            "2": "source-zwfv5k",
-            "3": "source-p8jufg",
-            "4": "source-ifprxk",
-            "5": "source-1j75eqv"
-          },
           "actors": [
             {
               "id": "provider-1otfg47",
@@ -10380,7 +10189,14 @@
             "CO",
             "SE"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-1myv48p",
+            "2": "source-zwfv5k",
+            "3": "source-p8jufg",
+            "4": "source-ifprxk",
+            "5": "source-1j75eqv"
+          }
         },
         {
           "id": "client-eop5bi",
@@ -10423,10 +10239,6 @@
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-18ezbdl",
-            "2": "source-12ybnr8"
           },
           "actors": [
             {
@@ -10517,7 +10329,11 @@
             "CA",
             "MX"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-18ezbdl",
+            "2": "source-12ybnr8"
+          }
         },
         {
           "id": "client-1tgy1ze",
@@ -10569,11 +10385,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-acw942",
-            "2": "source-ynni6x",
-            "3": "source-1p9lyky"
-          },
           "actors": [
             {
               "id": "provider-1otfg47",
@@ -10610,7 +10421,12 @@
             "GB",
             "TH"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-acw942",
+            "2": "source-ynni6x",
+            "3": "source-1p9lyky"
+          }
         },
         {
           "id": "client-1koj8gs",
@@ -10668,13 +10484,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-ygo29i",
-            "2": "source-1ak390m",
-            "3": "source-bi4h2",
-            "4": "source-qldcx3",
-            "5": "source-1syoucv"
-          },
           "actors": [
             {
               "id": "provider-1lxwjaf",
@@ -10720,7 +10529,14 @@
             "CH",
             "ZA"
           ],
-          "recordsCount": 6
+          "recordsCount": 6,
+          "sourceRefs": {
+            "1": "source-ygo29i",
+            "2": "source-1ak390m",
+            "3": "source-bi4h2",
+            "4": "source-qldcx3",
+            "5": "source-1syoucv"
+          }
         },
         {
           "id": "client-127w9wx",
@@ -10763,10 +10579,6 @@
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1v8roi",
-            "2": "source-ssyzoc"
           },
           "actors": [
             {
@@ -10841,7 +10653,11 @@
             "AU",
             "NZ"
           ],
-          "recordsCount": 13
+          "recordsCount": 13,
+          "sourceRefs": {
+            "1": "source-1v8roi",
+            "2": "source-ssyzoc"
+          }
         },
         {
           "id": "client-o5iazw",
@@ -10890,10 +10706,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1p3sltl",
-            "2": "source-42j81t"
-          },
           "actors": [
             {
               "id": "provider-in0nmn",
@@ -10919,7 +10731,11 @@
             "MX",
             "BR"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-1p3sltl",
+            "2": "source-42j81t"
+          }
         },
         {
           "id": "client-dvmdvf",
@@ -10969,11 +10785,6 @@
               ],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1jgoy27",
-            "2": "source-1cmwao0",
-            "3": "source-vudlpw"
           },
           "actors": [
             {
@@ -11027,7 +10838,12 @@
             "CA",
             "MX"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-1jgoy27",
+            "2": "source-1cmwao0",
+            "3": "source-vudlpw"
+          }
         },
         {
           "id": "client-oomy87",
@@ -11073,13 +10889,6 @@
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-13gxwv3",
-            "2": "source-z6argp",
-            "3": "source-1co08md",
-            "4": "source-lpkbs8",
-            "5": "source-1xwfs4a"
           },
           "actors": [
             {
@@ -11139,7 +10948,14 @@
             "AT",
             "CH"
           ],
-          "recordsCount": 5
+          "recordsCount": 5,
+          "sourceRefs": {
+            "1": "source-13gxwv3",
+            "2": "source-z6argp",
+            "3": "source-1co08md",
+            "4": "source-lpkbs8",
+            "5": "source-1xwfs4a"
+          }
         },
         {
           "id": "client-r7lfv6",
@@ -11187,12 +11003,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-sp1u2y",
-            "2": "source-1pxpdjq",
-            "3": "source-1y2fy76",
-            "4": "source-iuazuv"
-          },
           "actors": [
             {
               "id": "provider-cfdbsn",
@@ -11230,7 +11040,13 @@
             "US",
             "CA"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-sp1u2y",
+            "2": "source-1pxpdjq",
+            "3": "source-1y2fy76",
+            "4": "source-iuazuv"
+          }
         }
       ],
       "sources": [
@@ -11327,8 +11143,8 @@
         },
         {
           "id": "source-1l7qyhe",
-          "label": "起亚生产国家及供应链：官方报告",
-          "url": "https://worldwide.kia.com/int/files/company/sr/eco/Kia-Response-to-CDP-Climate-Change-Questionnaire.pdf",
+          "label": "Kia：生产基地及气候行动（官方）",
+          "url": "https://worldwide.kia.com/en/company/sustainability/environmental/climate-action",
           "clientId": "client-1s9gppv",
           "cell": "E16"
         },
@@ -11464,13 +11280,6 @@
           "url": "https://www.paccar.com.au/paccar-parts-expands-bayswater-parts-distribution-centre/",
           "clientId": "client-lz007n",
           "cell": "E35"
-        },
-        {
-          "id": "source-7ip40",
-          "label": "DAF：澳大利亚库存覆盖的卡车维修件类别",
-          "url": "https://paccarparts.com.au/dafs-quality-parts-support",
-          "clientId": "client-lz007n",
-          "cell": "E36"
         },
         {
           "id": "source-1bo6e58",
@@ -15941,7 +15750,7 @@
       ],
       "report": {
         "customers": 25,
-        "sourceLinks": 95,
+        "sourceLinks": 94,
         "projectCells": 130,
         "projects": 124,
         "regional": 7,
@@ -15955,7 +15764,15 @@
         "零部件供应商",
         "轮胎企业",
         "独立后市场"
-      ]
+      ],
+      "sourceAuditRevision": "2026-10-23-links-v1",
+      "sourceAuditPreviousFingerprints": [
+        "79b8e816"
+      ],
+      "sourceAuditCounts": {
+        "sources": 94,
+        "records": 124
+      }
     },
     {
       "schemaVersion": "2.0",
@@ -16014,14 +15831,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-btgyof",
-            "2": "source-1w99xq9",
-            "3": "source-1nxus11",
-            "4": "source-z2rylc",
-            "5": "source-ov0uuc",
-            "6": "source-cy55rh"
-          },
           "actors": [
             {
               "id": "provider-vl5ll1",
@@ -16068,7 +15877,15 @@
             "IN",
             "AU"
           ],
-          "recordsCount": 11
+          "recordsCount": 11,
+          "sourceRefs": {
+            "1": "source-btgyof",
+            "2": "source-1w99xq9",
+            "3": "source-1nxus11",
+            "4": "source-z2rylc",
+            "5": "source-ov0uuc",
+            "6": "source-cy55rh"
+          }
         },
         {
           "id": "client-1vizhji",
@@ -16112,12 +15929,6 @@
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1f5u2ej",
-            "2": "source-1849m0e",
-            "3": "source-quoo8u",
-            "4": "source-u326bv"
           },
           "actors": [
             {
@@ -16175,7 +15986,13 @@
             "AU",
             "NZ"
           ],
-          "recordsCount": 18
+          "recordsCount": 18,
+          "sourceRefs": {
+            "1": "source-1f5u2ej",
+            "2": "source-1849m0e",
+            "3": "source-quoo8u",
+            "4": "source-u326bv"
+          }
         },
         {
           "id": "client-143yfbx",
@@ -16228,13 +16045,6 @@
                 "latin-america"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-1qe1qr2",
-            "2": "source-8fnc4z",
-            "3": "source-1fnx1hn",
-            "4": "source-3ni9j8",
-            "5": "source-1srdrbc"
           },
           "actors": [
             {
@@ -16289,14 +16099,21 @@
             "BR",
             "DE"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-1qe1qr2",
+            "2": "source-8fnc4z",
+            "3": "source-1fnx1hn",
+            "4": "source-3ni9j8",
+            "5": "source-1srdrbc"
+          }
         },
         {
           "id": "client-fimzf9",
           "name": "迪尔 John Deere",
           "subindustry": "机械设备",
-          "overview": "生产基地：美国及加拿大为重要制造区域，海外通过德国、法国、巴西、印度等基地配置农业、园林、工程及林业设备生产。\n\n产能分工：2025财年美国和加拿大以外拥有或租赁45个制造地点，部分工厂服务单一业务，部分跨业务生产；整机与发动机、传动及相关组件协同。\n\n需求市场：北美、欧洲及南美等农业和工程市场形成主要需求，农机季节性作业及设备存量决定新品供给和维修件保障节奏。[3]",
-          "carrierText": "Rhenus Automotive：德国Mannheim零部件仓储、拣选、排序、预装配、供应商空箱及备件业务（2023年扩仓公告）。[1]\nJohn Deere自营备件体系：德国Bruchsal欧洲备件分拨及经销商就近供货。[2]",
+          "overview": "生产基地：美国及加拿大为重要制造区域，海外通过德国、法国、巴西、印度等基地配置农业、园林、工程及林业设备生产。\n\n产能分工：2025财年美国和加拿大以外拥有或租赁45个制造地点，部分工厂服务单一业务，部分跨业务生产；整机与发动机、传动及相关组件协同。\n\n需求市场：北美、欧洲及南美等农业和工程市场形成主要需求，农机季节性作业及设备存量决定新品供给和维修件保障节奏。[2]",
+          "carrierText": "Rhenus Automotive：德国Mannheim零部件仓储、拣选、排序、预装配、供应商空箱及备件业务（2023年扩仓公告）。[1]",
           "matrixRow": 18,
           "sections": [
             {
@@ -16309,12 +16126,11 @@
             },
             {
               "label": "需求市场",
-              "text": "北美、欧洲及南美等农业和工程市场形成主要需求，农机季节性作业及设备存量决定新品供给和维修件保障节奏。[3]"
+              "text": "北美、欧洲及南美等农业和工程市场形成主要需求，农机季节性作业及设备存量决定新品供给和维修件保障节奏。[2]"
             }
           ],
           "sourceIds": [
             "source-4tf1xd",
-            "source-to02u2",
             "source-95oanu"
           ],
           "footprint": {
@@ -16333,7 +16149,7 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "北美、欧洲及南美等农业和工程市场形成主要需求，农机季节性作业及设备存量决定新品供给和维修件保障节奏。[3]",
+              "text": "北美、欧洲及南美等农业和工程市场形成主要需求，农机季节性作业及设备存量决定新品供给和维修件保障节奏。[2]",
               "countryIds": [],
               "areaIds": [
                 "north-america",
@@ -16341,11 +16157,6 @@
                 "latin-america"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-4tf1xd",
-            "2": "source-to02u2",
-            "3": "source-95oanu"
           },
           "actors": [
             {
@@ -16362,29 +16173,16 @@
               ],
               "scopeNames": [],
               "clientId": "client-fimzf9"
-            },
-            {
-              "id": "provider-h1hklt",
-              "name": "John Deere自营备件体系",
-              "role": "客户自营",
-              "duty": "德国Bruchsal欧洲备件分拨及经销商就近供货。[2]",
-              "quotes": [],
-              "sourceIds": [
-                "source-to02u2"
-              ],
-              "countryIds": [
-                "DE"
-              ],
-              "scopeNames": [
-                "欧洲"
-              ],
-              "clientId": "client-fimzf9"
             }
           ],
           "countryIds": [
             "DE"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-4tf1xd",
+            "2": "source-95oanu"
+          }
         },
         {
           "id": "client-ktrkxb",
@@ -16435,12 +16233,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-10iwi07",
-            "2": "source-azrzh8",
-            "3": "source-mj0t9c",
-            "4": "source-885ph2"
-          },
           "actors": [
             {
               "id": "provider-1dbtgve",
@@ -16481,7 +16273,13 @@
             "DE",
             "NL"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-10iwi07",
+            "2": "source-azrzh8",
+            "3": "source-mj0t9c",
+            "4": "source-885ph2"
+          }
         },
         {
           "id": "client-1can07l",
@@ -16538,13 +16336,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-11pxqmu",
-            "2": "source-n9r4m6",
-            "3": "source-cxlf88",
-            "4": "source-nbqece",
-            "5": "source-pm595d"
-          },
           "actors": [
             {
               "id": "provider-k9v01l",
@@ -16600,7 +16391,14 @@
             "DK",
             "VN"
           ],
-          "recordsCount": 4
+          "recordsCount": 4,
+          "sourceRefs": {
+            "1": "source-11pxqmu",
+            "2": "source-n9r4m6",
+            "3": "source-cxlf88",
+            "4": "source-nbqece",
+            "5": "source-pm595d"
+          }
         },
         {
           "id": "client-11vmazc",
@@ -16649,12 +16447,6 @@
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1e3w6uz",
-            "2": "source-888zfo",
-            "3": "source-wio1qz",
-            "4": "source-1e79c30"
           },
           "actors": [
             {
@@ -16707,7 +16499,13 @@
             "US",
             "SE"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-1e3w6uz",
+            "2": "source-888zfo",
+            "3": "source-wio1qz",
+            "4": "source-1e79c30"
+          }
         },
         {
           "id": "client-1dq6jde",
@@ -16753,12 +16551,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-innnt4",
-            "2": "source-1k4ibne",
-            "3": "source-19spzy3",
-            "4": "source-1g7mzc2"
-          },
           "actors": [
             {
               "id": "provider-50v913",
@@ -16798,7 +16590,13 @@
             "SG",
             "IN"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-innnt4",
+            "2": "source-1k4ibne",
+            "3": "source-19spzy3",
+            "4": "source-1g7mzc2"
+          }
         },
         {
           "id": "client-7qy75j",
@@ -16844,11 +16642,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-1l6iml9",
-            "2": "source-16udzsk",
-            "3": "source-1kn2rcm"
-          },
           "actors": [
             {
               "id": "provider-1otfg47",
@@ -16888,7 +16681,12 @@
             "GB",
             "CZ"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-1l6iml9",
+            "2": "source-16udzsk",
+            "3": "source-1kn2rcm"
+          }
         },
         {
           "id": "client-9i8rqf",
@@ -16939,14 +16737,6 @@
                 "middle-east"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-jnqd27",
-            "2": "source-1koqyq",
-            "3": "source-zs6seq",
-            "4": "source-15hggey",
-            "5": "source-7h6orm",
-            "6": "source-1874szt"
           },
           "actors": [
             {
@@ -17004,7 +16794,15 @@
             "NL",
             "GR"
           ],
-          "recordsCount": 4
+          "recordsCount": 4,
+          "sourceRefs": {
+            "1": "source-jnqd27",
+            "2": "source-1koqyq",
+            "3": "source-zs6seq",
+            "4": "source-15hggey",
+            "5": "source-7h6orm",
+            "6": "source-1874szt"
+          }
         },
         {
           "id": "client-e8orjb",
@@ -17053,11 +16851,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-dl84yv",
-            "2": "source-1ou1g43",
-            "3": "source-1r19xl6"
-          },
           "actors": [
             {
               "id": "provider-6bwmq4",
@@ -17092,7 +16885,12 @@
           "countryIds": [
             "DE"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-dl84yv",
+            "2": "source-1ou1g43",
+            "3": "source-1r19xl6"
+          }
         },
         {
           "id": "client-1j5mrrg",
@@ -17143,11 +16941,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-arfsb1",
-            "2": "source-rml2ak",
-            "3": "source-bozs65"
-          },
           "actors": [
             {
               "id": "provider-1otfg47",
@@ -17186,7 +16979,12 @@
             "FI",
             "CN"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-arfsb1",
+            "2": "source-rml2ak",
+            "3": "source-bozs65"
+          }
         },
         {
           "id": "client-12p46lb",
@@ -17232,12 +17030,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-1rdd709",
-            "2": "source-t9bcoc",
-            "3": "source-sqzkw6",
-            "4": "source-g4zbnt"
           },
           "actors": [
             {
@@ -17298,7 +17090,13 @@
             "TR",
             "JP"
           ],
-          "recordsCount": 25
+          "recordsCount": 25,
+          "sourceRefs": {
+            "1": "source-1rdd709",
+            "2": "source-t9bcoc",
+            "3": "source-sqzkw6",
+            "4": "source-g4zbnt"
+          }
         },
         {
           "id": "client-15chmx5",
@@ -17350,12 +17148,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-1szu00n",
-            "2": "source-1uwqc9v",
-            "3": "source-1lqoa4i",
-            "4": "source-1pcx1om"
-          },
           "actors": [
             {
               "id": "provider-baqoxv",
@@ -17393,7 +17185,13 @@
           "countryIds": [
             "SI"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-1szu00n",
+            "2": "source-1uwqc9v",
+            "3": "source-1lqoa4i",
+            "4": "source-1pcx1om"
+          }
         },
         {
           "id": "client-sdscbx",
@@ -17443,13 +17241,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-35w6bm",
-            "2": "source-13lwio8",
-            "3": "source-1sjacsu",
-            "4": "source-chqalz",
-            "5": "source-atlz1n"
-          },
           "actors": [
             {
               "id": "provider-1g6m9c5",
@@ -17490,7 +17281,14 @@
             "DE",
             "CN"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-35w6bm",
+            "2": "source-13lwio8",
+            "3": "source-1sjacsu",
+            "4": "source-chqalz",
+            "5": "source-atlz1n"
+          }
         },
         {
           "id": "client-19xu83b",
@@ -17537,12 +17335,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-xhcap8",
-            "2": "source-15i24h0",
-            "3": "source-dr638q",
-            "4": "source-ivvtmi"
-          },
           "actors": [
             {
               "id": "provider-gp5sid",
@@ -17580,7 +17372,13 @@
             "IT",
             "GN"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-xhcap8",
+            "2": "source-15i24h0",
+            "3": "source-dr638q",
+            "4": "source-ivvtmi"
+          }
         },
         {
           "id": "client-1kilrup",
@@ -17628,12 +17426,6 @@
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-19wsk7m",
-            "2": "source-ag95qu",
-            "3": "source-xut8xu",
-            "4": "source-1872gr"
           },
           "actors": [
             {
@@ -17686,7 +17478,13 @@
           "countryIds": [
             "DE"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-19wsk7m",
+            "2": "source-ag95qu",
+            "3": "source-xut8xu",
+            "4": "source-1872gr"
+          }
         },
         {
           "id": "client-iq7dgi",
@@ -17740,10 +17538,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-2ordde",
-            "2": "source-mnso3g"
           },
           "actors": [
             {
@@ -17811,7 +17605,11 @@
             "ID",
             "JP"
           ],
-          "recordsCount": 4
+          "recordsCount": 4,
+          "sourceRefs": {
+            "1": "source-2ordde",
+            "2": "source-mnso3g"
+          }
         },
         {
           "id": "client-1m01xj2",
@@ -17861,12 +17659,6 @@
               ],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1832xvy",
-            "2": "source-jcat79",
-            "3": "source-grch7n",
-            "4": "source-xl9cuy"
           },
           "actors": [
             {
@@ -17918,7 +17710,13 @@
           "countryIds": [
             "TH"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-1832xvy",
+            "2": "source-jcat79",
+            "3": "source-grch7n",
+            "4": "source-xl9cuy"
+          }
         },
         {
           "id": "client-1okszbh",
@@ -17968,13 +17766,6 @@
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1qr3r95",
-            "2": "source-1igjvbo",
-            "3": "source-6fwb4a",
-            "4": "source-43y1m8",
-            "5": "source-fr36r8"
           },
           "actors": [
             {
@@ -18038,7 +17829,14 @@
             "GN",
             "AU"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-1qr3r95",
+            "2": "source-1igjvbo",
+            "3": "source-6fwb4a",
+            "4": "source-43y1m8",
+            "5": "source-fr36r8"
+          }
         },
         {
           "id": "client-ramfid",
@@ -18085,13 +17883,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-148qode",
-            "2": "source-1vjyvp2",
-            "3": "source-m0xa56",
-            "4": "source-11pnlv",
-            "5": "source-gmpb5b"
           },
           "actors": [
             {
@@ -18157,7 +17948,14 @@
             "TH",
             "BD"
           ],
-          "recordsCount": 9
+          "recordsCount": 9,
+          "sourceRefs": {
+            "1": "source-148qode",
+            "2": "source-1vjyvp2",
+            "3": "source-m0xa56",
+            "4": "source-11pnlv",
+            "5": "source-gmpb5b"
+          }
         },
         {
           "id": "client-1lkbrr5",
@@ -18205,13 +18003,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-2b8e0p",
-            "2": "source-11krjx5",
-            "3": "source-1lxzui",
-            "4": "source-98g79t",
-            "5": "source-1oofuwm"
-          },
           "actors": [
             {
               "id": "provider-1kosjnx",
@@ -18253,7 +18044,14 @@
             "ES",
             "IE"
           ],
-          "recordsCount": 4
+          "recordsCount": 4,
+          "sourceRefs": {
+            "1": "source-2b8e0p",
+            "2": "source-11krjx5",
+            "3": "source-1lxzui",
+            "4": "source-98g79t",
+            "5": "source-1oofuwm"
+          }
         },
         {
           "id": "client-ov1v5f",
@@ -18300,12 +18098,6 @@
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1djatkt",
-            "2": "source-xsd5mu",
-            "3": "source-1m7hb5y",
-            "4": "source-13770qs"
           },
           "actors": [
             {
@@ -18359,7 +18151,13 @@
             "GB",
             "AU"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-1djatkt",
+            "2": "source-xsd5mu",
+            "3": "source-1m7hb5y",
+            "4": "source-13770qs"
+          }
         },
         {
           "id": "client-8miauq",
@@ -18405,12 +18203,6 @@
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1y6hnnd",
-            "2": "source-18k8o9e",
-            "3": "source-1k7ymef",
-            "4": "source-dn1mu"
           },
           "actors": [
             {
@@ -18464,13 +18256,19 @@
             "DE",
             "NO"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-1y6hnnd",
+            "2": "source-18k8o9e",
+            "3": "source-1k7ymef",
+            "4": "source-dn1mu"
+          }
         },
         {
           "id": "client-tajath",
           "name": "莫霍克 Mohawk Industries",
           "subindustry": "家居建材",
-          "overview": "生产基地：2025年底在19个国家组织制造，供给网络围绕北美、欧洲、南美及澳新等区域形成地板和相关材料能力。\n\n产能分工：陶瓷砖、地毯、强化地板、弹性地板和木地板等按专业化制造配置，各区域产品组合和市场需求不同。\n\n需求市场：销售覆盖约180个国家，连接专业零售商、家装渠道、分销商和工程客户，住宅新建、翻新及商业空间需求共同驱动区域供给。[5]",
+          "overview": "生产基地：2025年底在19个国家组织制造，供给网络围绕北美、欧洲、南美及澳新等区域形成地板和相关材料能力。\n\n产能分工：陶瓷砖、地毯、强化地板、弹性地板和木地板等按专业化制造配置，各区域产品组合和市场需求不同。\n\n需求市场：销售覆盖约180个国家，连接专业零售商、家装渠道、分销商和工程客户，住宅新建、翻新及商业空间需求共同驱动区域供给。[4]",
           "carrierText": "Mohawk自有车队及分销体系：美国地材从工厂至分拨中心、客户的运输与配送。[1]\nDSV：UNILIN英国地板仓储及次日配送；比利时始发欧洲运输、瑞典—丹麦跨境运输，按长件易损货物适配车辆。[2]\nDal-Tile Mexico自营分拨体系：墨西哥Monterrey瓷砖托盘集中包装与全国物流组织；Innova为包装设备方（2019年案例）。[3]",
           "matrixRow": 103,
           "sections": [
@@ -18484,14 +18282,13 @@
             },
             {
               "label": "需求市场",
-              "text": "销售覆盖约180个国家，连接专业零售商、家装渠道、分销商和工程客户，住宅新建、翻新及商业空间需求共同驱动区域供给。[5]"
+              "text": "销售覆盖约180个国家，连接专业零售商、家装渠道、分销商和工程客户，住宅新建、翻新及商业空间需求共同驱动区域供给。[4]"
             }
           ],
           "sourceIds": [
             "source-1y5jr5y",
             "source-yjy3d9",
             "source-ip3t2g",
-            "source-1fdjgk1",
             "source-1qwi38e"
           ],
           "footprint": {
@@ -18507,17 +18304,10 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "销售覆盖约180个国家，连接专业零售商、家装渠道、分销商和工程客户，住宅新建、翻新及商业空间需求共同驱动区域供给。[5]",
+              "text": "销售覆盖约180个国家，连接专业零售商、家装渠道、分销商和工程客户，住宅新建、翻新及商业空间需求共同驱动区域供给。[4]",
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1y5jr5y",
-            "2": "source-yjy3d9",
-            "3": "source-ip3t2g",
-            "4": "source-1fdjgk1",
-            "5": "source-1qwi38e"
           },
           "actors": [
             {
@@ -18580,7 +18370,13 @@
             "FI",
             "SE"
           ],
-          "recordsCount": 8
+          "recordsCount": 8,
+          "sourceRefs": {
+            "1": "source-1y5jr5y",
+            "2": "source-yjy3d9",
+            "3": "source-ip3t2g",
+            "4": "source-1qwi38e"
+          }
         }
       ],
       "sources": [
@@ -18691,17 +18487,10 @@
         },
         {
           "id": "source-4tf1xd",
-          "label": "Rhenus：John Deere Mannheim第四仓（2023）",
+          "label": "Rhenus：John Deere Mannheim第四仓（2023历史公告）",
           "url": "https://www.rhenus.group/news-media/en/rhenus-automotive-opens-a-fourth-warehouse-for-john-deere-in-mannheim/",
           "clientId": "client-fimzf9",
           "cell": "E18"
-        },
-        {
-          "id": "source-to02u2",
-          "label": "John Deere：欧洲备件分拨",
-          "url": "https://www.deere.de/de-de/ersatzteile-service/ersatzteile",
-          "clientId": "client-fimzf9",
-          "cell": "E19"
         },
         {
           "id": "source-95oanu",
@@ -18957,8 +18746,8 @@
         },
         {
           "id": "source-g4zbnt",
-          "label": "集中制造及产能组织：2025公司资料",
-          "url": "https://www.fanuc.co.jp/en/profile/booklet/pdf/corporateprofile202508_e.pdf",
+          "label": "FANUC：2026年3月公司资料",
+          "url": "https://www.fanuc.co.jp/en/profile/booklet/pdf/corporateprofile202603_e.pdf",
           "clientId": "client-12p46lb",
           "cell": "E56"
         },
@@ -19041,8 +18830,8 @@
         },
         {
           "id": "source-dr638q",
-          "label": "Baosteel Europe：意大利钢材集散中心",
-          "url": "https://www.baosteeleu.com/baoou_cms/content/baoou/indexEnglish/index.html",
+          "label": "Baosteel：海外网络及意大利集散中心（官方）",
+          "url": "https://esales.baosteel.com/baosteel_products/salesSystem.do?method=abroadEn",
           "clientId": "client-19xu83b",
           "cell": "E68"
         },
@@ -19293,8 +19082,8 @@
         },
         {
           "id": "source-yjy3d9",
-          "label": "DSV：UNILIN地板英国仓配及欧洲运输",
-          "url": "https://www.dsv.com/sv-se/insikter/kundcase/unilin",
+          "label": "DSV：UNILIN英国仓配与欧洲运输（官方案例）",
+          "url": "https://www.dsv.com/en-in/insights/case-studies/unilin",
           "clientId": "client-tajath",
           "cell": "E104"
         },
@@ -19304,13 +19093,6 @@
           "url": "https://en.innovamaquinaria.com/news/daltile-mohawk-industries-improves-and-saves-on-the-final-packaging-of-their-tiles-with-stretch-hood/",
           "clientId": "client-tajath",
           "cell": "E105"
-        },
-        {
-          "id": "source-1fdjgk1",
-          "label": "Mohawk：2025年报，旗下品牌及分销体系（第20、23页）",
-          "url": "https://ir.mohawkind.com/static-files/a731258e-a4de-40b8-b7f0-3d9d75fe73c2",
-          "clientId": "client-tajath",
-          "cell": "E106"
         },
         {
           "id": "source-1qwi38e",
@@ -20220,9 +20002,9 @@
         {
           "id": "project-mj663p",
           "clientId": "client-fimzf9",
-          "title": "Mannheim 拖拉机零部件生产及成品仓配项目",
-          "detail": "Mannheim生产仓储、排序及预装配；Bruchsal欧洲备件分拨。",
-          "original": "Mannheim 拖拉机零部件生产及成品仓配项目（生产物流、成品仓）\nMannheim生产仓储、排序及预装配；Bruchsal欧洲备件分拨。",
+          "title": "Mannheim零部件仓储与排序项目（2023年历史案例）",
+          "detail": "2023年第四仓投运，开展零部件仓储、拣选、排序、预装配、供应商空箱处理及备件业务。[1]",
+          "original": "2023年第四仓投运，开展零部件仓储、拣选、排序、预装配、供应商空箱处理及备件业务。[1]",
           "types": [
             "生产物流",
             "成品仓"
@@ -20242,9 +20024,27 @@
           "matrixCells": [
             "O18"
           ],
-          "sourceIds": [],
-          "state": "disclosed",
-          "actors": [],
+          "sourceIds": [
+            "source-4tf1xd"
+          ],
+          "state": "case",
+          "actors": [
+            {
+              "id": "provider-1pevu5p",
+              "name": "Rhenus Automotive",
+              "role": "第三方服务",
+              "duty": "德国Mannheim零部件仓储、拣选、排序、预装配、供应商空箱及备件业务（2023年扩仓公告）。[1]",
+              "quotes": [],
+              "sourceIds": [
+                "source-4tf1xd"
+              ],
+              "countryIds": [
+                "DE"
+              ],
+              "scopeNames": [],
+              "clientId": "client-fimzf9"
+            }
+          ],
           "engagementId": "project-mj663p"
         },
         {
@@ -23412,7 +23212,7 @@
       ],
       "report": {
         "customers": 25,
-        "sourceLinks": 105,
+        "sourceLinks": 103,
         "projectCells": 130,
         "projects": 124,
         "regional": 7,
@@ -23426,7 +23226,15 @@
         "智能装备",
         "工业原材料",
         "家居建材"
-      ]
+      ],
+      "sourceAuditRevision": "2026-10-23-links-v1",
+      "sourceAuditPreviousFingerprints": [
+        "12cab43f"
+      ],
+      "sourceAuditCounts": {
+        "sources": 103,
+        "records": 124
+      }
     },
     {
       "schemaVersion": "2.0",
@@ -23491,14 +23299,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-cli6cx",
-            "2": "source-12k4vhf",
-            "3": "source-pgt4cg",
-            "4": "source-1n226y9",
-            "5": "source-1eq1oy8",
-            "6": "source-12iaqss"
-          },
           "actors": [
             {
               "id": "provider-q5ylhv",
@@ -23560,7 +23360,15 @@
             "HU",
             "SK"
           ],
-          "recordsCount": 7
+          "recordsCount": 7,
+          "sourceRefs": {
+            "1": "source-cli6cx",
+            "2": "source-12k4vhf",
+            "3": "source-pgt4cg",
+            "4": "source-1n226y9",
+            "5": "source-1eq1oy8",
+            "6": "source-12iaqss"
+          }
         },
         {
           "id": "client-1g6qzlt",
@@ -23608,11 +23416,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-12tok1a",
-            "2": "source-244w48",
-            "3": "source-hn6n2u"
-          },
           "actors": [
             {
               "id": "provider-1ug1age",
@@ -23646,7 +23449,12 @@
           "countryIds": [
             "SA"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-12tok1a",
+            "2": "source-244w48",
+            "3": "source-hn6n2u"
+          }
         },
         {
           "id": "client-g7zsov",
@@ -23692,11 +23500,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-eehsc0",
-            "2": "source-1vt1bzq",
-            "3": "source-1kwpcnu"
           },
           "actors": [
             {
@@ -23800,7 +23603,12 @@
             "MX",
             "CZ"
           ],
-          "recordsCount": 4
+          "recordsCount": 4,
+          "sourceRefs": {
+            "1": "source-eehsc0",
+            "2": "source-1vt1bzq",
+            "3": "source-1kwpcnu"
+          }
         },
         {
           "id": "client-ve6hcq",
@@ -23854,13 +23662,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-9xqz3n",
-            "2": "source-13bw4jj",
-            "3": "source-1h2sl74",
-            "4": "source-1ksvh9b",
-            "5": "source-k1we8r"
-          },
           "actors": [
             {
               "id": "provider-1qvwzof",
@@ -23898,7 +23699,14 @@
             "BE",
             "CH"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-9xqz3n",
+            "2": "source-13bw4jj",
+            "3": "source-1h2sl74",
+            "4": "source-1ksvh9b",
+            "5": "source-k1we8r"
+          }
         },
         {
           "id": "client-1m46lt9",
@@ -23947,13 +23755,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-287lq5",
-            "2": "source-pkemuu",
-            "3": "source-j8bxik",
-            "4": "source-1ecju47",
-            "5": "source-m7aynj"
-          },
           "actors": [
             {
               "id": "provider-1dr23tv",
@@ -23991,7 +23792,14 @@
             "BR",
             "SG"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-287lq5",
+            "2": "source-pkemuu",
+            "3": "source-j8bxik",
+            "4": "source-1ecju47",
+            "5": "source-m7aynj"
+          }
         },
         {
           "id": "client-1ef7cl9",
@@ -24043,13 +23851,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-kopquy",
-            "2": "source-2m9a2l",
-            "3": "source-1bh2h7s",
-            "4": "source-1od0kuk",
-            "5": "source-6qrqag"
-          },
           "actors": [
             {
               "id": "provider-18ftlsf",
@@ -24100,7 +23901,14 @@
             "TW",
             "AU"
           ],
-          "recordsCount": 7
+          "recordsCount": 7,
+          "sourceRefs": {
+            "1": "source-kopquy",
+            "2": "source-2m9a2l",
+            "3": "source-1bh2h7s",
+            "4": "source-1od0kuk",
+            "5": "source-6qrqag"
+          }
         },
         {
           "id": "client-1xnhhiw",
@@ -24149,12 +23957,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-k3qbsx",
-            "2": "source-1ykqzlz",
-            "3": "source-j1vp13",
-            "4": "source-1f4zf7f"
           },
           "actors": [
             {
@@ -24216,7 +24018,13 @@
             "BN",
             "HK"
           ],
-          "recordsCount": 11
+          "recordsCount": 11,
+          "sourceRefs": {
+            "1": "source-k3qbsx",
+            "2": "source-1ykqzlz",
+            "3": "source-j1vp13",
+            "4": "source-1f4zf7f"
+          }
         },
         {
           "id": "client-1kjzsdp",
@@ -24266,12 +24074,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-35sylc",
-            "2": "source-1pjddch",
-            "3": "source-ba5x5w",
-            "4": "source-trb16o"
-          },
           "actors": [
             {
               "id": "provider-18ftlsf",
@@ -24309,7 +24111,13 @@
             "FR",
             "GB"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-35sylc",
+            "2": "source-1pjddch",
+            "3": "source-ba5x5w",
+            "4": "source-trb16o"
+          }
         },
         {
           "id": "client-1d5hoh6",
@@ -24355,12 +24163,6 @@
                 "latin-america"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-dheon2",
-            "2": "source-6kspr3",
-            "3": "source-1vcn0ic",
-            "4": "source-br92ps"
           },
           "actors": [
             {
@@ -24414,7 +24216,13 @@
             "IN",
             "AU"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-dheon2",
+            "2": "source-6kspr3",
+            "3": "source-1vcn0ic",
+            "4": "source-br92ps"
+          }
         },
         {
           "id": "client-13n55fc",
@@ -24461,11 +24269,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-p9no3l",
-            "2": "source-1xuoeta",
-            "3": "source-1ajtlsu"
-          },
           "actors": [
             {
               "id": "provider-50v913",
@@ -24502,7 +24305,12 @@
             "US",
             "GB"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-p9no3l",
+            "2": "source-1xuoeta",
+            "3": "source-1ajtlsu"
+          }
         },
         {
           "id": "client-15ihrc7",
@@ -24554,12 +24362,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-k7yr49",
-            "2": "source-h1stj1",
-            "3": "source-1hrvz6b",
-            "4": "source-17cwvjm"
           },
           "actors": [
             {
@@ -24614,7 +24416,13 @@
             "AU",
             "NZ"
           ],
-          "recordsCount": 11
+          "recordsCount": 11,
+          "sourceRefs": {
+            "1": "source-k7yr49",
+            "2": "source-h1stj1",
+            "3": "source-1hrvz6b",
+            "4": "source-17cwvjm"
+          }
         },
         {
           "id": "client-n2air3",
@@ -24666,10 +24474,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-gcwyri",
-            "2": "source-1l5r7d"
-          },
           "actors": [
             {
               "id": "provider-1otfg47",
@@ -24708,7 +24512,11 @@
             "CA",
             "AU"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-gcwyri",
+            "2": "source-1l5r7d"
+          }
         },
         {
           "id": "client-p7e6z6",
@@ -24760,12 +24568,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-znff0r",
-            "2": "source-e7i17f",
-            "3": "source-pnsgt8",
-            "4": "source-mcioxe"
-          },
           "actors": [
             {
               "id": "provider-18ftlsf",
@@ -24802,7 +24604,13 @@
             "US",
             "TR"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-znff0r",
+            "2": "source-e7i17f",
+            "3": "source-pnsgt8",
+            "4": "source-mcioxe"
+          }
         },
         {
           "id": "client-p7uxqz",
@@ -24853,13 +24661,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-13bl8gs",
-            "2": "source-1o34kp1",
-            "3": "source-1x1gn6m",
-            "4": "source-haq59",
-            "5": "source-10l1vr7"
-          },
           "actors": [
             {
               "id": "provider-1fflrzz",
@@ -24900,7 +24701,14 @@
             "JP",
             "CN"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-13bl8gs",
+            "2": "source-1o34kp1",
+            "3": "source-1x1gn6m",
+            "4": "source-haq59",
+            "5": "source-10l1vr7"
+          }
         },
         {
           "id": "client-l9roid",
@@ -24945,11 +24753,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-lug7sf",
-            "2": "source-lh32um",
-            "3": "source-1nrhx89"
           },
           "actors": [
             {
@@ -25107,7 +24910,12 @@
             "US",
             "JP"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-lug7sf",
+            "2": "source-lh32um",
+            "3": "source-1nrhx89"
+          }
         },
         {
           "id": "client-1h74amk",
@@ -25158,11 +24966,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-1mjj4x9",
-            "2": "source-erpel5",
-            "3": "source-qe1oj7"
-          },
           "actors": [
             {
               "id": "provider-1r7dti4",
@@ -25208,13 +25011,18 @@
             "JP",
             "CN"
           ],
-          "recordsCount": 6
+          "recordsCount": 6,
+          "sourceRefs": {
+            "1": "source-1mjj4x9",
+            "2": "source-erpel5",
+            "3": "source-qe1oj7"
+          }
         },
         {
           "id": "client-19rix3z",
           "name": "Inditex（Zara等）",
           "subindustry": "服装鞋帽",
-          "overview": "供给网络：以外部供应商和合作工厂组织生产，西班牙、葡萄牙、摩洛哥、土耳其等邻近欧洲的生产集群与亚洲制造来源协同。\n\n区域分工：邻近供应与远端采购配合产品上新和常规款供给，西班牙集中物流平台连接全球门店及电商，荷兰等节点增加区域处理能力。\n\n需求市场：欧洲、美洲及亚洲等区域共同销售Zara等品牌，门店与线上库存协同，款式轮换、补货频次及退货共同影响区域履约需求。[4][5]",
+          "overview": "供给网络：以外部供应商和合作工厂组织生产，西班牙、葡萄牙、摩洛哥、土耳其等邻近欧洲的生产集群与亚洲制造来源协同。\n\n区域分工：邻近供应与远端采购配合产品上新和常规款供给，西班牙集中物流平台连接全球门店及电商，荷兰等节点增加区域处理能力。\n\n需求市场：欧洲、美洲及亚洲等区域共同销售Zara等品牌，门店与线上库存协同，款式轮换、补货频次及退货共同影响区域履约需求。[4]",
           "carrierText": "Inditex集团物流体系：西班牙Zaragoza等集中分拨仓及荷兰Lelystad枢纽，采用XWMS整合挂装/包裹库存及仓内流转。[1][2]\nInditex集团物流体系：Zaragoza II于2025年11月投运，扩大Zara集中分拨能力。[3]",
           "matrixRow": 66,
           "sections": [
@@ -25228,14 +25036,13 @@
             },
             {
               "label": "需求市场",
-              "text": "欧洲、美洲及亚洲等区域共同销售Zara等品牌，门店与线上库存协同，款式轮换、补货频次及退货共同影响区域履约需求。[4][5]"
+              "text": "欧洲、美洲及亚洲等区域共同销售Zara等品牌，门店与线上库存协同，款式轮换、补货频次及退货共同影响区域履约需求。[4]"
             }
           ],
           "sourceIds": [
             "source-1quciny",
             "source-15opp20",
             "source-t9h86h",
-            "source-5rxl8t",
             "source-18vf83w"
           ],
           "footprint": {
@@ -25254,19 +25061,12 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "欧洲、美洲及亚洲等区域共同销售Zara等品牌，门店与线上库存协同，款式轮换、补货频次及退货共同影响区域履约需求。[4][5]",
+              "text": "欧洲、美洲及亚洲等区域共同销售Zara等品牌，门店与线上库存协同，款式轮换、补货频次及退货共同影响区域履约需求。[4]",
               "countryIds": [],
               "areaIds": [
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-1quciny",
-            "2": "source-15opp20",
-            "3": "source-t9h86h",
-            "4": "source-5rxl8t",
-            "5": "source-18vf83w"
           },
           "actors": [
             {
@@ -25304,7 +25104,13 @@
             "NL",
             "ES"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-1quciny",
+            "2": "source-15opp20",
+            "3": "source-t9h86h",
+            "4": "source-18vf83w"
+          }
         },
         {
           "id": "client-ncdl7h",
@@ -25365,14 +25171,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-lrh784",
-            "2": "source-12cpihv",
-            "3": "source-1yy7ifq",
-            "4": "source-1unrf4o",
-            "5": "source-97qvm7",
-            "6": "source-kjwp87"
-          },
           "actors": [
             {
               "id": "provider-xya5nz",
@@ -25413,7 +25211,15 @@
             "SG",
             "JP"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-lrh784",
+            "2": "source-12cpihv",
+            "3": "source-1yy7ifq",
+            "4": "source-1unrf4o",
+            "5": "source-97qvm7",
+            "6": "source-kjwp87"
+          }
         },
         {
           "id": "client-i3zsm4",
@@ -25466,12 +25272,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-qvvge2",
-            "2": "source-rmyg39",
-            "3": "source-2xqixd",
-            "4": "source-uorp38"
-          },
           "actors": [
             {
               "id": "provider-1ml5moh",
@@ -25509,7 +25309,13 @@
             "US",
             "IT"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-qvvge2",
+            "2": "source-rmyg39",
+            "3": "source-2xqixd",
+            "4": "source-uorp38"
+          }
         },
         {
           "id": "client-w8vi1o",
@@ -25557,13 +25363,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-6i5aki",
-            "2": "source-11qtg63",
-            "3": "source-pt7cgf",
-            "4": "source-1ot27yi",
-            "5": "source-91m8dk"
           },
           "actors": [
             {
@@ -25622,7 +25421,14 @@
             "ES",
             "PL"
           ],
-          "recordsCount": 4
+          "recordsCount": 4,
+          "sourceRefs": {
+            "1": "source-6i5aki",
+            "2": "source-11qtg63",
+            "3": "source-pt7cgf",
+            "4": "source-1ot27yi",
+            "5": "source-91m8dk"
+          }
         },
         {
           "id": "client-93miew",
@@ -25674,12 +25480,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-rgnqc5",
-            "2": "source-d2tzvi",
-            "3": "source-upzupm",
-            "4": "source-1c1td07"
-          },
           "actors": [
             {
               "id": "provider-1bubue7",
@@ -25717,14 +25517,20 @@
             "US",
             "GB"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-rgnqc5",
+            "2": "source-d2tzvi",
+            "3": "source-upzupm",
+            "4": "source-1c1td07"
+          }
         },
         {
           "id": "client-1w0xfxn",
           "name": "保乐力加 Pernod Ricard",
           "subindustry": "烈酒",
-          "overview": "生产基地：烈酒制造扎根品牌原产地，苏格兰威士忌、爱尔兰威士忌、法国干邑及瑞典伏特加等基地与印度、美国等区域生产网络协同。\n\n产能分工：蒸馏、熟成、勾调与装瓶按品牌工艺分工，产地工厂与区域分销相连接，国际品牌与区域品牌分别适应当地需求。\n\n需求市场：集团品牌进入160多个国家，北美、欧洲及亚洲是重要销售区域，印度和中国等市场的酒种偏好及渠道结构影响产品与库存配置。[4]",
-          "carrierText": "CEVA Logistics：泰国Bangna烈酒进口、保税/完税仓、税标/警示标签、礼盒重包装及配送；为2020年签订的五年合同案例。[1]\nStaci、Custodian、DHL：保乐力加2026岗位披露的POS促销物料3PL库存、订单及运输协同；爱尔兰团队参与统筹。[2]\nPernod Ricard越南供应链团队：进口关务、税标及南北仓/生产仓协同。[3]",
+          "overview": "生产基地：烈酒制造扎根品牌原产地，苏格兰威士忌、爱尔兰威士忌、法国干邑及瑞典伏特加等基地与印度、美国等区域生产网络协同。\n\n产能分工：蒸馏、熟成、勾调与装瓶按品牌工艺分工，产地工厂与区域分销相连接，国际品牌与区域品牌分别适应当地需求。\n\n需求市场：集团品牌进入160多个国家，北美、欧洲及亚洲是重要销售区域，印度和中国等市场的酒种偏好及渠道结构影响产品与库存配置。[2]",
+          "carrierText": "CEVA Logistics：泰国Bangna烈酒进口、保税/完税仓、税标/警示标签、礼盒重包装及配送；为2020年签订的五年合同案例。[1]",
           "matrixRow": 90,
           "sections": [
             {
@@ -25737,13 +25543,11 @@
             },
             {
               "label": "需求市场",
-              "text": "集团品牌进入160多个国家，北美、欧洲及亚洲是重要销售区域，印度和中国等市场的酒种偏好及渠道结构影响产品与库存配置。[4]"
+              "text": "集团品牌进入160多个国家，北美、欧洲及亚洲是重要销售区域，印度和中国等市场的酒种偏好及渠道结构影响产品与库存配置。[2]"
             }
           ],
           "sourceIds": [
             "source-17dzrsb",
-            "source-1wqzcl2",
-            "source-kct7hj",
             "source-wkrust"
           ],
           "footprint": {
@@ -25762,7 +25566,7 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "集团品牌进入160多个国家，北美、欧洲及亚洲是重要销售区域，印度和中国等市场的酒种偏好及渠道结构影响产品与库存配置。[4]",
+              "text": "集团品牌进入160多个国家，北美、欧洲及亚洲是重要销售区域，印度和中国等市场的酒种偏好及渠道结构影响产品与库存配置。[2]",
               "countryIds": [
                 "CN",
                 "IN"
@@ -25772,12 +25576,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-17dzrsb",
-            "2": "source-1wqzcl2",
-            "3": "source-kct7hj",
-            "4": "source-wkrust"
           },
           "actors": [
             {
@@ -25794,66 +25592,6 @@
               ],
               "scopeNames": [],
               "clientId": "client-1w0xfxn"
-            },
-            {
-              "id": "provider-2sdzgl",
-              "name": "Staci",
-              "role": "第三方服务",
-              "duty": "保乐力加2026岗位披露的POS促销物料3PL库存、订单及运输协同；爱尔兰团队参与统筹。[2]",
-              "quotes": [],
-              "sourceIds": [
-                "source-1wqzcl2"
-              ],
-              "countryIds": [
-                "IE"
-              ],
-              "scopeNames": [],
-              "clientId": "client-1w0xfxn"
-            },
-            {
-              "id": "provider-q7rw5j",
-              "name": "Custodian",
-              "role": "第三方服务",
-              "duty": "保乐力加2026岗位披露的POS促销物料3PL库存、订单及运输协同；爱尔兰团队参与统筹。[2]",
-              "quotes": [],
-              "sourceIds": [
-                "source-1wqzcl2"
-              ],
-              "countryIds": [
-                "IE"
-              ],
-              "scopeNames": [],
-              "clientId": "client-1w0xfxn"
-            },
-            {
-              "id": "provider-50v913",
-              "name": "DHL",
-              "role": "第三方服务",
-              "duty": "保乐力加2026岗位披露的POS促销物料3PL库存、订单及运输协同；爱尔兰团队参与统筹。[2]",
-              "quotes": [],
-              "sourceIds": [
-                "source-1wqzcl2"
-              ],
-              "countryIds": [
-                "IE"
-              ],
-              "scopeNames": [],
-              "clientId": "client-1w0xfxn"
-            },
-            {
-              "id": "provider-gowuyx",
-              "name": "Pernod Ricard越南供应链团队",
-              "role": "客户自营",
-              "duty": "进口关务、税标及南北仓/生产仓协同。[3]",
-              "quotes": [],
-              "sourceIds": [
-                "source-kct7hj"
-              ],
-              "countryIds": [
-                "VN"
-              ],
-              "scopeNames": [],
-              "clientId": "client-1w0xfxn"
             }
           ],
           "countryIds": [
@@ -25861,7 +25599,11 @@
             "TH",
             "VN"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-17dzrsb",
+            "2": "source-wkrust"
+          }
         },
         {
           "id": "client-1atcoc5",
@@ -25914,12 +25656,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-rbi6e2",
-            "2": "source-q9hrfz",
-            "3": "source-5njtzi",
-            "4": "source-1aao89w"
           },
           "actors": [
             {
@@ -25975,14 +25711,20 @@
             "FR",
             "AT"
           ],
-          "recordsCount": 4
+          "recordsCount": 4,
+          "sourceRefs": {
+            "1": "source-rbi6e2",
+            "2": "source-q9hrfz",
+            "3": "source-5njtzi",
+            "4": "source-1aao89w"
+          }
         },
         {
           "id": "client-h2vztb",
           "name": "百加得 Bacardi",
           "subindustry": "烈酒",
-          "overview": "生产基地：波多黎各配置Bacardí朗姆酒生产，墨西哥配置Patrón等龙舌兰，法国配置Grey Goose伏特加，英国配置Bombay Sapphire金酒及苏格兰威士忌，美国配置波本和装瓶能力。\n\n产能分工：品牌制造与原产地相绑定，蒸馏、熟成、装瓶及区域成品供给协同，朗姆酒等熟成库存与瓶装产品的区域分销分别组织。\n\n需求市场：美洲、欧洲及亚洲等国际市场共同销售，分销商、零售、餐饮及品牌电商形成需求，酒种及礼赠场景影响包装与区域库存。[4][5]",
-          "carrierText": "Ryder：美国Bacardi成品出库货运管理，涵盖公路、铁路联运及零担；2020客户公告案例。[1]\nStaci：英国BACARDÍ、BOMBAY SAPPHIRE、GREY GOOSE等品牌POS营销物料的库存及活动物流。[2]\nBacardi Benelux供应链团队：荷兰/比利时本地订单履约、POS及3PL协同。[3]",
+          "overview": "生产基地：波多黎各配置Bacardí朗姆酒生产，墨西哥配置Patrón等龙舌兰，法国配置Grey Goose伏特加，英国配置Bombay Sapphire金酒及苏格兰威士忌，美国配置波本和装瓶能力。\n\n产能分工：品牌制造与原产地相绑定，蒸馏、熟成、装瓶及区域成品供给协同，朗姆酒等熟成库存与瓶装产品的区域分销分别组织。\n\n需求市场：美洲、欧洲及亚洲等国际市场共同销售，分销商、零售、餐饮及品牌电商形成需求，酒种及礼赠场景影响包装与区域库存。[3][4]",
+          "carrierText": "Ryder：美国Bacardi成品出库货运管理，涵盖公路、铁路联运及零担；2020客户公告案例。[1]\nStaci：英国BACARDÍ、BOMBAY SAPPHIRE、GREY GOOSE等品牌POS营销物料的库存及活动物流。[2]",
           "matrixRow": 98,
           "sections": [
             {
@@ -25995,13 +25737,12 @@
             },
             {
               "label": "需求市场",
-              "text": "美洲、欧洲及亚洲等国际市场共同销售，分销商、零售、餐饮及品牌电商形成需求，酒种及礼赠场景影响包装与区域库存。[4][5]"
+              "text": "美洲、欧洲及亚洲等国际市场共同销售，分销商、零售、餐饮及品牌电商形成需求，酒种及礼赠场景影响包装与区域库存。[3][4]"
             }
           ],
           "sourceIds": [
             "source-u6hh6z",
             "source-1i57s6k",
-            "source-1icqka4",
             "source-1sar170",
             "source-c20vot"
           ],
@@ -26020,19 +25761,12 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "美洲、欧洲及亚洲等国际市场共同销售，分销商、零售、餐饮及品牌电商形成需求，酒种及礼赠场景影响包装与区域库存。[4][5]",
+              "text": "美洲、欧洲及亚洲等国际市场共同销售，分销商、零售、餐饮及品牌电商形成需求，酒种及礼赠场景影响包装与区域库存。[3][4]",
               "countryIds": [],
               "areaIds": [
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-u6hh6z",
-            "2": "source-1i57s6k",
-            "3": "source-1icqka4",
-            "4": "source-1sar170",
-            "5": "source-c20vot"
           },
           "actors": [
             {
@@ -26064,22 +25798,6 @@
               ],
               "scopeNames": [],
               "clientId": "client-h2vztb"
-            },
-            {
-              "id": "provider-1t4rkd0",
-              "name": "Bacardi Benelux供应链团队",
-              "role": "客户自营",
-              "duty": "荷兰/比利时本地订单履约、POS及3PL协同。[3]",
-              "quotes": [],
-              "sourceIds": [
-                "source-1icqka4"
-              ],
-              "countryIds": [
-                "BE",
-                "NL"
-              ],
-              "scopeNames": [],
-              "clientId": "client-h2vztb"
             }
           ],
           "countryIds": [
@@ -26088,7 +25806,13 @@
             "NL",
             "BE"
           ],
-          "recordsCount": 4
+          "recordsCount": 4,
+          "sourceRefs": {
+            "1": "source-u6hh6z",
+            "2": "source-1i57s6k",
+            "3": "source-1sar170",
+            "4": "source-c20vot"
+          }
         },
         {
           "id": "client-11yaohe",
@@ -26137,11 +25861,6 @@
                 "europe"
               ]
             }
-          },
-          "sourceRefs": {
-            "1": "source-n1k1lf",
-            "2": "source-17q280c",
-            "3": "source-ohss5k"
           },
           "actors": [
             {
@@ -26261,7 +25980,12 @@
             "SK",
             "TR"
           ],
-          "recordsCount": 13
+          "recordsCount": 13,
+          "sourceRefs": {
+            "1": "source-n1k1lf",
+            "2": "source-17q280c",
+            "3": "source-ohss5k"
+          }
         }
       ],
       "sources": [
@@ -26337,8 +26061,8 @@
         },
         {
           "id": "source-1vt1bzq",
-          "label": "CTP公告：宝洁捷克新仓，计划2027运营",
-          "url": "https://live.euronext.com/en/products/equities/company-news/2025-12-19-ctp-signs-lease-procter-gamble-37000-sqm-flagship",
+          "label": "CTP：宝洁Prague North物流设施，计划2027运营",
+          "url": "https://ctp.eu/news/ctp-signs-lease-with-procter-gamble-for-37000-sqm-flagship-facility-in-prague/",
           "clientId": "client-g7zsov",
           "cell": "E13"
         },
@@ -26728,13 +26452,6 @@
           "cell": "E68"
         },
         {
-          "id": "source-5rxl8t",
-          "label": "供应网络及生产环节：品牌官网",
-          "url": "https://www.zara.com/es/en/sustainability-suppliers-mkt1456.html",
-          "clientId": "client-19rix3z",
-          "cell": "E69"
-        },
-        {
           "id": "source-18vf83w",
           "label": "全球运营及市场：2025年报",
           "url": "https://annualreport.inditex.com/anrpxxvui/en/download-centre",
@@ -26882,20 +26599,6 @@
           "cell": "E90"
         },
         {
-          "id": "source-1wqzcl2",
-          "label": "Pernod Ricard：促销物料3PL及订单流程（2026）",
-          "url": "https://pernodricard.wd3.myworkdayjobs.com/en-US/pernod-ricard/job/Logistics-Co-Ordinator_JR-053553",
-          "clientId": "client-1w0xfxn",
-          "cell": "E91"
-        },
-        {
-          "id": "source-kct7hj",
-          "label": "Pernod Ricard：越南进口、税标及仓网统筹",
-          "url": "https://pernodricard.wd3.myworkdayjobs.com/en-US/pernod-ricard/job/Supply-Chain-Manager_JR-053846",
-          "clientId": "client-1w0xfxn",
-          "cell": "E92"
-        },
-        {
           "id": "source-wkrust",
           "label": "品牌原产地及国际网络：集团官网",
           "url": "https://www.pernod-ricard.com/en/locations",
@@ -26904,8 +26607,8 @@
         },
         {
           "id": "source-rbi6e2",
-          "label": "FIEGE：Suntory Emmerich消费税仓及德奥配送",
-          "url": "https://www.fiege.com/de/kundenstories/suntory",
+          "label": "FIEGE：Suntory Emmerich消费税仓及德奥配送（官方英文）",
+          "url": "https://www.fiege.com/en/perfect-serve",
           "clientId": "client-1atcoc5",
           "cell": "E94"
         },
@@ -26943,13 +26646,6 @@
           "url": "https://uk.staci.com/staci-uk-are-a-true-extension-to-the-bacardi-business/",
           "clientId": "client-h2vztb",
           "cell": "E99"
-        },
-        {
-          "id": "source-1icqka4",
-          "label": "Bacardi：Benelux订单履约与3PL岗位披露",
-          "url": "https://jobs.bacardilimited.com/job-search/200cb0e5e15a10019ed7d923e6ff0000",
-          "clientId": "client-h2vztb",
-          "cell": "E100"
         },
         {
           "id": "source-1sar170",
@@ -29571,35 +29267,6 @@
           "engagementId": "project-1eagja8"
         },
         {
-          "id": "project-1hl87ta",
-          "clientId": "client-1w0xfxn",
-          "title": "促销物料库存分拨项目",
-          "detail": "订单、3PL库存及跨市场发运统筹（2026岗位披露）。",
-          "original": "促销物料库存分拨项目（成品仓）\n订单、3PL库存及跨市场发运统筹（2026岗位披露）。",
-          "types": [
-            "成品仓"
-          ],
-          "attribute": "logistics",
-          "scope": "country",
-          "region": "",
-          "countryId": "IE",
-          "reference": false,
-          "areaId": "europe",
-          "contextAreas": [
-            "europe"
-          ],
-          "eligibleCountryIds": [
-            "IE"
-          ],
-          "matrixCells": [
-            "AH90"
-          ],
-          "sourceIds": [],
-          "state": "disclosed",
-          "actors": [],
-          "engagementId": "project-1hl87ta"
-        },
-        {
           "id": "project-aqwcmf",
           "clientId": "client-1w0xfxn",
           "title": "瓶装烈酒保税仓项目",
@@ -29628,36 +29295,6 @@
           "state": "case",
           "actors": [],
           "engagementId": "project-aqwcmf"
-        },
-        {
-          "id": "project-9ago7l",
-          "clientId": "client-1w0xfxn",
-          "title": "进口烈酒包装与仓储项目",
-          "detail": "税标、关务及南北多仓协同（2026岗位披露）。",
-          "original": "进口烈酒包装与仓储项目（多功能仓、成品仓）\n税标、关务及南北多仓协同（2026岗位披露）。",
-          "types": [
-            "多功能仓",
-            "成品仓"
-          ],
-          "attribute": "logistics",
-          "scope": "country",
-          "region": "",
-          "countryId": "VN",
-          "reference": false,
-          "areaId": "southeast-asia",
-          "contextAreas": [
-            "southeast-asia"
-          ],
-          "eligibleCountryIds": [
-            "VN"
-          ],
-          "matrixCells": [
-            "BK90"
-          ],
-          "sourceIds": [],
-          "state": "disclosed",
-          "actors": [],
-          "engagementId": "project-9ago7l"
         },
         {
           "id": "project-1v81wpg",
@@ -29828,64 +29465,6 @@
           "state": "disclosed",
           "actors": [],
           "engagementId": "project-1fs89hb"
-        },
-        {
-          "id": "project-d919qp",
-          "clientId": "client-h2vztb",
-          "title": "Benelux 烈酒/POS物料渠道供货项目",
-          "detail": "Benelux本地履约及3PL协同。",
-          "original": "Benelux 烈酒/POS物料渠道供货项目（仓-经销商/店）\nBenelux本地履约及3PL协同。",
-          "types": [
-            "仓-经销商/店"
-          ],
-          "attribute": "logistics",
-          "scope": "country",
-          "region": "",
-          "countryId": "NL",
-          "reference": false,
-          "areaId": "europe",
-          "contextAreas": [
-            "europe"
-          ],
-          "eligibleCountryIds": [
-            "NL"
-          ],
-          "matrixCells": [
-            "S98"
-          ],
-          "sourceIds": [],
-          "state": "disclosed",
-          "actors": [],
-          "engagementId": "project-d919qp"
-        },
-        {
-          "id": "project-2o2q5o",
-          "clientId": "client-h2vztb",
-          "title": "Benelux 烈酒/POS物料渠道供货项目",
-          "detail": "Benelux本地履约及3PL协同。",
-          "original": "Benelux 烈酒/POS物料渠道供货项目（仓-经销商/店）\nBenelux本地履约及3PL协同。",
-          "types": [
-            "仓-经销商/店"
-          ],
-          "attribute": "logistics",
-          "scope": "country",
-          "region": "",
-          "countryId": "BE",
-          "reference": false,
-          "areaId": "europe",
-          "contextAreas": [
-            "europe"
-          ],
-          "eligibleCountryIds": [
-            "BE"
-          ],
-          "matrixCells": [
-            "V98"
-          ],
-          "sourceIds": [],
-          "state": "disclosed",
-          "actors": [],
-          "engagementId": "project-2o2q5o"
         },
         {
           "id": "project-or1y60",
@@ -30549,9 +30128,9 @@
       ],
       "report": {
         "customers": 25,
-        "sourceLinks": 103,
-        "projectCells": 115,
-        "projects": 109,
+        "sourceLinks": 99,
+        "projectCells": 111,
+        "projects": 105,
         "regional": 5,
         "manufacturing": 0,
         "untyped": 37,
@@ -30563,7 +30142,16 @@
         "文娱潮玩",
         "服装鞋帽",
         "烈酒"
-      ]
+      ],
+      "sourceAuditRevision": "2026-10-23-links-v1",
+      "sourceAuditPreviousFingerprints": [
+        "76619adb",
+        "fd75d773"
+      ],
+      "sourceAuditCounts": {
+        "sources": 99,
+        "records": 105
+      }
     },
     {
       "schemaVersion": "2.0",
@@ -30576,17 +30164,17 @@
           "id": "client-bl5ah0",
           "name": "凯撒医疗",
           "subindustry": "医院",
-          "overview": "生产及运营布局：以美国医院、门诊及药房网络为核心；药品履约节点包括加州与华盛顿州。[1][4]\n\n产能及网络分工：供应链统一管理供应商交付、收货和运输路由；Renton自动化药房承担处方处理与发运。[2][4]\n\n需求市场：服务美国会员及医疗机构，物资流向以院区补给和患者处方交付为主。[1]",
+          "overview": "生产及运营布局：以美国医院、门诊及药房网络为核心；药品履约节点包括加州与华盛顿州。[1][3]\n\n产能及网络分工：供应链统一管理供应商交付、收货和运输路由；Renton自动化药房承担处方处理与发运。[2][3]\n\n需求市场：服务美国会员及医疗机构，物资流向以院区补给和患者处方交付为主。[1]",
           "carrierText": "凯撒供应链及运输控制中心：美国；统一供应商送货、运输路由与大件/特殊货物调度。[2]\nUPS、FedEx：美国；按凯撒账户及路由要求承接小包裹空运和陆运。[2]",
           "matrixRow": 3,
           "sections": [
             {
               "label": "生产及运营布局",
-              "text": "以美国医院、门诊及药房网络为核心；药品履约节点包括加州与华盛顿州。[1][4]"
+              "text": "以美国医院、门诊及药房网络为核心；药品履约节点包括加州与华盛顿州。[1][3]"
             },
             {
               "label": "产能及网络分工",
-              "text": "供应链统一管理供应商交付、收货和运输路由；Renton自动化药房承担处方处理与发运。[2][4]"
+              "text": "供应链统一管理供应商交付、收货和运输路由；Renton自动化药房承担处方处理与发运。[2][3]"
             },
             {
               "label": "需求市场",
@@ -30596,13 +30184,12 @@
           "sourceIds": [
             "source-1x5lwu5",
             "source-nd2io9",
-            "source-t1uurc",
             "source-s7a204"
           ],
           "footprint": {
             "production": {
               "label": "生产及运营布局",
-              "text": "以美国医院、门诊及药房网络为核心；药品履约节点包括加州与华盛顿州。[1][4]",
+              "text": "以美国医院、门诊及药房网络为核心；药品履约节点包括加州与华盛顿州。[1][3]",
               "countryIds": [
                 "US"
               ],
@@ -30616,12 +30203,6 @@
               ],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1x5lwu5",
-            "2": "source-nd2io9",
-            "3": "source-t1uurc",
-            "4": "source-s7a204"
           },
           "actors": [
             {
@@ -30673,31 +30254,35 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1x5lwu5",
+            "2": "source-nd2io9",
+            "3": "source-s7a204"
+          }
         },
         {
           "id": "client-158t8xz",
           "name": "HCA医疗",
           "subindustry": "医院",
-          "overview": "生产及运营布局：医疗服务以美国为主，英国设有独立医疗机构网络。[1][4]\n\n产能及网络分工：HealthTrust统筹采购及供应链，区域配送中心连接供应商与医院，承担储备、订单处理和院区补给。[2][3]\n\n需求市场：美国医院、门诊与手术中心是主要需求端；英国需求主要来自当地医院网络。[1][4]",
-          "carrierText": "HealthTrust／HCA供应链团队：美国；集中采购、区域配送中心运营及医院物资补给。[2][3]",
+          "overview": "生产及运营布局：医疗服务以美国为主，英国设有独立医疗机构网络。[2][3]\n\n产能及网络分工：HealthTrust统筹采购及供应链，区域配送中心连接供应商与医院，承担储备、订单处理和院区补给。[1][2]\n\n需求市场：美国医院、门诊与手术中心是主要需求端；英国需求主要来自当地医院网络。[2][3]",
+          "carrierText": "HealthTrust／HCA供应链团队：美国；集中采购、区域配送中心运营及医院物资补给。[1][2]",
           "matrixRow": 8,
           "sections": [
             {
               "label": "生产及运营布局",
-              "text": "医疗服务以美国为主，英国设有独立医疗机构网络。[1][4]"
+              "text": "医疗服务以美国为主，英国设有独立医疗机构网络。[2][3]"
             },
             {
               "label": "产能及网络分工",
-              "text": "HealthTrust统筹采购及供应链，区域配送中心连接供应商与医院，承担储备、订单处理和院区补给。[2][3]"
+              "text": "HealthTrust统筹采购及供应链，区域配送中心连接供应商与医院，承担储备、订单处理和院区补给。[1][2]"
             },
             {
               "label": "需求市场",
-              "text": "美国医院、门诊与手术中心是主要需求端；英国需求主要来自当地医院网络。[1][4]"
+              "text": "美国医院、门诊与手术中心是主要需求端；英国需求主要来自当地医院网络。[2][3]"
             }
           ],
           "sourceIds": [
-            "source-ym1ju1",
             "source-mqttge",
             "source-1e6c41e",
             "source-1ecr97r"
@@ -30705,7 +30290,7 @@
           "footprint": {
             "production": {
               "label": "生产及运营布局",
-              "text": "医疗服务以美国为主，英国设有独立医疗机构网络。[1][4]",
+              "text": "医疗服务以美国为主，英国设有独立医疗机构网络。[3]",
               "countryIds": [
                 "US",
                 "GB"
@@ -30714,7 +30299,7 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "美国医院、门诊与手术中心是主要需求端；英国需求主要来自当地医院网络。[1][4]",
+              "text": "美国医院、门诊与手术中心是主要需求端；英国需求主要来自当地医院网络。[3]",
               "countryIds": [
                 "US",
                 "GB"
@@ -30722,18 +30307,12 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-ym1ju1",
-            "2": "source-mqttge",
-            "3": "source-1e6c41e",
-            "4": "source-1ecr97r"
-          },
           "actors": [
             {
               "id": "provider-1kkh1ww",
               "name": "HealthTrust／HCA供应链团队",
               "role": "客户自营",
-              "duty": "美国；集中采购、区域配送中心运营及医院物资补给。[2][3]",
+              "duty": "美国；集中采购、区域配送中心运营及医院物资补给。[1][2]",
               "quotes": [],
               "sourceIds": [
                 "source-mqttge",
@@ -30749,7 +30328,12 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-mqttge",
+            "2": "source-1e6c41e",
+            "3": "source-1ecr97r"
+          }
         },
         {
           "id": "client-1k1plr9",
@@ -30796,12 +30380,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-lkthox",
-            "2": "source-46d4z6",
-            "3": "source-mhy46n",
-            "4": "source-10cwisw"
-          },
           "actors": [
             {
               "id": "provider-1lract7",
@@ -30823,7 +30401,13 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-lkthox",
+            "2": "source-46d4z6",
+            "3": "source-mhy46n",
+            "4": "source-10cwisw"
+          }
         },
         {
           "id": "client-k8tx6f",
@@ -30870,12 +30454,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-lra67f",
-            "2": "source-1qn0zij",
-            "3": "source-dcbugx",
-            "4": "source-3i1u19"
-          },
           "actors": [
             {
               "id": "provider-1kk7t3v",
@@ -30910,7 +30488,13 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-lra67f",
+            "2": "source-1qn0zij",
+            "3": "source-dcbugx",
+            "4": "source-3i1u19"
+          }
         },
         {
           "id": "client-qexx5u",
@@ -30958,13 +30542,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-17yafyz",
-            "2": "source-1tgk0kz",
-            "3": "source-4pts8s",
-            "4": "source-1lh0pv6",
-            "5": "source-4lxe9k"
-          },
           "actors": [
             {
               "id": "provider-32pvua",
@@ -30986,7 +30563,14 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-17yafyz",
+            "2": "source-1tgk0kz",
+            "3": "source-4pts8s",
+            "4": "source-1lh0pv6",
+            "5": "source-4lxe9k"
+          }
         },
         {
           "id": "client-6k6gri",
@@ -31039,13 +30623,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-27lkcm",
-            "2": "source-rtjp6c",
-            "3": "source-5x02t0",
-            "4": "source-cx3zud",
-            "5": "source-si62h6"
-          },
           "actors": [
             {
               "id": "provider-1358xdt",
@@ -31079,7 +30656,14 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-27lkcm",
+            "2": "source-rtjp6c",
+            "3": "source-5x02t0",
+            "4": "source-cx3zud",
+            "5": "source-si62h6"
+          }
         },
         {
           "id": "client-1htgb7u",
@@ -31131,14 +30715,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-rcyets",
-            "2": "source-s0gwkt",
-            "3": "source-1rnxcid",
-            "4": "source-1u47dwt",
-            "5": "source-1mlk3ii",
-            "6": "source-1dcnsd7"
-          },
           "actors": [
             {
               "id": "provider-mdy056",
@@ -31159,7 +30735,15 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-rcyets",
+            "2": "source-s0gwkt",
+            "3": "source-1rnxcid",
+            "4": "source-1u47dwt",
+            "5": "source-1mlk3ii",
+            "6": "source-1dcnsd7"
+          }
         },
         {
           "id": "client-l3gj5b",
@@ -31208,12 +30792,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-1jqy9oc",
-            "2": "source-jnlscw",
-            "3": "source-1094005",
-            "4": "source-3afwnp"
-          },
           "actors": [
             {
               "id": "provider-19rurl4",
@@ -31253,7 +30831,13 @@
             "ES",
             "PL"
           ],
-          "recordsCount": 4
+          "recordsCount": 4,
+          "sourceRefs": {
+            "1": "source-1jqy9oc",
+            "2": "source-jnlscw",
+            "3": "source-1094005",
+            "4": "source-3afwnp"
+          }
         },
         {
           "id": "client-mkczvw",
@@ -31305,13 +30889,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-zuullf",
-            "2": "source-a5mpvj",
-            "3": "source-1dyka5q",
-            "4": "source-tsmjd4",
-            "5": "source-yj8ydp"
-          },
           "actors": [
             {
               "id": "provider-1otfg47",
@@ -31354,14 +30931,21 @@
             "AE",
             "TR"
           ],
-          "recordsCount": 5
+          "recordsCount": 5,
+          "sourceRefs": {
+            "1": "source-zuullf",
+            "2": "source-a5mpvj",
+            "3": "source-1dyka5q",
+            "4": "source-tsmjd4",
+            "5": "source-yj8ydp"
+          }
         },
         {
           "id": "client-ops5a5",
           "name": "阿斯利康",
           "subindustry": "精温(温控冷链)",
           "overview": "生产及运营布局：制造网络以欧洲、美国及亚洲为支点；英国、瑞典、中国和澳大利亚等地承担不同制造与研发功能。[1][4]\n\n产能及网络分工：美国增加制造及研发投资，新加坡规划ADC制造；澳大利亚制造基地承担本地及出口供货。[2][3][4]\n\n需求市场：全球处方药市场，重点覆盖肿瘤、心血管肾脏代谢及呼吸疾病；美国是重要需求市场。[1][2]",
-          "carrierText": "Yusen Logistics：欧洲等市场；按披露合作承接制造产品的医药道路运输与物流协同。[5]",
+          "carrierText": "Yusen Logistics：2017年披露的运输合作，承接原料、散装药品及处方药的公路、航空与海运物流；以欧洲医药公路网络及控制塔组织运输。[5]",
           "matrixRow": 49,
           "sections": [
             {
@@ -31408,19 +30992,12 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1kzra5k",
-            "2": "source-qas32h",
-            "3": "source-erhxf",
-            "4": "source-a2zyax",
-            "5": "source-1hyjwfc"
-          },
           "actors": [
             {
               "id": "provider-hnbky4",
               "name": "Yusen Logistics",
               "role": "第三方服务",
-              "duty": "欧洲等市场；按披露合作承接制造产品的医药道路运输与物流协同。[5]",
+              "duty": "2017年合作案例；原料、散装药品及处方药的公路、航空与海运物流，欧洲医药公路网络及控制塔协同。[5]",
               "quotes": [],
               "sourceIds": [
                 "source-1hyjwfc"
@@ -31433,7 +31010,14 @@
             }
           ],
           "countryIds": [],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1kzra5k",
+            "2": "source-qas32h",
+            "3": "source-erhxf",
+            "4": "source-a2zyax",
+            "5": "source-1hyjwfc"
+          }
         },
         {
           "id": "client-1u195pk",
@@ -31481,12 +31065,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1ydpi4k",
-            "2": "source-15uex3p",
-            "3": "source-1txttew",
-            "4": "source-1ds7mtv"
-          },
           "actors": [
             {
               "id": "provider-16isug2",
@@ -31517,7 +31095,13 @@
             }
           ],
           "countryIds": [],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1ydpi4k",
+            "2": "source-15uex3p",
+            "3": "source-1txttew",
+            "4": "source-1ds7mtv"
+          }
         },
         {
           "id": "client-82634f",
@@ -31563,12 +31147,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1vo8z3b",
-            "2": "source-or1f2j",
-            "3": "source-1sy1b9s",
-            "4": "source-1fj4bo2"
-          },
           "actors": [
             {
               "id": "provider-1ml5moh",
@@ -31589,7 +31167,13 @@
           "countryIds": [
             "CN"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1vo8z3b",
+            "2": "source-or1f2j",
+            "3": "source-1sy1b9s",
+            "4": "source-1fj4bo2"
+          }
         },
         {
           "id": "client-6upfm2",
@@ -31636,12 +31220,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1m4jduw",
-            "2": "source-1jafh56",
-            "3": "source-bcpz0u",
-            "4": "source-1sp5gum"
-          },
           "actors": [
             {
               "id": "provider-907ufz",
@@ -31677,7 +31255,13 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1m4jduw",
+            "2": "source-1jafh56",
+            "3": "source-bcpz0u",
+            "4": "source-1sp5gum"
+          }
         },
         {
           "id": "client-1f6urk6",
@@ -31724,12 +31308,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-rqmedq",
-            "2": "source-lwspkd",
-            "3": "source-ey0vs6",
-            "4": "source-1i4buzp"
-          },
           "actors": [
             {
               "id": "provider-1otfg47",
@@ -31765,7 +31343,13 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-rqmedq",
+            "2": "source-lwspkd",
+            "3": "source-ey0vs6",
+            "4": "source-1i4buzp"
+          }
         },
         {
           "id": "client-kqcmm1",
@@ -31817,12 +31401,6 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-b1bnaw",
-            "2": "source-1pvbelv",
-            "3": "source-143mr42",
-            "4": "source-80iaa"
-          },
           "actors": [
             {
               "id": "provider-1eudo17",
@@ -31845,7 +31423,13 @@
             "NL",
             "SE"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-b1bnaw",
+            "2": "source-1pvbelv",
+            "3": "source-143mr42",
+            "4": "source-80iaa"
+          }
         },
         {
           "id": "client-1ao246l",
@@ -31893,13 +31477,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-j07391",
-            "2": "source-k5tsjl",
-            "3": "source-phgatl",
-            "4": "source-1nsmn99",
-            "5": "source-1f8nfyj"
-          },
           "actors": [
             {
               "id": "provider-1f47jiv",
@@ -31917,7 +31494,14 @@
             }
           ],
           "countryIds": [],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-j07391",
+            "2": "source-k5tsjl",
+            "3": "source-phgatl",
+            "4": "source-1nsmn99",
+            "5": "source-1f8nfyj"
+          }
         },
         {
           "id": "client-1l5yhu7",
@@ -31963,12 +31547,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-cypaty",
-            "2": "source-1vr6i0b",
-            "3": "source-1ez9p8z",
-            "4": "source-1o9es9l"
-          },
           "actors": [
             {
               "id": "provider-1f47jiv",
@@ -31985,7 +31563,13 @@
             }
           ],
           "countryIds": [],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-cypaty",
+            "2": "source-1vr6i0b",
+            "3": "source-1ez9p8z",
+            "4": "source-1o9es9l"
+          }
         },
         {
           "id": "client-zitqn8",
@@ -32032,13 +31616,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-114sw5b",
-            "2": "source-18x99dj",
-            "3": "source-1rs6h6v",
-            "4": "source-it8fic",
-            "5": "source-xc8w23"
-          },
           "actors": [
             {
               "id": "provider-1f47jiv",
@@ -32055,7 +31632,14 @@
             }
           ],
           "countryIds": [],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-114sw5b",
+            "2": "source-18x99dj",
+            "3": "source-1rs6h6v",
+            "4": "source-it8fic",
+            "5": "source-xc8w23"
+          }
         },
         {
           "id": "client-153ycea",
@@ -32103,13 +31687,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-d88phr",
-            "2": "source-1j6nv5z",
-            "3": "source-rj4r26",
-            "4": "source-1ng8sfu",
-            "5": "source-1w8xc52"
-          },
           "actors": [
             {
               "id": "provider-1f47jiv",
@@ -32140,7 +31717,14 @@
             }
           ],
           "countryIds": [],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-d88phr",
+            "2": "source-1j6nv5z",
+            "3": "source-rj4r26",
+            "4": "source-1ng8sfu",
+            "5": "source-1w8xc52"
+          }
         },
         {
           "id": "client-rkgyuf",
@@ -32188,13 +31772,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-fqr0gm",
-            "2": "source-nr1w5y",
-            "3": "source-19nt5f2",
-            "4": "source-8k1vni",
-            "5": "source-182entz"
-          },
           "actors": [
             {
               "id": "provider-1dx9xme",
@@ -32230,7 +31807,14 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-fqr0gm",
+            "2": "source-nr1w5y",
+            "3": "source-19nt5f2",
+            "4": "source-8k1vni",
+            "5": "source-182entz"
+          }
         },
         {
           "id": "client-7jbfx2",
@@ -32277,13 +31861,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-12akzvj",
-            "2": "source-33k52d",
-            "3": "source-3tax4f",
-            "4": "source-1ohh5yr",
-            "5": "source-1kgt6ha"
-          },
           "actors": [
             {
               "id": "provider-1p1pbec",
@@ -32321,7 +31898,14 @@
             "US",
             "CA"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-12akzvj",
+            "2": "source-33k52d",
+            "3": "source-3tax4f",
+            "4": "source-1ohh5yr",
+            "5": "source-1kgt6ha"
+          }
         },
         {
           "id": "client-146wzce",
@@ -32369,13 +31953,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1car9tq",
-            "2": "source-gmsl3x",
-            "3": "source-1sqhqcj",
-            "4": "source-1m90oxi",
-            "5": "source-rabslc"
-          },
           "actors": [
             {
               "id": "provider-1p7ch2u",
@@ -32410,39 +31987,44 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1car9tq",
+            "2": "source-gmsl3x",
+            "3": "source-1sqhqcj",
+            "4": "source-1m90oxi",
+            "5": "source-rabslc"
+          }
         },
         {
           "id": "client-1k6xi8v",
           "name": "嘉德诺健康",
           "subindustry": "医疗商业(医药分销)",
-          "overview": "生产及运营布局：美国为药品及医疗用品分销核心市场，并拥有国际医疗产品制造业务。[1]\n\n产能及网络分工：药品与医疗用品采用相应分销网络，区域中心持续引入自动化，以支持医院及药房订单履约。[2][3][4]\n\n需求市场：主要面向医院、药房及其他医疗服务机构的日常补给需求。[1][2][3]",
-          "carrierText": "Cardinal Health自营网络：美国；药品及医疗用品分销中心与渠道供货。[2][3]\nSwisslog：美国药品分销扩建项目；仓储自动化系统支持。[4]",
+          "overview": "生产及运营布局：美国为药品及医疗用品分销核心市场，配送网络服务药房、医院及其他医疗机构。[1][2]\n\n产能及网络分工：药品与医疗用品采用相应分销网络，区域中心持续引入自动化，以支持医院及药房订单履约。[1][2]\n\n需求市场：需求端主要为医院、药房及其他医疗服务机构的日常补给需求。[1][2]",
+          "carrierText": "Cardinal Health自营网络：美国；药品及医疗用品分销中心与渠道供货。[1]\nSwisslog：美国药品分销扩建项目；仓储自动化系统支持。[2]",
           "matrixRow": 114,
           "sections": [
             {
               "label": "生产及运营布局",
-              "text": "美国为药品及医疗用品分销核心市场，并拥有国际医疗产品制造业务。[1]"
+              "text": "美国为药品及医疗用品分销核心市场，配送网络服务药房、医院及其他医疗机构。[1][2]"
             },
             {
               "label": "产能及网络分工",
-              "text": "药品与医疗用品采用相应分销网络，区域中心持续引入自动化，以支持医院及药房订单履约。[2][3][4]"
+              "text": "药品与医疗用品采用相应分销网络，区域中心持续引入自动化，以支持医院及药房订单履约。[1][2]"
             },
             {
               "label": "需求市场",
-              "text": "主要面向医院、药房及其他医疗服务机构的日常补给需求。[1][2][3]"
+              "text": "需求端主要为医院、药房及其他医疗服务机构的日常补给需求。[1][2]"
             }
           ],
           "sourceIds": [
-            "source-g9dv5h",
-            "source-162a9nj",
             "source-11a0zhb",
             "source-tjmkpo"
           ],
           "footprint": {
             "production": {
               "label": "生产及运营布局",
-              "text": "美国为药品及医疗用品分销核心市场，并拥有国际医疗产品制造业务。[1]",
+              "text": "美国为药品及医疗用品分销核心市场，并拥有国际医疗产品制造业务。",
               "countryIds": [
                 "US"
               ],
@@ -32450,26 +32032,19 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "主要面向医院、药房及其他医疗服务机构的日常补给需求。[1][2][3]",
+              "text": "主要面向医院、药房及其他医疗服务机构的日常补给需求。[1]",
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-g9dv5h",
-            "2": "source-162a9nj",
-            "3": "source-11a0zhb",
-            "4": "source-tjmkpo"
           },
           "actors": [
             {
               "id": "provider-1nd6g5p",
               "name": "Cardinal Health自营网络",
               "role": "客户自营",
-              "duty": "美国；药品及医疗用品分销中心与渠道供货。[2][3]",
+              "duty": "美国；药品及医疗用品分销中心与渠道供货。[1]",
               "quotes": [],
               "sourceIds": [
-                "source-162a9nj",
                 "source-11a0zhb"
               ],
               "countryIds": [
@@ -32482,7 +32057,7 @@
               "id": "provider-tbhmw2",
               "name": "Swisslog",
               "role": "第三方服务",
-              "duty": "美国药品分销扩建项目；仓储自动化系统支持。[4]",
+              "duty": "美国药品分销扩建项目；仓储自动化系统支持。[2]",
               "quotes": [],
               "sourceIds": [
                 "source-tjmkpo"
@@ -32497,19 +32072,23 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-11a0zhb",
+            "2": "source-tjmkpo"
+          }
         },
         {
           "id": "client-10t0bor",
           "name": "国药集团",
           "subindustry": "医疗商业(医药分销)",
-          "overview": "生产及运营布局：境内形成全国医药物流及分销网络，国药一致等流通主体连接区域渠道与零售业务。[1][3]\n\n产能及网络分工：2025年披露7个中央物流枢纽、43个省级中心及超过300万平方米仓储，全国网络支撑医药储配与渠道供货。[2]\n\n需求市场：主要服务各级医院、零售药房及基层医疗机构，境内网络构成医药供应链运营基础。[1][2]",
-          "carrierText": "国药集团及国药控股等流通主体：中国；医药仓储、分销和医疗机构配送，作为境内网络能力参考。[1][2][3]",
+          "overview": "生产及运营布局：境内形成全国医药物流及分销网络，国药一致等流通主体连接区域渠道与零售业务。[1]\n\n产能及网络分工：2025年披露7个中央物流枢纽、43个省级中心及超过300万平方米仓储，全国网络支撑医药储配与渠道供货。[2]\n\n需求市场：主要服务各级医院、零售药房及基层医疗机构，境内网络构成医药供应链运营基础。[1][2]",
+          "carrierText": "国药集团及国药控股等流通主体：中国；医药仓储、分销和医疗机构配送，作为境内网络能力参考。[1][2]",
           "matrixRow": 119,
           "sections": [
             {
               "label": "生产及运营布局",
-              "text": "境内形成全国医药物流及分销网络，国药一致等流通主体连接区域渠道与零售业务。[1][3]"
+              "text": "境内形成全国医药物流及分销网络，国药一致等流通主体连接区域渠道与零售业务。[1]"
             },
             {
               "label": "产能及网络分工",
@@ -32522,13 +32101,12 @@
           ],
           "sourceIds": [
             "source-1crlnko",
-            "source-z5xqmr",
-            "source-1qpokza"
+            "source-z5xqmr"
           ],
           "footprint": {
             "production": {
               "label": "生产及运营布局",
-              "text": "境内形成全国医药物流及分销网络，国药一致等流通主体连接区域渠道与零售业务。[1][3]",
+              "text": "境内形成全国医药物流及分销网络，国药一致等流通主体连接区域渠道与零售业务。[1]",
               "countryIds": [],
               "areaIds": []
             },
@@ -32539,22 +32117,16 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1crlnko",
-            "2": "source-z5xqmr",
-            "3": "source-1qpokza"
-          },
           "actors": [
             {
               "id": "provider-8vo215",
               "name": "国药集团及国药控股等流通主体",
               "role": "第三方服务",
-              "duty": "中国；医药仓储、分销和医疗机构配送，作为境内网络能力参考。[1][2][3]",
+              "duty": "中国；医药仓储、分销和医疗机构配送，作为境内网络能力参考。[1][2]",
               "quotes": [],
               "sourceIds": [
                 "source-1crlnko",
-                "source-z5xqmr",
-                "source-1qpokza"
+                "source-z5xqmr"
               ],
               "countryIds": [
                 "CN"
@@ -32566,14 +32138,18 @@
           "countryIds": [
             "CN"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1crlnko",
+            "2": "source-z5xqmr"
+          }
         },
         {
           "id": "client-5rsht",
           "name": "菲尼克斯医药",
           "subindustry": "医疗商业(医药分销)",
-          "overview": "生产及运营布局：经营网络聚焦欧洲；总部位于德国，各国子公司建立本地批发和预批发网络。[1][2]\n\n产能及网络分工：德国、英国、意大利、荷兰及北欧等地分销中心支撑就近供货，跨国集团共享物流及药品供应能力。[1][4]\n\n需求市场：药房、医院及制药企业为主要客户；业务包含本地药品供应和制药商物流服务。[1][4]",
-          "carrierText": "PHOENIX及各国子公司：欧洲；自营药品分销、仓储与本地供货；包括英国PHOENIX Medical Supplies、荷兰Brocacef及瑞典Tamro。[1][4]",
+          "overview": "生产及运营布局：经营网络聚焦欧洲；总部位于德国，各国子公司建立本地批发和预批发网络。[1][2]\n\n产能及网络分工：德国、英国、意大利、荷兰及北欧等地分销中心支撑就近供货，跨国集团共享物流及药品供应能力。[1][3]\n\n需求市场：药房、医院及制药企业为主要客户；业务包含本地药品供应和制药商物流服务。[1][3]",
+          "carrierText": "PHOENIX及各国子公司：欧洲；自营药品分销、仓储与本地供货；包括英国PHOENIX Medical Supplies、荷兰Brocacef及瑞典Tamro。[1][3]",
           "matrixRow": 124,
           "sections": [
             {
@@ -32582,17 +32158,16 @@
             },
             {
               "label": "产能及网络分工",
-              "text": "德国、英国、意大利、荷兰及北欧等地分销中心支撑就近供货，跨国集团共享物流及药品供应能力。[1][4]"
+              "text": "德国、英国、意大利、荷兰及北欧等地分销中心支撑就近供货，跨国集团共享物流及药品供应能力。[1][3]"
             },
             {
               "label": "需求市场",
-              "text": "药房、医院及制药企业为主要客户；业务包含本地药品供应和制药商物流服务。[1][4]"
+              "text": "药房、医院及制药企业为主要客户；业务包含本地药品供应和制药商物流服务。[1][3]"
             }
           ],
           "sourceIds": [
             "source-1n58p35",
             "source-wpw9l6",
-            "source-qyum17",
             "source-tmsdgd"
           ],
           "footprint": {
@@ -32608,23 +32183,17 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "药房、医院及制药企业为主要客户；业务包含本地药品供应和制药商物流服务。[1][4]",
+              "text": "药房、医院及制药企业为主要客户；业务包含本地药品供应和制药商物流服务。[1][3]",
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1n58p35",
-            "2": "source-wpw9l6",
-            "3": "source-qyum17",
-            "4": "source-tmsdgd"
           },
           "actors": [
             {
               "id": "provider-1ac6qsr",
               "name": "PHOENIX及各国子公司",
               "role": "第三方服务",
-              "duty": "欧洲；自营药品分销、仓储与本地供货；包括英国PHOENIX Medical Supplies、荷兰Brocacef及瑞典Tamro。[1][4]",
+              "duty": "欧洲；自营药品分销、仓储与本地供货；包括英国PHOENIX Medical Supplies、荷兰Brocacef及瑞典Tamro。[1][3]",
               "quotes": [],
               "sourceIds": [
                 "source-1n58p35",
@@ -32650,14 +32219,19 @@
             "PL",
             "SE"
           ],
-          "recordsCount": 7
+          "recordsCount": 7,
+          "sourceRefs": {
+            "1": "source-1n58p35",
+            "2": "source-wpw9l6",
+            "3": "source-tmsdgd"
+          }
         },
         {
           "id": "client-yxet8s",
           "name": "强生",
           "subindustry": "医药工业(制药)",
-          "overview": "生产及运营布局：创新药与医疗科技构成集团两大业务，制造研发分布于美国、比利时、爱尔兰等地。[1][3][4]\n\n产能及网络分工：美国追加制造投资；创新药生产包括化学药、生物药及细胞治疗，各地工厂与市场供应网络协同。[2][3][4][5]\n\n需求市场：北美、欧洲和亚太构成主要需求区域，创新药面向肿瘤、免疫及其他专科疾病市场。[1]",
-          "carrierText": "强生自有供应链及物流管理团队：全球；生产、计划与库存协同，支持创新药商业供应。[5]",
+          "overview": "生产及运营布局：创新药与医疗科技构成集团两大业务，制造研发分布于美国、比利时、爱尔兰等地。[1][3][4]\n\n产能及网络分工：美国追加制造投资；创新药生产包括化学药、生物药及细胞治疗，各地工厂与市场供应网络协同。[2][3][4]\n\n需求市场：北美、欧洲和亚太构成主要需求区域，创新药面向肿瘤、免疫及其他专科疾病市场。[1]",
+          "carrierText": "",
           "matrixRow": 129,
           "sections": [
             {
@@ -32666,7 +32240,7 @@
             },
             {
               "label": "产能及网络分工",
-              "text": "美国追加制造投资；创新药生产包括化学药、生物药及细胞治疗，各地工厂与市场供应网络协同。[2][3][4][5]"
+              "text": "美国追加制造投资；创新药生产包括化学药、生物药及细胞治疗，各地工厂与市场供应网络协同。[2][3][4]"
             },
             {
               "label": "需求市场",
@@ -32677,8 +32251,7 @@
             "source-1kltk6p",
             "source-2ne8j5",
             "source-p286h8",
-            "source-qovrzz",
-            "source-ywimql"
+            "source-qovrzz"
           ],
           "footprint": {
             "production": {
@@ -32701,30 +32274,15 @@
               ]
             }
           },
+          "actors": [],
+          "countryIds": [],
+          "recordsCount": 1,
           "sourceRefs": {
             "1": "source-1kltk6p",
             "2": "source-2ne8j5",
             "3": "source-p286h8",
-            "4": "source-qovrzz",
-            "5": "source-ywimql"
-          },
-          "actors": [
-            {
-              "id": "provider-u0aw5u",
-              "name": "强生自有供应链及物流管理团队",
-              "role": "客户自营",
-              "duty": "全球；生产、计划与库存协同，支持创新药商业供应。[5]",
-              "quotes": [],
-              "sourceIds": [
-                "source-ywimql"
-              ],
-              "countryIds": [],
-              "scopeNames": [],
-              "clientId": "client-yxet8s"
-            }
-          ],
-          "countryIds": [],
-          "recordsCount": 1
+            "4": "source-qovrzz"
+          }
         },
         {
           "id": "client-1hdvap5",
@@ -32772,13 +32330,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1t0buk1",
-            "2": "source-1wuzgij",
-            "3": "source-bpukpu",
-            "4": "source-zko8jl",
-            "5": "source-ppvnhl"
-          },
           "actors": [
             {
               "id": "provider-1ml5moh",
@@ -32801,14 +32352,21 @@
           "countryIds": [
             "GR"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1t0buk1",
+            "2": "source-1wuzgij",
+            "3": "source-bpukpu",
+            "4": "source-zko8jl",
+            "5": "source-ppvnhl"
+          }
         },
         {
           "id": "client-1wfwgzc",
           "name": "礼来",
           "subindustry": "医药工业(制药)",
-          "overview": "生产及运营布局：生产布局以美国和欧洲为重点；欧洲网络包括爱尔兰、法国、意大利及西班牙等基地。[1][2]\n\n产能及网络分工：美国新增及扩建制造产能应对糖尿病、肥胖症等药品需求；欧洲生产基地通过跨境运输连接区域节点。[1][2][4]\n\n需求市场：美国为重要需求端，欧洲及其他国际市场构成全球供给网络。[2][3]",
-          "carrierText": "DHL Freight：西班牙Alcobendas至比利时Tessenderlo、Boortmeerbeek及荷兰Schiphol-Rijk；药品跨境公路运输，2024年披露采用生物柴油车辆。[4]",
+          "overview": "生产及运营布局：生产布局以美国和欧洲为重点；欧洲网络包括爱尔兰、法国、意大利及西班牙等基地。[1][2]\n\n产能及网络分工：美国新增及扩建制造产能应对糖尿病、肥胖症等药品需求；欧洲生产基地通过跨境运输连接区域节点。[1][2][3]\n\n需求市场：美国为重要需求端，欧洲及其他国际市场构成全球供给网络。[2]",
+          "carrierText": "DHL Freight：西班牙Alcobendas至比利时Tessenderlo、Boortmeerbeek及荷兰Schiphol-Rijk；药品跨境公路运输，2024年披露采用生物柴油车辆。[3]",
           "matrixRow": 139,
           "sections": [
             {
@@ -32817,17 +32375,16 @@
             },
             {
               "label": "产能及网络分工",
-              "text": "美国新增及扩建制造产能应对糖尿病、肥胖症等药品需求；欧洲生产基地通过跨境运输连接区域节点。[1][2][4]"
+              "text": "美国新增及扩建制造产能应对糖尿病、肥胖症等药品需求；欧洲生产基地通过跨境运输连接区域节点。[1][2][3]"
             },
             {
               "label": "需求市场",
-              "text": "美国为重要需求端，欧洲及其他国际市场构成全球供给网络。[2][3]"
+              "text": "美国为重要需求端，欧洲及其他国际市场构成全球供给网络。[2]"
             }
           ],
           "sourceIds": [
             "source-ssczax",
             "source-xuqv42",
-            "source-1644sln",
             "source-94qi68"
           ],
           "footprint": {
@@ -32847,7 +32404,7 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "美国为重要需求端，欧洲及其他国际市场构成全球供给网络。[2][3]",
+              "text": "美国为重要需求端，欧洲及其他国际市场构成全球供给网络。[2]",
               "countryIds": [
                 "US"
               ],
@@ -32856,18 +32413,12 @@
               ]
             }
           },
-          "sourceRefs": {
-            "1": "source-ssczax",
-            "2": "source-xuqv42",
-            "3": "source-1644sln",
-            "4": "source-94qi68"
-          },
           "actors": [
             {
               "id": "provider-4uhg3g",
               "name": "DHL Freight",
               "role": "第三方服务",
-              "duty": "西班牙Alcobendas至比利时Tessenderlo、Boortmeerbeek及荷兰Schiphol-Rijk；药品跨境公路运输，2024年披露采用生物柴油车辆。[4]",
+              "duty": "西班牙Alcobendas至比利时Tessenderlo、Boortmeerbeek及荷兰Schiphol-Rijk；药品跨境公路运输，2024年披露采用生物柴油车辆。[3]",
               "quotes": [],
               "sourceIds": [
                 "source-94qi68"
@@ -32886,14 +32437,19 @@
             "ES",
             "BE"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-ssczax",
+            "2": "source-xuqv42",
+            "3": "source-94qi68"
+          }
         },
         {
           "id": "client-1iua85c",
           "name": "辉瑞",
           "subindustry": "医药工业(制药)",
           "overview": "生产及运营布局：全球制造供应网络连接美国、欧洲和其他区域；美国、比利时及爱尔兰等地是重要制造节点。[1][2]\n\n产能及网络分工：化学药、生物药及疫苗按专业网络组织生产；全球供应链连接制造、库存、温控监测和发运。[1][2][4][5]\n\n需求市场：产品面向全球医疗市场，需求覆盖疫苗、肿瘤及其他专科治疗领域。[1][3]",
-          "carrierText": "DHL：辉瑞新冠疫苗国际物流；按疫苗项目披露范围承接温控运输及供应链协同。[4]\nControlant：辉瑞疫苗供应链；运输状态、温度与实时可视化监测。[5]",
+          "carrierText": "DHL Global Forwarding、ANA：2021年比利时至日本辉瑞／BioNTech疫苗国际运输。[4]\nControlant：辉瑞疫苗供应链；运输状态、温度与实时可视化监测。[5]",
           "matrixRow": 144,
           "sections": [
             {
@@ -32936,19 +32492,12 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1lkl49z",
-            "2": "source-1iqx6p7",
-            "3": "source-2f6z6e",
-            "4": "source-xep4r8",
-            "5": "source-1q878ss"
-          },
           "actors": [
             {
               "id": "provider-50v913",
-              "name": "DHL",
+              "name": "DHL Global Forwarding、ANA",
               "role": "第三方服务",
-              "duty": "辉瑞新冠疫苗国际物流；按疫苗项目披露范围承接温控运输及供应链协同。[4]",
+              "duty": "2021年历史项目；比利时至日本辉瑞／BioNTech疫苗国际运输。[4]",
               "quotes": [],
               "sourceIds": [
                 "source-xep4r8"
@@ -32972,13 +32521,20 @@
             }
           ],
           "countryIds": [],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1lkl49z",
+            "2": "source-1iqx6p7",
+            "3": "source-2f6z6e",
+            "4": "source-xep4r8",
+            "5": "source-1q878ss"
+          }
         },
         {
           "id": "client-1qam344",
           "name": "艾伯维",
           "subindustry": "医药工业(制药)",
-          "overview": "生产及运营布局：制造设施覆盖美国、波多黎各、爱尔兰、德国、意大利、新加坡等地。[1][2]\n\n产能及网络分工：美国及欧洲中央配送中心与区域配送中心衔接制造供应；生产网络覆盖免疫、肿瘤、神经科学和医美等产品。[2][3]\n\n需求市场：美国及国际市场的医疗机构、渠道和患者构成需求端，按产品及区域配置商业供应。[2]",
+          "overview": "生产及运营布局：制造设施覆盖美国、波多黎各、爱尔兰、德国、意大利、新加坡等地。[1][2]\n\n产能及网络分工：美国及欧洲中央配送中心与区域配送中心衔接制造供应；生产网络覆盖免疫、肿瘤、神经科学和医美等产品。[2]\n\n需求市场：美国及国际市场的医疗机构、渠道和患者构成需求端，按产品及区域配置商业供应。[2]",
           "carrierText": "艾伯维自有供应链与分销网络：美国及欧洲；中央与区域配送中心衔接产品供应。[2]",
           "matrixRow": 149,
           "sections": [
@@ -32988,7 +32544,7 @@
             },
             {
               "label": "产能及网络分工",
-              "text": "美国及欧洲中央配送中心与区域配送中心衔接制造供应；生产网络覆盖免疫、肿瘤、神经科学和医美等产品。[2][3]"
+              "text": "美国及欧洲中央配送中心与区域配送中心衔接制造供应；生产网络覆盖免疫、肿瘤、神经科学和医美等产品。[2]"
             },
             {
               "label": "需求市场",
@@ -32997,8 +32553,7 @@
           ],
           "sourceIds": [
             "source-1u3el0c",
-            "source-1cpfy7g",
-            "source-1parlqx"
+            "source-1cpfy7g"
           ],
           "footprint": {
             "production": {
@@ -33023,11 +32578,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1u3el0c",
-            "2": "source-1cpfy7g",
-            "3": "source-1parlqx"
-          },
           "actors": [
             {
               "id": "provider-i4styb",
@@ -33050,7 +32600,11 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-1u3el0c",
+            "2": "source-1cpfy7g"
+          }
         }
       ],
       "sources": [
@@ -33063,17 +32617,10 @@
         },
         {
           "id": "source-nd2io9",
-          "label": "凯撒：供应商配送与运输指南（2026）",
+          "label": "凯撒：供应商配送与运输指南",
           "url": "https://supplier.kp.org/wp-content/uploads/2020/12/DistributionandTransportationGuide.pdf",
           "clientId": "client-bl5ah0",
           "cell": "E4"
-        },
-        {
-          "id": "source-t1uurc",
-          "label": "凯撒：供应链与供应商体系",
-          "url": "https://supplier.kp.org/about/",
-          "clientId": "client-bl5ah0",
-          "cell": "E5"
         },
         {
           "id": "source-s7a204",
@@ -33081,13 +32628,6 @@
           "url": "https://www.geekwire.com/2018/high-tech-healthcare-behind-scenes-inside-kaiser-permanentes-automated-lab-pharmacy/",
           "clientId": "client-bl5ah0",
           "cell": "E6"
-        },
-        {
-          "id": "source-ym1ju1",
-          "label": "HCA：医疗服务网络",
-          "url": "https://www.hcahealthcare.com/about",
-          "clientId": "client-158t8xz",
-          "cell": "E8"
         },
         {
           "id": "source-mqttge",
@@ -33322,8 +32862,8 @@
         },
         {
           "id": "source-1dyka5q",
-          "label": "新加坡EDB：赛诺菲模块化工厂",
-          "url": "https://www.edb.gov.sg/news-and-insights/sanofi-unveils-world-first-modular-facility-in-singapore",
+          "label": "Sanofi：疫苗生产网络与新加坡Modulus设施",
+          "url": "https://www.sanofi.com/en/our-science/manufacturing-and-supply/vaccines-manufacturing-and-supply",
           "clientId": "client-mkczvw",
           "cell": "E46"
         },
@@ -33364,15 +32904,15 @@
         },
         {
           "id": "source-a2zyax",
-          "label": "阿斯利康：澳大利亚制造与出口",
-          "url": "https://www.astrazeneca.com/content/az-au/about-us/manufacturing-australia.html",
+          "label": "阿斯利康：澳大利亚制造（官方）",
+          "url": "https://www.astrazeneca.com.au/about-us/manufacturing-australia.html",
           "clientId": "client-ops5a5",
           "cell": "E52"
         },
         {
           "id": "source-1hyjwfc",
-          "label": "Yusen合作：阿斯利康医药道路物流",
-          "url": "https://supplychaindigital.com/digital-supply-chain/astrazeneca-strengthens-its-partnership-yusen-logistics",
+          "label": "Yusen Logistics：阿斯利康运输合作公告（2017）",
+          "url": "https://www.prweb.com/releases/yusen_logistics_extends_business_with_astrazeneca/prweb14777901.htm",
           "clientId": "client-ops5a5",
           "cell": "E53"
         },
@@ -33700,8 +33240,8 @@
         },
         {
           "id": "source-3tax4f",
-          "label": "McKesson Canada：分销服务",
-          "url": "https://www.mckesson.ca/distribution-services",
+          "label": "McKesson Canada：药品分销服务（官方）",
+          "url": "https://www.mckesson.ca/en-CA/distribution-services",
           "clientId": "client-7jbfx2",
           "cell": "E106"
         },
@@ -33755,20 +33295,6 @@
           "cell": "E113"
         },
         {
-          "id": "source-g9dv5h",
-          "label": "嘉德诺健康：业务与经营网络",
-          "url": "https://www.cardinalhealth.com/en/about-us.html",
-          "clientId": "client-1k6xi8v",
-          "cell": "E114"
-        },
-        {
-          "id": "source-162a9nj",
-          "label": "嘉德诺健康：药品分销",
-          "url": "https://www.cardinalhealth.com/en/services/retail-pharmacy/products-and-distribution.html",
-          "clientId": "client-1k6xi8v",
-          "cell": "E115"
-        },
-        {
           "id": "source-11a0zhb",
           "label": "嘉德诺健康：医疗产品分销转型（2026）",
           "url": "https://newsroom.cardinalhealth.com/2026-04-15-A-journey-of-resiliency-Transforming-medical-products-distribution",
@@ -33797,13 +33323,6 @@
           "cell": "E120"
         },
         {
-          "id": "source-1qpokza",
-          "label": "国药一致：流通及零售业务",
-          "url": "https://en.sinopharm.com/sinopharmaccord.html",
-          "clientId": "client-10t0bor",
-          "cell": "E121"
-        },
-        {
           "id": "source-1n58p35",
           "label": "PHOENIX：欧洲各国分销节点",
           "url": "https://www.phoenixgroup.eu/en/phoenix-in-europe/across-europe",
@@ -33816,13 +33335,6 @@
           "url": "https://www.phoenixgroup.eu/en/about-phoenix/about-us",
           "clientId": "client-5rsht",
           "cell": "E125"
-        },
-        {
-          "id": "source-qyum17",
-          "label": "PHOENIX Ireland：爱尔兰业务",
-          "url": "https://www.phxireland.ie/pages/phoenix-group",
-          "clientId": "client-5rsht",
-          "cell": "E126"
         },
         {
           "id": "source-tmsdgd",
@@ -33858,13 +33370,6 @@
           "url": "https://www.jnj.com/innovativemedicine/ireland/about-us/our-presence-in-ireland",
           "clientId": "client-yxet8s",
           "cell": "E132"
-        },
-        {
-          "id": "source-ywimql",
-          "label": "强生：供应链技术与库存协同",
-          "url": "https://www.jnj.com/innovation/how-johnson-johnsons-innovative-supply-chain-technology-is-helping-transform-how-we-work-and-live",
-          "clientId": "client-yxet8s",
-          "cell": "E133"
         },
         {
           "id": "source-1t0buk1",
@@ -33916,13 +33421,6 @@
           "cell": "E140"
         },
         {
-          "id": "source-1644sln",
-          "label": "礼来：可及性与供给网络",
-          "url": "https://sustainability.lilly.com/impactareas/access-supply",
-          "clientId": "client-1wfwgzc",
-          "cell": "E141"
-        },
-        {
           "id": "source-94qi68",
           "label": "DHL Freight：西班牙至比荷药品运输（2024）",
           "url": "https://dhl-freight-connections.com/en/sustainability/dhl-freight-and-lilly-first-international-biodiesel-route-for-the-transport-of-medicines/",
@@ -33952,8 +33450,8 @@
         },
         {
           "id": "source-xep4r8",
-          "label": "DHL：新冠疫苗国际供应链案例",
-          "url": "https://www.dhl.com/global-en/delivered/innovation/ingenious-supply-chain-solutions-for-revolutionary-vaccines.html",
+          "label": "ANA／DHL：辉瑞疫苗比利时至日本运输（2021）",
+          "url": "https://www.anacargo.jp/en/news/20210222_EN.html",
           "clientId": "client-1iua85c",
           "cell": "E147"
         },
@@ -33977,13 +33475,6 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000008/abbv-20251231.htm",
           "clientId": "client-1qam344",
           "cell": "E150"
-        },
-        {
-          "id": "source-1parlqx",
-          "label": "艾伯维：爱尔兰制造扩建",
-          "url": "https://www.fiercepharma.com/pharma/abbvie-plans-500m-expansion-irish-manufacturing-site",
-          "clientId": "client-1qam344",
-          "cell": "E151"
         }
       ],
       "records": [
@@ -33991,8 +33482,8 @@
           "id": "project-13q46na",
           "clientId": "client-bl5ah0",
           "title": "Renton处方药自动化履约与医疗物资收货",
-          "detail": "处方药集中处理、配药和发运；医院物资按ASN、包装标签和预约要求交付。[2][4]",
-          "original": "Renton处方药自动化履约与医疗物资收货（成品仓）\n处方药集中处理、配药和发运；医院物资按ASN、包装标签和预约要求交付。[2][4]",
+          "detail": "处方药集中处理、配药和发运；医院物资按ASN、包装标签和预约要求交付。[2][3]",
+          "original": "Renton处方药自动化履约与医疗物资收货（成品仓）\n处方药集中处理、配药和发运；医院物资按ASN、包装标签和预约要求交付。[2][3]",
           "types": [
             "成品仓"
           ],
@@ -34039,8 +33530,8 @@
           "id": "project-7ajs0i",
           "clientId": "client-158t8xz",
           "title": "区域医疗物资配送中心与医院补给",
-          "detail": "区域中心接收并储备医疗用品，按医院需求拣选、配货，支持医疗机构日常运营。[2][3]",
-          "original": "区域医疗物资配送中心与医院补给（成品仓）\n区域中心接收并储备医疗用品，按医院需求拣选、配货，支持医疗机构日常运营。[2][3]",
+          "detail": "区域中心接收并储备医疗用品，按医院需求拣选、配货，支持医疗机构日常运营。[1][2]",
+          "original": "区域医疗物资配送中心与医院补给（成品仓）\n区域中心接收并储备医疗用品，按医院需求拣选、配货，支持医疗机构日常运营。[1][2]",
           "types": [
             "成品仓"
           ],
@@ -34069,7 +33560,7 @@
               "id": "provider-1kkh1ww",
               "name": "HealthTrust／HCA供应链团队",
               "role": "客户自营",
-              "duty": "美国；集中采购、区域配送中心运营及医院物资补给。[2][3]",
+              "duty": "美国；集中采购、区域配送中心运营及医院物资补给。[1][2]",
               "quotes": [],
               "sourceIds": [
                 "source-mqttge",
@@ -34768,9 +34259,9 @@
         {
           "id": "project-1yhet1f",
           "clientId": "client-ops5a5",
-          "title": "全球供应链服务",
-          "detail": "Yusen Logistics：欧洲等市场；按披露合作承接制造产品的医药道路运输与物流协同。[5]",
-          "original": "Yusen Logistics：欧洲等市场；按披露合作承接制造产品的医药道路运输与物流协同。[5]",
+          "title": "阿斯利康运输合作（2017年历史案例）",
+          "detail": "Yusen Logistics：2017年披露的运输合作，承接原料、散装药品及处方药的公路、航空与海运物流；以欧洲医药公路网络及控制塔组织运输。[5]",
+          "original": "Yusen Logistics：2017年披露的运输合作，承接原料、散装药品及处方药的公路、航空与海运物流；以欧洲医药公路网络及控制塔组织运输。[5]",
           "types": [],
           "attribute": "logistics",
           "scope": "global",
@@ -34786,13 +34277,13 @@
           "sourceIds": [
             "source-1hyjwfc"
           ],
-          "state": "disclosed",
+          "state": "case",
           "actors": [
             {
               "id": "provider-hnbky4",
               "name": "Yusen Logistics",
               "role": "第三方服务",
-              "duty": "欧洲等市场；按披露合作承接制造产品的医药道路运输与物流协同。[5]",
+              "duty": "2017年合作案例；原料、散装药品及处方药的公路、航空与海运物流，欧洲医药公路网络及控制塔协同。[5]",
               "quotes": [],
               "sourceIds": [
                 "source-1hyjwfc"
@@ -35444,8 +34935,8 @@
           "id": "project-1ok4gla",
           "clientId": "client-1k6xi8v",
           "title": "药品分销中心扩建及医疗用品供货",
-          "detail": "分销中心开展药品与医疗用品库存和订单处理，扩建项目引入仓储自动化。[2][3][4]",
-          "original": "药品分销中心扩建及医疗用品供货（成品仓）\n分销中心开展药品与医疗用品库存和订单处理，扩建项目引入仓储自动化。[2][3][4]",
+          "detail": "分销中心开展药品与医疗用品库存和订单处理，扩建项目引入仓储自动化。[1][2]",
+          "original": "药品分销中心扩建及医疗用品供货（成品仓）\n分销中心开展药品与医疗用品库存和订单处理，扩建项目引入仓储自动化。[1][2]",
           "types": [
             "成品仓"
           ],
@@ -35465,7 +34956,6 @@
             "F114"
           ],
           "sourceIds": [
-            "source-162a9nj",
             "source-11a0zhb",
             "source-tjmkpo"
           ],
@@ -35475,7 +34965,7 @@
               "id": "provider-tbhmw2",
               "name": "Swisslog",
               "role": "第三方服务",
-              "duty": "美国药品分销扩建项目；仓储自动化系统支持。[4]",
+              "duty": "美国药品分销扩建项目；仓储自动化系统支持。[2]",
               "quotes": [],
               "sourceIds": [
                 "source-tjmkpo"
@@ -35737,45 +35227,6 @@
           "engagementId": "project-140i27b"
         },
         {
-          "id": "project-n4y50r",
-          "clientId": "client-yxet8s",
-          "title": "全球供应链服务",
-          "detail": "强生自有供应链及物流管理团队：全球；生产、计划与库存协同，支持创新药商业供应。[5]",
-          "original": "强生自有供应链及物流管理团队：全球；生产、计划与库存协同，支持创新药商业供应。[5]",
-          "types": [],
-          "attribute": "logistics",
-          "scope": "global",
-          "region": "全球",
-          "countryId": "",
-          "reference": false,
-          "areaId": "",
-          "contextAreas": [],
-          "eligibleCountryIds": [],
-          "matrixCells": [
-            "D129"
-          ],
-          "sourceIds": [
-            "source-ywimql"
-          ],
-          "state": "disclosed",
-          "actors": [
-            {
-              "id": "provider-u0aw5u",
-              "name": "强生自有供应链及物流管理团队",
-              "role": "客户自营",
-              "duty": "全球；生产、计划与库存协同，支持创新药商业供应。[5]",
-              "quotes": [],
-              "sourceIds": [
-                "source-ywimql"
-              ],
-              "countryIds": [],
-              "scopeNames": [],
-              "clientId": "client-yxet8s"
-            }
-          ],
-          "engagementId": "project-n4y50r"
-        },
-        {
           "id": "project-1hqofjs",
           "clientId": "client-1hdvap5",
           "title": "欧洲工厂至希腊药品温控线路",
@@ -35826,8 +35277,8 @@
           "id": "project-qv403h",
           "clientId": "client-1wfwgzc",
           "title": "Schiphol-Rijk药品运输节点",
-          "detail": "承接Alcobendas发出的跨境药品运输。[4]",
-          "original": "Schiphol-Rijk药品运输节点\n承接Alcobendas发出的跨境药品运输。[4]",
+          "detail": "承接Alcobendas发出的跨境药品运输。[3]",
+          "original": "Schiphol-Rijk药品运输节点\n承接Alcobendas发出的跨境药品运输。[3]",
           "types": [],
           "attribute": "logistics",
           "scope": "country",
@@ -35853,7 +35304,7 @@
               "id": "provider-4uhg3g",
               "name": "DHL Freight",
               "role": "第三方服务",
-              "duty": "西班牙Alcobendas至比利时Tessenderlo、Boortmeerbeek及荷兰Schiphol-Rijk；药品跨境公路运输，2024年披露采用生物柴油车辆。[4]",
+              "duty": "西班牙Alcobendas至比利时Tessenderlo、Boortmeerbeek及荷兰Schiphol-Rijk；药品跨境公路运输，2024年披露采用生物柴油车辆。[3]",
               "quotes": [],
               "sourceIds": [
                 "source-94qi68"
@@ -35873,8 +35324,8 @@
           "id": "project-hz54u0",
           "clientId": "client-1wfwgzc",
           "title": "Alcobendas药品跨境出货线路",
-          "detail": "从Alcobendas生产基地发运药品，连接比利时及荷兰节点。[4]",
-          "original": "Alcobendas药品跨境出货线路（厂-仓运输）\n从Alcobendas生产基地发运药品，连接比利时及荷兰节点。[4]",
+          "detail": "从Alcobendas生产基地发运药品，连接比利时及荷兰节点。[3]",
+          "original": "Alcobendas药品跨境出货线路（厂-仓运输）\n从Alcobendas生产基地发运药品，连接比利时及荷兰节点。[3]",
           "types": [
             "厂-仓运输"
           ],
@@ -35902,7 +35353,7 @@
               "id": "provider-4uhg3g",
               "name": "DHL Freight",
               "role": "第三方服务",
-              "duty": "西班牙Alcobendas至比利时Tessenderlo、Boortmeerbeek及荷兰Schiphol-Rijk；药品跨境公路运输，2024年披露采用生物柴油车辆。[4]",
+              "duty": "西班牙Alcobendas至比利时Tessenderlo、Boortmeerbeek及荷兰Schiphol-Rijk；药品跨境公路运输，2024年披露采用生物柴油车辆。[3]",
               "quotes": [],
               "sourceIds": [
                 "source-94qi68"
@@ -35922,8 +35373,8 @@
           "id": "project-5oyk56",
           "clientId": "client-1wfwgzc",
           "title": "西班牙药品入境运输节点",
-          "detail": "承接Alcobendas发往Tessenderlo与Boortmeerbeek的药品公路运输。[4]",
-          "original": "西班牙药品入境运输节点\n承接Alcobendas发往Tessenderlo与Boortmeerbeek的药品公路运输。[4]",
+          "detail": "承接Alcobendas发往Tessenderlo与Boortmeerbeek的药品公路运输。[3]",
+          "original": "西班牙药品入境运输节点\n承接Alcobendas发往Tessenderlo与Boortmeerbeek的药品公路运输。[3]",
           "types": [],
           "attribute": "logistics",
           "scope": "country",
@@ -35949,7 +35400,7 @@
               "id": "provider-4uhg3g",
               "name": "DHL Freight",
               "role": "第三方服务",
-              "duty": "西班牙Alcobendas至比利时Tessenderlo、Boortmeerbeek及荷兰Schiphol-Rijk；药品跨境公路运输，2024年披露采用生物柴油车辆。[4]",
+              "duty": "西班牙Alcobendas至比利时Tessenderlo、Boortmeerbeek及荷兰Schiphol-Rijk；药品跨境公路运输，2024年披露采用生物柴油车辆。[3]",
               "quotes": [],
               "sourceIds": [
                 "source-94qi68"
@@ -35968,9 +35419,9 @@
         {
           "id": "project-1dt2lzq",
           "clientId": "client-1iua85c",
-          "title": "全球供应链服务",
-          "detail": "DHL：辉瑞新冠疫苗国际物流；按疫苗项目披露范围承接温控运输及供应链协同。[4]\nControlant：辉瑞疫苗供应链；运输状态、温度与实时可视化监测。[5]",
-          "original": "DHL：辉瑞新冠疫苗国际物流；按疫苗项目披露范围承接温控运输及供应链协同。[4]\nControlant：辉瑞疫苗供应链；运输状态、温度与实时可视化监测。[5]",
+          "title": "辉瑞疫苗跨境运输与温控监测（历史案例）",
+          "detail": "DHL Global Forwarding、ANA：2021年比利时至日本辉瑞／BioNTech疫苗国际运输。[4]\nControlant：辉瑞疫苗供应链；运输状态、温度与实时可视化监测。[5]",
+          "original": "DHL Global Forwarding、ANA：2021年比利时至日本辉瑞／BioNTech疫苗国际运输。[4]\nControlant：辉瑞疫苗供应链；运输状态、温度与实时可视化监测。[5]",
           "types": [],
           "attribute": "logistics",
           "scope": "global",
@@ -35987,13 +35438,13 @@
             "source-xep4r8",
             "source-1q878ss"
           ],
-          "state": "disclosed",
+          "state": "case",
           "actors": [
             {
               "id": "provider-50v913",
-              "name": "DHL",
+              "name": "DHL Global Forwarding、ANA",
               "role": "第三方服务",
-              "duty": "辉瑞新冠疫苗国际物流；按疫苗项目披露范围承接温控运输及供应链协同。[4]",
+              "duty": "2021年历史项目；比利时至日本辉瑞／BioNTech疫苗国际运输。[4]",
               "quotes": [],
               "sourceIds": [
                 "source-xep4r8"
@@ -36277,12 +35728,12 @@
       ],
       "report": {
         "customers": 30,
-        "sourceLinks": 133,
-        "projectCells": 41,
-        "projects": 48,
+        "sourceLinks": 124,
+        "projectCells": 47,
+        "projects": 47,
         "regional": 2,
         "manufacturing": 0,
-        "untyped": 14,
+        "untyped": 13,
         "warnings": []
       },
       "subindustries": [
@@ -36292,7 +35743,15 @@
         "生物基因/细胞基因治疗",
         "医疗商业(医药分销)",
         "医药工业(制药)"
-      ]
+      ],
+      "sourceAuditRevision": "2026-10-23-links-v1",
+      "sourceAuditPreviousFingerprints": [
+        "1d070f18"
+      ],
+      "sourceAuditCounts": {
+        "sources": 124,
+        "records": 47
+      }
     },
     {
       "schemaVersion": "2.0",
@@ -36347,13 +35806,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-aandq0",
-            "2": "source-r7xhlu",
-            "3": "source-1c5ldbx",
-            "4": "source-1txpy0l",
-            "5": "source-2mt47v"
-          },
           "actors": [
             {
               "id": "provider-kav1ui",
@@ -36393,7 +35845,14 @@
             "US",
             "BR"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-aandq0",
+            "2": "source-r7xhlu",
+            "3": "source-1c5ldbx",
+            "4": "source-1txpy0l",
+            "5": "source-2mt47v"
+          }
         },
         {
           "id": "client-u4elml",
@@ -36440,12 +35899,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1wbcpv",
-            "2": "source-sqc96z",
-            "3": "source-61saq4",
-            "4": "source-alebls"
-          },
           "actors": [
             {
               "id": "provider-goevgf",
@@ -36480,7 +35933,13 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1wbcpv",
+            "2": "source-sqc96z",
+            "3": "source-61saq4",
+            "4": "source-alebls"
+          }
         },
         {
           "id": "client-c92gku",
@@ -36526,13 +35985,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-1340k0n",
-            "2": "source-pe7udk",
-            "3": "source-zyycxm",
-            "4": "source-vvi40v",
-            "5": "source-wn0ax5"
-          },
           "actors": [
             {
               "id": "provider-78twpd",
@@ -36554,7 +36006,14 @@
             "CA",
             "AU"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-1340k0n",
+            "2": "source-pe7udk",
+            "3": "source-zyycxm",
+            "4": "source-vvi40v",
+            "5": "source-wn0ax5"
+          }
         },
         {
           "id": "client-4q4c0x",
@@ -36606,13 +36065,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-6h2drt",
-            "2": "source-wqp9h0",
-            "3": "source-yfn4xj",
-            "4": "source-yhydcp",
-            "5": "source-1uh8i49"
-          },
           "actors": [
             {
               "id": "provider-13nbvi6",
@@ -36634,40 +36086,45 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-6h2drt",
+            "2": "source-wqp9h0",
+            "3": "source-yfn4xj",
+            "4": "source-yhydcp",
+            "5": "source-1uh8i49"
+          }
         },
         {
           "id": "client-13z1cj0",
           "name": "宜瑞安",
           "subindustry": "食材供应商",
-          "overview": "生产及运营布局：美国、墨西哥、巴西及其他国际基地承担淀粉、甜味剂和特种配料生产；2024年出售韩国业务。[1][2][4]\n\n产能及网络分工：谷物加工与高附加值配料制造按区域分工；北美和南美贸易团队以统一系统管理进出口信息及流程。[1][5]\n\n需求市场：服务全球食品、饮料及工业客户，跨境供给连接产地加工与配料需求市场。[1][2]",
-          "carrierText": "宜瑞安贸易与供应链团队：北美及南美；进出口流程与信息管理。[5]\nThomson Reuters：提供ONESOURCE Global Trade进口、出口管理系统，属于系统支持服务。[5]",
+          "overview": "生产及运营布局：美国、墨西哥、巴西及其他国际基地承担淀粉、甜味剂和特种配料生产；2024年出售韩国业务。[1][2]\n\n产能及网络分工：谷物加工与高附加值配料制造按区域分工；北美和南美贸易团队以统一系统管理进出口信息及流程。[1][3]\n\n需求市场：服务全球食品、饮料及工业客户，跨境供给连接产地加工与配料需求市场。[1]",
+          "carrierText": "宜瑞安贸易与供应链团队：北美及南美；进出口流程与信息管理。[3]\nThomson Reuters：提供ONESOURCE Global Trade进口、出口管理系统，属于系统支持服务。[3]",
           "matrixRow": 23,
           "sections": [
             {
               "label": "生产及运营布局",
-              "text": "美国、墨西哥、巴西及其他国际基地承担淀粉、甜味剂和特种配料生产；2024年出售韩国业务。[1][2][4]"
+              "text": "美国、墨西哥、巴西及其他国际基地承担淀粉、甜味剂和特种配料生产；2024年出售韩国业务。[1][2]"
             },
             {
               "label": "产能及网络分工",
-              "text": "谷物加工与高附加值配料制造按区域分工；北美和南美贸易团队以统一系统管理进出口信息及流程。[1][5]"
+              "text": "谷物加工与高附加值配料制造按区域分工；北美和南美贸易团队以统一系统管理进出口信息及流程。[1][3]"
             },
             {
               "label": "需求市场",
-              "text": "服务全球食品、饮料及工业客户，跨境供给连接产地加工与配料需求市场。[1][2]"
+              "text": "服务全球食品、饮料及工业客户，跨境供给连接产地加工与配料需求市场。[1]"
             }
           ],
           "sourceIds": [
             "source-1t0e37y",
-            "source-o6yc4c",
-            "source-3zl3if",
             "source-1xubhno",
             "source-z3b2yq"
           ],
           "footprint": {
             "production": {
               "label": "生产及运营布局",
-              "text": "美国、墨西哥、巴西及其他国际基地承担淀粉、甜味剂和特种配料生产；2024年出售韩国业务。[1][2][4]",
+              "text": "美国、墨西哥、巴西及其他国际基地承担淀粉、甜味剂和特种配料生产；2024年出售韩国业务。[1][2]",
               "countryIds": [
                 "MX",
                 "US",
@@ -36678,24 +36135,17 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "服务全球食品、饮料及工业客户，跨境供给连接产地加工与配料需求市场。[1][2]",
+              "text": "服务全球食品、饮料及工业客户，跨境供给连接产地加工与配料需求市场。[1]",
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1t0e37y",
-            "2": "source-o6yc4c",
-            "3": "source-3zl3if",
-            "4": "source-1xubhno",
-            "5": "source-z3b2yq"
           },
           "actors": [
             {
               "id": "provider-gzd7tl",
               "name": "宜瑞安贸易与供应链团队",
               "role": "客户自营",
-              "duty": "北美及南美；进出口流程与信息管理。[5]",
+              "duty": "北美及南美；进出口流程与信息管理。[3]",
               "quotes": [],
               "sourceIds": [
                 "source-z3b2yq"
@@ -36710,7 +36160,7 @@
               "id": "provider-3k10n3",
               "name": "Thomson Reuters",
               "role": "第三方服务",
-              "duty": "提供ONESOURCE Global Trade进口、出口管理系统，属于系统支持服务。[5]",
+              "duty": "提供ONESOURCE Global Trade进口、出口管理系统，属于系统支持服务。[3]",
               "quotes": [],
               "sourceIds": [
                 "source-z3b2yq"
@@ -36721,7 +36171,12 @@
             }
           ],
           "countryIds": [],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-1t0e37y",
+            "2": "source-1xubhno",
+            "3": "source-z3b2yq"
+          }
         },
         {
           "id": "client-1ihmutl",
@@ -36771,13 +36226,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-onkrks",
-            "2": "source-1nyatsv",
-            "3": "source-mhnx0l",
-            "4": "source-ep6cgm",
-            "5": "source-135cnqr"
-          },
           "actors": [
             {
               "id": "provider-grahgj",
@@ -36825,7 +36273,14 @@
             "AU",
             "NZ"
           ],
-          "recordsCount": 14
+          "recordsCount": 14,
+          "sourceRefs": {
+            "1": "source-onkrks",
+            "2": "source-1nyatsv",
+            "3": "source-mhnx0l",
+            "4": "source-ep6cgm",
+            "5": "source-135cnqr"
+          }
         },
         {
           "id": "client-a0p64t",
@@ -36871,12 +36326,6 @@
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1yeobh9",
-            "2": "source-c4pe0e",
-            "3": "source-1n36sim",
-            "4": "source-npwj9v"
           },
           "actors": [
             {
@@ -36955,7 +36404,13 @@
             "SG",
             "CN"
           ],
-          "recordsCount": 7
+          "recordsCount": 7,
+          "sourceRefs": {
+            "1": "source-1yeobh9",
+            "2": "source-c4pe0e",
+            "3": "source-1n36sim",
+            "4": "source-npwj9v"
+          }
         },
         {
           "id": "client-1tcch6t",
@@ -37000,13 +36455,6 @@
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1vpgysg",
-            "2": "source-10l8huk",
-            "3": "source-bejoyl",
-            "4": "source-139fc59",
-            "5": "source-14ijefr"
           },
           "actors": [
             {
@@ -37074,7 +36522,14 @@
             "GB",
             "CN"
           ],
-          "recordsCount": 3
+          "recordsCount": 3,
+          "sourceRefs": {
+            "1": "source-1vpgysg",
+            "2": "source-10l8huk",
+            "3": "source-bejoyl",
+            "4": "source-139fc59",
+            "5": "source-14ijefr"
+          }
         },
         {
           "id": "client-1v9ldwu",
@@ -37120,13 +36575,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-kljfh7",
-            "2": "source-196rspz",
-            "3": "source-1d1sg1l",
-            "4": "source-ywz9xy",
-            "5": "source-we99ar"
-          },
           "actors": [
             {
               "id": "provider-131josh",
@@ -37164,7 +36612,14 @@
             "US",
             "GB"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-kljfh7",
+            "2": "source-196rspz",
+            "3": "source-1d1sg1l",
+            "4": "source-ywz9xy",
+            "5": "source-we99ar"
+          }
         },
         {
           "id": "client-1vb1j3r",
@@ -37207,13 +36662,6 @@
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-l9qvos",
-            "2": "source-pzy65i",
-            "3": "source-xa3zam",
-            "4": "source-8vk3xu",
-            "5": "source-1y2pgtu"
           },
           "actors": [
             {
@@ -37259,7 +36707,14 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-l9qvos",
+            "2": "source-pzy65i",
+            "3": "source-xa3zam",
+            "4": "source-8vk3xu",
+            "5": "source-1y2pgtu"
+          }
         },
         {
           "id": "client-1si8hu1",
@@ -37307,12 +36762,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-rp6kc4",
-            "2": "source-7g8fah",
-            "3": "source-65fbih",
-            "4": "source-11nd23k"
-          },
           "actors": [
             {
               "id": "provider-lnofc0",
@@ -37337,13 +36786,19 @@
             "US",
             "CA"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-rp6kc4",
+            "2": "source-7g8fah",
+            "3": "source-65fbih",
+            "4": "source-11nd23k"
+          }
         },
         {
           "id": "client-6bnev9",
           "name": "开市客",
           "subindustry": "商超+跨境",
-          "overview": "生产及运营布局：会员仓储门店集中于美国，并在加拿大、墨西哥、欧洲、亚洲和大洋洲等市场运营。[1][2]\n\n产能及网络分工：以供应商直送和自营depot交叉转运相结合，减少商品重复处理；电商及大件商品另有相应履约安排。[2]\n\n需求市场：实体会员仓储门店消费者为主要需求端，电商形成补充渠道。[1][2][4]",
+          "overview": "生产及运营布局：会员仓储门店集中于美国，并在加拿大、墨西哥、欧洲、亚洲和大洋洲等市场运营。[1][2]\n\n产能及网络分工：以供应商直送和自营depot交叉转运相结合，减少商品重复处理；电商及大件商品另有相应履约安排。[2]\n\n需求市场：实体会员仓储门店消费者为主要需求端，电商形成补充渠道。[1][2][3]",
           "carrierText": "Costco自营depot及履约体系：美国及国际市场；交叉转运、集中采购分流、门店补货和电商订单履约。[2]",
           "matrixRow": 58,
           "sections": [
@@ -37357,13 +36812,12 @@
             },
             {
               "label": "需求市场",
-              "text": "实体会员仓储门店消费者为主要需求端，电商形成补充渠道。[1][2][4]"
+              "text": "实体会员仓储门店消费者为主要需求端，电商形成补充渠道。[1][2][3]"
             }
           ],
           "sourceIds": [
             "source-uvimiq",
             "source-1ktwi9b",
-            "source-13k4mhg",
             "source-r80kso"
           ],
           "footprint": {
@@ -37382,16 +36836,10 @@
             },
             "market": {
               "label": "需求市场",
-              "text": "实体会员仓储门店消费者为主要需求端，电商形成补充渠道。[1][2][4]",
+              "text": "实体会员仓储门店消费者为主要需求端，电商形成补充渠道。[1][2][3]",
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-uvimiq",
-            "2": "source-1ktwi9b",
-            "3": "source-13k4mhg",
-            "4": "source-r80kso"
           },
           "actors": [
             {
@@ -37413,7 +36861,12 @@
           "countryIds": [
             "US"
           ],
-          "recordsCount": 1
+          "recordsCount": 1,
+          "sourceRefs": {
+            "1": "source-uvimiq",
+            "2": "source-1ktwi9b",
+            "3": "source-r80kso"
+          }
         },
         {
           "id": "client-110mxhc",
@@ -37460,12 +36913,6 @@
               "areaIds": []
             }
           },
-          "sourceRefs": {
-            "1": "source-onevtx",
-            "2": "source-lezniz",
-            "3": "source-lzwym7",
-            "4": "source-dj9xc7"
-          },
           "actors": [
             {
               "id": "provider-15t58po",
@@ -37504,7 +36951,13 @@
             "CZ",
             "CH"
           ],
-          "recordsCount": 6
+          "recordsCount": 6,
+          "sourceRefs": {
+            "1": "source-onevtx",
+            "2": "source-lezniz",
+            "3": "source-lzwym7",
+            "4": "source-dj9xc7"
+          }
         },
         {
           "id": "client-1vpioii",
@@ -37531,8 +36984,7 @@
             "source-1in4c75",
             "source-ncwaf8",
             "source-v1zmc6",
-            "source-12t9bjv",
-            "source-3aibjh"
+            "source-12t9bjv"
           ],
           "footprint": {
             "production": {
@@ -37551,13 +37003,6 @@
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-1in4c75",
-            "2": "source-ncwaf8",
-            "3": "source-v1zmc6",
-            "4": "source-12t9bjv",
-            "5": "source-3aibjh"
           },
           "actors": [
             {
@@ -37583,7 +37028,13 @@
             "US",
             "GB"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-1in4c75",
+            "2": "source-ncwaf8",
+            "3": "source-v1zmc6",
+            "4": "source-12t9bjv"
+          }
         },
         {
           "id": "client-17suexe",
@@ -37630,13 +37081,6 @@
               "countryIds": [],
               "areaIds": []
             }
-          },
-          "sourceRefs": {
-            "1": "source-64z9qk",
-            "2": "source-ajpa9b",
-            "3": "source-1wsf7nt",
-            "4": "source-135konz",
-            "5": "source-5egrbv"
           },
           "actors": [
             {
@@ -37689,7 +37133,14 @@
             "FR",
             "ES"
           ],
-          "recordsCount": 2
+          "recordsCount": 2,
+          "sourceRefs": {
+            "1": "source-64z9qk",
+            "2": "source-ajpa9b",
+            "3": "source-1wsf7nt",
+            "4": "source-135konz",
+            "5": "source-5egrbv"
+          }
         }
       ],
       "sources": [
@@ -37832,20 +37283,6 @@
           "url": "https://media.corporate-ir.net/media_files/IROL/10/1018414/Ingredion-AR-2024/pdf/Ingredion-2024-Annual-Report.pdf",
           "clientId": "client-13z1cj0",
           "cell": "E23"
-        },
-        {
-          "id": "source-o6yc4c",
-          "label": "宜瑞安：全球业务及客户市场",
-          "url": "https://www.ingredion.com/na/en-us/company",
-          "clientId": "client-13z1cj0",
-          "cell": "E24"
-        },
-        {
-          "id": "source-3zl3if",
-          "label": "宜瑞安：中国淀粉制造基地",
-          "url": "https://www.ingredion.com/apac/en-sg/news-events/news/ingredion-establishes-sustainable-state-of-the-art-starch-manufacturing-plant-china",
-          "clientId": "client-13z1cj0",
-          "cell": "E25"
         },
         {
           "id": "source-1xubhno",
@@ -38072,13 +37509,6 @@
           "cell": "E59"
         },
         {
-          "id": "source-13k4mhg",
-          "label": "Costco：会员仓储经营模式",
-          "url": "https://www.costco.com/about.html",
-          "clientId": "client-6bnev9",
-          "cell": "E60"
-        },
-        {
           "id": "source-r80kso",
           "label": "Costco：电商经营与履约",
           "url": "https://www.digitalcommerce360.com/2024/09/27/costco-ecommerce-sales-q4-fiscal-2024/",
@@ -38140,13 +37570,6 @@
           "url": "https://www.aldipresscentre.co.uk/business-news/aldi-begins-fresh-produce-operations-at-uks-largest-automated-supermarket-warehouse/",
           "clientId": "client-1vpioii",
           "cell": "E71"
-        },
-        {
-          "id": "source-3aibjh",
-          "label": "ALDI Süd：供应链控制塔案例",
-          "url": "https://retail-optimiser.de/en/aldi-sued-orchestrates-global-supply-chain-with-one-ai/",
-          "clientId": "client-1vpioii",
-          "cell": "E72"
         },
         {
           "id": "source-64z9qk",
@@ -38384,8 +37807,8 @@
           "id": "project-6vjdjy",
           "clientId": "client-13z1cj0",
           "title": "全球供应链服务",
-          "detail": "宜瑞安贸易与供应链团队：北美及南美；进出口流程与信息管理。[5]\nThomson Reuters：提供ONESOURCE Global Trade进口、出口管理系统，属于系统支持服务。[5]",
-          "original": "宜瑞安贸易与供应链团队：北美及南美；进出口流程与信息管理。[5]\nThomson Reuters：提供ONESOURCE Global Trade进口、出口管理系统，属于系统支持服务。[5]",
+          "detail": "宜瑞安贸易与供应链团队：北美及南美；进出口流程与信息管理。[3]\nThomson Reuters：提供ONESOURCE Global Trade进口、出口管理系统，属于系统支持服务。[3]",
+          "original": "宜瑞安贸易与供应链团队：北美及南美；进出口流程与信息管理。[3]\nThomson Reuters：提供ONESOURCE Global Trade进口、出口管理系统，属于系统支持服务。[3]",
           "types": [],
           "attribute": "logistics",
           "scope": "global",
@@ -40065,8 +39488,8 @@
       ],
       "report": {
         "customers": 15,
-        "sourceLinks": 70,
-        "projectCells": 46,
+        "sourceLinks": 66,
+        "projectCells": 47,
         "projects": 47,
         "regional": 0,
         "manufacturing": 0,
@@ -40077,7 +39500,15 @@
         "食材供应商",
         "连锁餐饮",
         "商超+跨境"
-      ]
+      ],
+      "sourceAuditRevision": "2026-10-23-links-v1",
+      "sourceAuditPreviousFingerprints": [
+        "7cdcd99d"
+      ],
+      "sourceAuditCounts": {
+        "sources": 66,
+        "records": 47
+      }
     }
   ]
 }

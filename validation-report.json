@@ -87,5 +87,61 @@
   "clearAllKeepsIndustry": true,
   "defaultCasesStayInSelectedIndustry": true,
   "sourceLinksPreserved": true,
-  "visualBrowserQA": "not performed; DOM/selection adapters used"
+  "visualBrowserQA": "六行业切换、完整客户名册、辉瑞修正引用、强生错配案例移除均已验证，控制台无错误",
+  "latestSourceAudit": {
+    "status": "passed",
+    "sourceReferencesConsistent": true,
+    "allOldSnapshotsMigrated": true,
+    "newUserEditsPreserved": true,
+    "importChecks": [
+      {
+        "industry": "高科技",
+        "rawSourceCount": 110,
+        "sourceCount": 103,
+        "oldWorkbookMigrated": true
+      },
+      {
+        "industry": "汽车",
+        "rawSourceCount": 95,
+        "sourceCount": 94,
+        "oldWorkbookMigrated": true
+      },
+      {
+        "industry": "工业设备",
+        "rawSourceCount": 105,
+        "sourceCount": 103,
+        "oldWorkbookMigrated": true
+      },
+      {
+        "industry": "消费品",
+        "rawSourceCount": 103,
+        "sourceCount": 99,
+        "oldWorkbookMigrated": true
+      },
+      {
+        "industry": "医药",
+        "rawSourceCount": 133,
+        "sourceCount": 124,
+        "oldWorkbookMigrated": true
+      },
+      {
+        "industry": "餐饮",
+        "rawSourceCount": 70,
+        "sourceCount": 66,
+        "oldWorkbookMigrated": true
+      }
+    ],
+    "bgStats": {
+      "projects": 486,
+      "clients": 137,
+      "industries": 6,
+      "typed": 366,
+      "planned": 17,
+      "historical": 44
+    },
+    "roster": 145,
+    "broad": 11,
+    "regionTypeCombinationsChecked": 180
+  },
+  "sourceAuditStatus": "passed"
 }

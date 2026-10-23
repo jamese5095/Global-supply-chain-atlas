@@ -14,6 +14,7 @@ replacements={
  'DATA':json.dumps(json.loads((ROOT/'data.json').read_text()),ensure_ascii=False,separators=(',',':')).replace('<','\\u003c'),
  'GEO':json.dumps(json.loads((ROOT/'vendor/countries-50m.json').read_text()),separators=(',',':')),
  'REGIONS':json.dumps(json.loads((ROOT/'regions.json').read_text()),ensure_ascii=False,separators=(',',':')),
+ 'AUDIT':(ROOT/'source-audit.js').read_text(),
  'SCOPE':(ROOT/'scope-notes.js').read_text(),
  'APP':(ROOT/'app.js').read_text(),
  'BGSTYLE':(ROOT/'bg.css').read_text(),

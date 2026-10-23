@@ -4,8 +4,9 @@ const here=__dirname,meta=require('./metadata.json'),areas=require('./regions.js
 const file=process.argv[2],name=process.argv[3];
 if(!file||!name)throw Error('用法：node refresh-data.cjs "表格路径.xlsx" "行业名称"');
 const wb=XLSX.read(fs.readFileSync(file),{type:'buffer',cellHTML:false,cellStyles:false});
-const d=core.parseWorkbook(wb,{XLSX,areas,numeric:meta.numeric,baseCountries:meta.countries,name,filename:path.basename(file)});
+let d=core.parseWorkbook(wb,{XLSX,areas,numeric:meta.numeric,baseCountries:meta.countries,name,filename:path.basename(file)});
 const destination=path.join(here,'data.json'),bundle=JSON.parse(fs.readFileSync(destination,'utf8'));
+d=require('./source-audit.js').upgrade(d,bundle.datasets);
 const datasets=new Map(bundle.datasets.map(d=>[d.id,d]));datasets.set(d.id,d);
 fs.writeFileSync(destination,JSON.stringify({schemaVersion:'2.0',datasets:[...datasets.values()]},null,2));
 console.log(JSON.stringify({industry:d.name,...d.report}));

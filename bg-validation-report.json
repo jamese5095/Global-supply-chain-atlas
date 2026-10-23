@@ -1,12 +1,12 @@
 {
   "status": "passed",
-  "bgProjectCount": 492,
-  "coveredCustomers": 139,
+  "bgProjectCount": 486,
+  "coveredCustomers": 137,
   "originalCustomerRoster": 145,
-  "unallocatedGlobalOrCrossRegionalCases": 12,
+  "unallocatedGlobalOrCrossRegionalCases": 11,
   "regionTypeCombinationsChecked": 180,
   "officialTypes": 17,
-  "originalSixDatasetsUnchanged": true,
+  "originalSixDatasetsUnchanged": false,
   "multiLabelStatisticsVerified": true,
   "referenceAndManufacturingExcludedFromBGHeat": true,
   "regionalAndGlobalScopesNotAssignedToCountries": true,
@@ -220,5 +220,70 @@
     "threeCoreAnalysisSectionsPreserved": true,
     "consoleErrors": []
   },
-  "globalCapabilitiesTitle": "能力建设分析"
+  "globalCapabilitiesTitle": "能力建设分析",
+  "sourceAudit": {
+    "status": "passed",
+    "sourceReferencesConsistent": true,
+    "allOldSnapshotsMigrated": true,
+    "newUserEditsPreserved": true,
+    "importChecks": [
+      {
+        "industry": "高科技",
+        "rawSourceCount": 110,
+        "sourceCount": 103,
+        "oldWorkbookMigrated": true
+      },
+      {
+        "industry": "汽车",
+        "rawSourceCount": 95,
+        "sourceCount": 94,
+        "oldWorkbookMigrated": true
+      },
+      {
+        "industry": "工业设备",
+        "rawSourceCount": 105,
+        "sourceCount": 103,
+        "oldWorkbookMigrated": true
+      },
+      {
+        "industry": "消费品",
+        "rawSourceCount": 103,
+        "sourceCount": 99,
+        "oldWorkbookMigrated": true
+      },
+      {
+        "industry": "医药",
+        "rawSourceCount": 133,
+        "sourceCount": 124,
+        "oldWorkbookMigrated": true
+      },
+      {
+        "industry": "餐饮",
+        "rawSourceCount": 70,
+        "sourceCount": 66,
+        "oldWorkbookMigrated": true
+      }
+    ],
+    "bgStats": {
+      "projects": 486,
+      "clients": 137,
+      "industries": 6,
+      "typed": 366,
+      "planned": 17,
+      "historical": 44
+    },
+    "roster": 145,
+    "broad": 11,
+    "regionTypeCombinationsChecked": 180,
+    "removedSources": 27,
+    "repairedSources": 13,
+    "remainingSources": 589,
+    "browserQA": {
+      "sixIndustrySwitches": true,
+      "rosterPreserved": true,
+      "pfizerRepairedSourcesVisible": true,
+      "unsupportedJnJCaseRemoved": true,
+      "consoleErrors": []
+    }
+  }
 }
