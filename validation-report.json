@@ -1,0 +1,108 @@
+{
+  "status": "passed",
+  "industrySwitches": 18,
+  "industries": [
+    {
+      "industry": "高科技",
+      "status": "passed",
+      "clients": 25,
+      "sources": 110,
+      "defaultVisibleProjects": 73,
+      "selectedCountry": "US"
+    },
+    {
+      "industry": "汽车",
+      "status": "passed",
+      "clients": 25,
+      "sources": 95,
+      "defaultVisibleProjects": 124,
+      "selectedCountry": "US"
+    },
+    {
+      "industry": "工业设备",
+      "status": "passed",
+      "clients": 25,
+      "sources": 105,
+      "defaultVisibleProjects": 122,
+      "selectedCountry": "US"
+    },
+    {
+      "industry": "消费品",
+      "status": "passed",
+      "clients": 25,
+      "sources": 103,
+      "defaultVisibleProjects": 104,
+      "selectedCountry": "DE"
+    },
+    {
+      "industry": "医药",
+      "status": "passed",
+      "clients": 30,
+      "sources": 133,
+      "defaultVisibleProjects": 46,
+      "selectedCountry": "US"
+    },
+    {
+      "industry": "餐饮",
+      "status": "passed",
+      "clients": 15,
+      "sources": 70,
+      "defaultVisibleProjects": 45,
+      "selectedCountry": "US"
+    }
+  ],
+  "caseChecks": [
+    {
+      "industry": "高科技",
+      "countryCaseChecks": 71,
+      "regionCaseChecks": 9
+    },
+    {
+      "industry": "汽车",
+      "countryCaseChecks": 117,
+      "regionCaseChecks": 8
+    },
+    {
+      "industry": "工业设备",
+      "countryCaseChecks": 115,
+      "regionCaseChecks": 10
+    },
+    {
+      "industry": "消费品",
+      "countryCaseChecks": 99,
+      "regionCaseChecks": 8
+    },
+    {
+      "industry": "医药",
+      "countryCaseChecks": 37,
+      "regionCaseChecks": 3
+    },
+    {
+      "industry": "餐饮",
+      "countryCaseChecks": 44,
+      "regionCaseChecks": 7
+    }
+  ],
+  "switchingClearsPreviousFilters": true,
+  "clearAllKeepsIndustry": true,
+  "defaultCasesStayInSelectedIndustry": true,
+  "sourceLinksPreserved": true,
+  "visualBrowserQA": {
+    "status": "passed",
+    "browser": "Codex in-app browser",
+    "checks": [
+      "六行业切换入口",
+      "医药30家客户及欧洲区域共用案例",
+      "波兰国家案例与来源链接",
+      "餐饮15家客户及德国案例",
+      "运营计划不误标为规划项目",
+      "星巴克客户布局摘要位于地图之后",
+      "客户级承接主体汇总与来源",
+      "浏览器控制台无错误"
+    ]
+  },
+  "sourceWorkbooks": {
+    "医药": "542b58a14064e9844bacc6d96ac208d3b3ea416cefc57911070f8b2c13b163a3",
+    "餐饮": "20d3cc31aafd6d91487b65a5797b22aebdd813cf747697fec11f0025402ea4d6"
+  }
+}

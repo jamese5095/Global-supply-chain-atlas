@@ -1,0 +1,13 @@
+[
+ {"id":"north-america","name":"北美","countries":["US","CA","MX","GL","PM","BM"],"anchor":[-105,39],"bounds":[-173,7,-45,77],"center":-110},
+ {"id":"europe","name":"欧洲","countries":["AL","AD","AT","BY","BE","BA","BG","HR","CZ","DK","EE","FO","FI","FR","DE","GI","GR","GG","VA","HU","IS","IE","IM","IT","JE","LV","LI","LT","LU","MT","MD","MC","ME","NL","MK","NO","PL","PT","RO","SM","RS","SK","SI","ES","SJ","SE","CH","UA","GB","AX","XK"],"anchor":[16,52],"bounds":[-25,33,43,71],"center":10},
+ {"id":"southeast-asia","name":"东南亚","countries":["BN","KH","ID","LA","MY","MM","PH","SG","TH","TL","VN"],"anchor":[112,8],"bounds":[90,-13,143,29],"center":116},
+ {"id":"east-asia","name":"东亚","countries":["CN","TW","HK","MO","JP","KR","KP","MN"],"anchor":[128,38],"bounds":[73,17,150,56],"center":112},
+ {"id":"south-asia","name":"南亚","countries":["IN","PK","BD","LK","NP","BT","MV","AF"],"anchor":[76,20],"bounds":[59,-2,97,38],"center":78},
+ {"id":"middle-east","name":"中东","countries":["AE","BH","CY","IR","IQ","IL","JO","KW","LB","OM","PS","QA","SA","SY","TR","YE"],"anchor":[43,28],"bounds":[24,10,65,44],"center":44},
+ {"id":"africa","name":"非洲","countries":["DZ","AO","BJ","BW","BF","BI","CV","CM","CF","TD","KM","CD","CG","CI","DJ","EG","GQ","ER","SZ","ET","GA","GM","GH","GN","GW","KE","LS","LR","LY","MG","MW","ML","MR","MU","YT","MA","MZ","NA","NE","NG","RE","RW","SH","ST","SN","SC","SL","SO","ZA","SS","SD","TZ","TG","TN","UG","EH","ZM","ZW","TF","IO"],"anchor":[17,0],"bounds":[-21,-36,57,38],"center":18},
+ {"id":"latin-america","name":"拉丁美洲","countries":["AI","AG","AR","AW","BS","BB","BZ","BO","BQ","BR","VG","KY","CL","CO","CR","CU","CW","DM","DO","EC","SV","FK","GF","GD","GP","GT","GY","HT","HN","JM","MQ","MS","NI","PA","PY","PE","PR","BL","KN","LC","MF","VC","SX","GS","SR","TT","TC","UY","VE","VI"],"anchor":[-62,-13],"bounds":[-119,-58,-30,32],"center":-75},
+ {"id":"oceania","name":"大洋洲","countries":["AS","AU","CX","CC","CK","FJ","PF","GU","HM","KI","MH","FM","NR","NC","NZ","NU","NF","MP","PW","PG","PN","WS","SB","TK","TO","TV","UM","VU","WF"],"anchor":[139,-23],"bounds":[94,-51,-138,15],"center":151},
+ {"id":"eurasia","name":"欧亚其他","countries":["RU","KZ","UZ","TM","TJ","KG","GE","AM","AZ"],"anchor":[75,51],"bounds":[32,35,-168,75],"center":103},
+ {"id":"other","name":"其他地区","countries":[],"anchor":[-28,13],"bounds":[-179,-58,179,76],"center":0}
+]
