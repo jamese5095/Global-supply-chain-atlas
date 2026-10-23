@@ -1,0 +1,431 @@
+{
+  "removedSources": [
+    {
+      "industry": "高科技",
+      "client": "美光 Micron",
+      "id": "source-1cl8y3m",
+      "label": "全球：存储器件包装、标签与物料编号说明",
+      "url": "https://www.micron.com/sales-support/sales/packaging-and-shipping-information",
+      "clientId": "client-127wl6y",
+      "cell": "E14",
+      "reason": "未用于当前客户布局或项目的补充包装说明"
+    },
+    {
+      "industry": "高科技",
+      "client": "三星半导体 Samsung DS",
+      "id": "source-1gjwhph",
+      "label": "美国：Austin物流岗位，备件及原料零件库存",
+      "url": "https://sec.wd3.myworkdayjobs.com/en-US/Samsung_Careers/job/Logistics-Professional_R117236",
+      "clientId": "client-jzv2md",
+      "cell": "E16",
+      "reason": "动态招聘入口未返回岗位正文，不能继续作为该物料项目的唯一证据"
+    },
+    {
+      "industry": "高科技",
+      "client": "立讯精密 Luxshare",
+      "id": "source-o0vd9l",
+      "label": "集团：精益仓储及厂内配送（官网）",
+      "url": "https://www.luxshare-ict.com/innovate-technology.html",
+      "clientId": "client-16393wx",
+      "cell": "E44",
+      "reason": "未用于当前客户布局或项目的通用技术介绍"
+    },
+    {
+      "industry": "高科技",
+      "client": "美的 Midea",
+      "id": "source-1oc5ldm",
+      "label": "巴西：Pouso Alegre冰箱／洗衣机工厂投运（政府，2024）",
+      "url": "https://www.agenciaminas.mg.gov.br/noticia/multinacional-inaugura-unidade-que-vai-gerar-650-empregos-diretos-em-pouso-alegre-124524",
+      "clientId": "client-1xtfrlz",
+      "cell": "E87",
+      "reason": "HTTP 200但正文为Notícia não encontrada，原新闻已不存在"
+    },
+    {
+      "industry": "高科技",
+      "client": "海尔 Haier",
+      "id": "source-15q3djd",
+      "label": "海尔意大利交付说明",
+      "url": "https://www.haier-europe.com/it_IT/pages/tempi-e-modalita-di-consegna",
+      "clientId": "client-x5cczb",
+      "cell": "E91",
+      "reason": "已由更具体的Washpass交付分工页面支持，无独立引用"
+    },
+    {
+      "industry": "高科技",
+      "client": "海尔 Haier",
+      "id": "source-16qajeg",
+      "label": "Energo交付服务能力",
+      "url": "https://www.energologistic.it/",
+      "clientId": "client-x5cczb",
+      "cell": "E92",
+      "reason": "服务商通用首页，未独立支持客户项目"
+    },
+    {
+      "industry": "高科技",
+      "client": "惠而浦 Whirlpool",
+      "id": "source-1eygfjh",
+      "label": "全球：2025业务布局与厨房／洗衣家电品牌",
+      "url": "https://cprod.whirlpoolcorp.com/our-company.html",
+      "clientId": "client-1olgn7z",
+      "cell": "E105",
+      "reason": "重复公司概况，已有年报及运营网络依据"
+    },
+    {
+      "industry": "汽车",
+      "client": "帕卡 PACCAR",
+      "id": "source-7ip40",
+      "label": "DAF：澳大利亚库存覆盖的卡车维修件类别",
+      "url": "https://paccarparts.com.au/dafs-quality-parts-support",
+      "clientId": "client-lz007n",
+      "cell": "E36",
+      "reason": "未引用的备件类别说明"
+    },
+    {
+      "industry": "工业设备",
+      "client": "迪尔 John Deere",
+      "id": "source-to02u2",
+      "label": "John Deere：欧洲备件分拨",
+      "url": "https://www.deere.de/de-de/ersatzteile-service/ersatzteile",
+      "clientId": "client-fimzf9",
+      "cell": "E19",
+      "reason": "只呈现备件栏目标题，无法核对Bruchsal具体项目；保留已取得原文的Rhenus历史项目"
+    },
+    {
+      "industry": "工业设备",
+      "client": "莫霍克 Mohawk Industries",
+      "id": "source-1fdjgk1",
+      "label": "Mohawk：2025年报，旗下品牌及分销体系（第20、23页）",
+      "url": "https://ir.mohawkind.com/static-files/a731258e-a4de-40b8-b7f0-3d9d75fe73c2",
+      "clientId": "client-tajath",
+      "cell": "E106",
+      "reason": "未引用的补充年报，已有公司及具体项目来源"
+    },
+    {
+      "industry": "消费品",
+      "client": "Inditex（Zara等）",
+      "id": "source-5rxl8t",
+      "label": "供应网络及生产环节：品牌官网",
+      "url": "https://www.zara.com/es/en/sustainability-suppliers-mkt1456.html",
+      "clientId": "client-19rix3z",
+      "cell": "E69",
+      "reason": "旧供应商专题已跳回Zara商城首页；制造与来源市场使用集团年报"
+    },
+    {
+      "industry": "消费品",
+      "client": "保乐力加 Pernod Ricard",
+      "id": "source-1wqzcl2",
+      "label": "Pernod Ricard：促销物料3PL及订单流程（2026）",
+      "url": "https://pernodricard.wd3.myworkdayjobs.com/en-US/pernod-ricard/job/Logistics-Co-Ordinator_JR-053553",
+      "clientId": "client-1w0xfxn",
+      "cell": "E91",
+      "reason": "动态招聘入口未返回岗位正文，未取得具体促销物料项目的独立证据"
+    },
+    {
+      "industry": "消费品",
+      "client": "保乐力加 Pernod Ricard",
+      "id": "source-kct7hj",
+      "label": "Pernod Ricard：越南进口、税标及仓网统筹",
+      "url": "https://pernodricard.wd3.myworkdayjobs.com/en-US/pernod-ricard/job/Supply-Chain-Manager_JR-053846",
+      "clientId": "client-1w0xfxn",
+      "cell": "E92",
+      "reason": "动态招聘入口未返回岗位正文，未取得越南仓储项目的独立证据"
+    },
+    {
+      "industry": "消费品",
+      "client": "百加得 Bacardi",
+      "id": "source-1icqka4",
+      "label": "Bacardi：Benelux订单履约与3PL岗位披露",
+      "url": "https://jobs.bacardilimited.com/job-search/200cb0e5e15a10019ed7d923e6ff0000",
+      "clientId": "client-h2vztb",
+      "cell": "E100",
+      "reason": "招聘页两次返回500，不能继续作为Benelux项目唯一证据"
+    },
+    {
+      "industry": "医药",
+      "client": "凯撒医疗",
+      "id": "source-t1uurc",
+      "label": "凯撒：供应链与供应商体系",
+      "url": "https://supplier.kp.org/about/",
+      "clientId": "client-bl5ah0",
+      "cell": "E5",
+      "reason": "未引用的供应商体系概况"
+    },
+    {
+      "industry": "医药",
+      "client": "HCA医疗",
+      "id": "source-ym1ju1",
+      "label": "HCA：医疗服务网络",
+      "url": "https://www.hcahealthcare.com/about",
+      "clientId": "client-158t8xz",
+      "cell": "E8",
+      "reason": "跳转至地区访问限制页面，保留HCA具体供应链与英国布局来源"
+    },
+    {
+      "industry": "医药",
+      "client": "嘉德诺健康",
+      "id": "source-g9dv5h",
+      "label": "嘉德诺健康：业务与经营网络",
+      "url": "https://www.cardinalhealth.com/en/about-us.html",
+      "clientId": "client-1k6xi8v",
+      "cell": "E114",
+      "reason": "重复公司概况且多次无法读取，改以已取得的公司配送公告与自动化项目为依据"
+    },
+    {
+      "industry": "医药",
+      "client": "嘉德诺健康",
+      "id": "source-162a9nj",
+      "label": "嘉德诺健康：药品分销",
+      "url": "https://www.cardinalhealth.com/en/services/retail-pharmacy/products-and-distribution.html",
+      "clientId": "client-1k6xi8v",
+      "cell": "E115",
+      "reason": "多次无法读取的通用分销介绍，具体配送及自动化项目公告已覆盖对应业务"
+    },
+    {
+      "industry": "医药",
+      "client": "国药集团",
+      "id": "source-1qpokza",
+      "label": "国药一致：流通及零售业务",
+      "url": "https://en.sinopharm.com/sinopharmaccord.html",
+      "clientId": "client-10t0bor",
+      "cell": "E121",
+      "reason": "页面仅返回企业标题，未提供流通及零售业务正文；保留国药流通与物流网络资料"
+    },
+    {
+      "industry": "医药",
+      "client": "菲尼克斯医药",
+      "id": "source-qyum17",
+      "label": "PHOENIX Ireland：爱尔兰业务",
+      "url": "https://www.phxireland.ie/pages/phoenix-group",
+      "clientId": "client-5rsht",
+      "cell": "E126",
+      "reason": "未引用的爱尔兰公司介绍，未形成对应案例"
+    },
+    {
+      "industry": "医药",
+      "client": "强生",
+      "id": "source-ywimql",
+      "label": "强生：供应链技术与库存协同",
+      "url": "https://www.jnj.com/innovation/how-johnson-johnsons-innovative-supply-chain-technology-is-helping-transform-how-we-work-and-live",
+      "clientId": "client-yxet8s",
+      "cell": "E133",
+      "reason": "正文为医疗器械及视力保健案例，不能证明创新药全球供应链服务"
+    },
+    {
+      "industry": "医药",
+      "client": "礼来",
+      "id": "source-1644sln",
+      "label": "礼来：可及性与供给网络",
+      "url": "https://sustainability.lilly.com/impactareas/access-supply",
+      "clientId": "client-1wfwgzc",
+      "cell": "E141",
+      "reason": "可及性通用专题，未独立支持地区物流案例"
+    },
+    {
+      "industry": "医药",
+      "client": "艾伯维",
+      "id": "source-1parlqx",
+      "label": "艾伯维：爱尔兰制造扩建",
+      "url": "https://www.fiercepharma.com/pharma/abbvie-plans-500m-expansion-irish-manufacturing-site",
+      "clientId": "client-1qam344",
+      "cell": "E151",
+      "reason": "无法读取的二手制造扩建报道，布局已有官方年报支撑"
+    },
+    {
+      "industry": "餐饮",
+      "client": "宜瑞安",
+      "id": "source-o6yc4c",
+      "label": "宜瑞安：全球业务及客户市场",
+      "url": "https://www.ingredion.com/na/en-us/company",
+      "clientId": "client-13z1cj0",
+      "cell": "E24",
+      "reason": "正文只呈现公司栏目标题，布局已有官方年报支撑"
+    },
+    {
+      "industry": "餐饮",
+      "client": "宜瑞安",
+      "id": "source-3zl3if",
+      "label": "宜瑞安：中国淀粉制造基地",
+      "url": "https://www.ingredion.com/apac/en-sg/news-events/news/ingredion-establishes-sustainable-state-of-the-art-starch-manufacturing-plant-china",
+      "clientId": "client-13z1cj0",
+      "cell": "E25",
+      "reason": "未引用的境内制造新闻"
+    },
+    {
+      "industry": "餐饮",
+      "client": "开市客",
+      "id": "source-13k4mhg",
+      "label": "Costco：会员仓储经营模式",
+      "url": "https://www.costco.com/about.html",
+      "clientId": "client-6bnev9",
+      "cell": "E60",
+      "reason": "重复会员仓储经营模式概况"
+    },
+    {
+      "industry": "餐饮",
+      "client": "阿尔迪",
+      "id": "source-3aibjh",
+      "label": "ALDI Süd：供应链控制塔案例",
+      "url": "https://retail-optimiser.de/en/aldi-sued-orchestrates-global-supply-chain-with-one-ai/",
+      "clientId": "client-1vpioii",
+      "cell": "E72",
+      "reason": "未引用的第三方系统介绍"
+    }
+  ],
+  "repairedSources": [
+    {
+      "industry": "高科技",
+      "client": "美光 Micron",
+      "id": "source-11osxrd",
+      "oldUrl": "https://investors.micron.com/static-files/7a1f8c6f-1ce9-4efe-bc6e-722b6b9c4550",
+      "newUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000040/202510karscopy.pdf",
+      "reason": "原静态链接跳回投资者首页，替换为检索取得的SEC正式2025年报"
+    },
+    {
+      "industry": "汽车",
+      "client": "现代汽车集团 Hyundai Motor Group",
+      "id": "source-1l7qyhe",
+      "oldUrl": "https://worldwide.kia.com/int/files/company/sr/eco/Kia-Response-to-CDP-Climate-Change-Questionnaire.pdf",
+      "newUrl": "https://worldwide.kia.com/en/company/sustainability/environmental/climate-action",
+      "reason": "原报告链接跳回品牌首页，替换为官方列示生产国家的专题页"
+    },
+    {
+      "industry": "工业设备",
+      "client": "迪尔 John Deere",
+      "id": "source-4tf1xd",
+      "oldUrl": "https://www.rhenus.group/news-media/en/rhenus-automotive-opens-a-fourth-warehouse-for-john-deere-in-mannheim/",
+      "newUrl": "https://www.rhenus.group/news-media/en/rhenus-automotive-opens-a-fourth-warehouse-for-john-deere-in-mannheim/",
+      "reason": "已取得带原始日期的官方历史原文，保留Mannheim项目并明确历史状态"
+    },
+    {
+      "industry": "工业设备",
+      "client": "发那科 FANUC",
+      "id": "source-g4zbnt",
+      "oldUrl": "https://www.fanuc.co.jp/en/profile/booklet/pdf/corporateprofile202508_e.pdf",
+      "newUrl": "https://www.fanuc.co.jp/en/profile/booklet/pdf/corporateprofile202603_e.pdf",
+      "reason": "原2025年8月PDF返回404，替换为检索取得的官方新版"
+    },
+    {
+      "industry": "工业设备",
+      "client": "中国宝武 China Baowu",
+      "id": "source-dr638q",
+      "oldUrl": "https://www.baosteeleu.com/baoou_cms/content/baoou/indexEnglish/index.html",
+      "newUrl": "https://esales.baosteel.com/baosteel_products/salesSystem.do?method=abroadEn",
+      "reason": "以宝钢官方海外网络替换证书异常且无法稳定读取的欧洲站点"
+    },
+    {
+      "industry": "工业设备",
+      "client": "莫霍克 Mohawk Industries",
+      "id": "source-yjy3d9",
+      "oldUrl": "https://www.dsv.com/sv-se/insikter/kundcase/unilin",
+      "newUrl": "https://www.dsv.com/en-in/insights/case-studies/unilin",
+      "reason": "原瑞典站404；英文原文明确说明英国仓储配送及欧洲运输"
+    },
+    {
+      "industry": "消费品",
+      "client": "宝洁 Procter & Gamble",
+      "id": "source-1vt1bzq",
+      "oldUrl": "https://live.euronext.com/en/products/equities/company-news/2025-12-19-ctp-signs-lease-procter-gamble-37000-sqm-flagship",
+      "newUrl": "https://ctp.eu/news/ctp-signs-lease-with-procter-gamble-for-37000-sqm-flagship-facility-in-prague/",
+      "reason": "使用发行人原始公告替换不能直接读取的交易所转载入口"
+    },
+    {
+      "industry": "消费品",
+      "client": "三得利全球烈酒 Suntory Global Spirits",
+      "id": "source-rbi6e2",
+      "oldUrl": "https://www.fiege.com/de/kundenstories/suntory",
+      "newUrl": "https://www.fiege.com/en/perfect-serve",
+      "reason": "替换为已取得具体仓储与德奥配送原文的官方英文案例"
+    },
+    {
+      "industry": "医药",
+      "client": "赛诺菲",
+      "id": "source-1dyka5q",
+      "oldUrl": "https://www.edb.gov.sg/news-and-insights/sanofi-unveils-world-first-modular-facility-in-singapore",
+      "newUrl": "https://www.sanofi.com/en/our-science/manufacturing-and-supply/vaccines-manufacturing-and-supply",
+      "reason": "用企业官方生产网络原文替换仅显示机器人验证的EDB入口"
+    },
+    {
+      "industry": "医药",
+      "client": "阿斯利康",
+      "id": "source-a2zyax",
+      "oldUrl": "https://www.astrazeneca.com/content/az-au/about-us/manufacturing-australia.html",
+      "newUrl": "https://www.astrazeneca.com.au/about-us/manufacturing-australia.html",
+      "reason": "更新为重定向后正式澳大利亚站点"
+    },
+    {
+      "industry": "医药",
+      "client": "阿斯利康",
+      "id": "source-1hyjwfc",
+      "oldUrl": "https://supplychaindigital.com/digital-supply-chain/astrazeneca-strengthens-its-partnership-yusen-logistics",
+      "newUrl": "https://www.prweb.com/releases/yusen_logistics_extends_business_with_astrazeneca/prweb14777901.htm",
+      "reason": "以Yusen发布的新闻稿替换行业媒体转述，并明确历史时间"
+    },
+    {
+      "industry": "医药",
+      "client": "麦克森",
+      "id": "source-3tax4f",
+      "oldUrl": "https://www.mckesson.ca/distribution-services",
+      "newUrl": "https://www.mckesson.ca/en-CA/distribution-services",
+      "reason": "补全官方语言路径，恢复具体分销服务正文"
+    },
+    {
+      "industry": "医药",
+      "client": "辉瑞",
+      "id": "source-xep4r8",
+      "oldUrl": "https://www.dhl.com/global-en/delivered/innovation/ingenious-supply-chain-solutions-for-revolutionary-vaccines.html",
+      "newUrl": "https://www.anacargo.jp/en/news/20210222_EN.html",
+      "reason": "原专题没有直接证明DHL承运范围，替换为ANA发布的三方运输公告"
+    }
+  ],
+  "removedRecords": [
+    {
+      "industry": "高科技",
+      "client": "三星半导体 Samsung DS",
+      "id": "project-1ftz7l8",
+      "title": "奥斯汀晶圆厂物料收储与机台领用",
+      "reason": "唯一岗位原文当前无法复核"
+    },
+    {
+      "industry": "高科技",
+      "client": "美的 Midea",
+      "id": "project-1v8kdma",
+      "title": "Pouso Alegre冰箱及洗衣机制造节点",
+      "reason": "唯一新闻来源正文已不存在，且属于纯制造背景"
+    },
+    {
+      "industry": "消费品",
+      "client": "保乐力加 Pernod Ricard",
+      "id": "project-1hl87ta",
+      "title": "促销物料库存分拨项目",
+      "reason": "唯一岗位原文当前无法复核"
+    },
+    {
+      "industry": "消费品",
+      "client": "保乐力加 Pernod Ricard",
+      "id": "project-9ago7l",
+      "title": "进口烈酒包装与仓储项目",
+      "reason": "唯一岗位原文当前无法复核"
+    },
+    {
+      "industry": "消费品",
+      "client": "百加得 Bacardi",
+      "id": "project-d919qp",
+      "title": "Benelux 烈酒/POS物料渠道供货项目",
+      "reason": "唯一岗位来源两次返回500"
+    },
+    {
+      "industry": "消费品",
+      "client": "百加得 Bacardi",
+      "id": "project-2o2q5o",
+      "title": "Benelux 烈酒/POS物料渠道供货项目",
+      "reason": "唯一岗位来源两次返回500"
+    },
+    {
+      "industry": "医药",
+      "client": "强生",
+      "id": "project-n4y50r",
+      "title": "全球供应链服务",
+      "reason": "将医疗器械技术案例误配为创新药全球服务"
+    }
+  ]
+}

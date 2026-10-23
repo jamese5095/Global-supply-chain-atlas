@@ -79,6 +79,8 @@
   }).map(p=>({...p}));
  }
  function parseWorkbook(wb,options){
+  const exchange=typeof module!=='undefined'&&module.exports?require('./workbook-roundtrip.js'):root.WorkbookRoundtrip;
+  const restored=exchange?.restore(wb,{...options,core:api});if(restored)return restored;
   const {XLSX,areas,numeric,baseCountries}=options;
   const catalog=countryCatalog(baseCountries,areas,numeric),name=options.name||'高科技',industryId=uid('industry',name);
   let sheet,header;
@@ -173,6 +175,6 @@
   return (omit.includes('sub')||!s.sub||c.subindustry===s.sub)&&(omit.includes('client')||!s.client||r.clientId===s.client)&&(omit.includes('type')||!s.type||r.types.includes(s.type))&&(!s.provider||r.actors.some(p=>p.id===s.provider))&&(s.references||!r.reference)&&(s.history||r.state==='disclosed')&&(s.scope==='all'||(s.scope==='manufacturing'?r.attribute==='manufacturing':r.attribute==='logistics'));
  });}
  function stats(rows){return {projects:new Set(rows.map(r=>r.engagementId||r.id)).size,clients:new Set(rows.map(r=>r.clientId)).size,providers:new Set(rows.flatMap(r=>r.actors.filter(p=>p.role==='第三方服务').map(p=>p.id))).size};}
- const api={TYPES,TYPE_GROUPS,parseWorkbook,validate,filter,stats,uid,uniq,norm,cleanTitle,safeUrl,regionId,regionContext};
+ const api={TYPES,TYPE_GROUPS,parseWorkbook,validate,filter,stats,uid,uniq,norm,cleanTitle,safeUrl,regionId,regionContext,editable:{paragraphs,footprint,actors,associate,getTypes,refNums,countryCatalog}};
  root.WorkbookAtlas=api;if(typeof module!=='undefined'&&module.exports)module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

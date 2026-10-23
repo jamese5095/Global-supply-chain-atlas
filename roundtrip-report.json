@@ -1,0 +1,339 @@
+{
+  "status": "passed",
+  "datasets": [
+    {
+      "industry": "高科技",
+      "customers": 25,
+      "records": 75,
+      "sources": 103,
+      "identical": true
+    },
+    {
+      "industry": "汽车",
+      "customers": 25,
+      "records": 124,
+      "sources": 94,
+      "identical": true
+    },
+    {
+      "industry": "工业设备",
+      "customers": 25,
+      "records": 124,
+      "sources": 103,
+      "identical": true
+    },
+    {
+      "industry": "消费品",
+      "customers": 25,
+      "records": 105,
+      "sources": 99,
+      "identical": true
+    },
+    {
+      "industry": "医药",
+      "customers": 30,
+      "records": 47,
+      "sources": 124,
+      "identical": true
+    },
+    {
+      "industry": "餐饮",
+      "customers": 15,
+      "records": 47,
+      "sources": 66,
+      "identical": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "高科技完整语义往返",
+      "status": "passed"
+    },
+    {
+      "name": "高科技隐藏辅助表",
+      "status": "passed"
+    },
+    {
+      "name": "高科技来源链接完整",
+      "status": "passed"
+    },
+    {
+      "name": "高科技旧输入精确迁移",
+      "status": "passed"
+    },
+    {
+      "name": "汽车完整语义往返",
+      "status": "passed"
+    },
+    {
+      "name": "汽车隐藏辅助表",
+      "status": "passed"
+    },
+    {
+      "name": "汽车来源链接完整",
+      "status": "passed"
+    },
+    {
+      "name": "汽车旧输入精确迁移",
+      "status": "passed"
+    },
+    {
+      "name": "工业设备完整语义往返",
+      "status": "passed"
+    },
+    {
+      "name": "工业设备隐藏辅助表",
+      "status": "passed"
+    },
+    {
+      "name": "工业设备来源链接完整",
+      "status": "passed"
+    },
+    {
+      "name": "工业设备旧输入精确迁移",
+      "status": "passed"
+    },
+    {
+      "name": "消费品完整语义往返",
+      "status": "passed"
+    },
+    {
+      "name": "消费品隐藏辅助表",
+      "status": "passed"
+    },
+    {
+      "name": "消费品来源链接完整",
+      "status": "passed"
+    },
+    {
+      "name": "消费品旧输入精确迁移",
+      "status": "passed"
+    },
+    {
+      "name": "医药完整语义往返",
+      "status": "passed"
+    },
+    {
+      "name": "医药隐藏辅助表",
+      "status": "passed"
+    },
+    {
+      "name": "医药来源链接完整",
+      "status": "passed"
+    },
+    {
+      "name": "医药旧输入精确迁移",
+      "status": "passed"
+    },
+    {
+      "name": "餐饮完整语义往返",
+      "status": "passed"
+    },
+    {
+      "name": "餐饮隐藏辅助表",
+      "status": "passed"
+    },
+    {
+      "name": "餐饮来源链接完整",
+      "status": "passed"
+    },
+    {
+      "name": "餐饮旧输入精确迁移",
+      "status": "passed"
+    },
+    {
+      "name": "浏览器UMD分支可读取统一工作簿",
+      "status": "passed"
+    },
+    {
+      "name": "可见C列修改优先于隐藏旧数据且不改其他客户",
+      "status": "passed"
+    },
+    {
+      "name": "客户改名保留ID",
+      "status": "passed"
+    },
+    {
+      "name": "合并子行业格修改作用于实际合并范围",
+      "status": "passed"
+    },
+    {
+      "name": "项目改名保留项目及合作ID和历史状态",
+      "status": "passed"
+    },
+    {
+      "name": "删除项目不会根据D列虚构全球项目",
+      "status": "passed"
+    },
+    {
+      "name": "空白国家格新增项目及来源引用",
+      "status": "passed"
+    },
+    {
+      "name": "来源标题与真实链接修改生效",
+      "status": "passed"
+    },
+    {
+      "name": "新增来源空位可编辑",
+      "status": "passed"
+    },
+    {
+      "name": "删除仍被引用来源时拒绝整包写入",
+      "status": "passed"
+    },
+    {
+      "name": "表头改动明确拒绝且不忽略用户内容",
+      "status": "passed"
+    },
+    {
+      "name": "合并范围改动明确拒绝",
+      "status": "passed"
+    },
+    {
+      "name": "D列主体改动保留且未改地区内容完整",
+      "status": "passed"
+    },
+    {
+      "name": "一格多项目变更不丢相邻项目",
+      "status": "passed"
+    },
+    {
+      "name": "同客户国家与区域共用混合范围不互相覆盖",
+      "status": "passed"
+    },
+    {
+      "name": "辅助工作表被删除时拒绝静默降级",
+      "status": "passed"
+    },
+    {
+      "name": "旧表基础上的用户修改不会被静默替换且回流有报告",
+      "status": "passed"
+    },
+    {
+      "name": "高科技全球案例可见且状态保留",
+      "status": "passed"
+    },
+    {
+      "name": "医药全球案例可见且状态保留",
+      "status": "passed"
+    },
+    {
+      "name": "餐饮全球案例可见且状态保留",
+      "status": "passed"
+    },
+    {
+      "name": "BG现有口径保持",
+      "status": "passed"
+    },
+    {
+      "name": "测试过程未写入主数据",
+      "status": "passed"
+    }
+  ],
+  "bg": {
+    "projects": 486,
+    "clients": 137,
+    "industries": 6,
+    "typed": 366,
+    "planned": 17,
+    "historical": 44
+  },
+  "sourceDataUnchanged": true,
+  "nativeWorkbookChecks": [
+    {
+      "file": "国际业务热力图_医药_统一数据版.xlsx",
+      "sourceHyperlinks": 124,
+      "hiddenHelper": true,
+      "freeze": "F3",
+      "businessFill": "FFEAF3FA",
+      "packageValid": true
+    },
+    {
+      "file": "国际业务热力图_工业设备_统一数据版.xlsx",
+      "sourceHyperlinks": 103,
+      "hiddenHelper": true,
+      "freeze": "F3",
+      "businessFill": "FFEAF3FA",
+      "packageValid": true
+    },
+    {
+      "file": "国际业务热力图_汽车_统一数据版.xlsx",
+      "sourceHyperlinks": 94,
+      "hiddenHelper": true,
+      "freeze": "F3",
+      "businessFill": "FFEAF3FA",
+      "packageValid": true
+    },
+    {
+      "file": "国际业务热力图_消费品_统一数据版.xlsx",
+      "sourceHyperlinks": 99,
+      "hiddenHelper": true,
+      "freeze": "F3",
+      "businessFill": "FFEAF3FA",
+      "packageValid": true
+    },
+    {
+      "file": "国际业务热力图_餐饮_统一数据版.xlsx",
+      "sourceHyperlinks": 66,
+      "hiddenHelper": true,
+      "freeze": "F3",
+      "businessFill": "FFEAF3FA",
+      "packageValid": true
+    },
+    {
+      "file": "国际业务热力图_高科技_统一数据版.xlsx",
+      "sourceHyperlinks": 103,
+      "hiddenHelper": true,
+      "freeze": "F3",
+      "businessFill": "FFEAF3FA",
+      "packageValid": true
+    }
+  ],
+  "appHandlerChecks": {
+    "status": "passed",
+    "imports": [
+      {
+        "industry": "高科技",
+        "actualAppImportAndApply": "passed"
+      },
+      {
+        "industry": "汽车",
+        "actualAppImportAndApply": "passed"
+      },
+      {
+        "industry": "工业设备",
+        "actualAppImportAndApply": "passed"
+      },
+      {
+        "industry": "消费品",
+        "actualAppImportAndApply": "passed"
+      },
+      {
+        "industry": "医药",
+        "actualAppImportAndApply": "passed"
+      },
+      {
+        "industry": "餐饮",
+        "actualAppImportAndApply": "passed"
+      }
+    ],
+    "editedLegacyConflictBlocked": true,
+    "method": "actual app handlers with DOM/D3 adapters; not native browser file chooser"
+  },
+  "browserQA": {
+    "sixIndustryNavigation": true,
+    "consoleErrors": [],
+    "importEntry": true,
+    "nativeFileChooserEndToEnd": false,
+    "desktopExcelOpen": false,
+    "workbookRenders": 6
+  },
+  "baseline": {
+    "customers": 145,
+    "rawRecords": 522,
+    "sources": 589,
+    "sourceDataUnchanged": true,
+    "originalWorkbooksUnchanged": true,
+    "regionPriorityUnchanged": true
+  }
+}
