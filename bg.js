@@ -104,7 +104,7 @@
  function refresh(){
   if(!active)return;
   hideTip();const ps=rows(),s=agg.stats(ps);
-  $('pageTitle').textContent='BG国际供应链布局总览';document.title='BG国际供应链布局总览 · 六行业';
+  $('pageTitle').textContent='六行业国际供应链布局 · BG总览';document.title='六行业国际供应链布局 · BG总览';
   document.querySelector('.eyebrow').textContent='六行业需求 · 网络资源复用 · 能力布局';
   $('introText').innerHTML=window.AtlasScope.bg(window.AtlasHost.datasets(),{compact:!area});
   $('bgView').classList.toggle('bg-home',!area);
@@ -138,7 +138,7 @@
   if(b.hasAttribute('data-bg-clear')){if(b.dataset.bgClear==='area'){area='';drawMap();}else type='';refresh();}
  });
  $('bgReset').addEventListener('click',()=>{area='';type='';drawMap();refresh();});
- document.querySelector('.brand').addEventListener('click',()=>{if(active)activate();});
+ document.querySelector('.brand').addEventListener('click',()=>{if(window.AtlasNav)window.AtlasNav.home();else activate();});
  function snapshot(){return {kind:'bg',area,type,label:area?areaMap.get(area).name+' · BG区域':'BG总览首页'};}
  function restore(saved){activate();area=areaMap.has(saved.area)?saved.area:'';type=core.TYPES.includes(saved.type)?saved.type:'';drawMap();refresh();}
  window.AtlasBG={activate,deactivate,snapshot,restore,get active(){return active;}};

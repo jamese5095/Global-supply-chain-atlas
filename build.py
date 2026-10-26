@@ -1,10 +1,12 @@
 from pathlib import Path
 import json
+import base64
 ROOT=Path(__file__).resolve().parent
 text=(ROOT/'page.html').read_text()
 licenses='\n\n'.join((ROOT/'vendor'/name).read_text() for name in ['D3-LICENSE.txt','TOPOJSON-LICENSE.txt','WORLD-ATLAS-LICENSE.txt','SHEETJS-LICENSE.txt'])
 text=text.replace('<head>','<head>\n<!-- Third-party notices\n'+licenses+'\nNatural Earth geographical data: Public Domain.\n-->')
 replacements={
+ 'SFLOGO':'data:image/png;base64,'+base64.b64encode((ROOT/'assets/sf-express-logo.png').read_bytes()).decode('ascii'),
  'PROVIDERSTYLE':(ROOT/'provider.css').read_text(),
  'PROVIDERCORE':(ROOT/'provider-core.js').read_text(),
  'PROVIDERUI':(ROOT/'provider-ui.js').read_text(),

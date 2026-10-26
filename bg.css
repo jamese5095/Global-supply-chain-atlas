@@ -83,3 +83,7 @@ body.bg-mode .intro{margin-bottom:20px}body.bg-mode .eyebrow{letter-spacing:1px}
 @media(max-width:1100px){#bgView.bg-home .bg-hero{grid-template-columns:minmax(0,1.45fr) minmax(300px,1fr)}.bg-insights-heading{padding:19px 20px 15px}.bg-insights-list{padding:3px 20px 7px}.bg-insights-list>li{padding-block:13px}.bg-insights-list>li:before{top:21px}#bgView.bg-home #bgProviders .provider-row{grid-template-columns:116px minmax(45px,1fr) 32px;gap:8px}}
 @media(max-width:800px){#bgView.bg-home .bg-hero{grid-template-columns:1fr}.bg-insights-list h3{font-size:14px}.bg-insights-list p{font-size:13px}#bgView.bg-home .bg-analysis-grid{grid-template-columns:1fr}#bgView.bg-home #bgProviders{padding:18px 16px}#bgView.bg-home #bgProviders .provider-row{grid-template-columns:125px minmax(45px,1fr) 32px}#bgView.bg-home #bgTypes{max-height:420px}}
 @media(max-width:650px){#bgView.bg-home #bgProviders .provider-row{grid-template-columns:112px minmax(35px,1fr) 30px;gap:7px}#bgView.bg-home #bgProviders .provider-name strong{font-size:11px}}
+
+/* Official SF mark is embedded so both hosted and standalone pages retain branding. */
+.masthead .brand-logo{display:block;width:38px;height:38px;object-fit:contain;border-radius:0;background:transparent;flex-shrink:0}
+@media(max-width:700px){.masthead .brand{gap:8px}.masthead .brand-logo{display:block;width:30px;height:30px}}

@@ -1,6 +1,6 @@
 # BG Global Supply Chain Atlas
 
-BG国际供应链布局总览 · 六行业
+六行业国际供应链布局 · BG总览
 
 在线访问：https://jamese5095.github.io/Global-supply-chain-atlas/
 
@@ -135,3 +135,9 @@ BG区域页的供应链业务结构仅展示案例数大于0的类型，右侧�
 区域页继续保留区域排序导航、区域分析、非零业务类型、全部六行业计数（含零值）及全宽TOP5。首页样式限定在 `#bgView.bg-home`；行业页布局、业务数据和承接商统计口径保持不变。标题下选样说明仅在BG首页精简，行业及区域页原说明保留。
 
 `bg-content.json` 的 `planning` 将11条行业方向映射至2块共建重点、3个定向节点；`shared` 内容保留在源资料中，前端不再渲染共用能力板块。详细规划内容全部直接展示。当前首页及区域共建规划已纳入本次发布；案例数据和承接商统计口径保持不变。
+
+## 名称与品牌（2026-10-26）
+
+顶部项目名为「国际供应链行业研究」，BG主标题及浏览器标题为「六行业国际供应链布局 · BG总览」。行业页面继续保留各自标题。顺丰Logo保留返回BG首页的行为，并在窄屏显示。
+
+`assets/sf-express-logo.png`取自[顺丰官网](https://www.sf-express.com/chn/sc)导航栏的[原始图片](https://www-static.sf-express.com/ssr2_blue/_next/static/media/ic-black-logo.c86816fe.png)。构建时以数据URI内嵌到`index.html`，离线页面不依赖外部图片请求。
