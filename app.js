@@ -6,7 +6,7 @@
  const bundle=read('atlas-data'),initialDatasets=bundle.datasets||[bundle],seed=initialDatasets[0],meta=read('metadata'),areas=read('region-data'),geo=read('geo-data');
  initialDatasets.forEach(core.validate);
  const datasets=new Map(initialDatasets.map(d=>[d.id,d])),byArea=new Map(areas.map(a=>[a.id,a])),countryArea=new Map(areas.flatMap(a=>a.countries.map(id=>[id,a.id])));
- const allNames=new Intl.DisplayNames(['zh-CN'],{type:'region'}),palette=['#e7edf3','#fae4e8','#efb8c3','#df879b','#bf4d6b','#8e2341'];
+ const allNames=new Intl.DisplayNames(['zh-CN'],{type:'region'}),palette=['#e7edf3','#d9ebf8','#aed3ef','#76b1dd','#3f86bc','#15588f'];
  const bin=n=>n===0?0:n===1?1:n<=3?2:n<=6?3:n<=10?4:5,uniq=core.uniq;
  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const status={planned:'规划／建设',case:'历史案例'};
@@ -90,7 +90,7 @@
  function paintMap(){
   const a=byArea.get(state.area),value=rs=>core.stats(rs||[])[state.metric];
   areaLayer.selectAll('path').attr('fill',a=>palette[bin(value(areaRows.get(a.id)))]).classed('has-data',a=>areaRows.has(a.id)).attr('role',a=>areaRows.has(a.id)?'button':null).attr('tabindex',a=>areaRows.has(a.id)?0:null).attr('aria-label',a=>`${a.name}，${value(areaRows.get(a.id))}${state.metric==='clients'?'家客户':'个项目'}`);
-  mapCountries.attr('fill',f=>countryRows.has(f.iso)&&state.country===f.iso?'#721d38':palette[bin(value(countryRows.get(f.iso)))]).classed('selected',f=>countryRows.has(f.iso)&&state.country===f.iso).classed('has-data',f=>countryRows.has(f.iso)).attr('role',f=>countryRows.has(f.iso)?'button':null).attr('tabindex',f=>countryRows.has(f.iso)?0:null).attr('aria-label',f=>`${nameCountry(f.iso)}，${value(countryRows.get(f.iso))}${state.metric==='clients'?'家客户':'个项目'}`).attr('aria-pressed',f=>String(countryRows.has(f.iso)&&state.country===f.iso));
+  mapCountries.attr('fill',f=>countryRows.has(f.iso)&&state.country===f.iso?'#0d3e68':palette[bin(value(countryRows.get(f.iso)))]).classed('selected',f=>countryRows.has(f.iso)&&state.country===f.iso).classed('has-data',f=>countryRows.has(f.iso)).attr('role',f=>countryRows.has(f.iso)?'button':null).attr('tabindex',f=>countryRows.has(f.iso)?0:null).attr('aria-label',f=>`${nameCountry(f.iso)}，${value(countryRows.get(f.iso))}${state.metric==='clients'?'家客户':'个项目'}`).attr('aria-pressed',f=>String(countryRows.has(f.iso)&&state.country===f.iso));
   $('mapTitle').textContent=a?a.name+'区域':state.client?clients.get(state.client).name+' · 全球区域':'全球区域总览';$('countryPill').hidden=!state.country;$('countryPill').textContent=state.country?'已选：'+nameCountry(state.country):'';
   $('legend').innerHTML=['当前无资料','1','2–3','4–6','7–10','11+'].map((s,i)=>`<span><i class="swatch" style="background:${palette[i]}"></i>${s}</span>`).join('');
   $('mapCaption').textContent=a?'右侧展示本区案例；灰色国家暂无案例，点有资料的国家可进一步筛选。':'色深表示涉及客户数；鼠标悬停区域查看概况，点击查看各国案例。';

@@ -4,7 +4,7 @@
  const $=id=>document.getElementById(id),core=WorkbookAtlas,agg=BGAtlas;
  const read=id=>JSON.parse($(id).textContent),editorial=read('bg-editorial'),meta=read('metadata'),areas=read('region-data'),geo=read('geo-data');
  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- const palette=['#e7edf3','#fae4e8','#efb8c3','#df879b','#bf4d6b','#8e2341'];
+ const palette=['#e7edf3','#d9ebf8','#aed3ef','#76b1dd','#3f86bc','#15588f'];
  const bin=n=>!n?0:n<10?1:n<25?2:n<50?3:n<100?4:5;
  const areaMap=new Map(areas.map(a=>[a.id,a])),countryArea=new Map(areas.flatMap(a=>a.countries.map(id=>[id,a.id])));
  const iso=f=>meta.numeric[String(f.id).padStart(3,'0')]||String(f.id);
