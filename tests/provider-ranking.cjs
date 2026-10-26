@@ -22,6 +22,7 @@ const project={dataset:d,industry:'test',records:[r],areaId:'europe'};
 const pol={...policy,bindings:[{recordId:'r',signature:P.signature(r),actors:[{name:'DHL',duty:'example',type:'成品仓'},{name:'Deutsche Post',duty:'example',type:'成品仓'},{name:'UPS',duty:'example',type:'末端配送'}]}]};
 let sample=P.build([project],pol,C.TYPES);assert.equal(sample.entries.length,2,'Aliases merged; two operators each get one case');
 assert.equal(P.rank(sample,{type:'成品仓'}).relations,1,'Primary single assignment');assert.equal(P.rank(sample,{area:'north-america'}).relations,0,'No geographic spreading');
+assert.equal(P.build([{...project,records:[{...r,areaId:'new-region'}]}],pol,C.TYPES).entries.length,0,'Changed geographic allocation invalidates association');
 assert.equal(P.build([{...project,records:[{...r,detail:'modified'}]}],pol,C.TYPES).entries.length,0,'Changed case invalidates manual multitype association');
 assert.equal(P.build([{...project,dataset:{...d,clients:[{...d.clients[0],actors:d.clients[0].actors.map(a=>({...a,duty:'changed'}))}]}}],pol,C.TYPES).entries.length,0,'Changed actor duty invalidates association');
 assert.equal(P.build([{...project,records:[{...r,types:[]}]}],{...policy,bindings:[]},C.TYPES).entries.length,0,'Untyped not forced into 17');

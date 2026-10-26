@@ -2,7 +2,7 @@
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.ProviderAtlas=api;})(typeof globalThis!=='undefined'?globalThis:this,()=>{
  'use strict';
  const key=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[\s.,，。’'()（）\-]/g,'');
- const signature=r=>JSON.stringify([r.clientId,r.title,r.detail,r.types,r.scope,r.countryId,r.region,r.sourceIds]);
+ const signature=r=>JSON.stringify([r.clientId,r.title,r.detail,r.types,r.scope,r.countryId,r.region,r.areaId,r.sourceIds]);
  function canonical(name,policy){const n=key(name);return policy.providers.find(p=>p.aliases.some(a=>key(a)===n))||null;}
  function external(actor,client,policy){
   const p=canonical(actor.name,policy);if(!p||['客户自营','集团物流','制造与供货','物业与设施','技术合作方','客户仓储使用方'].includes(actor.role))return null;
@@ -16,7 +16,7 @@
    for(const record of project.records){
     const client=project.dataset.clients.find(c=>c.id===record.clientId);if(!client)continue;
     const rule=byRecord.get(record.id),reviewed=rule&&rule.signature===signature(record);
-    const actors=reviewed?rule.actors.map(x=>({review:x,actor:client.actors.find(a=>a.name===x.name&&a.duty===x.duty)})).filter(x=>x.actor):record.actors.map(actor=>({actor,review:null}));
+    const actors=reviewed?rule.actors.map(x=>({review:x,actor:client.actors.find(a=>a.name===x.name&&a.duty===x.duty)})).filter(x=>x.actor&&(!x.review.sourceIds||JSON.stringify(x.review.sourceIds)===JSON.stringify(x.actor.sourceIds))):record.actors.map(actor=>({actor,review:null}));
     for(const {actor,review}of actors){
      const provider=external(actor,client,policy);if(!provider||!actor.sourceIds?.length)continue;
      const type=review?.type||(record.types.length===1?record.types[0]:'');
