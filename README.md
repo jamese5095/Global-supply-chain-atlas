@@ -100,3 +100,5 @@ BG全球页TOP10、BG区域页TOP5；六个行业仅在各自全球首页展示T
 - `node tests/provider-ranking.cjs`：覆盖自营排除、别名去重、项目归属变更、17类限制、排名范围及分段合计。
 
 归并遵循已核实主体关系：DHL各服务品牌与Deutsche Post统一；CEVA的旧Bolloré名称统一；输入中的Schenker（DSV集团）名称统一；GXO与Wincanton统一。HAVI与Martin Brower仍按披露运营品牌分别统计。GXO归并依据：[2024年完成收购公告](https://investors.gxo.com/news-releases/news-release-details/gxo-completes-acquisition-wincanton)、[2025年年报中的监管及整合说明](https://www.sec.gov/Archives/edgar/data/1852244/000185224426000007/gxo-20251231.htm)。其余项目依据保留在原数据与关联层的sourceIds中。
+
+BG区域页的供应链业务结构仅展示案例数大于0的类型，右侧六行业数量完整保留（含0值）；全球页继续保留官方17类。此调整仅影响显示，不修改统计及数据。
