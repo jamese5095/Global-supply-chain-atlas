@@ -13,10 +13,12 @@
   const selection=counts.every(n=>n===5)?`本行业覆盖${subs.size}个子行业，每个子行业选取5家头部企业，共${db.clients.length}家。`:`本行业覆盖${subs.size}个子行业，共收录${db.clients.length}家代表性头部企业。`;
   return render(selection);
  }
- function bg(datasets){
+ function bg(datasets,{compact=false}={}){
   const subCount=datasets.reduce((n,d)=>n+new Set(d.clients.map(c=>c.subindustry)).size,0);
   const allFive=datasets.every(d=>[...new Set(d.clients.map(c=>c.subindustry))].every(sub=>d.clients.filter(c=>c.subindustry===sub).length===5));
-  return render(`汇集${datasets.length}个行业、${subCount}个子行业${allFive?'分别选取的5家头部企业':'的代表性头部企业'}及其供应链案例。`,true);
+  const selection=`汇集${datasets.length}个行业、${subCount}个子行业${allFive?'分别选取的5家头部企业':'的代表性头部企业'}及其供应链案例。`;
+  if(!compact)return render(selection,true);
+  return `<p class="scope-note"><strong>客户选取：</strong><span><strong class="scope-selection">${esc(selection)}</strong>按各子行业适用的营收、销量、份额或运营网络规模等领先指标，结合国际经营布局或规模化区域需求及供应链代表性选取，不作跨子行业统一排名。</span></p><p class="scope-note"><strong>案例范围：</strong><span>纳入有来源、业务及落地区域明确的海外或跨境项目，涵盖生产配套、仓运配及售后逆向，含自营与外部承接。设厂和市场信息仅作背景，国内业务仅作参考；历史及规划项目保留标识，区域与全球项目不拆分到国家，国内参考及纯制造布局不计入热度。</span></p>`;
  }
  window.AtlasScope={industry,bg};
 })();
