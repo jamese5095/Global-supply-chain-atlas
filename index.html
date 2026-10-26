@@ -886,7 +886,7 @@ t.sheetStubs=true}if(t.type=="array"){t.type="binary";var a=xk(e,t);t.type="arra
  }
  function renderProviders(){
   const host=$('industryProviders'),compact=db.name==='高科技';
-  if(compact)$('industryStrategy').after(host);else $('bgView').before(host);
+  if(compact)$('industryStrategy').before(host);else $('bgView').before(host);
   host.classList.toggle('provider-compact',compact);host.hidden=!!(state.area||state.country||state.client||state.sub||window.AtlasBG?.active);window.ProviderCharts.hide();
   if(!host.hidden)window.ProviderCharts.render(host,{projects:BGAtlas.build([db]).projects,type:state.type,limit:5,title:db.name+' · 全球外部承接商TOP5'});
  }
