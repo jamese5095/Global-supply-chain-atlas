@@ -2,7 +2,7 @@
 (()=>{
  'use strict';
  const core=WorkbookAtlas,$=id=>document.getElementById(id),read=id=>JSON.parse($(id).textContent);
- const auditPolicy=read('audit-policy');
+ const auditPolicy=read('audit-policy'),strategyContent=read('industry-strategy-content');
  const bundle=read('atlas-data'),initialDatasets=bundle.datasets||[bundle],seed=initialDatasets[0],meta=read('metadata'),areas=read('region-data'),geo=read('geo-data');
  initialDatasets.forEach(core.validate);
  const datasets=new Map(initialDatasets.map(d=>[d.id,d])),byArea=new Map(areas.map(a=>[a.id,a])),countryArea=new Map(areas.flatMap(a=>a.countries.map(id=>[id,a.id])));
@@ -60,12 +60,12 @@
   renderNavigation();renderProfile();paintMap();renderPanel();renderStrategy();renderProviders();rememberView();
  }
  function renderStrategy(){
-  const host=$('industryStrategy'),home=db.name==='高科技'&&!state.area&&!state.country&&!state.client&&!state.sub&&!state.type&&!window.AtlasBG?.active;
-  host.hidden=!home;$('industryWorkspace').classList.toggle('tech-home',home);
-  if(home)IndustryStrategy.render(host,db,read('industry-strategy-content'),BGAtlas);
+  const host=$('industryStrategy'),home=!!strategyContent.industries[db.name]&&!state.area&&!state.country&&!state.client&&!state.sub&&!state.type&&!window.AtlasBG?.active;
+  host.hidden=!home;$('industryWorkspace').classList.toggle('industry-home',home);
+  if(home)IndustryStrategy.render(host,db,strategyContent,BGAtlas);
  }
  function renderProviders(){
-  const host=$('industryProviders'),compact=db.name==='高科技';
+  const host=$('industryProviders'),compact=!!strategyContent.industries[db.name];
   if(compact)$('industryStrategy').before(host);else $('bgView').before(host);
   host.classList.toggle('provider-compact',compact);host.hidden=!!(state.area||state.country||state.client||state.sub||window.AtlasBG?.active);window.ProviderCharts.hide();
   if(!host.hidden)window.ProviderCharts.render(host,{projects:BGAtlas.build([db]).projects,type:state.type,limit:5,title:db.name+' · 全球外部承接商TOP5'});
