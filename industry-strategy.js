@@ -21,7 +21,7 @@
      <section class="strategy-analysis-cell strategy-where"><h4>建设区域与能力</h4><strong>${esc(rec.location)}</strong><p>${esc(rec.capacity)}</p><div class="strategy-tags">${rec.businessTypes.map(t=>`<span>${esc(t)}</span>`).join('')}</div></section>
      <section class="strategy-analysis-cell strategy-why"><h4>为什么建设</h4><div class="strategy-evidence-stats">${[[f.clients,'家客户'],[f.cases,'个案例'],[f.subindustries,'个子行业']].map(([n,label])=>`<span><b>${n}</b>${label}</span>`).join('')}</div><p>${esc(rec.why)}</p><p class="strategy-customers">${examples.length?'相关客户：'+esc(examples.join('、')):'当前资料暂无匹配案例'}${f.planned||f.historical?`<small>含规划／建设${f.planned}项、历史${f.historical}项</small>`:''}</p></section>
      <section class="strategy-analysis-cell strategy-foundation"><h4>已有基础与关键缺口</h4><div class="strategy-basis"><b>${esc(rec.basis.tag)}</b><p>${esc(rec.basis.text)}</p></div><p class="strategy-gap"><b>重点补齐</b>${esc(rec.gap)}</p></section>
-     <section class="strategy-analysis-cell strategy-acquisition"><h4>如何建设及布局取舍</h4><div class="strategy-methods">${rec.methods.map(method=>`<div class="strategy-method"><span class="strategy-method-tag ${esc(method.kind)}">${esc(method.label)}</span><p>${esc(method.text)}</p></div>`).join('')}</div><p class="strategy-condition"><b>布局取舍</b>${esc(rec.condition)}</p></section>
+     <section class="strategy-analysis-cell strategy-acquisition"><h4>如何建设</h4><div class="strategy-methods">${rec.methods.map(method=>`<div class="strategy-method"><span class="strategy-method-tag ${esc(method.kind)}">${esc(method.label)}</span><p>${esc(method.text)}</p></div>`).join('')}</div></section>
     </div>
    </article>`;
   }).join('')}</div><p class="strategy-footnote">能力依据：海外能力建设表高科技行业页。建设方向与获取方式为分析建议，未按案例数量直接排序；案例可包含自营及规划项目。</p>`;
