@@ -2,7 +2,6 @@
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.IndustryStrategy=api;})(typeof globalThis!=='undefined'?globalThis:this,()=>{
  'use strict';
  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- const states={'快速落地':'ready','长期筑基':'develop','择机观察':'watch'};
  function evidence(dataset,recommendation,bg){
   const ps=bg.build([dataset]).projects,s=recommendation.selection;
   return ps.filter(p=>s.recordIds?p.records.some(r=>s.recordIds.includes(r.id)):(!s.area||p.areaId===s.area)&&(!s.subindustries||s.subindustries.includes(p.client.subindustry))&&(!s.types||s.types.some(t=>p.types.includes(t))));
@@ -10,9 +9,9 @@
  function facts(projects){return {cases:projects.length,clients:new Set(projects.map(p=>p.client.id)).size,subindustries:new Set(projects.map(p=>p.client.subindustry)).size,planned:projects.filter(p=>p.state==='planned').length,historical:projects.filter(p=>p.state==='case').length};}
  function render(host,dataset,content,bg){
   const c=content.industries[dataset.name];if(!c){host.innerHTML='';return;}
-  host.innerHTML=`<div class="strategy-heading"><div><p class="strategy-eyebrow">INDUSTRY STRATEGY</p><h2>高科技行业能力建设</h2></div><span class="strategy-version">${esc(content.version)}</span></div>
+  host.innerHTML=`<div class="strategy-heading"><div><p class="strategy-eyebrow">INDUSTRY STRATEGY</p><h2>高科技行业能力建设</h2></div></div>
   <p class="strategy-intro">围绕可聚合的客户需求选择建设方向，先验证节点复用，再确定能力获取方式。</p>
-  <section class="strategy-matrix-section" aria-label="重点国家及区域能力矩阵"><div class="strategy-subheading"><h3>重点能力布局</h3><span>行业输入的建设档位</span></div><div class="strategy-matrix-wrap"><table class="strategy-matrix"><thead><tr><th scope="col">建设能力</th>${c.columns.map(col=>`<th scope="col">${esc(col.label)}</th>`).join('')}</tr></thead><tbody>${c.capabilities.map(cap=>`<tr data-capability="${esc(cap.id)}"><th scope="row">${esc(cap.label)}</th>${c.columns.map(col=>`<td data-source-cell="${col.column}${cap.sourceRow}"><span class="strategy-state ${states[cap.states[col.key]]}">${esc(cap.states[col.key])}</span></td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="strategy-matrix-note">“快速落地”表示输入表的复制条件判断，仍需落实当地资源；全渠道仓配展示仓储履约部分。</p></section>
+
   <div class="strategy-subheading"><h3>建设方向与获取方式</h3><span>结合需求聚合、已有基础与能力缺口判断</span></div>
   <div class="strategy-direction-list">${c.recommendations.map(rec=>{
    const ps=evidence(dataset,rec,bg),f=facts(ps),examples=[...new Set(ps.map(p=>p.client.name.replace(/\s[A-Za-z].*$/,'')))].slice(0,4);
