@@ -57,10 +57,17 @@
   $('summary').innerHTML=[[st.clients,'涉及客户'],[st.projects,'收录案例']].map(([n,label])=>`<div class="stat"><b>${n}</b><span>${label}</span></div>`).join('');
   $('introText').innerHTML=window.AtlasScope.industry(db);
   $('context').innerHTML=[['client',c?.name||state.sub],['type',state.type],['area',byArea.get(state.area)?.name],['country',state.country?nameCountry(state.country):'']].filter(([,v])=>v).map(([k,v])=>`<button data-clear="${k}" title="取消筛选">${esc(v)} ×</button>`).join('')||'<span class="context-view">全部客户 · 全球 · 全部业务</span>';
-  renderNavigation();renderProfile();paintMap();renderPanel();renderProviders();rememberView();
+  renderNavigation();renderProfile();paintMap();renderPanel();renderStrategy();renderProviders();rememberView();
+ }
+ function renderStrategy(){
+  const host=$('industryStrategy'),home=db.name==='高科技'&&!state.area&&!state.country&&!state.client&&!state.sub&&!state.type&&!window.AtlasBG?.active;
+  host.hidden=!home;$('industryWorkspace').classList.toggle('tech-home',home);
+  if(home)IndustryStrategy.render(host,db,read('industry-strategy-content'),BGAtlas);
  }
  function renderProviders(){
-  const host=$('industryProviders');host.hidden=!!(state.area||state.country||state.client||state.sub||window.AtlasBG?.active);window.ProviderCharts.hide();
+  const host=$('industryProviders'),compact=db.name==='高科技';
+  if(compact)$('industryStrategy').after(host);else $('bgView').before(host);
+  host.classList.toggle('provider-compact',compact);host.hidden=!!(state.area||state.country||state.client||state.sub||window.AtlasBG?.active);window.ProviderCharts.hide();
   if(!host.hidden)window.ProviderCharts.render(host,{projects:BGAtlas.build([db]).projects,type:state.type,limit:5,title:db.name+' · 全球外部承接商TOP5'});
  }
  function viewSnapshot(){return {kind:'industry',dataset:db.id,state:{...state},search:$('navSearch').value,label:db.name+' · '+(clients.get(state.client)?.name||byArea.get(state.area)?.name||'全球')};}
@@ -168,6 +175,7 @@
   if(b.hasAttribute('data-clear')){clear(b.dataset.clear);return;}
   if(b.hasAttribute('data-type')){state.type=b.dataset.type;refresh();return;}
   if(b.hasAttribute('data-world')){world();return;}
+  if(b.hasAttribute('data-strategy-country')){const id=b.dataset.strategyCountry,a=b.dataset.area;if(countryArea.get(id)===a&&byArea.has(a)){state.area=a;state.country=id;state.broad=false;hideTip();drawGeography();refresh();}return;}
   if(b.hasAttribute('data-area')){chooseArea(b.dataset.area);return;}
   if(b.hasAttribute('data-country')){chooseCountry(b.dataset.country);return;}
  });

@@ -1,0 +1,248 @@
+{
+  "version": "2026-10-26",
+  "industries": {
+    "高科技": {
+      "source": {
+        "file": "20261012_供应链BG海外能力建设_V0.1.xlsx",
+        "sheet": "高科技",
+        "scope": "行业页，未使用首页汇总"
+      },
+      "columns": [
+        {
+          "key": "VN",
+          "label": "越南",
+          "column": "J"
+        },
+        {
+          "key": "MY",
+          "label": "马来西亚",
+          "column": "K"
+        },
+        {
+          "key": "JP",
+          "label": "日本",
+          "column": "G"
+        },
+        {
+          "key": "EU",
+          "label": "欧盟",
+          "column": "P"
+        }
+      ],
+      "capabilities": [
+        {
+          "id": "material-transport",
+          "label": "原材料集结与仓运一体",
+          "sourceRow": 12,
+          "originalLabel": "原材料集结原材料集结KD仓运一体",
+          "states": {
+            "VN": "快速落地",
+            "MY": "快速落地",
+            "JP": "择机观察",
+            "EU": "择机观察"
+          }
+        },
+        {
+          "id": "material-warehouse",
+          "label": "原材料仓储",
+          "sourceRow": 14,
+          "states": {
+            "VN": "快速落地",
+            "MY": "快速落地",
+            "JP": "择机观察",
+            "EU": "择机观察"
+          }
+        },
+        {
+          "id": "omnichannel",
+          "label": "全渠道仓配",
+          "sourceRow": 15,
+          "originalLabel": "全渠道仓配+金融",
+          "states": {
+            "VN": "快速落地",
+            "MY": "快速落地",
+            "JP": "长期筑基",
+            "EU": "快速落地"
+          }
+        },
+        {
+          "id": "white-glove",
+          "label": "数据中心白手套",
+          "sourceRow": 10,
+          "states": {
+            "VN": "快速落地",
+            "MY": "快速落地",
+            "JP": "快速落地",
+            "EU": "长期筑基"
+          }
+        },
+        {
+          "id": "precision",
+          "label": "精密设备仓运",
+          "sourceRow": 6,
+          "originalLabel": "精密设备供应链服务",
+          "states": {
+            "VN": "择机观察",
+            "MY": "快速落地",
+            "JP": "快速落地",
+            "EU": "快速落地"
+          }
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "sea-manufacturing",
+          "rank": 1,
+          "stage": "优先拓展",
+          "area": "southeast-asia",
+          "region": "东南亚",
+          "title": "制造物料仓运一体",
+          "location": "越南先行，马来西亚按客户节点复制",
+          "capacity": "集货运输、原材料仓与入厂补货协同",
+          "businessTypes": [
+            "入厂运输",
+            "VMI/外库",
+            "生产物流"
+          ],
+          "selection": {
+            "recordIds": [
+              "project-sn3ogv",
+              "project-1wy4xrg",
+              "project-768r4t",
+              "project-1vzao0t"
+            ]
+          },
+          "why": "越南电子制造与泰国PCB、空调生产均有物料仓储或调度需求。先在工厂周边核实线路、频次与作业兼容性，再组织多客户共用节点。",
+          "basis": {
+            "tag": "中越项目与国内仓储经验",
+            "text": "歌尔中越项目提供跨境协同经验；大疆结构件央仓提供原材料库存运营经验。",
+            "sourceCells": [
+              "E12",
+              "E14"
+            ]
+          },
+          "gap": "属地运营团队、客户库存接口与入厂接驳",
+          "steps": [
+            {
+              "name": "跨境集货运输",
+              "method": "复用现有经验",
+              "kind": "reuse"
+            },
+            {
+              "name": "当地物料仓",
+              "method": "伙伴合作起步",
+              "kind": "partner"
+            },
+            {
+              "name": "补货与库存运营",
+              "method": "内部建设",
+              "kind": "build"
+            }
+          ],
+          "condition": "先以明确工厂订单验证节点复用，再扩展周边客户。"
+        },
+        {
+          "id": "europe-fulfilment",
+          "rank": 2,
+          "stage": "优先拓展",
+          "area": "europe",
+          "region": "欧洲",
+          "title": "智能终端全渠道仓配",
+          "location": "德荷节点，连接欧盟消费市场",
+          "capacity": "共享库存、订单履约与退货处理",
+          "businessTypes": [
+            "电商仓",
+            "末端配送",
+            "逆向退货"
+          ],
+          "selection": {
+            "area": "europe",
+            "subindustries": [
+              "智能终端"
+            ],
+            "types": [
+              "电商仓",
+              "末端配送",
+              "逆向退货"
+            ]
+          },
+          "why": "3D打印机、清洁机器人及智能硬件已有本地仓与订单交付案例。围绕同一库存节点承接多品牌订单与退货，末端配送衔接当地网络。",
+          "basis": {
+            "tag": "全球央仓与香港仓配经验",
+            "text": "拓竹全球央仓、影石香港仓配提供品牌库存和订单运营经验，可作为欧洲复制的方法基础。",
+            "sourceCells": [
+              "E15"
+            ]
+          },
+          "gap": "欧盟本地仓运营、多渠道订单连接与退货处理",
+          "steps": [
+            {
+              "name": "品牌跨境运输",
+              "method": "复用现有经验",
+              "kind": "reuse"
+            },
+            {
+              "name": "德荷共享库存",
+              "method": "伙伴合作起步",
+              "kind": "partner"
+            },
+            {
+              "name": "订单与退货运营",
+              "method": "内部建设",
+              "kind": "build"
+            }
+          ],
+          "condition": "客户持续集聚、当地仓配能力成为瓶颈后，再评估并购履约网络与团队。"
+        },
+        {
+          "id": "japan-whiteglove",
+          "rank": 3,
+          "stage": "定向复制",
+          "area": "east-asia",
+          "region": "日本",
+          "title": "数据中心白手套交付",
+          "location": "围绕已识别数据中心客户节点进入",
+          "capacity": "精密运输、现场收发与跨站点协同",
+          "businessTypes": [
+            "入厂运输",
+            "生产物流"
+          ],
+          "selection": {
+            "recordIds": [
+              "project-q0tfvl"
+            ]
+          },
+          "why": "AWS日本案例涉及服务器、存储网络与机电设备收发及跨站点运输。先验证一个客户节点的专业交付，再随持续订单复制团队和作业标准。",
+          "basis": {
+            "tag": "亚洲区白手套项目经验",
+            "text": "行业输入已列阿里亚洲区7国白手套业务；日本档位为“快速落地”，可据此研究当地复制条件。",
+            "sourceCells": [
+              "E10",
+              "G10"
+            ]
+          },
+          "gap": "当地现场团队、精密操作资源与质量管理",
+          "steps": [
+            {
+              "name": "精密运输组织",
+              "method": "复用现有经验",
+              "kind": "reuse"
+            },
+            {
+              "name": "现场交付团队",
+              "method": "当地专业合作",
+              "kind": "partner"
+            },
+            {
+              "name": "作业与质量标准",
+              "method": "内部建设",
+              "kind": "build"
+            }
+          ],
+          "condition": "以专业交付项目复制为主，暂不据单一案例铺设大范围仓网。",
+          "country": "JP"
+        }
+      ]
+    }
+  }
+}
