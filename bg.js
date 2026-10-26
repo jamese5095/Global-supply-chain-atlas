@@ -17,6 +17,7 @@
  <div class="bg-controls"><div class="context" id="bgContext"></div><button id="bgReset" class="reset-tag">清除选项 · 返回首页</button></div>
  <div class="bg-grid"><section class="bg-card bg-map-box"><div class="bg-map-heading"><h2 id="bgMapTitle"></h2><span>区域 × 官方17类业务</span></div><svg id="bgMap" viewBox="0 0 1000 540" role="group" aria-label="BG全球区域地图"></svg><div class="legend" id="bgLegend"></div><p class="bg-map-note" id="bgMapNote"></p></section><aside class="bg-card bg-brief" id="bgBrief"></aside></div>
  <div class="bg-grid bg-secondary"><section class="bg-card"><div class="bg-block-title"><div><h2 id="bgTypesTitle">供应链业务结构</h2><p>点击业务类型，地图与案例同步筛选</p></div><span>17类 · 向下滚动查看</span></div><div class="bg-type-list" id="bgTypes"></div><p class="bg-count-note" id="bgCountNote"></p></section><section class="bg-card"><div class="bg-block-title"><div><h2>行业构成与资源复用</h2><p id="bgIndustryNote"></p></div></div><div class="bg-industries" id="bgIndustries"></div><div class="bg-reuse" id="bgReuse"></div></section></div>
+ <section id="bgProviders"></section>
  <section class="bg-card bg-capabilities" id="bgCapabilities"></section><section class="bg-card bg-cases" id="bgCases"></section>`;
  const svg=d3.select('#bgMap'),mapLayer=svg.append('g'),sphere=mapLayer.append('path').attr('class','sphere'),regionLayer=mapLayer.append('g'),countryLayer=mapLayer.append('g');
  function rows(){return agg.select(model,{area,type});}
@@ -105,19 +106,19 @@
   $('bgReset').disabled=!(area||type);
   $('version').textContent=`资料：六行业最新版表格 · BG汇总 · ${editorial.version}`;
   $('footerNote').textContent='地图按收录案例数着色；类型多标签计数，区域与全球范围独立保留。';
-  renderPriorities();paintMap();renderBrief(ps);renderCounts(ps);renderCapabilities();renderCases(ps);
+  renderPriorities();paintMap();renderBrief(ps);renderCounts(ps);ProviderCharts.render($('bgProviders'),{projects:model.projects,area,type,limit:area?5:10,title:(area?areaMap.get(area).name:'六行业 · 全球')+' · 外部承接商TOP'+(area?5:10)});renderCapabilities();renderCases(ps);
   window.AtlasNav?.record(snapshot());
  }
  function chooseArea(id){if(!model.projects.some(p=>p.areaId===id)||!areaMap.has(id))return;area=id;drawMap();refresh();}
  function activate(){
   datasets=window.AtlasHost.datasets();model=agg.build(datasets);active=true;area='';type='';
-  document.body.classList.add('bg-mode');$('industryWorkspace').hidden=true;$('bgView').hidden=false;$('notice').hidden=true;$('industryName').hidden=true;
+  ProviderCharts.hide();$('industryProviders').hidden=true;document.body.classList.add('bg-mode');$('industryWorkspace').hidden=true;$('bgView').hidden=false;$('notice').hidden=true;$('industryName').hidden=true;
   document.querySelectorAll('[data-industry]').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false');});
   const tab=document.querySelector('[data-bg-home]');if(tab){tab.classList.add('active');tab.setAttribute('aria-pressed','true');}
   drawMap();refresh();
  }
  function deactivate(){
-  active=false;hideTip();document.body.classList.remove('bg-mode');$('industryWorkspace').hidden=false;$('bgView').hidden=true;
+  active=false;hideTip();ProviderCharts.hide();document.body.classList.remove('bg-mode');$('industryWorkspace').hidden=false;$('bgView').hidden=true;
   document.querySelector('.eyebrow').textContent='客户产业布局 · 区域案例 · 供应链业务';$('footerNote').textContent='地图按客户数着色，数量不代表市场份额。';
  }
  document.addEventListener('click',e=>{

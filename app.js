@@ -57,7 +57,11 @@
   $('summary').innerHTML=[[st.clients,'涉及客户'],[st.projects,'收录案例']].map(([n,label])=>`<div class="stat"><b>${n}</b><span>${label}</span></div>`).join('');
   $('introText').innerHTML=window.AtlasScope.industry(db);
   $('context').innerHTML=[['client',c?.name||state.sub],['type',state.type],['area',byArea.get(state.area)?.name],['country',state.country?nameCountry(state.country):'']].filter(([,v])=>v).map(([k,v])=>`<button data-clear="${k}" title="取消筛选">${esc(v)} ×</button>`).join('')||'<span class="context-view">全部客户 · 全球 · 全部业务</span>';
-  renderNavigation();renderProfile();paintMap();renderPanel();rememberView();
+  renderNavigation();renderProfile();paintMap();renderPanel();renderProviders();rememberView();
+ }
+ function renderProviders(){
+  const host=$('industryProviders');host.hidden=!!(state.area||state.country||state.client||state.sub||window.AtlasBG?.active);window.ProviderCharts.hide();
+  if(!host.hidden)window.ProviderCharts.render(host,{projects:BGAtlas.build([db]).projects,type:state.type,limit:5,title:db.name+' · 全球外部承接商TOP5'});
  }
  function viewSnapshot(){return {kind:'industry',dataset:db.id,state:{...state},search:$('navSearch').value,label:db.name+' · '+(clients.get(state.client)?.name||byArea.get(state.area)?.name||'全球')};}
  function rememberView(replace=false){if(!window.AtlasBG?.active)window.AtlasNav?.record(viewSnapshot(),{replace});}

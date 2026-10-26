@@ -1,0 +1,2329 @@
+{
+  "version": "2026-10-26",
+  "providers": [
+    {
+      "id": "dhl",
+      "name": "DHL集团",
+      "aliases": [
+        "DHL",
+        "DHL等",
+        "Deutsche Post",
+        "DHL Supply Chain",
+        "DHL Global Forwarding",
+        "DHL Freight",
+        "DHL Express",
+        "DHL Load Planning Center",
+        "DHL Supply Chain / DHL Freight"
+      ]
+    },
+    {
+      "id": "ceva",
+      "name": "CEVA",
+      "aliases": [
+        "CEVA",
+        "CEVA Logistics",
+        "CEVA（原Bolloré Logistics）"
+      ]
+    },
+    {
+      "id": "kn",
+      "name": "Kuehne+Nagel",
+      "aliases": [
+        "Kuehne+Nagel"
+      ]
+    },
+    {
+      "id": "dsv",
+      "name": "DSV集团",
+      "aliases": [
+        "DSV",
+        "DB Schenker Asia Pacific（DSV集团）",
+        "DB Schenker（DSV集团）",
+        "DB Schenker（现属DSV）"
+      ]
+    },
+    {
+      "id": "gxo",
+      "name": "GXO（含Wincanton）",
+      "aliases": [
+        "GXO",
+        "GXO Logistics",
+        "Wincanton"
+      ]
+    },
+    {
+      "id": "fedex",
+      "name": "FedEx",
+      "aliases": [
+        "FedEx",
+        "FedEx Ground"
+      ]
+    },
+    {
+      "id": "ups",
+      "name": "UPS",
+      "aliases": [
+        "UPS"
+      ]
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "aliases": [
+        "Amazon",
+        "Amazon Logistics US"
+      ]
+    },
+    {
+      "id": "penske",
+      "name": "Penske Logistics",
+      "aliases": [
+        "Penske",
+        "Penske Logistics"
+      ]
+    },
+    {
+      "id": "rhenus",
+      "name": "Rhenus",
+      "aliases": [
+        "Rhenus",
+        "Rhenus Automotive",
+        "Rhenus AL"
+      ]
+    },
+    {
+      "id": "neovia",
+      "name": "Neovia",
+      "aliases": [
+        "Neovia Logistics Austria（原TLC）",
+        "TLC历史项目"
+      ]
+    },
+    {
+      "id": "fiege",
+      "name": "FIEGE",
+      "aliases": [
+        "FIEGE"
+      ]
+    },
+    {
+      "id": "mb",
+      "name": "Martin Brower",
+      "aliases": [
+        "Martin Brower"
+      ]
+    },
+    {
+      "id": "havi",
+      "name": "HAVI",
+      "aliases": [
+        "HAVI"
+      ]
+    },
+    {
+      "id": "bestfood",
+      "name": "Best Food Logistics",
+      "aliases": [
+        "Best Food Logistics"
+      ]
+    },
+    {
+      "id": "lekkerland",
+      "name": "Lekkerland",
+      "aliases": [
+        "Lekkerland"
+      ]
+    },
+    {
+      "id": "mclane",
+      "name": "McLane Foodservice",
+      "aliases": [
+        "McLane Foodservice"
+      ]
+    },
+    {
+      "id": "lineage",
+      "name": "Lineage",
+      "aliases": [
+        "Lineage"
+      ]
+    },
+    {
+      "id": "dpd",
+      "name": "DPD",
+      "aliases": [
+        "DPD"
+      ]
+    },
+    {
+      "id": "usps",
+      "name": "USPS",
+      "aliases": [
+        "USPS"
+      ]
+    },
+    {
+      "id": "bol",
+      "name": "Logistics via bol",
+      "aliases": [
+        "Logistics via bol"
+      ]
+    },
+    {
+      "id": "canadapost",
+      "name": "Canada Post",
+      "aliases": [
+        "Canada Post"
+      ]
+    },
+    {
+      "id": "md",
+      "name": "MD Logistics",
+      "aliases": [
+        "MD Logistics"
+      ]
+    },
+    {
+      "id": "mckesson",
+      "name": "McKesson",
+      "aliases": [
+        "McKesson",
+        "McKesson Canada"
+      ]
+    },
+    {
+      "id": "blondel",
+      "name": "Groupe Blondel",
+      "aliases": [
+        "Groupe Blondel"
+      ]
+    },
+    {
+      "id": "geodis",
+      "name": "GEODIS",
+      "aliases": [
+        "GEODIS"
+      ]
+    },
+    {
+      "id": "dpworld",
+      "name": "DP World",
+      "aliases": [
+        "DP World"
+      ]
+    },
+    {
+      "id": "netlog",
+      "name": "Netlog",
+      "aliases": [
+        "Netlog"
+      ]
+    },
+    {
+      "id": "bleckmann",
+      "name": "Bleckmann",
+      "aliases": [
+        "Bleckmann"
+      ]
+    },
+    {
+      "id": "malcolm",
+      "name": "Malcolm Logistics",
+      "aliases": [
+        "Malcolm Logistics"
+      ]
+    },
+    {
+      "id": "staci",
+      "name": "Staci",
+      "aliases": [
+        "Staci"
+      ]
+    },
+    {
+      "id": "xpo",
+      "name": "XPO Logistics",
+      "aliases": [
+        "XPO Logistics"
+      ]
+    },
+    {
+      "id": "zufall",
+      "name": "ZUFALL",
+      "aliases": [
+        "ZUFALL logistics group"
+      ]
+    },
+    {
+      "id": "geis",
+      "name": "Geis Group",
+      "aliases": [
+        "Geis Group"
+      ]
+    },
+    {
+      "id": "trientec",
+      "name": "Trientec",
+      "aliases": [
+        "Trientec"
+      ]
+    },
+    {
+      "id": "dbcargo",
+      "name": "DB Cargo",
+      "aliases": [
+        "DB Cargo"
+      ]
+    },
+    {
+      "id": "duvenbeck",
+      "name": "Duvenbeck",
+      "aliases": [
+        "Duvenbeck"
+      ]
+    },
+    {
+      "id": "blg",
+      "name": "BLG",
+      "aliases": [
+        "BLG"
+      ]
+    },
+    {
+      "id": "crusader",
+      "name": "Crusader Logistics",
+      "aliases": [
+        "Crusader Logistics"
+      ]
+    },
+    {
+      "id": "vos",
+      "name": "Vos Transport",
+      "aliases": [
+        "Vos Transport"
+      ]
+    },
+    {
+      "id": "cat",
+      "name": "Groupe CAT",
+      "aliases": [
+        "Groupe CAT"
+      ]
+    },
+    {
+      "id": "yusen",
+      "name": "Yusen Logistics",
+      "aliases": [
+        "Yusen Logistics"
+      ]
+    },
+    {
+      "id": "nxnec",
+      "name": "日通NEC物流",
+      "aliases": [
+        "Nittsu NEC Logistics（日通NEC）"
+      ]
+    },
+    {
+      "id": "teckwah",
+      "name": "Teckwah",
+      "aliases": [
+        "Teckwah"
+      ]
+    },
+    {
+      "id": "cryoport",
+      "name": "Cryoport",
+      "aliases": [
+        "Cryoport"
+      ]
+    },
+    {
+      "id": "lx",
+      "name": "LX Pantos",
+      "aliases": [
+        "LX Pantos Netherlands"
+      ]
+    },
+    {
+      "id": "dynalogic",
+      "name": "Dynalogic",
+      "aliases": [
+        "Dynalogic"
+      ]
+    },
+    {
+      "id": "kaboodle",
+      "name": "Kaboodle",
+      "aliases": [
+        "Kaboodle"
+      ]
+    },
+    {
+      "id": "arrowxl",
+      "name": "ArrowXL",
+      "aliases": [
+        "ArrowXL"
+      ]
+    },
+    {
+      "id": "mcd",
+      "name": "MCD",
+      "aliases": [
+        "MCD"
+      ]
+    },
+    {
+      "id": "lt",
+      "name": "LT Solution",
+      "aliases": [
+        "LT Solution"
+      ]
+    },
+    {
+      "id": "and",
+      "name": "安得智联",
+      "aliases": [
+        "安得智联"
+      ]
+    },
+    {
+      "id": "sf",
+      "name": "顺丰",
+      "aliases": [
+        "SF Express",
+        "SF"
+      ]
+    },
+    {
+      "id": "yunexpress",
+      "name": "YunExpress",
+      "aliases": [
+        "YunExpress"
+      ]
+    },
+    {
+      "id": "4px",
+      "name": "4PX",
+      "aliases": [
+        "4PX"
+      ]
+    },
+    {
+      "id": "sagawa",
+      "name": "佐川急便",
+      "aliases": [
+        "佐川急便"
+      ]
+    },
+    {
+      "id": "yamato",
+      "name": "ヤマト",
+      "aliases": [
+        "ヤマト"
+      ]
+    },
+    {
+      "id": "japanpost",
+      "name": "日本邮便",
+      "aliases": [
+        "日本邮便等"
+      ]
+    },
+    {
+      "id": "maersk",
+      "name": "Maersk",
+      "aliases": [
+        "Maersk",
+        "Maersk Project Logistics"
+      ]
+    }
+  ],
+  "selfRelations": [
+    {
+      "clientId": "client-1xtfrlz",
+      "providerId": "and"
+    },
+    {
+      "clientId": "client-7jbfx2",
+      "providerId": "mckesson"
+    }
+  ],
+  "bindings": [
+    {
+      "recordId": "project-s4ch18",
+      "signature": "[\"client-wvr2k8\",\"Weert欧洲物料补给外库\",\"为光刻设备物料及部件提供工厂外仓储、库存管理和区域分拨。[1][2]\",[\"VMI/外库\"],\"country\",\"NL\",\"\",[\"source-lisn7s\",\"source-wu6op1\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL Supply Chain",
+          "duty": "荷兰Weert“欧洲物料补给外库”；负责光刻设备物料及部件仓储、库存管理和区域分拨。[1][2]",
+          "type": "VMI/外库"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1aojqse",
+      "signature": "[\"client-127wl6y\",\"亚太存储芯片寄售补货项目\",\"存储芯片客户附近备货、按领用补货并回传库存。[1][3]\",[\"VMI/外库\"],\"region\",\"\",\"亚太\",[\"source-vn8ksz\",\"source-39vkid\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DB Schenker Asia Pacific（DSV集团）",
+          "duty": "亚太“存储芯片寄售与客户补货”；承担寄售仓配、领用补货及库存回传。[1][3]",
+          "type": "VMI/外库"
+        },
+        {
+          "name": "Nittsu NEC Logistics（日通NEC）",
+          "duty": "亚太“存储芯片寄售与客户补货”；承担芯片寄售仓配、客户补货及库存管理。[1][2][3]",
+          "type": "VMI/外库"
+        }
+      ]
+    },
+    {
+      "recordId": "project-e3o3a8",
+      "signature": "[\"client-kj3f99\",\"北美官网订单交付项目\",\"无人机、影像设备、电池及配件订单派送。[1]\",[\"末端配送\"],\"region\",\"\",\"北美\",[\"source-pirdfx\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "FedEx",
+          "duty": "北美“官网订单交付”；承担无人机、影像设备、电池及配件订单派送。[1]",
+          "type": "末端配送"
+        },
+        {
+          "name": "UPS",
+          "duty": "北美“官网订单交付”；承担无人机、影像设备、电池及配件订单派送。[1]",
+          "type": "末端配送"
+        },
+        {
+          "name": "DHL",
+          "duty": "北美“官网订单交付”；承担无人机、影像设备、电池及配件订单派送。[1]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-15t6u9q",
+      "signature": "[\"client-ghpsvj\",\"加拿大3D打印机订单交付\",\"商城订单派送；2024年案例涉及罢工期间配送伙伴切换。[1]\",[\"末端配送\"],\"country\",\"CA\",\"\",[\"source-142m0k9\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Canada Post",
+          "duty": "加拿大2024年配送合作方，罢工期间曾调整配送安排。[1]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1q122c5",
+      "signature": "[\"client-ghpsvj\",\"欧盟商城订单交付项目\",\"面向欧盟商城覆盖市场组织订单派送。[1][2]\",[\"末端配送\"],\"region\",\"\",\"欧盟\",[\"source-142m0k9\",\"source-19mhjxl\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DPD",
+          "duty": "欧盟“商城订单跨国交付”；负责分拣、转运、派送及轨迹更新（2024年案例）。[1]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-14xc8ky",
+      "signature": "[\"client-1md4r9k\",\"美国清洁机器人官网订单交付\",\"清洁机器人及配件官网订单发运和消费者派送。[1]\",[\"末端配送\"],\"country\",\"US\",\"\",[\"source-1uptgjv\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "FedEx",
+          "duty": "美国“官网订单交付”；承担清洁机器人及配件派送。[1]",
+          "type": "末端配送"
+        },
+        {
+          "name": "UPS",
+          "duty": "美国“官网订单交付”；承担清洁机器人及配件派送。[1]",
+          "type": "末端配送"
+        },
+        {
+          "name": "USPS",
+          "duty": "美国“官网订单交付”；承担清洁机器人及配件派送。[1]",
+          "type": "末端配送"
+        },
+        {
+          "name": "Amazon Logistics US",
+          "duty": "美国“官网订单交付”；承担清洁机器人及配件派送。[1]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-a6h116",
+      "signature": "[\"client-1md4r9k\",\"荷兰市场平台订单履约与退货\",\"清洁机器人库存、拣包、配送及消费者退货。[2][3]\",[\"电商仓\",\"末端配送\",\"逆向退货\"],\"country\",\"NL\",\"\",[\"source-15k31ob\",\"source-1q2cgj8\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Logistics via bol",
+          "duty": "荷兰、比利时“平台渠道履约与退货”；负责库存、拣包、配送、退货及配送客服。[2][3]",
+          "type": "电商仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-x4c9ld",
+      "signature": "[\"client-1md4r9k\",\"比利时市场平台订单履约与退货\",\"清洁机器人库存、拣包、配送及消费者退货。[2][3]\",[\"电商仓\",\"末端配送\",\"逆向退货\"],\"country\",\"BE\",\"\",[\"source-15k31ob\",\"source-1q2cgj8\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Logistics via bol",
+          "duty": "荷兰、比利时“平台渠道履约与退货”；负责库存、拣包、配送、退货及配送客服。[2][3]",
+          "type": "电商仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-11f1ub9",
+      "signature": "[\"client-170wnw1\",\"美国官网订单交付\",\"充电器、移动电源及智能硬件官网订单履约与派送。[1]\",[\"末端配送\"],\"country\",\"US\",\"\",[\"source-mgvfn9\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Amazon",
+          "duty": "美国及德国、奥地利、荷兰、比利时、卢森堡“多国官网订单交付”；负责履约及配送统筹，覆盖德国SOLIX相关商城交付。[1][2]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-jos7vy",
+      "signature": "[\"client-170wnw1\",\"德国商城订单交付\",\"充电及智能硬件派送；SOLIX阳台光伏系列限定德国市场。[2]\",[\"末端配送\"],\"country\",\"DE\",\"\",[\"source-adpmsz\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Amazon",
+          "duty": "美国及德国、奥地利、荷兰、比利时、卢森堡“多国官网订单交付”；负责履约及配送统筹，覆盖德国SOLIX相关商城交付。[1][2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "Deutsche Post",
+          "duty": "欧洲官网订单配送合作网络。[2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "DHL",
+          "duty": "欧洲官网订单配送合作网络。[2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "UPS",
+          "duty": "欧洲官网订单配送合作网络。[2]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-kpmfhx",
+      "signature": "[\"client-170wnw1\",\"荷兰官网订单交付\",\"充电及智能硬件订单派送。[2]\",[\"末端配送\"],\"country\",\"NL\",\"\",[\"source-adpmsz\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Amazon",
+          "duty": "美国及德国、奥地利、荷兰、比利时、卢森堡“多国官网订单交付”；负责履约及配送统筹，覆盖德国SOLIX相关商城交付。[1][2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "Deutsche Post",
+          "duty": "欧洲官网订单配送合作网络。[2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "DHL",
+          "duty": "欧洲官网订单配送合作网络。[2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "UPS",
+          "duty": "欧洲官网订单配送合作网络。[2]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1rpo6ia",
+      "signature": "[\"client-170wnw1\",\"比利时官网订单交付\",\"充电及智能硬件订单派送。[2]\",[\"末端配送\"],\"country\",\"BE\",\"\",[\"source-adpmsz\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Amazon",
+          "duty": "美国及德国、奥地利、荷兰、比利时、卢森堡“多国官网订单交付”；负责履约及配送统筹，覆盖德国SOLIX相关商城交付。[1][2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "Deutsche Post",
+          "duty": "欧洲官网订单配送合作网络。[2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "DHL",
+          "duty": "欧洲官网订单配送合作网络。[2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "UPS",
+          "duty": "欧洲官网订单配送合作网络。[2]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-ilrv2k",
+      "signature": "[\"client-170wnw1\",\"卢森堡官网订单交付\",\"充电及智能硬件订单派送。[2]\",[\"末端配送\"],\"country\",\"LU\",\"\",[\"source-adpmsz\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Amazon",
+          "duty": "美国及德国、奥地利、荷兰、比利时、卢森堡“多国官网订单交付”；负责履约及配送统筹，覆盖德国SOLIX相关商城交付。[1][2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "Deutsche Post",
+          "duty": "欧洲官网订单配送合作网络。[2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "DHL",
+          "duty": "欧洲官网订单配送合作网络。[2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "UPS",
+          "duty": "欧洲官网订单配送合作网络。[2]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-pgq2ih",
+      "signature": "[\"client-170wnw1\",\"奥地利官网订单交付\",\"充电及智能硬件订单派送。[2]\",[\"末端配送\"],\"country\",\"AT\",\"\",[\"source-adpmsz\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Amazon",
+          "duty": "美国及德国、奥地利、荷兰、比利时、卢森堡“多国官网订单交付”；负责履约及配送统筹，覆盖德国SOLIX相关商城交付。[1][2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "Deutsche Post",
+          "duty": "欧洲官网订单配送合作网络。[2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "DHL",
+          "duty": "欧洲官网订单配送合作网络。[2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "UPS",
+          "duty": "欧洲官网订单配送合作网络。[2]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1790cps",
+      "signature": "[\"client-1lddhu8\",\"美国清洁机器人官网订单交付\",\"清洁机器人及配件发运、签收与运输追踪。[2]\",[\"末端配送\"],\"country\",\"US\",\"\",[\"source-jma8vv\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "UPS",
+          "duty": "美国、德国“清洁机器人商城交付”；负责派送与运输追踪。[1][2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "FedEx",
+          "duty": "美国清洁机器人及配件官网订单派送。[2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "USPS",
+          "duty": "美国清洁机器人及配件官网订单派送。[2]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1ve0awj",
+      "signature": "[\"client-1lddhu8\",\"德国清洁机器人商城订单交付\",\"清洁机器人及配件包裹运输、派送及追踪。[1]\",[\"末端配送\"],\"country\",\"DE\",\"\",[\"source-1lhro3\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "UPS",
+          "duty": "美国、德国“清洁机器人商城交付”；负责派送与运输追踪。[1][2]",
+          "type": "末端配送"
+        },
+        {
+          "name": "DHL",
+          "duty": "德国清洁机器人及配件商城派送。[1]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1af8spu",
+      "signature": "[\"client-x5cczb\",\"意大利Washpass入户交付\",\"洗衣机及洗涤剂罐预约送至楼层、拆包和包装回收。[1]\",[\"末端配送\"],\"country\",\"IT\",\"\",[\"source-54cc6\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "LT Solution",
+          "duty": "意大利“Washpass入户交付”；负责预约送至楼层、摆放、拆包及包装回收。[1]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-46wjjn",
+      "signature": "[\"client-zip8ez\",\"荷兰官网家电分类交付\",\"电视、冰箱、洗衣机按产品类别预约入户或门口交付。[1]\",[\"末端配送\"],\"country\",\"NL\",\"\",[\"source-1k27ynl\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "LX Pantos Netherlands",
+          "duty": "荷兰“官网家电分类交付”；负责物流统筹。[1]",
+          "type": "末端配送"
+        },
+        {
+          "name": "Dynalogic",
+          "duty": "负责电视、显示器及家电的预约或入户配送，以及适用订单的安装、旧机回收。[1]",
+          "type": "末端配送"
+        },
+        {
+          "name": "UPS",
+          "duty": "负责对应产品类别的门口交付。[1]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-5dsvtb",
+      "signature": "[\"client-1viyz9j\",\"英国家电分级订单交付\",\"大件家电、小包裹及配件按产品类别派送。[1]\",[\"末端配送\"],\"country\",\"GB\",\"\",[\"source-1abydpv\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "ArrowXL",
+          "duty": "英国“家电分级配送与安装”的大件配送",
+          "type": "末端配送"
+        },
+        {
+          "name": "Kaboodle",
+          "duty": "负责配送及安装",
+          "type": "末端配送"
+        },
+        {
+          "name": "MCD",
+          "duty": "负责苏格兰大件交付",
+          "type": "末端配送"
+        },
+        {
+          "name": "DPD",
+          "duty": "负责小包裹及配件配送。[1]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-mj663p",
+      "signature": "[\"client-fimzf9\",\"Mannheim零部件仓储与排序项目（2023年历史案例）\",\"2023年第四仓投运，开展零部件仓储、拣选、排序、预装配、供应商空箱处理及备件业务。[1]\",[\"生产物流\",\"成品仓\"],\"country\",\"DE\",\"\",[\"source-4tf1xd\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Rhenus Automotive",
+          "duty": "德国Mannheim零部件仓储、拣选、排序、预装配、供应商空箱及备件业务（2023年扩仓公告）。[1]",
+          "type": "生产物流"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1wjyp57",
+      "signature": "[\"client-6k6gri\",\"印第安纳州医药仓储合作\",\"2014年披露的仓储合作，以当地医药设施支持诺和诺德美国供应网络。[4]\",[\"成品仓\"],\"country\",\"US\",\"\",[\"source-cx3zud\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "MD Logistics",
+          "duty": "美国印第安纳州；医药仓储及供应链支持，2014年案例。[4]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-wq0nb2",
+      "signature": "[\"client-l3gj5b\",\"法国药品配送中心\",\"欧洲药品配送中心网络节点，支持GSK区域供应。[3]\",[\"成品仓\"],\"country\",\"FR\",\"\",[\"source-1094005\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA",
+          "duty": "波兰Robakowo；药品与疫苗温控仓储、拣选、包装、分拨及退货处理；亦披露法国、意大利、西班牙配送中心合作。[3]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1tovahc",
+      "signature": "[\"client-l3gj5b\",\"意大利药品配送中心\",\"欧洲药品配送中心网络节点，支持GSK区域供应。[3]\",[\"成品仓\"],\"country\",\"IT\",\"\",[\"source-1094005\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA",
+          "duty": "波兰Robakowo；药品与疫苗温控仓储、拣选、包装、分拨及退货处理；亦披露法国、意大利、西班牙配送中心合作。[3]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-kzeqqz",
+      "signature": "[\"client-l3gj5b\",\"西班牙药品配送中心\",\"欧洲药品配送中心网络节点，支持GSK区域供应。[3]\",[\"成品仓\"],\"country\",\"ES\",\"\",[\"source-1094005\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA",
+          "duty": "波兰Robakowo；药品与疫苗温控仓储、拣选、包装、分拨及退货处理；亦披露法国、意大利、西班牙配送中心合作。[3]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-14z8sbm",
+      "signature": "[\"client-l3gj5b\",\"Robakowo药品与疫苗配送中心\",\"设置2–8°C及15–25°C温区，开展仓储、拣选、包装、装运与退货处理，服务北欧及中欧市场。[3]\",[\"成品仓\",\"逆向退货\"],\"country\",\"PL\",\"\",[\"source-1094005\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA",
+          "duty": "波兰Robakowo；药品与疫苗温控仓储、拣选、包装、分拨及退货处理；亦披露法国、意大利、西班牙配送中心合作。[3]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-13o5u5y",
+      "signature": "[\"client-mkczvw\",\"Val-de-Reuil医药配送中心\",\"承接医药产品仓储与配送运营，连接赛诺菲生产供应及市场需求。[4]\",[\"成品仓\"],\"country\",\"FR\",\"\",[\"source-tsmjd4\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL Supply Chain",
+          "duty": "法国Val-de-Reuil；承接已披露的药品配送中心仓储及分拨运营。[4]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1kv5ych",
+      "signature": "[\"client-mkczvw\",\"英国药品履约合作\",\"赛诺菲区域物流合作网络中的药品仓储与履约业务。[5]\",[\"成品仓\"],\"country\",\"GB\",\"\",[\"source-yj8ydp\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Kuehne+Nagel",
+          "duty": "土耳其Tuzla；温控仓储、履约和序列化增值服务；合作网络另覆盖匈牙利、英国、阿联酋。[5]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-spxtxr",
+      "signature": "[\"client-mkczvw\",\"匈牙利药品履约合作\",\"赛诺菲区域物流合作网络中的药品仓储与履约业务。[5]\",[\"成品仓\"],\"country\",\"HU\",\"\",[\"source-yj8ydp\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Kuehne+Nagel",
+          "duty": "土耳其Tuzla；温控仓储、履约和序列化增值服务；合作网络另覆盖匈牙利、英国、阿联酋。[5]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-xz1zf0",
+      "signature": "[\"client-mkczvw\",\"阿联酋药品履约合作\",\"赛诺菲区域物流合作网络中的药品仓储与履约业务。[5]\",[\"成品仓\"],\"country\",\"AE\",\"\",[\"source-yj8ydp\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Kuehne+Nagel",
+          "duty": "土耳其Tuzla；温控仓储、履约和序列化增值服务；合作网络另覆盖匈牙利、英国、阿联酋。[5]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-19xckro",
+      "signature": "[\"client-mkczvw\",\"Tuzla药品履约中心\",\"约1.1万平方米设施设置15–25°C和2–8°C温区，开展仓储、履约、序列化及标识作业。[5]\",[\"多功能仓\"],\"country\",\"TR\",\"\",[\"source-yj8ydp\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Kuehne+Nagel",
+          "duty": "土耳其Tuzla；温控仓储、履约和序列化增值服务；合作网络另覆盖匈牙利、英国、阿联酋。[5]",
+          "type": "多功能仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1e61du8",
+      "signature": "[\"client-1f6urk6\",\"Memphis及东西海岸影像设备备件仓\",\"Memphis承担售后备件物流；2025年新泽西与加州新增备件仓扩充库存和仓储能力，支持设备维护交付。[3][4]\",[\"售后仓\"],\"country\",\"US\",\"\",[\"source-ey0vs6\",\"source-1i4buzp\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "GXO",
+          "duty": "美国新泽西州及加州；新增影像设备备件Mega Depot仓储合作，2025年披露。[4]",
+          "type": "售后仓"
+        },
+        {
+          "name": "DHL Supply Chain",
+          "duty": "美国Memphis；Customer Service Material Logistics备件物流，2020年披露十年服务协议。[3]",
+          "type": "售后仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-hz54u0",
+      "signature": "[\"client-1wfwgzc\",\"Alcobendas药品跨境出货线路\",\"从Alcobendas生产基地发运药品，连接比利时及荷兰节点。[3]\",[\"厂-仓运输\"],\"country\",\"ES\",\"\",[\"source-94qi68\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL Freight",
+          "duty": "西班牙Alcobendas至比利时Tessenderlo、Boortmeerbeek及荷兰Schiphol-Rijk；药品跨境公路运输，2024年披露采用生物柴油车辆。[3]",
+          "type": "厂-仓运输"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1gsm0md",
+      "signature": "[\"client-1ihmutl\",\"德国餐厅食材与运营物料仓配\",\"在德国物流网络中组织食材与物料仓储、计划及自有车队运输，支持麦当劳餐厅补给。[5]\",[\"成品仓\",\"仓-经销商/店\"],\"country\",\"DE\",\"\",[\"source-135cnqr\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "HAVI",
+          "duty": "多市场；运输管理、计划、仓储与配送；德国明确披露麦当劳客户及自有车队服务。[4][5]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-3f3t25",
+      "signature": "[\"client-a0p64t\",\"烘焙配送与门店开发物料区域仓\",\"烘焙配送设施支持咖啡供给；Perris及La Vergne等指南列示节点储配门店开发物料。[2][3]\",[\"成品仓\"],\"country\",\"US\",\"\",[\"source-c4pe0e\",\"source-1n36sim\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Penske",
+          "duty": "美国及荷兰等节点；供应商指南列示配送中心与门店开发物料节点。[3]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-4n7st2",
+      "signature": "[\"client-a0p64t\",\"Duisburg区域配送节点\",\"2025年供应商指南列示的欧洲配送节点。[3]\",[\"成品仓\"],\"country\",\"DE\",\"\",[\"source-1n36sim\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL",
+          "duty": "新加坡、德国及中国相关节点；供应商指南列示区域配送服务。[3]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-8vwcbv",
+      "signature": "[\"client-a0p64t\",\"Basildon欧洲配送节点\",\"2025年供应商指南列示的欧洲区域配送中心。[3]\",[\"成品仓\"],\"country\",\"GB\",\"\",[\"source-1n36sim\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA",
+          "duty": "英国Basildon；指南列示欧洲区域配送节点。[3]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1ejk2ul",
+      "signature": "[\"client-a0p64t\",\"Roosendaal区域配送与荷比门店补给\",\"供应商指南列示Roosendaal门店开发物料节点；2025年合作另向Alsea荷比门店配送咖啡、乳品、食品及耗材。[3][4]\",[\"成品仓\",\"仓-经销商/店\"],\"country\",\"NL\",\"\",[\"source-1n36sim\",\"source-npwj9v\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Penske",
+          "duty": "美国及荷兰等节点；供应商指南列示配送中心与门店开发物料节点。[3]",
+          "type": "成品仓"
+        },
+        {
+          "name": "Lekkerland",
+          "duty": "荷兰、比利时Alsea加盟网络；咖啡、乳品、食品及门店耗材配送，2025年披露。[4]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-h2jkmn",
+      "signature": "[\"client-a0p64t\",\"新加坡区域配送节点\",\"2025年供应商指南列示的区域配送中心，衔接区域供货。[3]\",[\"成品仓\"],\"country\",\"SG\",\"\",[\"source-1n36sim\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL",
+          "duty": "新加坡、德国及中国相关节点；供应商指南列示区域配送服务。[3]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1x4ujdr",
+      "signature": "[\"client-1tcch6t\",\"KFC餐厅持续补货网络\",\"专业餐饮配送网络支持KFC餐厅食材及运营物料供货。[4]\",[\"仓-经销商/店\"],\"country\",\"GB\",\"\",[\"source-139fc59\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Best Food Logistics",
+          "duty": "英国及爱尔兰KFC体系；餐厅物料配送合作。[4]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-16f3cee",
+      "signature": "[\"client-1v9ldwu\",\"汉堡王多温区餐饮补给\",\"以专业餐饮配送网络支持汉堡王食材和运营物料供货。[4][5]\",[\"仓-经销商/店\"],\"country\",\"GB\",\"\",[\"source-ywz9xy\",\"source-we99ar\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Best Food Logistics",
+          "duty": "英国；汉堡王合作及多温区餐饮配送服务。[4][5]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1h2jch6",
+      "signature": "[\"client-17suexe\",\"Getafe及Málaga配送中心合作\",\"2022年披露新增Getafe与Málaga运营设施；合作网络还包含温控电商仓，分工按项目范围列示。[4]\",[\"成品仓\"],\"country\",\"ES\",\"\",[\"source-135konz\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "GXO",
+          "duty": "西班牙Getafe、Málaga等配送设施；零售仓配合作，2022年披露。[4]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1jzv6nr",
+      "signature": "[\"client-1eixwp\",\"Vinhedo 售后件/附件库存分拨项目\",\"Vinhedo仓储、分拨及出口。\",[\"成品仓\"],\"country\",\"BR\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA Logistics",
+          "duty": "巴西Vinhedo零件与附件中心仓储、分拨及出口业务。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1cy61jw",
+      "signature": "[\"client-1eixwp\",\"Herne 生产零件入厂供给项目\",\"Herne集拼至Wolfsburg电动重卡运输。\",[\"入厂运输\"],\"country\",\"DE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Duvenbeck",
+          "duty": "德国Herne集拼供应商零件，以电动重卡运往Volkswagen Wolfsburg工厂（2025项目）。[2]",
+          "type": "入厂运输"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1rbla3j",
+      "signature": "[\"client-oou2wq\",\"汽车生产件及整车入厂供给项目\",\"上游供给与成品分拨物流。\",[\"入厂运输\"],\"country\",\"BR\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA Logistics",
+          "duty": "比利时Zeebrugge接车，法国与德国凯迪拉克纯电整车整备及直送客户；瑞典等市场展车专运；巴西生产件及整车供应链。[1]",
+          "type": "入厂运输"
+        }
+      ]
+    },
+    {
+      "recordId": "project-qaeiwh",
+      "signature": "[\"client-oou2wq\",\"Neuss 凯迪拉克电动车终端交付项目\",\"Neuss整备、注册及送车到家。\",[\"末端配送\"],\"country\",\"DE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA Logistics",
+          "duty": "比利时Zeebrugge接车，法国与德国凯迪拉克纯电整车整备及直送客户；瑞典等市场展车专运；巴西生产件及整车供应链。[1]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-cn5rq4",
+      "signature": "[\"client-oou2wq\",\"Nanteuil 凯迪拉克电动车终端交付项目\",\"Nanteuil整备、注册及送车到家。\",[\"末端配送\"],\"country\",\"FR\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA Logistics",
+          "duty": "比利时Zeebrugge接车，法国与德国凯迪拉克纯电整车整备及直送客户；瑞典等市场展车专运；巴西生产件及整车供应链。[1]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1wosrw0",
+      "signature": "[\"client-1ym60b2\",\"售后维修件库存分拨项目\",\"区域PDC合作（2024年项目公告）。\",[\"成品仓\"],\"country\",\"MY\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL Supply Chain",
+          "duty": "马来西亚区域售后件中心合作，面向印度及亚太20国，按2024年项目公告口径。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-s3pmmk",
+      "signature": "[\"client-bm5uqj\",\"Halberstadt 卡车备件库存分拨项目\",\"Halberstadt全球分拨；生产件/KD：Wörth、Bremen集货。\",[\"成品仓\",\"入厂运输\"],\"country\",\"DE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Rhenus AL",
+          "duty": "德国Wörth集货中心，组织发往巴西、美国、印度、墨西哥等工厂的零件物流。[2]",
+          "type": "入厂运输"
+        },
+        {
+          "name": "BLG",
+          "duty": "德国Bremen集货中心，组织发往美国、巴西及日本等目的地的零件物流。[2]",
+          "type": "入厂运输"
+        }
+      ]
+    },
+    {
+      "recordId": "project-16ny6vw",
+      "signature": "[\"client-1aj8gl2\",\"动力总成/代工件生产物料仓储与供给项目\",\"收货仓储与空箱回运；保险杠预装、JIS上线（2019案例）。\",[\"生产物流\"],\"country\",\"AT\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Neovia Logistics Austria（原TLC）",
+          "duty": "奥地利Graz/Ilz/Lannach服务Magna Steyr及Magna Powertrain，承担入厂、仓储、集拼等物流。[1][2]",
+          "type": "生产物流"
+        },
+        {
+          "name": "TLC历史项目",
+          "duty": "奥地利Z4/Supra全套收货、保险杠预装及JIS上线（2019案例）；2021年并入Neovia并更名。[2]",
+          "type": "生产物流"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1490e05",
+      "signature": "[\"client-ap0z7h\",\"汽车生产件入厂供给项目\",\"西班牙跨境收货；售后件多仓整合项目。\",[\"入厂运输\",\"成品仓\"],\"country\",\"DE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Rhenus",
+          "duty": "ZF欧洲六国生产零件运输网络，含西班牙—德国每年约8,000吨货物流动。[1]",
+          "type": "入厂运输",
+          "caseKey": "zf-europe-production-network"
+        }
+      ]
+    },
+    {
+      "recordId": "project-16560wk",
+      "signature": "[\"client-ap0z7h\",\"欧洲区域供应链项目\",\"ZF生产零件六国运输网络及集拼。\",[\"入厂运输\"],\"region\",\"\",\"欧洲\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Rhenus",
+          "duty": "ZF欧洲六国生产零件运输网络，含西班牙—德国每年约8,000吨货物流动。[1]",
+          "type": "入厂运输",
+          "caseKey": "zf-europe-production-network"
+        }
+      ]
+    },
+    {
+      "recordId": "project-19ayh92",
+      "signature": "[\"client-ap0z7h\",\"汽车生产件入厂供给项目\",\"集拼及往返德国干线。\",[\"入厂运输\"],\"country\",\"ES\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Rhenus",
+          "duty": "ZF欧洲六国生产零件运输网络，含西班牙—德国每年约8,000吨货物流动。[1]",
+          "type": "入厂运输",
+          "caseKey": "zf-europe-production-network"
+        }
+      ]
+    },
+    {
+      "recordId": "project-15k85pn",
+      "signature": "[\"client-1m2ap98\",\"轮胎库存分拨项目\",\"仓储合作（2020启用案例）。\",[\"成品仓\"],\"country\",\"MY\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA Logistics",
+          "duty": "泰国Chonburi等四节点轮胎仓配，2025年披露合作22年。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-wfgvf0",
+      "signature": "[\"client-1m2ap98\",\"Chonburi 轮胎库存及渠道补货项目\",\"Chonburi等四仓库存与经销商配送。\",[\"成品仓\",\"仓-经销商/店\"],\"country\",\"TH\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA Logistics",
+          "duty": "泰国Chonburi等四节点轮胎仓配，2025年披露合作22年。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1uenk7u",
+      "signature": "[\"client-1m2ap98\",\"QLD 轮胎库存分拨项目\",\"QLD/VIC/WA/NSW仓网及订单配送。\",[\"成品仓\"],\"country\",\"AU\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA Logistics",
+          "duty": "泰国Chonburi等四节点轮胎仓配，2025年披露合作22年。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-11rw90a",
+      "signature": "[\"client-skbrrg\",\"Bogota 轮胎库存分拨项目\",\"Bogota配送中心及本地分拨（2022启用）。\",[\"成品仓\"],\"country\",\"CO\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL Supply Chain",
+          "duty": "哥伦比亚Bogota轮胎配送中心合作（2022启用）。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-he65o7",
+      "signature": "[\"client-skbrrg\",\"乘用车胎/工程胎库存分拨项目\",\"品类分仓、库龄管理及配送（2013年案例）。\",[\"成品仓\"],\"country\",\"SE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL Supply Chain / DHL Freight",
+          "duty": "瑞典轮胎仓网整合、库存及配送；2013年案例含Gothenburg工程胎与Jönköping乘用车胎分仓。[2][3]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-rbnr4t",
+      "signature": "[\"client-1tgy1ze\",\"Rugby NDC 轮胎渠道供货项目\",\"Rugby NDC运输及次日配送；合同披露至2026。\",[\"仓-经销商/店\"],\"country\",\"GB\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL",
+          "duty": "英国Rugby轮胎NDC运输，整车与零担结合、英格兰及威尔士次日配送；公告合同至2026年。[2]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-165vl2o",
+      "signature": "[\"client-1tgy1ze\",\"Bangna 乘用车/轻卡胎库存分拨项目\",\"Bangna仓储、库存追踪及全国配送。\",[\"成品仓\"],\"country\",\"TH\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL Supply Chain",
+          "duty": "泰国Bangna轮胎仓储、库存追踪及全国干支线配送（2022续约）。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1p707x5",
+      "signature": "[\"client-1koj8gs\",\"Dortmund Falken轮胎库存分拨项目\",\"Dortmund/Gengenbach等仓及DOT胎龄管理。\",[\"成品仓\"],\"country\",\"DE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "FIEGE",
+          "duty": "德国、波兰、匈牙利Falken轮胎仓储、库存与配送；德国Gengenbach仓服务法国及瑞士客户。[1][2]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-bygnqb",
+      "signature": "[\"client-1koj8gs\",\"Gengenbach Falken轮胎渠道供货项目\",\"德国Gengenbach仓跨境补货市场。\",[\"仓-经销商/店\"],\"country\",\"FR\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "FIEGE",
+          "duty": "德国、波兰、匈牙利Falken轮胎仓储、库存与配送；德国Gengenbach仓服务法国及瑞士客户。[1][2]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1fi0bzm",
+      "signature": "[\"client-1koj8gs\",\"Falken轮胎库存分拨项目\",\"仓储及订单配送。\",[\"成品仓\"],\"country\",\"HU\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "FIEGE",
+          "duty": "德国、波兰、匈牙利Falken轮胎仓储、库存与配送；德国Gengenbach仓服务法国及瑞士客户。[1][2]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-xeevgb",
+      "signature": "[\"client-1koj8gs\",\"Falken轮胎库存分拨项目\",\"仓储及订单配送。\",[\"成品仓\"],\"country\",\"PL\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "FIEGE",
+          "duty": "德国、波兰、匈牙利Falken轮胎仓储、库存与配送；德国Gengenbach仓服务法国及瑞士客户。[1][2]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-y6t0sw",
+      "signature": "[\"client-1koj8gs\",\"Gengenbach Falken轮胎渠道供货项目\",\"德国Gengenbach仓跨境补货市场。\",[\"仓-经销商/店\"],\"country\",\"CH\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "FIEGE",
+          "duty": "德国、波兰、匈牙利Falken轮胎仓储、库存与配送；德国Gengenbach仓服务法国及瑞士客户。[1][2]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1csma18",
+      "signature": "[\"client-1koj8gs\",\"Crusader 轮胎库存分拨项目\",\"Crusader供货及分销物流合作。\",[\"成品仓\"],\"country\",\"ZA\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Crusader Logistics",
+          "duty": "南非Sumitomo Rubber供货及分销物流合作，含仓储、履约及运输组织。[3]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-eoq3vs",
+      "signature": "[\"client-1dq6jde\",\"Mumbai 能源管理及自动化产品库存分拨项目\",\"Mumbai智能分拨仓；至北美海空联运。\",[\"成品仓\"],\"country\",\"IN\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL",
+          "duty": "印度Mumbai智能分拨中心的第三方物流合作与数字化仓储衔接（2019年公告）。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-y3f85w",
+      "signature": "[\"client-7qy75j\",\"Rheinbach 电气产品库存分拨项目\",\"Rheinbach库存、订单处理与欧洲分拨。\",[\"成品仓\"],\"country\",\"DE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL Supply Chain",
+          "duty": "德国Rheinbach、捷克Pohořelice及英国Coalville电气产品仓储、订单处理与区域分拨。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-13ikp3x",
+      "signature": "[\"client-7qy75j\",\"Coalville 电气产品库存分拨项目\",\"Coalville分拨节点。\",[\"成品仓\"],\"country\",\"GB\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL Supply Chain",
+          "duty": "德国Rheinbach、捷克Pohořelice及英国Coalville电气产品仓储、订单处理与区域分拨。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1otsdq7",
+      "signature": "[\"client-7qy75j\",\"Pohořelice 电气产品库存分拨项目\",\"Pohořelice分拨仓运营与低碳设施改造。\",[\"成品仓\"],\"country\",\"CZ\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL Supply Chain",
+          "duty": "德国Rheinbach、捷克Pohořelice及英国Coalville电气产品仓储、订单处理与区域分拨。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-bjg5yb",
+      "signature": "[\"client-9i8rqf\",\"Flensburg 逆变器、储能产品库存分拨项目\",\"渠道EU备货与发运（Flensburg）。\",[\"成品仓\"],\"country\",\"DE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Trientec",
+          "duty": "德国、希腊及荷兰服务市场的Sungrow逆变器、储能电池及中压站分销、EU库存与售后处理。[3][4]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-f45o43",
+      "signature": "[\"client-9i8rqf\",\"逆变器及储能产品渠道供货项目\",\"渠道供货服务市场。\",[\"仓-经销商/店\"],\"country\",\"NL\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Trientec",
+          "duty": "德国、希腊及荷兰服务市场的Sungrow逆变器、储能电池及中压站分销、EU库存与售后处理。[3][4]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1hiu4ie",
+      "signature": "[\"client-9i8rqf\",\"逆变器及储能产品渠道供货项目\",\"渠道分销及售后服务市场。\",[\"仓-经销商/店\"],\"country\",\"GR\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Trientec",
+          "duty": "德国、希腊及荷兰服务市场的Sungrow逆变器、储能电池及中压站分销、EU库存与售后处理。[3][4]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-zn335c",
+      "signature": "[\"client-e8orjb\",\"Nuremberg 工业自动化产品包装与仓储项目\",\"Nuremberg分拨出库、集散转运与公路运输。\",[\"多功能仓\",\"HUB仓\"],\"country\",\"DE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Geis Group",
+          "duty": "承接Nuremberg始发货物集散、转运与公路运输，配套HVO100及Book & Claim减排凭证。[1][2]",
+          "type": "HUB仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-z2f72j",
+      "signature": "[\"client-1j5mrrg\",\"传动技术零部件库存分拨项目\",\"AutoStore仓储、入厂物料及售后流转。\",[\"成品仓\",\"入厂运输\"],\"country\",\"FI\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL Supply Chain",
+          "duty": "芬兰Helsinki都市圈传动技术零部件自动化仓储、入厂供料及售后作业（2026年公告）。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1ychwmm",
+      "signature": "[\"client-sdscbx\",\"Göttingen 机器人备件库存分拨项目\",\"Göttingen中央仓、全球发运及返修衔接。\",[\"成品仓\"],\"country\",\"DE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "ZUFALL logistics group",
+          "duty": "德国Göttingen机器人备件收货、存储与全球订单物流（2019年续约披露）。[3]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-69zv9b",
+      "signature": "[\"client-1kilrup\",\"Eisenhüttenstadt 铁矿石、焦炭、石灰石入厂供给项目\",\"Eisenhüttenstadt高炉铁路保供。\",[\"入厂运输\"],\"country\",\"DE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DB Cargo",
+          "duty": "德国Eisenhüttenstadt铁矿石、焦炭及石灰石铁路保供，合同披露覆盖至2031年。[1]",
+          "type": "入厂运输"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1cukmr9",
+      "signature": "[\"client-ramfid\",\"Quakertown 家具及家居用品电商履约项目\",\"Quakertown客户配送中心、电商履约。\",[\"电商仓\"],\"country\",\"US\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "GXO Logistics",
+          "duty": "美国Quakertown家居订单仓储、电商拣配与履约。[1]",
+          "type": "电商仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1svch0v",
+      "signature": "[\"client-ramfid\",\"Dartford 家具及家居用品电商履约项目\",\"Dartford仓储履约与入户配送。\",[\"电商仓\",\"末端配送\"],\"country\",\"GB\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Wincanton",
+          "duty": "英国Dartford及爱尔兰配送中心运营与家居末端交付。[2][3]",
+          "type": "电商仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-6jxg0m",
+      "signature": "[\"client-ramfid\",\"家具及家居用品电商履约项目\",\"客户配送中心运营与末端交付。\",[\"电商仓\",\"末端配送\"],\"country\",\"IE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Wincanton",
+          "duty": "英国Dartford及爱尔兰配送中心运营与家居末端交付。[2][3]",
+          "type": "电商仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-4hpqrr",
+      "signature": "[\"client-1lkbrr5\",\"Gretz 空调、热泵库存及渠道补货项目\",\"Gretz仓储、分渠道拣配与北部网点配送。\",[\"成品仓\",\"仓-经销商/店\"],\"country\",\"FR\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Rhenus",
+          "duty": "法国Gretz-Armainvilliers空调、热泵等产品仓储、分渠道拣配及北部客户/网点配送（2022年扩仓披露）。[3]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-9yw6r9",
+      "signature": "[\"client-1lkbrr5\",\"管件及建筑产品库存分拨项目\",\"多品牌仓储、运输与客户配送。\",[\"成品仓\"],\"country\",\"GB\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "XPO Logistics",
+          "duty": "英国及爱尔兰PAM/Interior Solutions管件及建筑产品仓配；西班牙Placo石膏板Zaragoza至Catalonia专用双挂运输。[1][2]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1nmnxp9",
+      "signature": "[\"client-1lkbrr5\",\"XPO PAM/建筑产品库存分拨项目\",\"XPO运营网络仓配覆盖。\",[\"成品仓\"],\"country\",\"IE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "XPO Logistics",
+          "duty": "英国及爱尔兰PAM/Interior Solutions管件及建筑产品仓配；西班牙Placo石膏板Zaragoza至Catalonia专用双挂运输。[1][2]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-nms11a",
+      "signature": "[\"client-tajath\",\"UNILIN地板库存分拨项目\",\"仓储、同日提货及大部分地区次日配送。\",[\"成品仓\"],\"country\",\"GB\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DSV",
+          "duty": "UNILIN英国地板仓储及次日配送；比利时始发欧洲运输、瑞典—丹麦跨境运输，按长件易损货物适配车辆。[2]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-rmcdj8",
+      "signature": "[\"client-2wev75\",\"Chalon 美妆库存分拨项目\",\"Chalon仓B2B分拣及EMEA出口分销。\",[\"成品仓\"],\"country\",\"FR\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Groupe Blondel",
+          "duty": "法国Chalon-sur-Saône平台，承接美妆B2B订单分拣、WMS追踪及EMEA分销；具Seveso高等级危化场地与OEA资质。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-11g41vy",
+      "signature": "[\"client-2wev75\",\"EMEA区域供应链项目\",\"从法国平台组织美妆B2B分销。\",[\"仓-经销商/店\"],\"region\",\"\",\"EMEA\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Groupe Blondel",
+          "duty": "法国Chalon-sur-Saône平台，承接美妆B2B订单分拣、WMS追踪及EMEA分销；具Seveso高等级危化场地与OEA资质。[1]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1rzway5",
+      "signature": "[\"client-2wev75\",\"Lavičky 美妆零售与电商共仓项目\",\"Lavičky零售/电商新仓，计划2027年中投运。\",[\"BC共仓\"],\"country\",\"CZ\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "GXO",
+          "duty": "捷克Lavičky新仓及捷克/斯洛伐克/匈牙利全渠道物流，计划2027年中投运。[2]",
+          "type": "BC共仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-eu2ius",
+      "signature": "[\"client-2wev75\",\"美妆渠道供货项目\",\"由捷克新仓跨境履约，计划2027年中启动。\",[\"仓-经销商/店\"],\"country\",\"HU\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "GXO",
+          "duty": "捷克Lavičky新仓及捷克/斯洛伐克/匈牙利全渠道物流，计划2027年中投运。[2]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-eb2drv",
+      "signature": "[\"client-2wev75\",\"美妆渠道供货项目\",\"由捷克新仓跨境履约，计划2027年中启动。\",[\"仓-经销商/店\"],\"country\",\"SK\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "GXO",
+          "duty": "捷克Lavičky新仓及捷克/斯洛伐克/匈牙利全渠道物流，计划2027年中投运。[2]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-16xizcl",
+      "signature": "[\"client-1g6qzlt\",\"南美区域供应链项目\",\"联合利华仓储及供应链协同；披露范围仅南美，非整个拉美。\",[\"成品仓\"],\"region\",\"\",\"南美\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Kuehne+Nagel",
+          "duty": "欧洲与南美仓储及供应链合作，涉及空间优化、自动化和数据协同。[2]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-bex305",
+      "signature": "[\"client-1g6qzlt\",\"欧洲区域供应链项目\",\"联合利华仓储及供应链协同，含空间优化、自动化与数据应用。\",[\"成品仓\"],\"region\",\"\",\"欧洲\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Kuehne+Nagel",
+          "duty": "欧洲与南美仓储及供应链合作，涉及空间优化、自动化和数据协同。[2]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-h7ius4",
+      "signature": "[\"client-1g6qzlt\",\"Jeddah 个护/家清品库存及渠道补货项目\",\"Jeddah集成仓及BinDawood门店配送。\",[\"成品仓\",\"仓-经销商/店\"],\"country\",\"SA\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Maersk",
+          "duty": "沙特Jeddah集成仓储及BinDawood门店电动配送，连接港口与零售渠道。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1ah0ph9",
+      "signature": "[\"client-1m46lt9\",\"Sephora彩妆/香水/洗护零售与电商共仓项目\",\"温控仓、门店与电商履约及退货。\",[\"BC共仓\",\"逆向退货\"],\"country\",\"BR\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA Logistics",
+          "duty": "巴西Sephora两座配送中心，负责收货、温控仓储、电商履约、出库及退货，2022年签五年合同。[1]",
+          "type": "BC共仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-lk06au",
+      "signature": "[\"client-1m46lt9\",\"LVMH香水/美妆电商履约项目\",\"B2C电商仓储及订单履约。\",[\"电商仓\"],\"country\",\"SG\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA（原Bolloré Logistics）",
+          "duty": "新加坡LVMH香水与美妆B2C电商履约；2021披露具体服务，2025确认LVMH Beauty持续合作。[2][3]",
+          "type": "电商仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1pcx6eh",
+      "signature": "[\"client-1ef7cl9\",\"EMG KitKat等食品包装与仓储项目\",\"EMG混单拣配；Nespresso物流合作。\",[\"多功能仓\",\"成品仓\"],\"country\",\"GB\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "GXO",
+          "duty": "英国East Midlands Gateway自动化食品仓，支持英国及爱尔兰杂货渠道，并处理便利店混合商品订单。[1][2]",
+          "type": "多功能仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1m9d9xz",
+      "signature": "[\"client-1ef7cl9\",\"EMG 雀巢食品渠道供货项目\",\"英国EMG跨境渠道供货；Nespresso物流合作。\",[\"仓-经销商/店\"],\"country\",\"IE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "GXO",
+          "duty": "英国East Midlands Gateway自动化食品仓，支持英国及爱尔兰杂货渠道，并处理便利店混合商品订单。[1][2]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-16asibx",
+      "signature": "[\"client-1ef7cl9\",\"Sydney Nespresso咖啡胶囊库存分拨项目\",\"Sydney/Brisbane仓配及灯光拣选。\",[\"成品仓\"],\"country\",\"AU\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL Supply Chain",
+          "duty": "澳大利亚Nespresso咖啡胶囊履约；2023公告同时列示意大利、巴西、马来西亚、中国台湾、英国及爱尔兰已有物流合作。[3]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-stlee4",
+      "signature": "[\"client-1xnhhiw\",\"Nutricia管饲营养品库存分拨项目\",\"仓储及居家配送。\",[\"成品仓\",\"末端配送\"],\"country\",\"GB\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA Logistics",
+          "duty": "英国Nutricia营养供应链及Nutricia Homeward居家管饲营养品配送合作。[3]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1ilkj5f",
+      "signature": "[\"client-1xnhhiw\",\"Ruda Śląska 酸奶/奶酪库存分拨项目\",\"Ruda Śląska仓4–6°C库存及组合包装。\",[\"成品仓\",\"多功能仓\"],\"country\",\"PL\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Kuehne+Nagel",
+          "duty": "波兰Ruda Śląska乳品仓，4–6°C温控，并在冷藏/常温区组合包装；2021续约七年。[2]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-j0ze5v",
+      "signature": "[\"client-1kjzsdp\",\"玛氏食品工厂至分拨中心运输项目\",\"铁路供货至法国配送仓。\",[\"厂-仓运输\"],\"country\",\"DE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "GXO",
+          "duty": "法国Boigny-sur-Bionne仓储、分销、退货及增值服务，部署整层拣选机器人；2024续约披露德法每周铁路货流。[1]",
+          "type": "厂-仓运输"
+        }
+      ]
+    },
+    {
+      "recordId": "project-gesw3z",
+      "signature": "[\"client-1kjzsdp\",\"Boigny M&M’s/Twix/Snickers等库存分拨项目\",\"Boigny仓层拣、分拨及退货。\",[\"成品仓\",\"逆向退货\"],\"country\",\"FR\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "GXO",
+          "duty": "法国Boigny-sur-Bionne仓储、分销、退货及增值服务，部署整层拣选机器人；2024续约披露德法每周铁路货流。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1s4pfsq",
+      "signature": "[\"client-1kjzsdp\",\"East Midlands 糖巧/食品库存分拨项目\",\"East Midlands及London Thames自动化仓。\",[\"成品仓\"],\"country\",\"GB\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL Supply Chain",
+          "duty": "英国East Midlands Gateway与London Thames Gateway食品分拨中心，使用自动存取系统支持玛氏食品及零食订单。[2]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1e5alob",
+      "signature": "[\"client-1d5hoh6\",\"Cadbury/Oreo等包装与仓储项目\",\"仓储、组合包装及零售配送。\",[\"多功能仓\",\"仓-经销商/店\"],\"country\",\"SG\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "GEODIS",
+          "duty": "新加坡Cadbury/Oreo等商品的仓储、组合包装及零售渠道配送，2024续签三年。[1]",
+          "type": "多功能仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-h74jc1",
+      "signature": "[\"client-1d5hoh6\",\"Cochin 巧克力/饼干库存分拨项目\",\"Cochin干货及18–25°C分区仓配。\",[\"成品仓\"],\"country\",\"IN\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DP World",
+          "duty": "印度Cochin配送中心，分设干货与18–25°C温控区，服务Kerala市场。[2]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1j5vep3",
+      "signature": "[\"client-13n55fc\",\"McDonough Butterfinger/Crunch等糖巧包装与仓储项目\",\"McDonough包装、库存及分拨（启用公告案例）。\",[\"多功能仓\",\"成品仓\"],\"country\",\"US\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL",
+          "duty": "美国McDonough糖巧配送中心仓储、包装、库存及运输集货；按Ferrero启用公告案例列示。[1]",
+          "type": "多功能仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-inuqv1",
+      "signature": "[\"client-15ihrc7\",\"欧洲区域供应链项目\",\"从比利时Tessenderlo组织乐高积木区域分拨。\",[\"成品仓\"],\"region\",\"\",\"欧洲\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Kuehne+Nagel",
+          "duty": "越南Dong Nai区域中心，提供保税仓储、海运、清关及定制包装，衔接澳大利亚/新西兰/马来西亚/新加坡/日本本地仓；印度/印尼为2025公告所列2026拓展计划。[1][2]",
+          "type": "成品仓",
+          "caseKey": "lego-tessenderlo-rdc"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1w70bgk",
+      "signature": "[\"client-15ihrc7\",\"Tessenderlo 积木套装库存分拨项目\",\"Tessenderlo欧洲RDC。\",[\"成品仓\"],\"country\",\"BE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Kuehne+Nagel",
+          "duty": "越南Dong Nai区域中心，提供保税仓储、海运、清关及定制包装，衔接澳大利亚/新西兰/马来西亚/新加坡/日本本地仓；印度/印尼为2025公告所列2026拓展计划。[1][2]",
+          "type": "成品仓",
+          "caseKey": "lego-tessenderlo-rdc"
+        }
+      ]
+    },
+    {
+      "recordId": "project-5rn54c",
+      "signature": "[\"client-15ihrc7\",\"积木套装保税仓项目\",\"同奈保税RDC、清关及定制包装。\",[\"进出口保税仓\",\"多功能仓\"],\"country\",\"VN\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Kuehne+Nagel",
+          "duty": "越南Dong Nai区域中心，提供保税仓储、海运、清关及定制包装，衔接澳大利亚/新西兰/马来西亚/新加坡/日本本地仓；印度/印尼为2025公告所列2026拓展计划。[1][2]",
+          "type": "进出口保税仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1lmexrz",
+      "signature": "[\"client-n2air3\",\"Truganina Barbie/Hot Wheels等库存分拨项目\",\"Truganina仓储、迁仓及旺季履约。\",[\"成品仓\"],\"country\",\"AU\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL Supply Chain",
+          "duty": "澳大利亚Truganina玩具仓储与迁仓运营，2024签订十年协议，覆盖Barbie、Hot Wheels及Fisher-Price等品类。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-fi5ilv",
+      "signature": "[\"client-p7e6z6\",\"Midway 玩具/桌游零售与电商共仓项目\",\"Midway零售及Hasbro Pulse直销履约。\",[\"BC共仓\"],\"country\",\"US\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "GXO",
+          "duty": "美国Midway旗舰配送中心，2026年3月开业，服务实体零售及Hasbro Pulse DTC，使用GXO IQ优化拣货与补货。[1]",
+          "type": "BC共仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-7hn8hp",
+      "signature": "[\"client-p7e6z6\",\"玩具/桌游保税仓项目\",\"保税及完税仓、加工、配送与退货。\",[\"进出口保税仓\",\"多功能仓\",\"逆向退货\"],\"country\",\"TR\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Netlog",
+          "duty": "土耳其保税及普通仓、增值加工、境内运输配送与退货，2024扩大合作。[2]",
+          "type": "进出口保税仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1018rs3",
+      "signature": "[\"client-l9roid\",\"盲盒/IP商品终端交付项目\",\"官方电商订单跨境及本地包裹投递。\",[\"末端配送\"],\"country\",\"US\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "YunExpress",
+          "duty": "POP MART美国站官方FAQ列示的订单配送服务商，具体按订单分配。[1]",
+          "type": "末端配送"
+        },
+        {
+          "name": "4PX",
+          "duty": "POP MART美国站官方FAQ列示的订单配送服务商，具体按订单分配。[1]",
+          "type": "末端配送"
+        },
+        {
+          "name": "SF Express",
+          "duty": "POP MART美国站官方FAQ列示的订单配送服务商，具体按订单分配。[1]",
+          "type": "末端配送"
+        },
+        {
+          "name": "UPS",
+          "duty": "POP MART美国站官方FAQ列示的订单配送服务商，具体按订单分配。[1]",
+          "type": "末端配送"
+        },
+        {
+          "name": "USPS",
+          "duty": "POP MART美国站官方FAQ列示的订单配送服务商，具体按订单分配。[1]",
+          "type": "末端配送"
+        },
+        {
+          "name": "DHL等",
+          "duty": "POP MART美国站官方FAQ列示的订单配送服务商，具体按订单分配。[1]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-phu39n",
+      "signature": "[\"client-ncdl7h\",\"UNIQLO服装电商终端交付项目\",\"包裹柜/站交付及逾期退回。\",[\"末端配送\",\"逆向退货\"],\"country\",\"DE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL",
+          "duty": "德国UNIQLO电商Paketshop/Packstation交付及逾期退回；新加坡DHL Express取件与配送。[3][4]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1qmu1ao",
+      "signature": "[\"client-ncdl7h\",\"UNIQLO服装电商终端交付项目\",\"国际快递取件与配送。\",[\"末端配送\"],\"country\",\"SG\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "DHL",
+          "duty": "德国UNIQLO电商Paketshop/Packstation交付及逾期退回；新加坡DHL Express取件与配送。[3][4]",
+          "type": "末端配送"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1t7bmek",
+      "signature": "[\"client-1h74amk\",\"Cabanillas 运动鞋服库存分拨项目\",\"Cabanillas物流服务（2022案例）。\",[\"成品仓\"],\"country\",\"ES\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "GXO",
+          "duty": "NIKE退货中心质检、价值优先分流及复售处理；西班牙Cabanillas物流服务（2022官方案例）。[2][3]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-i5jkb",
+      "signature": "[\"client-i3zsm4\",\"南欧区域供应链项目\",\"由意大利Mantova处理adidas运动鞋服零售/电商履约。\",[\"BC共仓\"],\"region\",\"\",\"欧洲\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Kuehne+Nagel",
+          "duty": "意大利Mantova自动化配送中心，服务adidas零售及电商订单，支持南欧供应网络。[1][2]",
+          "type": "BC共仓",
+          "caseKey": "adidas-mantova"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1rsqunm",
+      "signature": "[\"client-i3zsm4\",\"Mantova 运动鞋服零售与电商共仓项目\",\"Mantova自动化仓、门店与电商履约。\",[\"BC共仓\"],\"country\",\"IT\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Kuehne+Nagel",
+          "duty": "意大利Mantova自动化配送中心，服务adidas零售及电商订单，支持南欧供应网络。[1][2]",
+          "type": "BC共仓",
+          "caseKey": "adidas-mantova"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1m2bpas",
+      "signature": "[\"client-w8vi1o\",\"Crick 服装/配件库存分拨项目\",\"Crick仓运营；AutoStore实施中（2026）。\",[\"成品仓\"],\"country\",\"GB\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Bleckmann",
+          "duty": "英国Crick多品牌服装物流，自2026年8月运营；AutoStore为实施中的自动化项目。[1]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1eagja8",
+      "signature": "[\"client-93miew\",\"Leven 烈酒/包装料入厂供给项目\",\"Leven及Shieldhall供料、仓储与成品运输。\",[\"入厂运输\",\"生产物流\",\"厂-仓运输\"],\"country\",\"GB\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Malcolm Logistics",
+          "duty": "英国Leven、Shieldhall包装物料入厂、仓储及产线补给，衔接烈酒成品运输；2025继续获得Diageo供应商表彰。[1][2]",
+          "type": "生产物流"
+        }
+      ]
+    },
+    {
+      "recordId": "project-aqwcmf",
+      "signature": "[\"client-1w0xfxn\",\"瓶装烈酒保税仓项目\",\"保税/完税仓、贴税标及礼盒加工（2020五年合同案例）。\",[\"进出口保税仓\",\"多功能仓\"],\"country\",\"TH\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "CEVA Logistics",
+          "duty": "泰国Bangna烈酒进口、保税/完税仓、税标/警示标签、礼盒重包装及配送；为2020年签订的五年合同案例。[1]",
+          "type": "进出口保税仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1ijus5c",
+      "signature": "[\"client-1atcoc5\",\"Emmerich 威士忌包装与仓储项目\",\"Emmerich消费税仓、关务及陈列包装/单瓶寄递。\",[\"多功能仓\",\"成品仓\"],\"country\",\"DE\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "FIEGE",
+          "duty": "德国Emmerich仓（2023从Bocholt迁入），承担消费税仓及关务、陈列组合加工，并向德国和奥地利分销，含高值单瓶包裹服务。[1]",
+          "type": "多功能仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1k1dn8g",
+      "signature": "[\"client-1atcoc5\",\"威士忌渠道供货项目\",\"渠道补货及高值单瓶配送。\",[\"仓-经销商/店\",\"末端配送\"],\"country\",\"AT\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "FIEGE",
+          "duty": "德国Emmerich仓（2023从Bocholt迁入），承担消费税仓及关务、陈列组合加工，并向德国和奥地利分销，含高值单瓶包裹服务。[1]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1fs89hb",
+      "signature": "[\"client-h2vztb\",\"Staci 烈酒品牌POS物料库存分拨项目\",\"Staci库存与营销活动物流。\",[\"成品仓\"],\"country\",\"GB\",\"\",[]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Staci",
+          "duty": "英国BACARDÍ、BOMBAY SAPPHIRE、GREY GOOSE等品牌POS营销物料的库存及活动物流。[2]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-j728kq",
+      "signature": "[\"client-1htgb7u\",\"美国新冠疫苗集中分销项目\",\"2020—2021年项目：冷冻储存及订单处理支撑莫德纳疫苗在美国的集中分销。[6]\",[\"成品仓\"],\"country\",\"US\",\"\",[\"source-1dcnsd7\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "McKesson",
+          "duty": "美国新冠疫苗分销；2020—2021年项目承接莫德纳疫苗储存、订单处理与分发。[6]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-ncqigf",
+      "signature": "[\"client-4q4c0x\",\"四座冷库运营合作与自动化冷库扩建\",\"2025年披露接手Pottsville、Olathe、Rochelle及Tolleson冷库，并约定建设运营两座自动化冷库；新建部分按规划列示。[4][5]\",[\"成品仓\"],\"country\",\"US\",\"\",[\"source-yhydcp\",\"source-1uh8i49\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Lineage",
+          "duty": "美国；接手四座泰森冷库，并签署新建及运营两座自动化冷库的协议；Hazleton设施亦纳入合作，2025年披露。[4][5]",
+          "type": "成品仓"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1aejdcq",
+      "signature": "[\"client-1ihmutl\",\"美国麦当劳餐厅分销网络\",\"2023年合作回顾列示的餐饮分销市场，承接麦当劳餐厅供应及补货。[3]\",[\"仓-经销商/店\"],\"country\",\"US\",\"\",[\"source-mhnx0l\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Martin Brower",
+          "duty": "麦当劳供应链合作；餐饮分销与门店供货。[3]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-18lhdxx",
+      "signature": "[\"client-1ihmutl\",\"加拿大麦当劳餐厅分销网络\",\"2023年合作回顾列示的餐饮分销市场，承接麦当劳餐厅供应及补货。[3]\",[\"仓-经销商/店\"],\"country\",\"CA\",\"\",[\"source-mhnx0l\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Martin Brower",
+          "duty": "麦当劳供应链合作；餐饮分销与门店供货。[3]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-vbtj2m",
+      "signature": "[\"client-1ihmutl\",\"巴西麦当劳餐厅分销网络\",\"2023年合作回顾列示的餐饮分销市场，承接麦当劳餐厅供应及补货。[3]\",[\"仓-经销商/店\"],\"country\",\"BR\",\"\",[\"source-mhnx0l\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Martin Brower",
+          "duty": "麦当劳供应链合作；餐饮分销与门店供货。[3]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1psat4v",
+      "signature": "[\"client-1ihmutl\",\"法国麦当劳餐厅分销网络\",\"2023年合作回顾列示的餐饮分销市场，承接麦当劳餐厅供应及补货。[3]\",[\"仓-经销商/店\"],\"country\",\"FR\",\"\",[\"source-mhnx0l\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Martin Brower",
+          "duty": "麦当劳供应链合作；餐饮分销与门店供货。[3]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-15eczt6",
+      "signature": "[\"client-1ihmutl\",\"英国麦当劳餐厅分销网络\",\"2023年合作回顾列示的餐饮分销市场，承接麦当劳餐厅供应及补货。[3]\",[\"仓-经销商/店\"],\"country\",\"GB\",\"\",[\"source-mhnx0l\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Martin Brower",
+          "duty": "麦当劳供应链合作；餐饮分销与门店供货。[3]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-v6s5p5",
+      "signature": "[\"client-1ihmutl\",\"阿联酋麦当劳餐厅分销网络\",\"2023年合作回顾列示的餐饮分销市场，承接麦当劳餐厅供应及补货。[3]\",[\"仓-经销商/店\"],\"country\",\"AE\",\"\",[\"source-mhnx0l\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Martin Brower",
+          "duty": "麦当劳供应链合作；餐饮分销与门店供货。[3]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-t3fbcc",
+      "signature": "[\"client-1ihmutl\",\"卡塔尔麦当劳餐厅分销网络\",\"2023年合作回顾列示的餐饮分销市场，承接麦当劳餐厅供应及补货。[3]\",[\"仓-经销商/店\"],\"country\",\"QA\",\"\",[\"source-mhnx0l\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Martin Brower",
+          "duty": "麦当劳供应链合作；餐饮分销与门店供货。[3]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-hv951i",
+      "signature": "[\"client-1ihmutl\",\"科威特麦当劳餐厅分销网络\",\"2023年合作回顾列示的餐饮分销市场，承接麦当劳餐厅供应及补货。[3]\",[\"仓-经销商/店\"],\"country\",\"KW\",\"\",[\"source-mhnx0l\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Martin Brower",
+          "duty": "麦当劳供应链合作；餐饮分销与门店供货。[3]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-utx4jo",
+      "signature": "[\"client-1ihmutl\",\"新加坡麦当劳餐厅分销网络\",\"2023年合作回顾列示的餐饮分销市场，承接麦当劳餐厅供应及补货。[3]\",[\"仓-经销商/店\"],\"country\",\"SG\",\"\",[\"source-mhnx0l\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Martin Brower",
+          "duty": "麦当劳供应链合作；餐饮分销与门店供货。[3]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1fvso1t",
+      "signature": "[\"client-1ihmutl\",\"马来西亚麦当劳餐厅分销网络\",\"2023年合作回顾列示的餐饮分销市场，承接麦当劳餐厅供应及补货。[3]\",[\"仓-经销商/店\"],\"country\",\"MY\",\"\",[\"source-mhnx0l\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Martin Brower",
+          "duty": "麦当劳供应链合作；餐饮分销与门店供货。[3]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1obpnla",
+      "signature": "[\"client-1ihmutl\",\"韩国麦当劳餐厅分销网络\",\"2023年合作回顾列示的餐饮分销市场，承接麦当劳餐厅供应及补货。[3]\",[\"仓-经销商/店\"],\"country\",\"KR\",\"\",[\"source-mhnx0l\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Martin Brower",
+          "duty": "麦当劳供应链合作；餐饮分销与门店供货。[3]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-69mbr0",
+      "signature": "[\"client-1ihmutl\",\"澳大利亚麦当劳餐厅分销网络\",\"2023年合作回顾列示的餐饮分销市场，承接麦当劳餐厅供应及补货。[3]\",[\"仓-经销商/店\"],\"country\",\"AU\",\"\",[\"source-mhnx0l\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Martin Brower",
+          "duty": "麦当劳供应链合作；餐饮分销与门店供货。[3]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-1fcd3kq",
+      "signature": "[\"client-1ihmutl\",\"新西兰麦当劳餐厅分销网络\",\"2023年合作回顾列示的餐饮分销市场，承接麦当劳餐厅供应及补货。[3]\",[\"仓-经销商/店\"],\"country\",\"NZ\",\"\",[\"source-mhnx0l\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Martin Brower",
+          "duty": "麦当劳供应链合作；餐饮分销与门店供货。[3]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-77cqka",
+      "signature": "[\"client-a0p64t\",\"Alsea星巴克门店综合补给\",\"2025年荷比合作覆盖咖啡、牛奶、烘焙食品、杯具、制服及清洁用品等门店物料。[4]\",[\"仓-经销商/店\"],\"country\",\"BE\",\"\",[\"source-npwj9v\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "Lekkerland",
+          "duty": "荷兰、比利时Alsea加盟网络；咖啡、乳品、食品及门店耗材配送，2025年披露。[4]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    },
+    {
+      "recordId": "project-144pavx",
+      "signature": "[\"client-1tcch6t\",\"美国餐厅产品及设备分销\",\"RSCS协调采购与分销伙伴关系，向餐厅供应约定的食材、物料及设备。[1][3]\",[\"仓-经销商/店\"],\"country\",\"US\",\"\",[\"source-1vpgysg\",\"source-bejoyl\"]]",
+      "reason": "已核对原项目地点、服务内容及客户D列对应来源；不将客户汇总主体分摊至无关项目。",
+      "actors": [
+        {
+          "name": "McLane Foodservice",
+          "duty": "美国；百胜年报披露RSCS管理的分销合作。[1]",
+          "type": "仓-经销商/店"
+        }
+      ]
+    }
+  ],
+  "groupingSources": [
+    {
+      "group": "GXO / Wincanton",
+      "url": "https://investors.gxo.com/news-releases/news-release-details/gxo-completes-acquisition-wincanton"
+    },
+    {
+      "group": "GXO / Wincanton 2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/1852244/000185224426000007/gxo-20251231.htm"
+    }
+  ]
+}

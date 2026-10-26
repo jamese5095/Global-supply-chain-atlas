@@ -5,6 +5,10 @@ text=(ROOT/'page.html').read_text()
 licenses='\n\n'.join((ROOT/'vendor'/name).read_text() for name in ['D3-LICENSE.txt','TOPOJSON-LICENSE.txt','WORLD-ATLAS-LICENSE.txt','SHEETJS-LICENSE.txt'])
 text=text.replace('<head>','<head>\n<!-- Third-party notices\n'+licenses+'\nNatural Earth geographical data: Public Domain.\n-->')
 replacements={
+ 'PROVIDERSTYLE':(ROOT/'provider.css').read_text(),
+ 'PROVIDERCORE':(ROOT/'provider-core.js').read_text(),
+ 'PROVIDERUI':(ROOT/'provider-ui.js').read_text(),
+ 'PROVIDERPOLICY':json.dumps(json.loads((ROOT/'provider-policy.json').read_text()),ensure_ascii=False,separators=(',',':')).replace('<','\\u003c'),
  'STYLE':(ROOT/'style.css').read_text(),
  'D3':(ROOT/'vendor/d3.min.js').read_text(),
  'TOPO':(ROOT/'vendor/topojson-client.min.js').read_text(),
