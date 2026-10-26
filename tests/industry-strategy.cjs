@@ -1,13 +1,14 @@
 const assert=require('node:assert/strict'),C=require('../workbook-core.js'),B=require('../bg-core.js'),S=require('../industry-strategy.js'),bundle=require('../data.json'),content=require('../industry-strategy.json');
 const d=bundle.datasets.find(d=>d.name==='高科技'),c=content.industries[d.name];
-assert.equal(c.recommendations.length,3);assert.equal(c.capabilities.length,5);assert.equal(c.columns.length,4);
+assert.equal(c.recommendations.length,2);assert.equal(c.capabilities.length,5);assert.equal(c.columns.length,4);
 for(const cap of c.capabilities)for(const col of c.columns)assert(['快速落地','长期筑基','择机观察'].includes(cap.states[col.key]));
-const expected=[[4,4,2,2,0],[11,4,1,0,1],[1,1,1,0,0]];
+const expected=[[4,4,2,2,0],[11,4,1,0,1]];
 for(const [i,r]of c.recommendations.entries()){
  for(const t of r.businessTypes)assert(C.TYPES.includes(t));
  const ps=S.evidence(d,r,B),f=S.facts(ps);assert.deepEqual([f.cases,f.clients,f.subindustries,f.planned,f.historical],expected[i]);
- assert(ps.every(p=>p.records.every(r=>r.attribute==='logistics'&&!r.reference)));assert.equal(r.steps.length,3);assert(r.location&&r.capacity&&r.why&&r.basis.text&&r.gap);
+ assert(ps.every(p=>p.records.every(r=>r.attribute==='logistics'&&!r.reference)));assert(r.methods.length>0);assert(r.methods.every(m=>['build','partner','ma'].includes(m.kind)));assert(!r.steps);assert.equal(r.rank,undefined,'Do not impose a numeric investment rank');assert(r.location&&r.capacity&&r.why&&r.basis.text&&r.gap);
 }
+assert(!c.recommendations.some(r=>r.region==='日本'));assert(d.records.some(r=>r.id==='project-q0tfvl'),'Japan customer case preserved');assert.equal(c.capabilities.find(r=>r.id==='white-glove').states.JP,'快速落地','Japan capability matrix preserved');
 const rec=c.recommendations[1],p=S.evidence(d,rec,B)[0],extra={...p.record,id:'new-europe-case',engagementId:'new-europe-case',types:['电商仓','末端配送','逆向退货']};
 assert.equal(S.facts(S.evidence({...d,records:[...d.records,extra]},rec,B)).cases,12,'New eligible case increases once despite multiple labels');
 assert.equal(S.facts(S.evidence({...d,records:[...d.records,{...extra,reference:true}]},rec,B)).cases,11,'Domestic reference excluded');

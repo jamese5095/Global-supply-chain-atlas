@@ -92,8 +92,7 @@
       "recommendations": [
         {
           "id": "sea-manufacturing",
-          "rank": 1,
-          "stage": "优先拓展",
+          "stage": "优先验证方向",
           "area": "southeast-asia",
           "region": "东南亚",
           "title": "制造物料仓运一体",
@@ -122,29 +121,23 @@
             ]
           },
           "gap": "属地运营团队、客户库存接口与入厂接驳",
-          "steps": [
+          "condition": "先核实工厂节点、线路频次和货量重叠，再扩大共用仓运服务；马来西亚须结合具体客户落点验证。",
+          "methods": [
             {
-              "name": "跨境集货运输",
-              "method": "复用现有经验",
-              "kind": "reuse"
+              "kind": "build",
+              "label": "内部建设与复用",
+              "text": "复用中越运输组织经验，内部掌握库存接口、入厂补货调度与客户交付。"
             },
             {
-              "name": "当地物料仓",
-              "method": "伙伴合作起步",
-              "kind": "partner"
-            },
-            {
-              "name": "补货与库存运营",
-              "method": "内部建设",
-              "kind": "build"
+              "kind": "partner",
+              "label": "当地伙伴合作",
+              "text": "整合当地仓库和接驳资源，以明确工厂订单开展试点。"
             }
-          ],
-          "condition": "先以明确工厂订单验证节点复用，再扩展周边客户。"
+          ]
         },
         {
           "id": "europe-fulfilment",
-          "rank": 2,
-          "stage": "优先拓展",
+          "stage": "重点建设方向",
           "area": "europe",
           "region": "欧洲",
           "title": "智能终端全渠道仓配",
@@ -175,72 +168,24 @@
             ]
           },
           "gap": "欧盟本地仓运营、多渠道订单连接与退货处理",
-          "steps": [
+          "condition": "先验证品牌客户的库存节点和配送范围重叠，再扩大共享仓；并购以持续业务与明确能力缺口为条件。",
+          "methods": [
             {
-              "name": "品牌跨境运输",
-              "method": "复用现有经验",
-              "kind": "reuse"
+              "kind": "build",
+              "label": "内部建设与复用",
+              "text": "复用品牌央仓经验，内部掌握库存、订单接口与退货运营。"
             },
             {
-              "name": "德荷共享库存",
-              "method": "伙伴合作起步",
-              "kind": "partner"
+              "kind": "partner",
+              "label": "当地伙伴合作",
+              "text": "以德荷共享仓及当地末端配送网络承接多品牌履约。"
             },
             {
-              "name": "订单与退货运营",
-              "method": "内部建设",
-              "kind": "build"
+              "kind": "ma",
+              "label": "并购评估",
+              "text": "多客户业务稳定、当地仓配网络长期难以补齐时，评估可延续客户合同、仓配网络及当地团队。"
             }
-          ],
-          "condition": "客户持续集聚、当地仓配能力成为瓶颈后，再评估并购履约网络与团队。"
-        },
-        {
-          "id": "japan-whiteglove",
-          "rank": 3,
-          "stage": "定向复制",
-          "area": "east-asia",
-          "region": "日本",
-          "title": "数据中心白手套交付",
-          "location": "围绕已识别数据中心客户节点进入",
-          "capacity": "精密运输、现场收发与跨站点协同",
-          "businessTypes": [
-            "入厂运输",
-            "生产物流"
-          ],
-          "selection": {
-            "recordIds": [
-              "project-q0tfvl"
-            ]
-          },
-          "why": "AWS日本案例涉及服务器、存储网络与机电设备收发及跨站点运输。先验证一个客户节点的专业交付，再随持续订单复制团队和作业标准。",
-          "basis": {
-            "tag": "亚洲区白手套项目经验",
-            "text": "行业输入已列阿里亚洲区7国白手套业务；日本档位为“快速落地”，可据此研究当地复制条件。",
-            "sourceCells": [
-              "E10",
-              "G10"
-            ]
-          },
-          "gap": "当地现场团队、精密操作资源与质量管理",
-          "steps": [
-            {
-              "name": "精密运输组织",
-              "method": "复用现有经验",
-              "kind": "reuse"
-            },
-            {
-              "name": "现场交付团队",
-              "method": "当地专业合作",
-              "kind": "partner"
-            },
-            {
-              "name": "作业与质量标准",
-              "method": "内部建设",
-              "kind": "build"
-            }
-          ],
-          "condition": "以专业交付项目复制为主，暂不据单一案例铺设大范围仓网。",
-          "country": "JP"
+          ]
         }
       ]
     }
