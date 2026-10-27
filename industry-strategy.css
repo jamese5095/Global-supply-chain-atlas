@@ -8,3 +8,45 @@
 .industry-home .detail-panel{position:sticky;top:92px;max-height:calc(100vh - 112px)}.industry-home .panel-content{max-height:calc(100vh - 230px)}
 .provider-card.provider-compact{margin-top:0;padding:19px 20px;border-radius:10px}.provider-compact .provider-heading{display:block;margin-bottom:17px}.provider-compact .provider-heading h2{font-size:17px}.provider-compact .provider-heading p{font-size:10px;margin-top:5px}.provider-compact .provider-heading>span{display:block;white-space:normal;font-size:10px;margin-top:6px}.provider-compact .provider-row{grid-template-columns:112px minmax(40px,1fr) 33px;gap:10px;min-height:24px}.provider-compact .provider-chart{gap:11px}.provider-compact .provider-name{gap:7px}.provider-compact .provider-name strong{font-size:11px}.provider-compact .provider-name small{font-size:10px}.provider-compact .provider-track{height:24px}.provider-compact .provider-total{font-size:14px}.provider-compact .provider-total small{font-size:9px}.provider-compact .provider-segment{font-size:10px}.provider-compact .provider-legend{gap:8px 12px;margin:17px 0 11px;padding-top:12px}.provider-compact .provider-legend span{font-size:9px}.provider-compact .provider-legend i{width:9px;height:9px}.provider-compact .provider-note{font-size:9px;line-height:1.8}
 @media(max-width:1000px){.industry-home .detail-panel{position:static;max-height:none}.industry-home .panel-content{max-height:650px}}@media(max-width:700px){.industry-strategy{padding:16px}.strategy-heading h2{font-size:18px}.strategy-subheading{align-items:flex-start}.strategy-subheading>span{max-width:150px;line-height:1.7}.strategy-analysis-grid{grid-template-columns:1fr}.strategy-analysis-cell{padding:14px}.provider-card.provider-compact{padding:16px}.provider-compact .provider-row{grid-template-columns:100px minmax(30px,1fr) 30px;gap:7px}}
+/* Shared capability plans for six industries; BG regional recommendations remain separate. */
+.strategy-capability-plan .strategy-capability-heading{display:flex;align-items:center;gap:10px;min-width:0}
+.strategy-capability-plan .strategy-capability-heading h3{margin:0;font-size:16px;line-height:1.5}
+.strategy-capability-plan .strategy-analysis-cell{padding:16px 14px}
+.strategy-capability-plan .strategy-analysis-cell h4{font-size:12px;margin-bottom:13px}
+.strategy-capability-plan .strategy-analysis-cell>p,.strategy-capability-plan .strategy-method p,.strategy-capability-plan .strategy-basis p{font-size:12px;line-height:1.85}
+.strategy-capability-plan .strategy-country-group+.strategy-country-group{margin-top:18px}
+.strategy-capability-plan .strategy-country-group>p{font-size:10px;color:#8394a2;line-height:1.6;margin-bottom:8px}
+.strategy-capability-plan .strategy-country-list{display:flex;flex-wrap:wrap;gap:7px}
+.strategy-capability-plan .strategy-country-list button{display:inline-flex;align-items:center;gap:7px;padding:6px 9px;border:1px solid #cee0ed;border-radius:5px;background:#f3f8fc;color:#356a91;font-size:12px;line-height:1.5}
+.strategy-capability-plan .strategy-country-list button:hover{background:#e5f0f9;border-color:#9dc3df}
+.strategy-capability-plan .strategy-country-list button span{color:#86a7bf;font-size:10px}
+.strategy-capability-plan .strategy-evidence-stats{gap:7px;margin-bottom:12px}
+.strategy-capability-plan .strategy-evidence-stats>span{font-size:10px;padding:8px 9px}
+.strategy-capability-plan .strategy-evidence-stats b{font-size:23px}
+.strategy-capability-plan .strategy-why>.strategy-customers{font-size:11px;line-height:1.9;margin-top:10px}
+.strategy-capability-plan .strategy-provider-proofs{border-top:1px solid #eaf0f5;margin-top:12px;padding-top:9px;display:grid;gap:6px}
+.strategy-capability-plan .strategy-provider-proofs>span{font-size:10px;color:#8b9ca9}
+.strategy-capability-plan .strategy-provider-proofs a{font-size:10px;line-height:1.8;color:#4f7f9f;overflow-wrap:anywhere;text-decoration:none}
+.strategy-capability-plan .strategy-provider-proofs a:hover{text-decoration:underline}
+.strategy-capability-plan .strategy-provider-proofs a small{font-size:10px;color:#8297a7}
+.strategy-capability-plan .strategy-provider-proofs a>span{margin-left:4px;color:#87a3b7}
+.strategy-capability-plan .strategy-evidence-kind{color:#7b91a3;font-size:10px!important;margin:0 0 8px}
+.strategy-capability-plan .strategy-opportunities{border-top:1px solid #eaf0f5;margin-top:12px;padding-top:9px;display:grid;gap:8px}
+.strategy-capability-plan .strategy-opportunities p{display:flex;flex-wrap:wrap;align-items:baseline;gap:3px 6px;font-size:10px;color:#748b9e;line-height:1.8}
+.strategy-capability-plan .strategy-opportunities strong{font-weight:600;color:#547792}
+.strategy-capability-plan .strategy-opportunities small{font-size:9px;color:#a1804a;background:#fbf4e7;border-radius:3px;padding:1px 4px}
+@container(min-width:820px){.strategy-capability-plan .strategy-analysis-grid{grid-template-columns:minmax(0,.75fr) minmax(0,1.3fr) minmax(0,1fr) minmax(0,1.1fr)}}
+@media(max-width:700px){.strategy-capability-plan .strategy-capability>header{padding:12px;gap:8px;align-items:flex-start}.strategy-capability-plan .strategy-capability-heading{gap:8px}.strategy-capability-plan .strategy-capability-heading h3{font-size:15px}.strategy-capability-plan .strategy-stage{font-size:9px;white-space:normal;text-align:center;max-width:75px;flex:none}.strategy-capability-plan .strategy-analysis-cell{padding:16px}.strategy-capability-plan .strategy-country-group+.strategy-country-group{margin-top:12px}}
+
+.strategy-capability-plan{margin-top:18px}
+.strategy-capability-plan .strategy-service-flows{margin-top:22px;padding-top:15px;border-top:1px solid #e5edf4}
+.strategy-capability-plan .strategy-service-flows h5{font-size:11px;font-weight:600;color:#52748f;margin:0 0 12px}
+.strategy-capability-plan .strategy-service-flow+.strategy-service-flow{margin-top:14px}
+.strategy-capability-plan .strategy-service-flow>p{font-size:10px;color:#8195a4;margin-bottom:7px}
+.strategy-capability-plan .strategy-service-flow ol{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.strategy-capability-plan .strategy-service-flow li{position:relative;padding:0 0 13px 18px;margin:0;color:#436d8e;font-size:11px;line-height:1.65;overflow-wrap:anywhere}
+.strategy-capability-plan .strategy-service-flow li:before{content:'';position:absolute;left:2px;top:5px;width:6px;height:6px;border-radius:50%;background:#4586b4;box-shadow:0 0 0 3px #eaf3fa}
+.strategy-capability-plan .strategy-service-flow li:not(:last-child):after{content:'';position:absolute;left:4.5px;top:14px;bottom:3px;width:1px;background:#cddfeb}
+.strategy-capability-plan .strategy-service-flow li:last-child{padding-bottom:0}
+
+.strategy-capability-plan .strategy-where>.strategy-scope-tag{font-size:11px;line-height:1.8;color:#54748c;border:1px solid #d8e5ef;border-radius:5px;background:#f3f8fc;padding:8px 10px;margin:0 0 12px}

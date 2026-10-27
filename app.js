@@ -68,7 +68,7 @@
   const host=$('industryProviders'),compact=!!strategyContent.industries[db.name];
   if(compact)$('industryStrategy').before(host);else $('bgView').before(host);
   host.classList.toggle('provider-compact',compact);host.hidden=!!(state.area||state.country||state.client||state.sub||window.AtlasBG?.active);window.ProviderCharts.hide();
-  if(!host.hidden)window.ProviderCharts.render(host,{projects:BGAtlas.build([db]).projects,type:state.type,limit:5,title:db.name+' · 全球外部承接商TOP5'});
+  if(!host.hidden)window.ProviderCharts.render(host,{projects:BGAtlas.build([db]).projects,type:state.type,limit:5,title:db.name+' · 全球外部承接商TOP5',theme:'blue'});
  }
  function viewSnapshot(){return {kind:'industry',dataset:db.id,state:{...state},search:$('navSearch').value,label:db.name+' · '+(clients.get(state.client)?.name||byArea.get(state.area)?.name||'全球')};}
  function rememberView(replace=false){if(!window.AtlasBG?.active)window.AtlasNav?.record(viewSnapshot(),{replace});}
