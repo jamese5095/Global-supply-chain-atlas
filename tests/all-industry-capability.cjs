@@ -5,7 +5,7 @@ const expected={
  '工业设备':[[4,8,2],[4,6,2],[2,5,1],[2,3,2],[3,3,1]],
  '消费品':[[8,8,3],[2,2,2],[0,0,0],[4,4,3],[3,3,2]],
  '医药':[[2,4,1],[2,5,1],[3,4,1],[4,4,1],[2,2,1]],
- '餐饮':[[3,8,1],[0,0,0],[0,0,0],[4,5,1],[0,0,0]]
+ '餐饮':[[3,13,1],[2,2,1],[3,3,2],[4,4,1],[3,3,1]]
 };
 let cards=0,proofs=0,internal=0;
 for(const d of bundle.datasets){
@@ -48,8 +48,20 @@ for(const d of bundle.datasets){
 const pharma=content.industries.医药.capabilityPlan.items[3],food=content.industries.餐饮.capabilityPlan.items;
 assert.equal(pharma.countryGroups.length,0);assert.equal(pharma.scopeTags[0].scope,'global');
 const fd=bundle.datasets.find(d=>d.name==='餐饮');
-assert.deepEqual(S.capabilityFacts(fd,food[1],B).stats,[[3,'组客户需求'],[8,'个适用国']]);
-assert.deepEqual(S.capabilityFacts(fd,food[2],B).stats,[[4,'组客户需求'],[4,'个市场']]);
-assert.deepEqual(food[2].opportunities[1].countryIds,[],'North America demand must stay regional');
-assert.equal(B.build(bundle.datasets).projects.length,486);assert.equal(cards,30);assert.equal(internal,4);
+for(const cap of food){
+ assert(!cap.evidenceMode&&!cap.opportunities&&!cap.scopeTags,'Food demand basis uses public country cases only');
+ assert(cap.selection.recordIds.length>=2&&cap.proofs.length>=2);
+ assert(!/行业输入|能力输入|已签|组客户需求|跟进需求/.test(cap.why),'Internal input cannot establish why to build');
+ const evidence=S.capabilityFacts(fd,cap,B);
+ assert.deepEqual(evidence.stats.map(x=>x[1]),['家客户','个案例','个子行业']);
+ for(const proof of cap.proofs){
+  const rec=fd.records.find(r=>r.id===proof.recordId);
+  assert(cap.selection.recordIds.includes(rec.id));
+  assert(rec.sourceIds.includes(proof.sourceId),'Proof must be linked to selected public project');
+ }
+ for(const country of cap.countryGroups.flatMap(g=>g.countries))assert(evidence.projects.some(p=>p.countryId===country.id),'Country must have a selected public project');
+}
+assert.deepEqual(food[1].countryGroups[0].countries.map(c=>c.id),['US']);
+assert(!food.some(c=>c.id==='food-fresh-air'));
+assert.equal(B.build(bundle.datasets).projects.length,486);assert.equal(cards,30);assert.equal(internal,1);
 console.log(JSON.stringify({status:'PASS',cards,linkedProofs:proofs,internalDemandCards:internal,projects:486}));

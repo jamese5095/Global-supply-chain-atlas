@@ -3132,15 +3132,20 @@
         }
       ],
       "capabilityPlan": {
-        "intro": "结合适用国家、服务链路、客户案例与行业海外能力输入，分析五项能力的建设依据、已有基础与建设方式。",
+        "intro": "以公开客户项目、地图分布和承接主体实践判断建设需求；行业海外能力输入用于已有基础与缺口分析。",
         "items": [
           {
             "id": "food-multitemp-stores",
             "title": "多温仓储与连锁门店补货",
             "countryGroups": [
               {
-                "label": "案例对应节点",
+                "label": "公开案例对应节点",
                 "countries": [
+                  {
+                    "id": "US",
+                    "name": "美国",
+                    "area": "north-america"
+                  },
                   {
                     "id": "SG",
                     "name": "新加坡",
@@ -3150,6 +3155,26 @@
                     "id": "MY",
                     "name": "马来西亚",
                     "area": "southeast-asia"
+                  },
+                  {
+                    "id": "KR",
+                    "name": "韩国",
+                    "area": "east-asia"
+                  },
+                  {
+                    "id": "AE",
+                    "name": "阿联酋",
+                    "area": "middle-east"
+                  },
+                  {
+                    "id": "QA",
+                    "name": "卡塔尔",
+                    "area": "middle-east"
+                  },
+                  {
+                    "id": "KW",
+                    "name": "科威特",
+                    "area": "middle-east"
                   },
                   {
                     "id": "AU",
@@ -3177,26 +3202,6 @@
                     "area": "europe"
                   }
                 ]
-              },
-              {
-                "label": "行业输入需求节点",
-                "countries": [
-                  {
-                    "id": "TH",
-                    "name": "泰国",
-                    "area": "southeast-asia"
-                  },
-                  {
-                    "id": "VN",
-                    "name": "越南",
-                    "area": "southeast-asia"
-                  },
-                  {
-                    "id": "JP",
-                    "name": "日本",
-                    "area": "east-asia"
-                  }
-                ]
               }
             ],
             "businessTypes": [
@@ -3212,24 +3217,36 @@
                 "project-h2jkmn",
                 "project-1ejk2ul",
                 "project-77cqka",
-                "project-16f3cee"
+                "project-16f3cee",
+                "project-1aejdcq",
+                "project-1obpnla",
+                "project-v6s5p5",
+                "project-t3fbcc",
+                "project-hv951i"
               ]
             },
-            "why": "连锁餐饮品牌在东南亚、欧洲及澳新均有门店补给网络。可按相近温区和配送时段聚合库存、拣选与门店线路，核心是稳定的门店交付频次。",
+            "why": "麦当劳的多国分销、星巴克荷比物料配送和汉堡王英国多温服务，体现了持续的餐厅补货需求。可按温区、配送时窗和门店密度聚合库存、拣选与线路组织。",
             "proofs": [
               {
-                "provider": "Martin Brower",
-                "service": "麦当劳门店补给",
-                "country": "新加坡",
                 "recordId": "project-utx4jo",
-                "sourceId": "source-mhnx0l"
+                "sourceId": "source-mhnx0l",
+                "provider": "Martin Brower",
+                "service": "麦当劳多国餐厅补给",
+                "country": "新加坡"
               },
               {
-                "provider": "Best Food Logistics",
-                "service": "汉堡王多温配送",
-                "country": "英国",
                 "recordId": "project-16f3cee",
-                "sourceId": "source-ywz9xy"
+                "sourceId": "source-ywz9xy",
+                "provider": "Best Food Logistics",
+                "service": "汉堡王英国多温配送",
+                "country": "英国"
+              },
+              {
+                "recordId": "project-1ejk2ul",
+                "sourceId": "source-npwj9v",
+                "provider": "Lekkerland",
+                "service": "星巴克荷比门店物料配送",
+                "country": "荷兰"
               }
             ],
             "basis": {
@@ -3250,7 +3267,7 @@
               {
                 "kind": "partner",
                 "label": "当地伙伴合作",
-                "text": "补齐泰越等需求节点的多温设施、车辆与属地运营团队。"
+                "text": "按实际客户节点补齐多温设施、车辆和属地班组，以订单验证服务组合。"
               },
               {
                 "kind": "ma",
@@ -3269,46 +3286,86 @@
             ]
           },
           {
-            "id": "food-crossborder-cold",
-            "title": "跨境冷链运输与食品清关",
+            "id": "food-origin-transport",
+            "title": "食材集运与海运、港口衔接",
             "countryGroups": [
               {
-                "label": "行业输入需求节点",
+                "label": "公开案例对应节点",
                 "countries": [
-                  {
-                    "id": "TH",
-                    "name": "泰国",
-                    "area": "southeast-asia"
-                  },
-                  {
-                    "id": "SA",
-                    "name": "沙特阿拉伯",
-                    "area": "middle-east"
-                  },
                   {
                     "id": "US",
                     "name": "美国",
                     "area": "north-america"
-                  },
+                  }
+                ]
+              }
+            ],
+            "businessTypes": [],
+            "selection": {
+              "recordIds": [
+                "project-7zvx47",
+                "project-1g4862n"
+              ]
+            },
+            "why": "嘉吉将海运连接美国驳船和仓储网络；ADM通过ARTCo衔接内河集运与新奥尔良装卸。食材原料需要贯通集货、转运、库存和船期，可从运输控制与交接组织切入。",
+            "proofs": [
+              {
+                "recordId": "project-7zvx47",
+                "sourceId": "source-2mt47v",
+                "provider": "Cargill Ocean Transportation",
+                "service": "海运、驳船与仓储衔接",
+                "country": "美国"
+              },
+              {
+                "recordId": "project-1g4862n",
+                "sourceId": "source-alebls",
+                "provider": "ARTCo（ADM自营）",
+                "service": "内河运输与港口装卸",
+                "country": "美国"
+              }
+            ],
+            "basis": {
+              "tag": "跨境运输与单证组织经验",
+              "text": "行业输入列有跨境海运和关务需求，可迁移运输调度与客户接口；散粮仓储、驳船及港口资源需另行匹配。",
+              "sourceCells": [
+                "E8",
+                "E9"
+              ]
+            },
+            "gap": "集货与船期协调、港口交接、散货装卸及粮食专用设施伙伴。",
+            "methods": [
+              {
+                "kind": "build",
+                "label": "内部建设与复用",
+                "text": "掌握客户运输计划、单证、库存交接和异常调度，按稳定流向组织运输。"
+              },
+              {
+                "kind": "partner",
+                "label": "当地伙伴合作",
+                "text": "调用粮商、码头和驳船等专业资源，以客户订单验证服务组合。"
+              }
+            ],
+            "serviceFlows": [
+              {
+                "steps": [
+                  "原料集货与仓储",
+                  "内河／陆路转运与港口交接",
+                  "海运及目的地衔接"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "food-cold-storage",
+            "title": "食品冷库与自动化作业",
+            "countryGroups": [
+              {
+                "label": "公开案例对应节点",
+                "countries": [
                   {
-                    "id": "KR",
-                    "name": "韩国",
-                    "area": "east-asia"
-                  },
-                  {
-                    "id": "SG",
-                    "name": "新加坡",
-                    "area": "southeast-asia"
-                  },
-                  {
-                    "id": "MY",
-                    "name": "马来西亚",
-                    "area": "southeast-asia"
-                  },
-                  {
-                    "id": "AU",
-                    "name": "澳大利亚",
-                    "area": "oceania"
+                    "id": "US",
+                    "name": "美国",
+                    "area": "north-america"
                   },
                   {
                     "id": "GB",
@@ -3318,200 +3375,87 @@
                 ]
               }
             ],
-            "businessTypes": [],
+            "businessTypes": [
+              "成品仓",
+              "仓-经销商/店"
+            ],
             "selection": {
-              "recordIds": []
-            },
-            "why": "客户输入同时存在水果进口、冷冻品出口与连锁品牌跨境供货。可围绕固定流向聚合货量，连接产地、跨境运输、食品清关及目的国仓配。",
-            "proofs": [],
-            "basis": {
-              "tag": "已有客户运输与关务需求",
-              "text": "行业输入记录泰国水果、沙特冷冻品及六国连锁客户跨境运输业务；各产品的准入、检疫、清关与温控责任仍须逐项确认。",
-              "sourceCells": [
-                "E7",
-                "E8",
-                "E9"
+              "recordIds": [
+                "project-ncqigf",
+                "project-16vxkxz",
+                "project-r40mna"
               ]
             },
-            "gap": "食品准入、检疫单证、温度交接及海陆空运输与目的仓衔接。",
+            "why": "泰森与Lineage的冷库合作、沃尔玛生鲜配送升级和ALDI Bardon多温仓表明，食品需要受控温区、自动存取及出库交接。可先形成稳定冷库运营，再按货量配置自动化作业。",
+            "proofs": [
+              {
+                "recordId": "project-ncqigf",
+                "sourceId": "source-yhydcp",
+                "provider": "Lineage",
+                "service": "泰森冷库合作及自动化扩建规划",
+                "country": "美国"
+              },
+              {
+                "recordId": "project-16vxkxz",
+                "sourceId": "source-65fbih",
+                "provider": "Walmart自营",
+                "service": "生鲜温控自动存储与组托",
+                "country": "美国"
+              },
+              {
+                "recordId": "project-r40mna",
+                "sourceId": "source-12t9bjv",
+                "provider": "ALDI自营／Cimcorp技术",
+                "service": "Bardon多温区与自动存取",
+                "country": "英国"
+              }
+            ],
+            "basis": {
+              "tag": "门店仓配与系统运营经验",
+              "text": "行业输入提供门店仓配及自有、第三方系统经验，可迁移库存与交接流程；专业冷库设施、自动化设备和运维能力仍需补齐。",
+              "sourceCells": [
+                "E10",
+                "E12"
+              ]
+            },
+            "gap": "食品温区设施、温度验证、库存与设备接口、自动化运维及食品质量管理。",
             "methods": [
               {
                 "kind": "build",
                 "label": "内部建设与复用",
-                "text": "统一产品准入检查、运输控制和温度记录，按流向组织客户订单。"
+                "text": "建立食品库存、温度记录与交接标准，按货量及作业条件选择自动化环节。"
               },
               {
                 "kind": "partner",
                 "label": "当地伙伴合作",
-                "text": "以目的国食品清关、冷库和冷链运输资源补齐属地环节。"
+                "text": "整合当地冷库、设备集成与运维伙伴，先验证实际客户作业。"
+              },
+              {
+                "kind": "ma",
+                "label": "并购评估",
+                "text": "稳定多客户需求与当地冷库、运营团队短板同时明确时，评估具有食品质量体系的专业仓储企业。"
               }
             ],
             "serviceFlows": [
               {
                 "steps": [
-                  "产地冷链集货",
-                  "跨境运输／食品清关",
-                  "目的仓与当地交付"
+                  "食品温控收货",
+                  "分温区库存／自动存取",
+                  "订单组托与冷链出库"
                 ]
-              }
-            ],
-            "evidenceMode": "internal",
-            "groupedDemand": true,
-            "showInitiationStat": false,
-            "countryMetricLabel": "个适用国",
-            "opportunities": [
-              {
-                "client": "泰国水果进口客户群",
-                "countryIds": [
-                  "TH"
-                ],
-                "state": "已签约",
-                "text": "行业输入记录数十家已签客户。"
-              },
-              {
-                "client": "沙特冷冻品出口客户群",
-                "countryIds": [
-                  "SA"
-                ],
-                "state": "已签约",
-                "text": "行业输入记录三家已签客户。"
-              },
-              {
-                "client": "六国连锁茶餐饮客户群",
-                "countryIds": [
-                  "US",
-                  "KR",
-                  "SG",
-                  "MY",
-                  "AU",
-                  "GB"
-                ],
-                "state": "已承接",
-                "text": "行业输入记录十家品牌跨境运输业务。"
-              }
-            ]
-          },
-          {
-            "id": "food-fresh-air",
-            "title": "短保生鲜空运与产地集货",
-            "countryGroups": [
-              {
-                "label": "行业输入需求节点",
-                "countries": [
-                  {
-                    "id": "SG",
-                    "name": "新加坡",
-                    "area": "southeast-asia"
-                  },
-                  {
-                    "id": "NO",
-                    "name": "挪威",
-                    "area": "europe"
-                  },
-                  {
-                    "id": "BD",
-                    "name": "孟加拉国",
-                    "area": "south-asia"
-                  }
-                ]
-              }
-            ],
-            "businessTypes": [],
-            "selection": {
-              "recordIds": []
-            },
-            "why": "猪肉、龙虾及三文鱼等货物对产地集货、舱位和交接时效要求高。已有签约需求与跟进机会并存，应分别确认货量、空运资源及温控责任，避免有货无舱。",
-            "proofs": [],
-            "basis": {
-              "tag": "生鲜客户与运力缺口",
-              "text": "行业输入记录新加坡猪肉出口、北美龙虾进口已签客户，以及挪威三文鱼、孟加拉业务跟进；挪威O3仓位及岳阳—达卡包机资源存在缺口。",
-              "sourceCells": [
-                "E6"
-              ]
-            },
-            "gap": "产地时窗、稳定舱位、温控交接、检疫衔接和航班异常处置。",
-            "methods": [
-              {
-                "kind": "build",
-                "label": "内部建设与复用",
-                "text": "按客户订单与产品保鲜期统筹集货和航班，掌握温度与时效异常。"
-              },
-              {
-                "kind": "partner",
-                "label": "当地伙伴合作",
-                "text": "与航空公司、产地冷库及食品关务伙伴落实稳定运力和交接；包机须以实际货量验证。"
-              }
-            ],
-            "serviceFlows": [
-              {
-                "steps": [
-                  "产地收货与预冷",
-                  "空运与温度交接",
-                  "进口检疫／快速交付"
-                ]
-              }
-            ],
-            "evidenceMode": "internal",
-            "groupedDemand": true,
-            "marketMetric": true,
-            "showInitiationStat": false,
-            "scopeTags": [
-              {
-                "scope": "region",
-                "label": "北美：龙虾产地集货与进口空运需求"
-              }
-            ],
-            "opportunities": [
-              {
-                "client": "新加坡猪肉出口客户群",
-                "countryIds": [
-                  "SG"
-                ],
-                "state": "已签约",
-                "text": "行业输入记录两家已签客户。"
-              },
-              {
-                "client": "北美龙虾进口客户群",
-                "countryIds": [],
-                "areaIds": [
-                  "north-america"
-                ],
-                "state": "已签约",
-                "text": "行业输入记录五家已签客户，按北美区域使用。"
-              },
-              {
-                "client": "挪威三文鱼客户",
-                "countryIds": [
-                  "NO"
-                ],
-                "state": "跟进中",
-                "text": "一条客户线索因直飞仓位受限搁置。"
-              },
-              {
-                "client": "孟加拉进出口客户",
-                "countryIds": [
-                  "BD"
-                ],
-                "state": "跟进中",
-                "text": "老客户需求跟进，需补齐岳阳—达卡运力。"
               }
             ]
           },
           {
             "id": "food-inventory-orders",
-            "title": "批次效期与多温订单协同",
+            "title": "食品库存与门店订单协同",
             "countryGroups": [
               {
-                "label": "案例对应节点",
+                "label": "公开案例对应节点",
                 "countries": [
                   {
                     "id": "US",
                     "name": "美国",
-                    "area": "north-america"
-                  },
-                  {
-                    "id": "CA",
-                    "name": "加拿大",
                     "area": "north-america"
                   },
                   {
@@ -3539,27 +3483,26 @@
             "selection": {
               "recordIds": [
                 "project-16vxkxz",
-                "project-dfupby",
                 "project-63o7fq",
                 "project-r40mna",
                 "project-1dh9du4"
               ]
             },
-            "why": "大型零售网络通过库存、自动化拣选和门店订单协同提升供货效率。案例可作作业与系统对标；食品批次效期和多温规则需结合具体商品设置，温区条件需按商品与设施分别匹配。",
+            "why": "沃尔玛、施瓦茨、ALDI和家乐福均有库存、拣选与门店供货案例。客户需要贯通库存、订单和出库指令，可围绕兼容节点复用订单接口、需求计划与异常管理。",
             "proofs": [
               {
-                "provider": "Walmart自营",
-                "service": "美国生鲜网络与订单协同",
-                "country": "美国",
-                "recordId": "project-16vxkxz",
-                "sourceId": "source-65fbih"
+                "recordId": "project-63o7fq",
+                "sourceId": "source-lezniz",
+                "provider": "Schwarz自营物流",
+                "service": "Geisenfeld食品订单与数据协同",
+                "country": "德国"
               },
               {
-                "provider": "ALDI自营",
-                "service": "英国生鲜自动化配送",
-                "country": "英国",
-                "recordId": "project-r40mna",
-                "sourceId": "source-12t9bjv"
+                "recordId": "project-1dh9du4",
+                "sourceId": "source-1wsf7nt",
+                "provider": "Carrefour运营／Fives技术",
+                "service": "Bourges食品订单与WMS/WES协同",
+                "country": "法国"
               }
             ],
             "basis": {
@@ -3594,31 +3537,54 @@
             ]
           },
           {
-            "id": "food-origin-sourcing",
-            "title": "食材采购与产地供货协同",
+            "id": "food-procurement-transport",
+            "title": "餐厅采购执行与运输协同",
             "countryGroups": [
               {
-                "label": "行业输入需求节点",
+                "label": "公开案例对应节点",
                 "countries": [
                   {
                     "id": "US",
                     "name": "美国",
                     "area": "north-america"
-                  },
-                  {
-                    "id": "TH",
-                    "name": "泰国",
-                    "area": "southeast-asia"
                   }
                 ]
               }
             ],
-            "businessTypes": [],
+            "businessTypes": [
+              "仓-经销商/店"
+            ],
             "selection": {
-              "recordIds": []
+              "recordIds": [
+                "project-144pavx",
+                "project-15xcvt7",
+                "project-se2q1g"
+              ]
             },
-            "why": "食材采购能够把客户订单前移到供应商与产地，但采购责任、食品质量和账期风险明显增加。美国已签需求与泰国早期意向应分别管理，不将意向视为已落地项目。",
-            "proofs": [],
+            "why": "肯德基体系由RSCS组织产品采购，汉堡王由RSI协调供应商与分销，赛百味IPC通过C.H. Robinson连接供应商、承运商和配送中心。采购计划需要与运输履约贯通，可建设供应商、订单及运输协同能力。",
+            "proofs": [
+              {
+                "recordId": "project-144pavx",
+                "sourceId": "source-1vpgysg",
+                "provider": "RSCS／McLane",
+                "service": "KFC体系采购及美国餐厅配送",
+                "country": "美国"
+              },
+              {
+                "recordId": "project-15xcvt7",
+                "sourceId": "source-1d1sg1l",
+                "provider": "RSI",
+                "service": "汉堡王食材与分销采购协调",
+                "country": "美国"
+              },
+              {
+                "recordId": "project-se2q1g",
+                "sourceId": "source-8vk3xu",
+                "provider": "IPC／C.H. Robinson",
+                "service": "赛百味运输采购与网络协同",
+                "country": "美国"
+              }
+            ],
             "basis": {
               "tag": "采购需求与客户线索",
               "text": "行业输入记录美国芝士采购已签约；泰国SKA为早期意向、尚未立项。可先围绕明确订单验证采购与仓运协同。",
@@ -3632,48 +3598,26 @@
               {
                 "kind": "build",
                 "label": "内部建设与复用",
-                "text": "掌握客户采购授权、订单、质量标准和结算风控，限定采购责任边界。"
+                "text": "按客户授权连接采购订单、供应商和运输计划，明确质量、履约及结算责任。"
               },
               {
                 "kind": "partner",
                 "label": "当地伙伴合作",
-                "text": "使用当地供应商、检测与产地仓运资源，按具体产品验证供货和质量流程。"
+                "text": "整合经品牌认可的供应商、分销和运输伙伴，按订单跟踪到仓、到店交付。"
               }
             ],
             "serviceFlows": [
               {
                 "steps": [
-                  "供应商审核与采购订单",
-                  "产地质量／批次管理",
-                  "仓运交付与结算追溯"
+                  "采购订单与供应商协同",
+                  "运输采购／集运及到仓履约",
+                  "门店供货与异常反馈"
                 ]
-              }
-            ],
-            "evidenceMode": "internal",
-            "groupedDemand": true,
-            "showInitiationStat": false,
-            "countryMetricLabel": "个适用国",
-            "opportunities": [
-              {
-                "client": "美国芝士采购客户",
-                "countryIds": [
-                  "US"
-                ],
-                "state": "已签约",
-                "text": "行业输入已列客户采购需求。"
-              },
-              {
-                "client": "泰国SKA客户线索",
-                "countryIds": [
-                  "TH"
-                ],
-                "state": "早期意向",
-                "text": "需求尚未立项，需核实产品、订单和责任边界。"
               }
             ]
           }
         ],
-        "footnote": "案例与客户数量按当前所选资料动态计算，同一案例可支持不同能力，不作加总。建设方向为分析建议；客户需求、规划及历史案例按各自状态使用。已有基础取自海外能力建设表行业页，国家节点不代表均已具备运营条件。"
+        "footnote": "建设依据的客户、案例和子行业数按所选公开项目去重计算，同一项目可支持不同能力，不作加总。历史及规划状态保留；行业输入仅用于已有基础与关键缺口，不参与建设依据统计。"
       }
     }
   }

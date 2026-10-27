@@ -57,7 +57,7 @@
   $('bgBrief').hidden=!area;
   if(!area){
    const c=editorial.insights;
-   $('bgStrategyBrief').innerHTML=`<header class="bg-insights-heading"><p>${esc(c.eyebrow)}</p><h2 id="bgStrategyTitle">${esc(c.title)}</h2></header><ul class="bg-insights-list">${c.items.map(item=>`<li><h3>${esc(item.title)}</h3><p>${esc(item.text)}</p></li>`).join('')}</ul>`;
+   $('bgStrategyBrief').innerHTML=`<header class="bg-insights-heading"><h2 id="bgStrategyTitle">${esc(c.title)}</h2></header><div class="bg-overview-regions">${c.items.map((item,i)=>`<section class="bg-overview-region" aria-labelledby="bgOverviewRegion${i}"><h3 id="bgOverviewRegion${i}">${esc(item.title)}</h3><ul>${item.points.map(point=>`<li>${esc(point)}</li>`).join('')}</ul></section>`).join('')}</div>`;
    $('bgBrief').innerHTML='';return;
   }
   $('bgStrategyBrief').innerHTML='';
@@ -85,21 +85,8 @@
  function renderCapabilities(){
   $('bgCapabilities').hidden=!!area;
   if(area){$('bgCapabilities').innerHTML='';return;}
-  const c=editorial.planning;
-  const industryTags=names=>`<div class="bg-plan-industries" aria-label="关联行业">${names.map(name=>`<span>${esc(name)}</span>`).join('')}</div>`;
-  const methods=items=>`<div class="bg-plan-methods">${items.map(m=>`<div><span class="bg-path ${['partner','ma'].includes(m.kind)?m.kind:''}">${esc(m.label)}</span><p>${esc(m.text)}</p></div>`).join('')}</div>`;
-  const regionLink=p=>`<button class="bg-plan-region-link" data-bg-planning-area="${esc(p.area)}">查看${esc(areaMap.get(p.area).name)}区域 <span aria-hidden="true">↗</span></button>`;
-  const focus=p=>`<article class="bg-plan-focus" data-bg-plan="${esc(p.id)}">
-   <header><div><div class="bg-plan-region"><strong>${esc(p.region)}</strong><span>${esc(p.stage)}</span></div><h3>${esc(p.title)}</h3></div>${regionLink(p)}</header>
-   <div class="bg-plan-fields">
-    <section><h4>共建区域与能力</h4><p class="bg-plan-location">${esc(p.location)}</p><p>${esc(p.capacity)}</p>${industryTags(p.industries)}</section>
-    <section><h4>跨行业复用价值</h4><div class="bg-plan-resources">${p.sharedResources.map(r=>`<span>${esc(r)}</span>`).join('')}</div><p>${esc(p.why)}</p></section>
-    <section><h4>已有基础与关键缺口</h4><div class="bg-plan-basis">${p.basis.map(b=>`<p><strong>${esc(b.label)}</strong>${esc(b.text)}</p>`).join('')}</div><p class="bg-plan-gap"><strong>重点补齐</strong>${esc(p.gap)}</p></section>
-    <section><h4>如何建设</h4>${methods(p.methods)}</section>
-   </div><p class="bg-plan-boundary"><strong>专业作业边界</strong>${esc(p.boundary)}</p>
-  </article>`;
-  const node=p=>`<article class="bg-plan-node" data-bg-plan="${esc(p.id)}"><header><strong>${esc(p.region)}</strong><span>${esc(p.stage)}</span></header><h3>${esc(p.title)}</h3>${industryTags(p.industries)}<p class="bg-node-capacity">${esc(p.capacity)}</p><dl><div><dt>已有基础</dt><dd>${esc(p.basis)}</dd></div><div><dt>重点补齐</dt><dd>${esc(p.gap)}</dd></div></dl>${methods(p.methods)}<p class="bg-node-boundary">${esc(p.boundary)}</p>${regionLink(p)}</article>`;
-  $('bgCapabilities').innerHTML=`<div class="bg-block-title bg-planning-title"><div><h2>${esc(c.title)}</h2><p>${esc(c.intro)}</p></div><span class="bg-plan-summary">${c.focus.length}块共建重点 · ${c.nodes.length}个定向节点</span></div><div class="bg-plan-focus-list">${c.focus.map(focus).join('')}</div><div class="bg-plan-nodes-heading"><h3>围绕客户定向拓展</h3><p>先验证具体节点，再随稳定业务扩展</p></div><div class="bg-plan-nodes">${c.nodes.map(node).join('')}</div><p class="bg-cap-footnote">${esc(c.footnote)}</p>`;
+  const c=editorial.planning,compiled=BGPlanning.compile(c,read('industry-strategy-content'),datasets,areas);
+  $('bgCapabilities').innerHTML=BGPlanning.render(c,compiled);
  }
  function refresh(){
   if(!active)return;
@@ -113,7 +100,7 @@
   $('bgReset').disabled=!(area||type);
   $('version').textContent=`资料：六行业最新版表格 · BG汇总 · ${editorial.version}`;
   $('footerNote').textContent='地图按收录案例数着色；类型多标签计数，区域与全球范围独立保留。';
-  renderPriorities();paintMap();renderBrief(ps);renderCounts(ps);ProviderCharts.render($('bgProviders'),{projects:model.projects,area,type,limit:area?5:10,title:(area?areaMap.get(area).name:'六行业 · 全球')+' · 外部承接商TOP'+(area?5:10)});renderCapabilities();
+  renderPriorities();paintMap();renderBrief(ps);renderCounts(ps);ProviderCharts.render($('bgProviders'),{projects:model.projects,area,type,limit:area?5:10,title:(area?areaMap.get(area).name:'六行业 · 全球')+' · 外部承接商TOP'+(area?5:10),theme:'blue'});renderCapabilities();
   window.AtlasNav?.record(snapshot());
  }
  function chooseArea(id){if(!model.projects.some(p=>p.areaId===id)||!areaMap.has(id))return;area=id;drawMap();refresh();}
@@ -131,6 +118,10 @@
  document.addEventListener('click',e=>{
   const b=e.target.closest('button');if(!b)return;
   if(b.hasAttribute('data-bg-home'))activate();
+  if(b.hasAttribute('data-bg-capability-source')){
+   const id=b.dataset.bgCapabilitySource;
+   requestAnimationFrame(()=>{const target=[...document.querySelectorAll('#industryStrategy [data-strategy-id]')].find(el=>el.dataset.strategyId===id);if(target){const heading=target.querySelector('h3');heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true});target.scrollIntoView({block:'start',behavior:'auto'});}});return;
+  }
   if(!active)return;
   if(b.hasAttribute('data-bg-priority'))chooseArea(b.dataset.bgPriority);
   if(b.hasAttribute('data-bg-planning-area')){chooseArea(b.dataset.bgPlanningArea);$('bgView').scrollIntoView({block:'start'});}

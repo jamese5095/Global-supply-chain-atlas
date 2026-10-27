@@ -29,9 +29,10 @@ replacements={
  'AUDIT':(ROOT/'source-audit.js').read_text(),
  'SCOPE':(ROOT/'scope-notes.js').read_text(),
  'APP':(ROOT/'app.js').read_text(),
- 'BGSTYLE':(ROOT/'bg.css').read_text(),
+ 'BGSTYLE':(ROOT/'bg.css').read_text().replace('url("assets/calibri-overview-bold.woff2")','url("data:font/woff2;base64,'+base64.b64encode((ROOT/'assets/calibri-overview-bold.woff2').read_bytes()).decode('ascii')+'")'),
  'BGCORE':(ROOT/'bg-core.js').read_text(),
  'BGAPP':(ROOT/'bg.js').read_text(),
+ 'BGPLANNING':(ROOT/'bg-planning.js').read_text(),
  'NAV':(ROOT/'navigation.js').read_text(),
  'BGCONTENT':json.dumps(json.loads((ROOT/'bg-content.json').read_text()),ensure_ascii=False,separators=(',',':')).replace('<','\\u003c'),
 }
