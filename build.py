@@ -31,6 +31,8 @@ replacements={
  'APP':(ROOT/'app.js').read_text(),
  'BGSTYLE':(ROOT/'bg.css').read_text().replace('url("assets/calibri-overview-bold.woff2")','url("data:font/woff2;base64,'+base64.b64encode((ROOT/'assets/calibri-overview-bold.woff2').read_bytes()).decode('ascii')+'")'),
  'BGCORE':(ROOT/'bg-core.js').read_text(),
+ 'BGPORTRAITSTYLE':(ROOT/'bg-region-portrait.css').read_text(),
+ 'BGPORTRAITAPP':(ROOT/'bg-region-portrait.js').read_text(),
  'BGAPP':(ROOT/'bg.js').read_text(),
  'BGPLANNING':(ROOT/'bg-planning.js').read_text(),
  'NAV':(ROOT/'navigation.js').read_text(),

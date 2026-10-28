@@ -4,7 +4,7 @@
  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const uniq=xs=>[...new Set(xs)];
  function compile(plan,industryContent,datasets,areas,{strict=false}={}){
-  const issues=[],catalog=new Map(),areaMap=new Map(areas.map(a=>[a.id,a])),countryArea=new Map(areas.flatMap(a=>a.countries.map(id=>[id,a.id]))),names=new Intl.DisplayNames(['zh-CN'],{type:'region'});
+  const issues=[],catalog=new Map(),datasetMap=new Map(datasets.map(d=>[d.id,d])),areaMap=new Map(areas.map(a=>[a.id,a])),countryArea=new Map(areas.flatMap(a=>a.countries.map(id=>[id,a.id]))),names=new Intl.DisplayNames(['zh-CN'],{type:'region'});
   const problem=text=>{issues.push(text);if(strict)throw Error(text);};
   for(const d of datasets){
    for(const cap of industryContent.industries[d.name]?.capabilityPlan?.items||[]){
@@ -24,14 +24,24 @@
     if(areaId&&!s.countries.some(c=>c.area===areaId)){problem('Unsupported region '+id+' / '+areaId);continue;}
     sources.push(s);used.add(id);
    }
-   if(!sources.length)return null;
-   const countries=[...new Map(sources.flatMap(s=>s.countries.filter(c=>!areaId||c.area===areaId)).map(c=>[c.id,c])).values()];
-   return {...r,sources,countries,industries:uniq(sources.map(s=>s.industry)),broadAreas:areaId?[]:uniq(sources.flatMap(s=>s.broadAreas)).map(id=>areaMap.get(id)?.name||id),global:sources.some(s=>s.global)};
+   const caseSources=[];
+   for(const ref of r.evidenceRecords||[]){
+    const d=datasetMap.get(ref.datasetId),record=d?.records.find(x=>x.id===ref.recordId),client=d?.clients.find(c=>c.id===record?.clientId);
+    if(!record||!client){problem('Missing customer-node record '+ref.recordId);continue;}
+    if(!areaId||record.reference||record.attribute!=='logistics'||record.scope!=='country'||record.areaId!==areaId||countryArea.get(record.countryId)!==areaId){problem('Unsupported customer-node geography '+ref.recordId);continue;}
+    const allowed=new Set([...(record.sourceIds||[]),...client.sourceIds]),proofs=(ref.sourceIds||[]).map(id=>d.sources.find(s=>s.id===id));
+    if(!proofs.length||proofs.some(s=>!s||s.clientId!==client.id||!allowed.has(s.id)||!/^https?:\/\//.test(s.url))){problem('Unbound customer-node source '+ref.recordId);continue;}
+    const key=d.id+':'+record.id;if(caseSources.some(s=>s.key===key))continue;
+    caseSources.push({key,datasetId:d.id,industry:d.name,recordId:record.id,clientName:client.name,title:record.title,country:{id:record.countryId,name:names.of(record.countryId),area:areaId},proofs});
+   }
+   if(!sources.length&&!caseSources.length)return null;
+   const countries=[...new Map(sources.flatMap(s=>s.countries.filter(c=>!areaId||c.area===areaId)).concat(caseSources.map(s=>s.country)).map(c=>[c.id,c])).values()];
+   return {...r,sources,caseSources,countries,industries:uniq(sources.map(s=>s.industry).concat(caseSources.map(s=>s.industry))),broadAreas:areaId?[]:uniq(sources.flatMap(s=>s.broadAreas)).map(id=>areaMap.get(id)?.name||id),global:sources.some(s=>s.global)};
   };
   const regions=plan.regions.flatMap(r=>{
    if(!areaMap.has(r.id)){problem('Unknown region '+r.id);return [];}
    const rows=r.rows.map(row=>makeRow(row,r.id)).filter(Boolean);
-   return rows.length?[{...r,rows,sourceCount:uniq(rows.flatMap(x=>x.sources.map(s=>s.id))).length,industries:uniq(rows.flatMap(x=>x.industries))}]:[];
+   return rows.length?[{...r,rows,sourceCount:uniq(rows.flatMap(x=>x.sources.map(s=>s.id))).length,caseSourceCount:uniq(rows.flatMap(x=>x.caseSources.map(s=>s.key))).length,industries:uniq(rows.flatMap(x=>x.industries))}]:[];
   });
   const chains=plan.chains.rows.map(row=>makeRow(row,'')).filter(Boolean),unmapped=[...catalog.keys()].filter(id=>!used.has(id));
   if(strict&&unmapped.length)throw Error('Unmapped industry capabilities: '+unmapped.join(', '));
@@ -40,18 +50,29 @@
   return {regions,chains,catalog,issues,unmapped,unmappedCountries,sourceCount:used.size,inputCount:catalog.size,industryCount:uniq([...catalog.values()].map(s=>s.industry)).length};
  }
  const columns=['建设能力与适用节点','行业需求与复用价值','已有基础与关键缺口','如何建设'];
- function render(plan,model){
+ function render(plan,model,options={}){
   const source=s=>`<button type="button" class="bg-cap-source" data-industry="${esc(s.datasetId)}" data-bg-capability-source="${esc(s.id)}" aria-label="查看${esc(s.industry)}：${esc(s.title)}能力建设" title="${esc(s.industry+'｜'+s.title)}"><strong>${esc(s.industry)}</strong><span>${esc(s.label)}</span><i aria-hidden="true">↗</i></button>`;
+  const caseSource=s=>`<a class="bg-cap-source" href="${esc(s.proofs[0].url)}" target="_blank" rel="noopener noreferrer" data-bg-node-source="${esc(s.key)}" title="${esc(s.clientName+'｜'+s.country.name+'｜'+s.title)}"><strong>${esc(s.industry)}</strong><span>${esc(s.clientName.split(' ')[0])} · ${esc(s.country.name)}</span><i aria-hidden="true">↗</i></a>`;
   const method=m=>`<div class="bg-cap-method"><span class="bg-path ${m.kind==='partner'?'partner':m.kind==='ma'?'ma':''}">${esc(m.label)}</span><p>${esc(m.text)}</p></div>`;
   const row=r=>`<article class="bg-cap-row" role="row" data-bg-cap-row="${esc(r.id)}">
    <section class="bg-cap-cell bg-cap-what" role="cell"><h5 class="bg-cap-mobile-label">${columns[0]}</h5><h4>${esc(r.title)}</h4><div class="bg-cap-countries">${r.countries.map(c=>`<span>${esc(c.name)}</span>`).join('')}${r.broadAreas.map(a=>`<span>${esc(a)}</span>`).join('')}${r.global?'<span>全球治疗网络</span>':''}</div><ul>${r.details.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></section>
-   <section class="bg-cap-cell bg-cap-demand" role="cell"><h5 class="bg-cap-mobile-label">${columns[1]}</h5><div class="bg-cap-sources">${r.sources.map(source).join('')}</div><div class="bg-cap-resources">${r.resources.map(t=>`<span>${esc(t)}</span>`).join('')}</div><p>${esc(r.value)}</p></section>
+   <section class="bg-cap-cell bg-cap-demand" role="cell"><h5 class="bg-cap-mobile-label">${columns[1]}</h5><div class="bg-cap-sources">${r.sources.map(source).join('')}${(r.caseSources||[]).map(caseSource).join('')}</div><div class="bg-cap-resources">${r.resources.map(t=>`<span>${esc(t)}</span>`).join('')}</div><p>${esc(r.value)}</p></section>
    <section class="bg-cap-cell bg-cap-basis" role="cell"><h5 class="bg-cap-mobile-label">${columns[2]}</h5><div class="bg-cap-foundation"><b>已有基础</b><p>${esc(r.basis)}</p></div><div class="bg-cap-gap"><b>重点补齐</b><p>${esc(r.gap)}</p></div></section>
    <section class="bg-cap-cell bg-cap-how" role="cell"><h5 class="bg-cap-mobile-label">${columns[3]}</h5>${r.methods.map(method).join('')}</section>
   </article>`;
   const table=(label,rows)=>`<div class="bg-cap-table" role="table" aria-label="${esc(label)}"><div class="bg-cap-columns" role="row">${columns.map(c=>`<span role="columnheader">${c}</span>`).join('')}</div><div role="rowgroup">${rows.map(row).join('')}</div></div>`;
-  const region=r=>`<section class="bg-cap-region ${r.primary?'bg-cap-region-primary':'bg-cap-region-other'}" data-bg-cap-region="${esc(r.id)}"><header><div><h3>${esc(r.title)}</h3><p>${esc(r.subtitle)}</p></div><div class="bg-cap-region-actions"><span>${r.industries.length}个行业 · ${r.sourceCount}项能力需求</span><button type="button" class="bg-plan-region-link" data-bg-planning-area="${esc(r.id)}">查看区域地图 <span aria-hidden="true">↗</span></button></div></header>${table(r.title+'能力建设',r.rows)}</section>`;
-  return `<div class="bg-block-title bg-planning-title"><div><h2>${esc(plan.title)}</h2><p>${esc(plan.intro)}</p></div><span class="bg-plan-summary">${model.industryCount}行业 · ${model.sourceCount}项行业能力</span></div><div class="bg-cap-logic" aria-label="能力规划推导关系"><span>行业能力规划</span><i aria-hidden="true">→</i><span>区域需求归集</span><i aria-hidden="true">→</i><strong>BG能力建设</strong></div><div class="bg-cap-region-list">${model.regions.filter(r=>r.primary).map(region).join('')}<div class="bg-cap-secondary-title"><h3>其他区域能力建设</h3><p>围绕客户节点配置专业仓运与当地交付</p></div>${model.regions.filter(r=>!r.primary).map(region).join('')}<section class="bg-cap-region bg-cap-chain"><header><div><h3>${esc(plan.chains.title)}</h3><p>${esc(plan.chains.intro)}</p></div></header>${table(plan.chains.title,model.chains)}</section></div><p class="bg-cap-footnote">${esc(plan.footnote)}</p>`;
+  const detailRegion=r=>`<section class="bg-cap-region ${r.primary?'bg-cap-region-primary':'bg-cap-region-other'}" data-bg-cap-region="${esc(r.id)}"><header><div><h3>${esc(r.title)}</h3><p>${esc(r.subtitle)}</p></div><div class="bg-cap-region-actions"><span>${r.industries.length}个行业 · ${r.origin==='customer-node'?r.rows.length:r.sourceCount}项${r.origin==='customer-node'?'建设方向':'能力需求'}</span><button type="button" class="bg-plan-region-link" data-bg-planning-area="${esc(r.id)}">查看区域地图 <span aria-hidden="true">↗</span></button></div></header>${table(r.title+'能力建设',r.rows)}</section>`;
+  const summaryRegion=r=>{
+   const content=options.summaries?.[r.id]||{},label=content.regionTitle||r.title,countries=[...new Map(r.rows.flatMap(row=>row.countries).map(c=>[c.id,c])).values()];
+   const nodes=(content.summaryCountryIds||[]).map(id=>countries.find(c=>c.id===id)).filter(Boolean);
+   return `<section class="bg-cap-region bg-cap-region-summary" data-bg-cap-region="${esc(r.id)}"><header><div><h3>${esc(label)}</h3><p>${esc(r.subtitle)}</p></div><div class="bg-cap-region-actions"><span>${r.industries.length}个行业 · ${r.rows.length}项建设方向</span><button type="button" class="bg-plan-region-link" data-bg-full-planning="${esc(r.id)}">查看${esc(label)}建设方向 <span aria-hidden="true">→</span></button></div></header><div class="bg-region-summary-body">${nodes.length?`<div class="bg-region-summary-nodes"><strong>重点节点</strong>${nodes.map(c=>`<span>${esc(c.name)}</span>`).join('')}</div>`:''}<ul>${(content.focusItems||[]).map(item=>`<li><strong>${esc(item.title)}</strong><p>${esc(item.text)}</p></li>`).join('')}</ul></div></section>`;
+  };
+  const region=r=>(options.summaryRegions||[]).includes(r.id)?summaryRegion(r):detailRegion(r);
+  if(options.region){
+   const r=model.regions.find(r=>r.id===options.region);if(!r)return '';const label=options.regionTitle||r.title;
+   return `<div class="bg-block-title bg-planning-title"><div><h2 id="bgRegionalPlanningTitle" tabindex="-1">${esc(label)}能力建设方向</h2><p>${r.origin==='customer-node'?'围绕明确客户节点梳理库存、运输与当地交付，按订单和国别条件配置资源。':'汇集本区域的行业需求，展开适用节点、行业依据、已有基础与建设方式。'}</p></div><div class="bg-regional-plan-actions"><span class="bg-plan-summary">${r.industries.length}个行业 · ${r.rows.length}项建设方向</span><button type="button" class="bg-plan-region-link" data-bg-scroll-map>返回区域地图 ↑</button></div></div>${options.filtered?'<p class="bg-regional-plan-scope">建设方向基于区域整体需求，不随单项业务筛选调整。</p>':''}<div class="bg-regional-table-wrap">${table(label+'能力建设方向明细',r.rows)}</div><p class="bg-cap-footnote">${esc(plan.footnote)}</p>`;
+  }
+  return `<div class="bg-block-title bg-planning-title"><div><h2>${esc(plan.title)}</h2><p>${esc(plan.intro)}</p></div><span class="bg-plan-summary">${model.industryCount}行业 · ${model.regions.length}区域</span></div><div class="bg-cap-logic" aria-label="能力方向推导关系"><span>行业能力与客户节点</span><i aria-hidden="true">→</i><span>区域需求归集</span><i aria-hidden="true">→</i><strong>BG能力建设</strong></div><div class="bg-cap-region-list">${model.regions.filter(r=>r.primary).map(region).join('')}<div class="bg-cap-secondary-title"><h3>其他区域能力建设方向</h3><p>围绕客户节点配置专业仓运与当地交付</p></div>${model.regions.filter(r=>!r.primary).map(region).join('')}<section class="bg-cap-region bg-cap-chain"><header><div><h3>${esc(plan.chains.title)}</h3><p>${esc(plan.chains.intro)}</p></div></header>${table(plan.chains.title,model.chains)}</section></div><p class="bg-cap-footnote">${esc(plan.footnote)}</p>`;
  }
  return {compile,render};
 });

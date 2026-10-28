@@ -1,0 +1,63 @@
+#bgView.bg-region-portrait .bg-hero{align-items:start}
+#bgView.bg-region-portrait #bgBrief{height:var(--bg-region-map-height,620px);min-height:350px;padding:0;display:flex;flex-direction:column;overflow:hidden}
+.bg-portrait-header{padding:18px 20px 15px;background:linear-gradient(110deg,#edf5fb,#fbfdff);border-bottom:1px solid #dfE9f1;flex-shrink:0}
+#bgBrief .bg-portrait-header>p{font-size:10px;letter-spacing:.6px;color:#7791a5;margin:0 0 5px}
+#bgBrief .bg-portrait-header>h2{font-size:21px;font-weight:650;color:#244e6d;margin:0 0 8px;line-height:1.5}
+.bg-portrait-header>span{font-size:11px;color:#6f899d}
+.bg-portrait-body{overflow:auto;overscroll-behavior:contain;padding:16px 20px 19px;min-height:0}
+#bgBrief .bg-portrait-summary{font-size:12px;line-height:1.85;color:#536f84;margin:0 0 17px}
+#bgBrief .bg-portrait-section-heading{font-size:12px;font-weight:650;color:#365e7c;margin:0 0 10px;line-height:1.7}
+.bg-country-portrait-list{display:grid;gap:12px}
+.bg-country-portrait{border:1px solid #dce7f0;border-radius:7px;background:white;overflow:hidden;transition:background-color .15s,border-color .15s}
+.bg-country-portrait>header{padding:10px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px;background:#f1f6fa;border-bottom:1px solid #e5edf4}
+#bgBrief .bg-country-portrait>header>h3{font-size:14px;font-weight:650;margin:0;line-height:1.5;color:#295375}
+.bg-country-portrait>header>span{font-size:10px;color:#7892a6;white-space:nowrap}
+.bg-country-portrait>header b{font-size:16px;color:#3e7298;font-weight:650;margin-right:4px}
+.bg-country-table{padding:8px 12px 6px}
+.bg-country-table-label,.bg-country-industry{display:grid;grid-template-columns:100px minmax(0,1fr);gap:9px;align-items:center}
+.bg-country-table-label{font-size:9px;color:#8a9eae;margin-bottom:5px}
+.bg-country-industry{padding:5px 0}
+.bg-country-industry>span{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.bg-country-industry strong{font-size:11px;font-weight:550;color:#47677f;white-space:nowrap}
+.bg-country-industry small{font-size:9px;color:#8ca0af;white-space:nowrap}
+.bg-country-industry>div{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+.bg-country-service{font-size:9px;line-height:1.5;padding:3px 5px;border-radius:3px;background:#edf4f9;color:#4e7795}
+.bg-country-untyped{font-size:10px;color:#93a5b2}
+#bgBrief .bg-country-more-industries{border-top:1px solid #edf2f6;font-size:9px;line-height:1.8;padding:7px 12px;margin:0;color:#879cAC}
+.bg-country-portrait.is-map-hover{border-color:#8db4d0;background:#f8fbfe}
+.bg-country-portrait.is-map-hover>header{background:#e1eef8}
+.bg-country-portrait:focus-visible{outline:2px solid #79a4c5;outline-offset:2px}
+#bgMap .bg-map-country.bg-region-highlight{fill:#15588f;stroke:white;stroke-width:.5}
+#bgBrief .bg-portrait-footnote{font-size:9px;line-height:1.85;margin:18px 0 0;color:#8a9fae}
+@media(max-width:1100px){.bg-country-table-label,.bg-country-industry{grid-template-columns:84px minmax(0,1fr);gap:7px}.bg-portrait-body{padding-inline:16px}.bg-portrait-header{padding-inline:16px}}
+@media(max-width:800px){#bgView.bg-region-portrait #bgBrief{height:auto;max-height:none;min-height:0}.bg-portrait-body{overflow:visible}.bg-country-portrait-list{grid-template-columns:1fr}.bg-portrait-header{padding:18px 20px}.bg-portrait-body{padding:17px 20px 21px}.bg-country-table-label,.bg-country-industry{grid-template-columns:110px minmax(0,1fr)}}
+@media(prefers-reduced-motion:reduce){.bg-country-portrait{transition:none}}
+.bg-portrait-focus{margin-top:20px;padding:16px 15px 14px;background:#f2f7fb;border:1px solid #dbe8f2;border-radius:7px}
+#bgBrief .bg-portrait-focus>h3{font-size:14px;line-height:1.6;font-weight:650;color:#285a7e;margin:0 0 12px}
+.bg-portrait-focus ul{list-style:none;margin:0;padding:0;display:grid;gap:13px}
+.bg-portrait-focus li{position:relative;padding-left:12px}
+.bg-portrait-focus li:before{content:'';position:absolute;left:0;top:7px;width:4px;height:4px;background:#6099c1;border-radius:50%}
+.bg-portrait-focus strong{display:block;font-size:12px;font-weight:600;line-height:1.7;color:#3c6787;margin-bottom:3px}
+#bgBrief .bg-portrait-focus li p{font-size:11px;line-height:1.9;color:#658096;margin:0}
+#bgBrief .bg-portrait-focus .bg-portrait-focus-scope{font-size:9px;line-height:1.8;color:#8ba0b1;margin:12px 0 0;padding-top:10px;border-top:1px solid #dfeaf3}
+.bg-portrait-focus+section[aria-label="重点国家与业务"]{margin-top:20px}
+.bg-portrait-planning-link{display:inline-block;margin-top:14px;padding:6px 10px;border:1px solid #bed5e6;border-radius:5px;background:white;font-size:11px;font-weight:600;color:#3b739c;line-height:1.7}
+.bg-portrait-planning-link:hover{background:#e8f2f9;border-color:#8fb6d2}
+.bg-portrait-planning-link:focus-visible{outline:2px solid #6b9fc5;outline-offset:2px}
+.bg-region-summary-body{padding:18px 20px 20px;background:#fff}
+.bg-region-summary-nodes{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin-bottom:16px}
+.bg-region-summary-nodes>strong{font-size:11px;font-weight:550;color:#7c95a8;margin-right:4px}
+.bg-region-summary-nodes>span{font-size:11px;line-height:1.6;padding:3px 8px;border:1px solid #d7e6f2;border-radius:4px;background:#f1f7fb;color:#4d7898}
+.bg-region-summary-body>ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 24px;list-style:none;padding:0;margin:0}
+.bg-region-summary-body li{position:relative;padding-left:13px;min-width:0}
+.bg-region-summary-body li:before{content:'';position:absolute;left:0;top:8px;width:4px;height:4px;border-radius:50%;background:#6499bf}
+.bg-region-summary-body li>strong{display:block;color:#3e6787;font-weight:600;font-size:13px;line-height:1.7;margin-bottom:5px}
+.bg-region-summary-body li>p{font-size:12px;line-height:1.9;margin:0;color:#6c8498;overflow-wrap:anywhere}
+#bgCapabilities.bg-regional-planning{scroll-margin-top:110px}
+.bg-regional-plan-actions{display:flex;gap:11px;flex-wrap:wrap;justify-content:flex-end;align-items:center}
+.bg-regional-table-wrap{margin:0 24px;border:1px solid #dce7f0;border-radius:7px;overflow:hidden}
+#bgRegionalPlanningTitle:focus,#bgMapTitle:focus{outline:none}
+.bg-regional-plan-scope{font-size:11px;line-height:1.8;color:#8299aa;margin:0 24px 15px}
+#bgView .bg-hero{scroll-margin-top:110px}
+@media(max-width:1100px){#bgCapabilities.bg-regional-planning,#bgView .bg-hero{scroll-margin-top:150px}.bg-regional-plan-actions{justify-content:flex-start}}
+@media(max-width:700px){.bg-region-summary-body{padding:16px}.bg-region-summary-body>ul{grid-template-columns:1fr;gap:14px}.bg-regional-table-wrap{margin:0 16px}.bg-regional-plan-scope{margin:0 16px 14px}.bg-regional-plan-actions .bg-plan-summary{font-size:10px!important}}
