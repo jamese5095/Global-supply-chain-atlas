@@ -2,7 +2,7 @@
 (()=>{
  'use strict';
  const core=WorkbookAtlas,$=id=>document.getElementById(id),read=id=>JSON.parse($(id).textContent);
- const auditPolicy=read('audit-policy'),strategyContent=read('industry-strategy-content');
+ const strategyContent=read('industry-strategy-content');
  const bundle=read('atlas-data'),initialDatasets=bundle.datasets||[bundle],seed=initialDatasets[0],meta=read('metadata'),areas=read('region-data'),geo=read('geo-data');
  initialDatasets.forEach(core.validate);
  const datasets=new Map(initialDatasets.map(d=>[d.id,d])),byArea=new Map(areas.map(a=>[a.id,a])),countryArea=new Map(areas.flatMap(a=>a.countries.map(id=>[id,a.id])));
@@ -11,8 +11,8 @@
  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const status={planned:'规划／建设',case:'历史案例'};
  const defaults={view:'region',sub:'',client:'',type:'',provider:'',area:'',country:'',scope:'all',history:true,references:false,metric:'clients',broad:false,background:'production'};
- let state={...defaults},db=seed,clients,sources,countries,rows=[],areaRows=new Map(),countryRows=new Map(),broadRows=[],pending=null,pendingReview=null,importSeq=0;
- let storage,projection,path,mapCountries,nameEdited=false;
+ let state={...defaults},db=seed,clients,sources,countries,rows=[],areaRows=new Map(),countryRows=new Map(),broadRows=[];
+ let projection,path,mapCountries;
  const svg=d3.select('#map'),viewport=svg.append('g'),sphere=viewport.append('path').attr('class','sphere'),grid=viewport.append('path').attr('class','graticule'),areaLayer=viewport.append('g'),countryLayer=viewport.append('g'),backgroundLayer=viewport.append('g');
  const iso=f=>meta.numeric[String(f.id).padStart(3,'0')]||String(f.id);
  const features=topojson.feature(geo,geo.objects.countries).features.filter(f=>iso(f)!=='AQ').map((f,i)=>({...f,iso:f.id==null?'geometry-'+i:iso(f)}));
@@ -25,7 +25,6 @@
   if(/^[A-Z]{2}$/.test(String(id))){try{return allNames.of(id)||fallback||id;}catch{}}
   return fallback||features.find(f=>f.iso===id)?.properties?.name||String(id??'');
  }
- const showNotice=s=>{$('notice').hidden=!s;$('notice').textContent=s;};
  function text(s,c){return esc(s).replace(/\[(\d+)\]/g,(m,n)=>{const src=sources.get(c?.sourceRefs?.[n]);return src?`<a href="${esc(core.safeUrl(src.url))}" target="_blank" rel="noopener noreferrer" title="${esc(src.label)}">[${n}]</a>`:m;}).replace(/\n/g,'<br>');}
  function sourceList(ids){return `<ul class="source-list">${uniq(ids).map(id=>{const s=sources.get(id);return s?`<li><a href="${esc(core.safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.label)} ↗</a></li>`:'';}).join('')}</ul>`;}
  function useDataset(id){
@@ -168,7 +167,6 @@
  document.addEventListener('click',e=>{
   const b=e.target.closest('button');if(!b)return;
   if(b.hasAttribute('data-industry')){if(datasets.has(b.dataset.industry))useDataset(b.dataset.industry);return;}
-  if(b.hasAttribute('data-close')){$(b.dataset.close).close();return;}
   if(b.hasAttribute('data-client')){chooseClient(b.dataset.client);return;}
   if(b.hasAttribute('data-sub')){state.sub=b.dataset.sub;state.client='';state.provider='';refresh();return;}
   if(b.hasAttribute('data-all-clients')){state.sub='';state.client='';state.provider='';refresh();return;}
@@ -181,26 +179,8 @@
  });
  $('industry').addEventListener('change',e=>useDataset(e.target.value));$('navSearch').addEventListener('input',()=>{renderNavigation();rememberView(true);});$('typeFilter').addEventListener('change',e=>{state.type=e.target.value;refresh();});
  $('reset').addEventListener('click',()=>{state={...defaults};$('navSearch').value='';drawGeography();refresh();});$('backWorld').addEventListener('click',world);
- $('methodBtn').addEventListener('click',()=>{$('dataDialog').close();$('methodDialog').showModal();});
  document.querySelector('.brand').addEventListener('click',e=>{e.preventDefault();state={...defaults};$('navSearch').value='';drawGeography();refresh();});
- function openStorage(){return new Promise((resolve,reject)=>{if(!window.indexedDB){reject(Error('当前浏览器不支持本地保存'));return;}const request=indexedDB.open('sf-supplychain-atlas-six-industries-v1',1);request.onupgradeneeded=()=>{const d=request.result;if(!d.objectStoreNames.contains('industries'))d.createObjectStore('industries',{keyPath:'id'});};request.onsuccess=()=>resolve(request.result);request.onerror=()=>reject(request.error);});}
- function saveDatasets(ds){return new Promise((resolve,reject)=>{if(!storage){reject(Error('当前环境无法持久保存，请使用资料备份保留更新'));return;}const tx=storage.transaction('industries','readwrite');for(const d of ds)tx.objectStore('industries').put(d);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||Error('保存被中断'));});}
- function storageData(){return new Promise((resolve,reject)=>{const tx=storage.transaction('industries','readonly'),r=tx.objectStore('industries').getAll();r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});}
- $('importBtn').addEventListener('click',()=>{$('dataDialog').close();pending=null;nameEdited=false;importSeq++;$('importFile').value='';$('importPreview').hidden=true;$('applyImport').disabled=true;$('applyImport').textContent=storage?'保存行业更新':'载入本次页面';$('importMessage').textContent='';$('importName').value=db.name;$('importDialog').showModal();});
- $('importName').addEventListener('input',()=>{nameEdited=true;pending=null;importSeq++;$('applyImport').disabled=true;$('importMessage').textContent=$('importFile').files.length?'行业名称已修改，请重新选择表格以生成预览。':'';});
- $('importFile').addEventListener('change',async e=>{
-  const file=e.target.files[0],sequence=++importSeq;pending=null;$('applyImport').disabled=true;$('importPreview').hidden=true;if(!file)return;
-  try{if(file.size>15*1024*1024)throw Error('文件超过15MB。');if(!/\.xlsx$/i.test(file.name))throw Error('请选择XLSX格式的最新版表格。');const guessed=file.name.match(/国际业务热力图[_－\-]?([^_.（(]+?)(?:_.*)?\.xlsx$/i)?.[1];if(guessed&&!nameEdited)$('importName').value=guessed;const name=$('importName').value.trim();if(!name)throw Error('请填写行业名称。');$('importMessage').textContent='正在读取表格…';
-   const buf=await file.arrayBuffer(),wb=XLSX.read(buf,{type:'array',cellHTML:false,cellStyles:false});const d=SourceAudit.upgrade(core.parseWorkbook(wb,{XLSX,areas,numeric:meta.numeric,baseCountries:meta.countries,name,filename:file.name}),initialDatasets);if(sequence!==importSeq)return;const review=ImportReview.review(datasets.get(d.id),d,auditPolicy);pendingReview=review;pending=review.canApply?d:null;
-   $('importPreview').innerHTML=`<strong>${esc(d.name)}</strong><br>${d.report.customers}家客户 · ${d.records.length}个项目及配套条目<br>${d.report.regional}个区域项目 · ${d.sources.length}条来源链接<br>${datasets.has(d.id)?'保存后替换该行业现有资料，其他行业保留。':'保存后增加该行业，现有行业保留。'}${d.report.untyped?`<p class="subtle">${d.report.untyped}个服务项目没有官方类型标签，将保留在项目视图中。</p>`:''}${d.report.warnings.length?`<p class="warn">${d.report.warnings.map(esc).join('<br>')}</p>`:''}`;const deltaText=Object.entries(review.delta).map(([k,v])=>({clients:'客户',records:'记录',sources:'来源'}[k])+'：新增'+v.added.length+'，删除'+v.removed.length+'，修改'+v.changed.length).join('；');$('importPreview').innerHTML+=`<p class="subtle">${esc(deltaText)}</p>${review.exchange?`<p class="subtle">${review.exchange.unchanged?'统一数据版内容一致，项目、地域范围和历史状态完整保留。':'已重新解析'+review.exchange.visibleEdits.length+'处可见修改，保留未修改内容。'}</p>`:''}${review.conflicts.length?`<p class="warn">发现${review.conflicts.length}项已清理内容回流，暂不覆盖资料。请保留当前文件修改，以统一数据版合并。</p><ul>${review.conflicts.map(x=>`<li>${esc(x.label)}：${esc(x.reason)}</li>`).join('')}</ul>`:''}`;$('importPreview').hidden=false;$('importMessage').textContent=review.canApply?'读取完成，请核对变更后保存。':'存在来源或项目冲突，原数据保持完整。';$('applyImport').disabled=!review.canApply;
-  }catch(err){if(sequence===importSeq){$('importMessage').textContent='读取未完成：'+err.message;}}
- });
- $('applyImport').addEventListener('click',async()=>{if(!pending||!pendingReview?.canApply)return;const d=pending;$('applyImport').disabled=true;try{if(storage)await saveDatasets([d]);datasets.set(d.id,d);pending=null;$('importDialog').close();useDataset(d.id);showNotice(storage?d.name+'资料已更新并保存在当前浏览器。':d.name+'资料已载入本次页面；当前环境无法持久保存，请在资料管理中备份更新。');}catch(err){$('importMessage').textContent='保存未完成：'+err.message;$('applyImport').disabled=false;}});
- $('dataBtn').addEventListener('click',()=>{$('dataInfo').innerHTML=[...datasets.values()].map(d=>`<div class="data-version"><strong>${esc(d.name)}</strong><small>${esc(d.version)} · ${d.clients.length}家客户 · ${d.records.length}个项目及配套条目<br>${esc(d.workbook)}</small></div>`).join('');$('storageInfo').textContent=storage?'本机持久保存可用。':'当前环境无法持久保存，内置资料可正常浏览。';$('dataDialog').showModal();});
- $('exportData').addEventListener('click',()=>{const data={schemaVersion:'2.0',datasets:[...datasets.values()]},url=URL.createObjectURL(new Blob([JSON.stringify(data)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='国际供应链看板_资料备份.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
- $('restoreFile').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{if(f.size>25*1024*1024)throw Error('备份文件超过25MB。');const data=JSON.parse(await f.text()),ds=(data.datasets||[data]).map(d=>SourceAudit.upgrade(d,initialDatasets));if(!ds.length||ds.length>30)throw Error('备份行业数量无效。');ds.forEach(core.validate);const conflicts=ds.flatMap(d=>ImportReview.review(datasets.get(d.id),d,auditPolicy).conflicts);if(conflicts.length)throw Error('备份含'+conflicts.length+'项已清理内容，请保留用户修改并使用统一数据版合并。');if(new Set(ds.map(d=>d.id)).size!==ds.length)throw Error('备份包含重复行业。');if(storage)await saveDatasets(ds);ds.forEach(d=>datasets.set(d.id,d));$('dataDialog').close();useDataset(ds[0].id);showNotice(storage?'已载入并保存资料备份。':'已载入本次页面；当前环境无法持久保存，请保留原备份文件。');}catch(err){$('storageInfo').textContent='载入未完成：'+err.message;}finally{e.target.value='';}});
  window.AtlasHost={datasets:()=>[...datasets.values()],snapshot:viewSnapshot,restore:restoreView};
  useDataset(seed.id);
- openStorage().then(async d=>{storage=d;const saved=await storageData();const migrations=[];for(const s of saved){try{core.validate(s);const next=SourceAudit.upgrade(s,initialDatasets);datasets.set(next.id,next);if(next!==s)migrations.push(next);}catch{}}if(migrations.length)await saveDatasets(migrations);if(saved.length){const applySaved=()=>{const bgSaved=window.AtlasBG?.active?window.AtlasBG.snapshot():null,industrySaved=viewSnapshot();if(bgSaved){useDataset(datasets.has(db.id)?db.id:seed.id);window.AtlasBG.restore(bgSaved);}else restoreView(industrySaved);};if(window.AtlasNav)window.AtlasNav.silent(applySaved);else applySaved();}}).catch(()=>{});
- Object.defineProperty(window,'atlasDiagnostics',{get:()=>({state:{...state},industry:db.name,customers:db.clients.length,projects:db.records.length,sources:db.sources.length,visible:core.stats(rows),areas:[...areaRows].map(([id,rs])=>({id,...core.stats(rs)})),broad:core.stats(broadRows),classification:core.TYPES,storage:!!storage})});
+ Object.defineProperty(window,'atlasDiagnostics',{get:()=>({state:{...state},industry:db.name,customers:db.clients.length,projects:db.records.length,sources:db.sources.length,visible:core.stats(rows),areas:[...areaRows].map(([id,rs])=>({id,...core.stats(rs)})),broad:core.stats(broadRows),classification:core.TYPES,readOnly:true})});
 })();
